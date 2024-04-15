@@ -1,4 +1,5 @@
-# Project
+# US State & Local Government Business Applications Repository
+Welcome to US State & Local Government (SLG) open-source repository! Here, you'll find a collection of Power Platform and Dynamics 365 resources, curated for the State & Local Government community. Our mission is to provide you with the tools and knowledge essential to ignite and navigate your journey within the Power Platform and Dynamics 365 landscape. 
 
 > This repo has been populated by an initial template to help get you started. Please
 > make sure to update the content to build a great experience for community-building.
