@@ -2,7 +2,7 @@
 Welcome to US State & Local Government (SLG) open-source repository! Here, you'll find a collection of Power Platform and Dynamics 365 resources, curated for the State & Local Government community. Our mission is to provide you with the tools and knowledge essential to ignite and navigate your journey within the Power Platform and Dynamics 365 landscape. 
 
 ## Demos
-Visit [the demos page](./demos/) a comprehensive list of available demonstrations and their associated assets. These demos are intended to showcase specific platform features and functions applied to the needs of State & Local Government.
+Visit [the demos page](./demos/) for a comprehensive list of available demonstrations and their associated assets. These demos are intended to showcase specific platform features and functions applied to the needs of State & Local Government.
 
 ## Contributing
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
