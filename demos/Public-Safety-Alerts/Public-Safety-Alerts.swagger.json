@@ -1,0 +1,251 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Public Safety Alerts",
+    "description": "Access to the centralized public safety alert system, improving citizen safety",
+    "version": "1.0"
+  },
+  "host": "publicsafetyalerts.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/alerts/": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string",
+                    "description": "The ID of public safety alert",
+                    "title": "ID"
+                  },
+                  "UtcTime": {
+                    "type": "string",
+                    "description": "The UTC time at which the public safety alert was issued",
+                    "title": "UTC Date & Time"
+                  },
+                  "IssuingAuthority": {
+                    "type": "string",
+                    "description": "The authority who issued the public safety alert",
+                    "title": "Issuing Authority"
+                  },
+                  "AlertType": {
+                    "type": "string",
+                    "description": "The type of public safety alert (i.e. power outage, evacuation order, etc.)",
+                    "title": "Alert Type"
+                  },
+                  "AffectedRegions": {
+                    "type": "string",
+                    "description": "The regions of the area affected by this public safety alert",
+                    "title": "Affected Regions"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get Public Safety Alerts",
+        "operationId": "GetPublicSafetyAlerts",
+        "description": "Get a list of previously-issued Public Safety Alerts",
+        "parameters": []
+      }
+    },
+    "/alerts": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "newRecord": {
+                  "type": "object",
+                  "properties": {
+                    "Id": {
+                      "type": "string",
+                      "description": "Id"
+                    },
+                    "UtcTime": {
+                      "type": "string",
+                      "description": "UtcTime"
+                    },
+                    "IssuingAuthority": {
+                      "type": "string",
+                      "description": "IssuingAuthority"
+                    },
+                    "AlertType": {
+                      "type": "string",
+                      "description": "AlertType"
+                    },
+                    "AffectedRegions": {
+                      "type": "string",
+                      "description": "AffectedRegions"
+                    }
+                  },
+                  "description": "newRecord"
+                },
+                "webhookSubscribersNotifiedCount": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "webhookSubscribersNotifiedCount"
+                },
+                "webhookSubscribersNotified": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Id": {
+                        "type": "string",
+                        "description": "Id"
+                      },
+                      "Endpoint": {
+                        "type": "string",
+                        "description": "Endpoint"
+                      }
+                    }
+                  },
+                  "description": "webhookSubscribersNotified"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Issue New Public Safety Alert",
+        "description": "Issues a new public safety alert",
+        "operationId": "NewPSA",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "IssuingAuthority": {
+                  "type": "string",
+                  "description": "The public authority issuing the public safety alert",
+                  "title": "Issuing Authority"
+                },
+                "AlertType": {
+                  "type": "string",
+                  "description": "The type of public safety alert you wish to issue (i.e. weather risk)",
+                  "title": "Alert Type"
+                },
+                "AffectedRegions": {
+                  "type": "string",
+                  "description": "The regions or areas that are affected by this safety risk",
+                  "title": "Affected Regions"
+                }
+              },
+              "required": [
+                "AffectedRegions",
+                "AlertType",
+                "IssuingAuthority"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/subscribe": {
+      "x-ms-notification-content": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "Id": {
+              "type": "string",
+              "description": "The ID of public safety alert",
+              "title": "ID"
+            },
+            "UtcTime": {
+              "type": "string",
+              "description": "The UTC time at which the public safety alert was issued",
+              "title": "UTC Date & Time"
+            },
+            "IssuingAuthority": {
+              "type": "string",
+              "description": "The authority who issued the public safety alert",
+              "title": "Issuing Authority"
+            },
+            "AlertType": {
+              "type": "string",
+              "description": "The type of public safety alert (i.e. power outage, evacuation order, etc.)",
+              "title": "Alert Type"
+            },
+            "AffectedRegions": {
+              "type": "string",
+              "description": "The regions of the area affected by this public safety alert",
+              "title": "Affected Regions"
+            }
+          }
+        }
+      },
+      "post": {
+        "responses": {},
+        "summary": "When a new Public Safety Alert is issued",
+        "description": "Trigger your workflow as soon as a new public safety alert is issued",
+        "operationId": "WhenNewPSA",
+        "x-ms-trigger": "single",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "description": "url",
+                  "title": "Subscribed Endpoint URL",
+                  "x-ms-notification-url": true,
+                  "x-ms-visibility": "internal"
+                }
+              },
+              "required": [
+                "url"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/unsubscribe/{id}": {
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Unsubscribe Webhook",
+        "description": "Unsubscribe webhook from new PSA hook",
+        "operationId": "UnsubHook",
+        "x-ms-visibility": "internal",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
