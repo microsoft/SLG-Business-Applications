@@ -36,6 +36,9 @@ I've included a few diagrams below that depict how I.R.I.S. works below.
 
 You can download the architecture diagrams above (PowerPoint deck) [here](https://github.com/TimHanewich/Power-Platform-Assets/releases/download/9/architecture.pptx).
 
+## Pricing Estimate Calculator
+A pricing estimate calculator can be accessed [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/2/IRIS.Pricing.Estimate.Calculator.xlsx) for estimating the monthly cost of a system like IRIS given a unique case load.
+
 ## Credits
 - IRIS architecture, logic, code, and AI integration by [Tim Hanewich](https://github.com/TimHanewich)
 - IRIS embedded application UI/UX designed by [Kelly Cason](https://www.linkedin.com/in/kellycason/)
