@@ -1,0 +1,428 @@
+{
+	"info": {
+		"_postman_id": "da846139-1921-4d2e-99b4-1ac106bc78be",
+		"name": "Dataverse Web API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authorize",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "default"
+						},
+						{
+							"key": "client_id",
+							"value": "51f81489-12ee-4a9e-aaae-a2591f45987d",
+							"type": "default"
+						},
+						{
+							"key": "resource",
+							"value": "{{resource}}",
+							"type": "default"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.windows.net/common/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"windows",
+						"net"
+					],
+					"path": [
+						"common",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Tables",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{resource}}/api/data/v9.0/",
+					"host": [
+						"{{resource}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"v9.0",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ - Contact Records",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{resource}}/api/data/v9.0/contacts",
+					"host": [
+						"{{resource}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"v9.0",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE - Contact Record",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"lastname\": \"Smith\",\r\n    \"firstname\": \"Ken\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{resource}}/api/data/v9.0/contacts",
+					"host": [
+						"{{resource}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"v9.0",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE - Contact Record",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobilephone\": \"911\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{resource}}/api/data/v9.0/contacts(426be9f9-d54f-ed11-bba2-000d3a337946)",
+					"host": [
+						"{{resource}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"v9.0",
+						"contacts(426be9f9-d54f-ed11-bba2-000d3a337946)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - Contact Record",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{resource}}/api/data/v9.0/contacts(426be9f9-d54f-ed11-bba2-000d3a337946)",
+					"host": [
+						"{{resource}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"v9.0",
+						"contacts(426be9f9-d54f-ed11-bba2-000d3a337946)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complex Read - Contact Records",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{resource}}/api/data/v9.0/contacts?$top=3&$select=firstname,lastname&$orderby=birthdate&$filter=lastname eq 'smith'",
+					"host": [
+						"{{resource}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"v9.0",
+						"contacts"
+					],
+					"query": [
+						{
+							"key": "$top",
+							"value": "3"
+						},
+						{
+							"key": "$select",
+							"value": "firstname,lastname"
+						},
+						{
+							"key": "$orderby",
+							"value": "birthdate"
+						},
+						{
+							"key": "$filter",
+							"value": "lastname eq 'smith'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Metadata - Contact table",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{resource}}/api/data/v9.0/EntityDefinitions(LogicalName='contact')?$expand=Attributes",
+					"host": [
+						"{{resource}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"v9.0",
+						"EntityDefinitions(LogicalName='contact')"
+					],
+					"query": [
+						{
+							"key": "$expand",
+							"value": "Attributes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Metadata - Option Sets",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{resource}}/api/data/v9.0/GlobalOptionSetDefinitions",
+					"host": [
+						"{{resource}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"v9.0",
+						"GlobalOptionSetDefinitions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download image",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{resource}}/Image/download.aspx?Entity=contact&Id=e2116395-8250-ed11-bba2-000d3a337946&Attribute=crfce_profilepicture&Full=true",
+					"host": [
+						"{{resource}}"
+					],
+					"path": [
+						"Image",
+						"download.aspx"
+					],
+					"query": [
+						{
+							"key": "Entity",
+							"value": "contact",
+							"description": "Name of the entity (table) that contains the image you want to download"
+						},
+						{
+							"key": "Id",
+							"value": "e2116395-8250-ed11-bba2-000d3a337946",
+							"description": "ID (guid) of the record that contains the image you want to download"
+						},
+						{
+							"key": "Attribute",
+							"value": "crfce_profilepicture",
+							"description": "I created a custom column in the contacts table, \"Profile Picture\", an image column, to demonstrate this. If you have not made this column on your contact table (and the schema name matches here), you will receive an error from Dataverse."
+						},
+						{
+							"key": "Full",
+							"value": "true",
+							"description": "We are requesting the full image (not a thumbnail)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download file",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{resource}}/api/data/v9.0/contacts(e2116395-8250-ed11-bba2-000d3a337946)/crfce_application/$value",
+					"host": [
+						"{{resource}}"
+					],
+					"path": [
+						"api",
+						"data",
+						"v9.0",
+						"contacts(e2116395-8250-ed11-bba2-000d3a337946)",
+						"crfce_application",
+						"$value"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
