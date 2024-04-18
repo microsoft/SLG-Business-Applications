@@ -6,7 +6,7 @@ To maintain transparency, accountability, and ensure proper review of all change
 
 When submitting a pull request, please provide a clear and concise description of the changes implemented, along with any relevant context or reasoning. This allows reviewers to understand the purpose and impact of the proposed changes fully.
 
-For more information on how to make a pull request, please read [here]().
+For more information on how to make a pull request, please read [here](./how_to_pull_request.md).
 
 ## Assets must be generic
 All contributions - solutions, screenshots, videos, etc., must be void of any customer names, logos, or references of any sort. Please use generic, ficticious names in assets you plan to contribute.
