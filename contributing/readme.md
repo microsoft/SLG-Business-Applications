@@ -9,7 +9,7 @@ When submitting a pull request, please provide a clear and concise description o
 For more information on how to make a pull request, please read [here](./how_to_pull_request.md).
 
 ## Assets must be generic
-All contributions - solutions, screenshots, videos, etc., must be void of any customer names, logos, or references of any sort. Please use generic, ficticious names in assets you plan to contribute.
+All contributions - solutions, screenshots, videos, etc., must be void of any customer names, logos, or references of any sort. Please use generic, fictitious names in assets you plan to contribute.
 
 ## Assets must not contain personal "secrets"
 All contributions must not contain any sensitive information - passwords, credentials, Azure connection strings, etc. Please ensure that your assets do not contain any sensitive information before contributing them to this repo.

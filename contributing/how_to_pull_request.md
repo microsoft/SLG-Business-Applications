@@ -38,7 +38,7 @@ That is only an example on how to edit an *existing* file. To create your own fo
 
 Once you get to "add file" interface, at the top in the "breadcrumbs", enter the name you intend for your new solution folder, then "/" (to denote it as a folder), and then the `README.md`. Then, customize your `README.md` file in the edit pane below! This is demonstrated in [this short video](https://youtu.be/E9WjFlvhdIw).
 
-After you make your commit ("commiting" your changes to your copy of the repo), on the repo's main page, you'll see a dialog box indicating that your personal copy of the repo is **ahead** of the `SLG-Business-Applications` repo it was forked from - those are your changes!
+After you make your commit ("committing" your changes to your copy of the repo), on the repo's main page, you'll see a dialog box indicating that your personal copy of the repo is **ahead** of the `SLG-Business-Applications` repo it was forked from - those are your changes!
 
 Finally, once you are pleased with what you have contributed to your copy, it is time to propose that the changes you have made to *your* repo *also* be made to the `SLG-Business-Applications` repo.
 
