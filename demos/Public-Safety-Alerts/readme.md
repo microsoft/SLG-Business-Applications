@@ -203,3 +203,6 @@ Further context on when this was discovered:
 - Full PSA Graphic: https://i.imgur.com/QrTUJnQ.png
 - Safety Shield Graphic: https://i.imgur.com/SlSyzgw.png
     - Against white background (use for custom connector icon): https://i.imgur.com/5UcTjop.png
+
+## Credits
+Created by [Tim Hanewich](https://github.com/TimHanewich).
