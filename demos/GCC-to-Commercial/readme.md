@@ -31,3 +31,6 @@ This process is more complicated than the first two examples. While the first tw
 3. When a blob is made in blob storage, Azure Blob Storage (commercial) will call to the `eventbroker` endpoint, notifying it of this new blob. 
 4. The `eventbroker` endpoint will retrieve the JSON-serialized list of subscribers and make a simplified POST request to each of them with information about the new blob that was made (thus triggering the Power Automate flow).
 5. When the Power Automate workflow that has this trigger (has been subscribed) is turned off or deleted, an HTTP DELETE request is sent to the `unsubscribe` endpoint, asking it to be removed from the list of subscribers. The [unsubscribe function](./api/webhooks/unsubscribe.cs) provided here works with some simple URL's but does not work with more complicated URL's (like the ones used in Power Automate triggers). This is probably because of the URL deserialization not working. Ideally, there should be an ID number of some sort that corresponds to an individual subscription and can be used to unsubscribe, but that would be too complicated for this simple demonstration. For now, understand that the `unsubscribe` endpoint doesn't always work and deleted workflow triggers may still be listed there.
+
+## Credit
+Created by [Tim Hanewich](https://github.com/TimHanewich).
