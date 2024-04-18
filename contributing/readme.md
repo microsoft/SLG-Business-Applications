@@ -42,7 +42,7 @@ The `README.md` file within your folder acts as a plain text file (written in [M
 - Who made this? (credit yourself and anyone you collaborated with)
 - Version history (if applicable)
 
-Please see [this GCC & Azure Commercial integration demo](../demos/GCC-to-Commercial/) as an example.
+Please see [this](../demos/Public-Safety-Alerts/) as an example.
 
 ### 3: Add your contribution to all-up demos catalog page
 After creating your unique folder and putting your assets there, please add your contribution to the [demos page directory of assets](./demos/). Find the SLG service category that is most appropriate for your contribution (i.e. PS&J, HHS, etc.) and add a row to that table, linking directly to your new contribution.
