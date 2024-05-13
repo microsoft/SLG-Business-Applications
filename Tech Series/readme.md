@@ -1,4 +1,4 @@
-# SLG Business Applications Tech Series
+# SLG Business Applications Tech Evangelism Series
 The Microsoft SLG Business Applications team presents a series of monthly sessions to educate, inform, and inspire State & Local government organizations to achieve more with Power Platform!
 
 We deliver valuable insights and expertise across three pillars, each month, to cater to diverse needs and skill levels:
