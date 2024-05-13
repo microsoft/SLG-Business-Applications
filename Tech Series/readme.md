@@ -1,5 +1,10 @@
 # SLG Business Applications Tech Series
-The Microsoft SLG Business Applications team presents a series of monthly sessions to educate, inform, and inspire State & Local government organizations to achieve more with Power Platform.
+The Microsoft SLG Business Applications team presents a series of monthly sessions to educate, inform, and inspire State & Local government organizations to achieve more with Power Platform!
+
+We deliver valuable insights and expertise across three pillars, each month, to cater to diverse needs and skill levels:
+- **Dynamics 365 Pillar** - Focused on Microsoft Dynamics 365, this pillar explores Dynamics 365 first party capabilities, highlighting the opportunities to drive digital transformation in State & Local governments. We'll demonstrate how D365 can be leveraged to meet specific government needs.
+- **Low-Code Pillar** - Designed for non-technical users and business analysts, this pillar focuses on empowering citizen developers to build custom applications without extensive coding knowledge. We'll showcase the latest Power Platform features and best practices to accelerate digital transformation in State & Local governments.
+- **Pro-Code Pillar** - Geared towards professional developers and IT professionals, this pillar delves into the advanced capabilities of Power Platform, including integrations, APIs, and custom development. Our experts will share in-depth knowledge and hands-on guidance to help you unlock the full potential of Power Platform.
 
 You can find an archive of all previous sessions below:
 
