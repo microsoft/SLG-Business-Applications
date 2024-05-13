@@ -14,7 +14,7 @@ All contributions - solutions, screenshots, videos, etc., must be void of any cu
 ## Assets must not contain personal "secrets"
 All contributions must not contain any sensitive information - passwords, credentials, Azure connection strings, etc. Please ensure that your assets do not contain any sensitive information before contributing them to this repo.
 
-## No large binary files
+## Minimize use of large BLOB files
 We kindly request that you refrain from adding large binary files to the repository. Git, while an exceptional version control system, is not optimized for handling large binary files efficiently. These files can significantly bloat the repository size, making it cumbersome to clone, fetch, and manage for all contributors.
 
 To maintain the integrity and performance of our repository, we encourage you to explore alternative solutions for storing and sharing large binary files, such as Git LFS (Large File Storage) or cloud storage services. For more information, please reach out to the administrators of this repository.
