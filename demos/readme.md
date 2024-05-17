@@ -33,8 +33,8 @@ These assets are focused on best-in-class User Interface and User Experience des
 |Title|Description|
 |-|-|
 |[Canvas App Component Library](./Canvas-App-Component-Library/)|Reusable canvas app components for improving your UI|
+|[Responsive Design Template](./Responsive-Design-Template/)|A fully responsive canvas app design template|
 |[Kelly's UI/UX Examples](./Kellys-UI-UX-Assets/)|Example designs and starter apps for those looking to improve their Canvas App Design skills|
-
 
 ### Miscellaneous
 For use cases that don't fit a particular agency or department:
