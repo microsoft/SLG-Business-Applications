@@ -28,6 +28,13 @@ These demos are focused on demonstrating a particular technology, feature, or fu
 |[Capturing Air Quality Data from an On-Premises Resource via a Data Gateway](https://github.com/TimHanewich/Air-Quality-IoT)|This demonstrates how you can accomplish bidirectional communication with an on-premises server (on your local server) via a *data gateway* that "brokers" the communication between your local service and the Azure cloud (Power Apps). **Scroll down to find the Power Platform portion!**|
 |[Leveraging a SQL database with Power Apps](./PowerApps-with-SQL/)|Basic demonstration of bidirectional communication with a SQL database (reading/writing via CRUD operations) in a Power Apps Canvas App|
 
+### UI/UX Design Focused
+These assets are focused on best-in-class User Interface and User Experience design with Power Apps. Great for front-end devs!
+|Title|Description|
+|-|-|
+|[Canvas App Component Library](./Canvas-App-Component-Library/)|Reusable canvas app components for improving your UI|
+|[Kelly's UI/UX Examples](./Kellys-UI-UX-Assets/)|Example designs and starter apps for those lookign to improve their Canvas App Design skills|
+
 
 ### Miscellaneous
 For use cases that don't fit a particular agency or department:
