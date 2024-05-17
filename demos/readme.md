@@ -33,7 +33,7 @@ These assets are focused on best-in-class User Interface and User Experience des
 |Title|Description|
 |-|-|
 |[Canvas App Component Library](./Canvas-App-Component-Library/)|Reusable canvas app components for improving your UI|
-|[Kelly's UI/UX Examples](./Kellys-UI-UX-Assets/)|Example designs and starter apps for those lookign to improve their Canvas App Design skills|
+|[Kelly's UI/UX Examples](./Kellys-UI-UX-Assets/)|Example designs and starter apps for those looking to improve their Canvas App Design skills|
 
 
 ### Miscellaneous
