@@ -47,7 +47,7 @@ Please see [this](../demos/Public-Safety-Alerts/) as an example.
 ### 3: Add your contribution to all-up demos catalog page
 After creating your unique folder and putting your assets there, please add your contribution to the [demos page directory of assets](./demos/). Find the SLG service category that is most appropriate for your contribution (i.e. PS&J, HHS, etc.) and add a row to that table, linking directly to your new contribution.
 
-## Legal
+### Legal
 Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
 the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
