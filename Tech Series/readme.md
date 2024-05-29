@@ -1,3 +1,5 @@
+![tech series](https://i.imgur.com/Mx695TT.png)
+
 # SLG Business Applications Tech Evangelism Series
 The Microsoft SLG Business Applications team presents a series of monthly sessions to educate, inform, and inspire State & Local government organizations to achieve more with Power Platform!
 
