@@ -7,6 +7,10 @@ We are pleased to share these SLG-related Microsoft Power Platform/Dynamics 365 
 
 By accessing and utilizing the code and assets, you agree to these terms. For further information regarding the MIT License, please refer to [the accompanying LICENSE file](./../LICENSE).
 
+### Health and Human Services (HHS)
+|Title|Description|
+|-|-|
+|[C.H.A.S.E. - Child Welffare AI Assistant](./CHASE/)|AI companion that uses natural language understanding to simplify and streamline child welfare case management, allowing caseworkers to quickly access information, save time, and focus on ensuring the health and safety of children.|
 
 ### Public Safety & Justice
 These demos are specifically crafted for a Department of Corrections.
