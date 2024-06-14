@@ -19,6 +19,12 @@ These demos are specifically crafted for a Department of Corrections.
 |-|-|
 |[I.R.I.S. - Case Investigations AI Bot](./IRIS/)|Embedded AI system in a case management platform. Employs next-gen generative AI to aid public investigators in various investigation tasks|
 
+### Department of Transportation
+These demos are applicable to agencies responsible for transportation infrastructure.
+|Title|Description|
+|-|-|
+|Mobile Road Inspections|App for documenting road conditions with an easy-to-use interface that works even without internet.|
+
 ### Human Resources
 These demos are focused on Human Resources-related functions.
 |Title|Description|
