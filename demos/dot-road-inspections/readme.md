@@ -30,4 +30,3 @@ We are providing the following resources:
 
 ## Credit
 Solution created by [Tim Hanewich](https://github.com/timhanewich).
-Solut
