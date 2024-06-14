@@ -23,7 +23,7 @@ These demos are specifically crafted for a Department of Corrections.
 These demos are applicable to agencies responsible for transportation infrastructure.
 |Title|Description|
 |-|-|
-|Mobile Road Inspections|App for documenting road conditions with an easy-to-use interface that works even without internet.|
+|[Mobile Road Inspections](./dot-road-inspections/)|App for documenting road conditions with an easy-to-use interface that works even without internet.|
 
 ### Human Resources
 These demos are focused on Human Resources-related functions.
