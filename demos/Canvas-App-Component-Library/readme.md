@@ -10,11 +10,11 @@ This asset was created to introduce folks to reusable Canvas App components. Imp
 You can see each solution file history below:
 |Version|Description|
 |-|-|
-|[1.0.0](https://github.com/microsoft/SLG-Business-Applications/releases/download/3/Kelly.Cason.Canvas.Component.Library.-.Version.1.0.0.msapp)|(base functionality)|
-|[1.01.1](./KellsCanvasLibrary_1.0.1.zip)|(describe here what changed)|
+|[1.0.0](https://github.com/microsoft/SLG-Business-Applications/releases/download/3/Kelly.Cason.Canvas.Component.Library.-.Version.1.0.0.msapp)|(Version 1.0.0 of the component library)|
+|[1.01.1](./Canvas-App-Component-Library)|(New components added: Slider, Search, Notification, Donut Chart)|
 
 ## How to use
-You can download the .msapp file [**here**](https://github.com/microsoft/SLG-Business-Applications/releases/download/3/Kelly.Cason.Canvas.Component.Library.-.Version.1.0.0.msapp) that contains the Canvas App Components.
+Leverage these reusable components in your Canvas Apps to expedite development and improve your UI/UX!
 
 To install it: 
 1. Go to make.gov.powerapps.com 
