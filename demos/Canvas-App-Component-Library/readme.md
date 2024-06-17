@@ -11,7 +11,7 @@ You can see each solution file history below:
 |Version|Description|
 |-|-|
 |[1.0.0](https://github.com/microsoft/SLG-Business-Applications/releases/download/3/Kelly.Cason.Canvas.Component.Library.-.Version.1.0.0.msapp)|(base functionality)|
-|1.01.1|(describe here what changed)|
+|[1.01.1](./KellsCanvasLibrary_1.0.1.zip)|(describe here what changed)|
 
 ## How to use
 You can download the .msapp file [**here**](https://github.com/microsoft/SLG-Business-Applications/releases/download/3/Kelly.Cason.Canvas.Component.Library.-.Version.1.0.0.msapp) that contains the Canvas App Components.
