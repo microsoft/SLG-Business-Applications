@@ -49,4 +49,5 @@ Notes for what's covered in the videos above:
     - The Flow does act as a template showing how other data driven Flows should be constructed.  Notice how the Flow gets its own ID and uses that to determine which Tasks it should automate.
     - The Flow comes with a Manual trigger.  At some point the trigger should be changed to run on a schedule.
 
+## Contributors
 *Solutions made by [Doug Bell](https://www.linkedin.com/in/doug-bell-56090341/), [Doug Furney](https://www.linkedin.com/in/dougfurney/), [John Parker](https://www.linkedin.com/in/corporalparker/), [Dan Cox](https://www.linkedin.com/in/ideasoftware/), [Richa Sharma](https://www.linkedin.com/in/richa-t-sharma/), [David Pritchett](https://www.linkedin.com/in/david-pritchett-710a1a/), and [Kurt Reynolds](https://www.linkedin.com/in/kurt-reynolds-24259413/).*
