@@ -11,7 +11,7 @@ You can see each solution file history below:
 |Version|Description|
 |-|-|
 |[Version 1.0.0](https://github.com/microsoft/SLG-Business-Applications/releases/download/3/Kelly.Cason.Canvas.Component.Library.-.Version.1.0.0.msapp)|(Version 1.0.0 of the component library)|
-|[Version 1.0.1](./Kelly-Cason-Canvas-Components-1.0.1)|(Four new components added)|
+|[Version 1.0.1](./Kelly-Cason-Canvas-Components-1.0.1.zip)|(Four new components added)|
 
 ## How to use
 Leverage these reusable components in your Canvas Apps to expedite development and improve your UI/UX!
