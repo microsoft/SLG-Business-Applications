@@ -6,8 +6,15 @@ A component library that consists of reusable components for your Canvas Apps. L
 ## What can this be used for?
 This asset was created to introduce folks to reusable Canvas App components. Import this library into your Power Platform environment to begin leveraging these tools to improve your familiarity and design of components. Note: All components can be edited by you so feel free to build on these ideas!
 
+## Solution File Version History
+You can see each solution file history below:
+|Version|Description|
+|-|-|
+|[Version 1.0.0](https://github.com/microsoft/SLG-Business-Applications/releases/download/3/Kelly.Cason.Canvas.Component.Library.-.Version.1.0.0.msapp)|(Version 1.0.0 of the component library)|
+|[Version 1.0.1](./Kelly-Cason-Canvas-Components-1.0.1.zip)|(Four new components added)|
+
 ## How to use
-You can download the .msapp file [**here**](https://github.com/microsoft/SLG-Business-Applications/releases/download/3/Kelly.Cason.Canvas.Component.Library.-.Version.1.0.0.msapp) that contains the Canvas App Components.
+Leverage these reusable components in your Canvas Apps to expedite development and improve your UI/UX!
 
 To install it: 
 1. Go to make.gov.powerapps.com 
