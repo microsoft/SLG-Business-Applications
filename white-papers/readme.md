@@ -13,6 +13,6 @@ These resources are not specific to US Government sovereign cloud regions.
 
 Below are whitepapers that have been created specifically for use in the US Government sovereign cloud regions.
 
-* [Power Platform / Dynamics 365 Gov Architecture](https://github.com/DougBell303/Federal-Business-Applications/blob/main/whitepapers/power-plat-d365-architecture/README.md)
-* [Power Platform / Dynamics 365 Copilot Resources](https://github.com/DougBell303/Federal-Business-Applications/blob/main/whitepapers/copilot/README.md)
+* [Power Platform / Dynamics 365 Copilot Resources](https://github.com/microsoft/Federal-Business-Applications/blob/main/whitepapers/copilot/README.md)
+* [Power Platform / Dynamics 365 Gov Architecture](https://github.com/microsoft/Federal-Business-Applications/blob/main/whitepapers/power-plat-d365-architecture/README.md)
 * [Azure Synapse Link Integration](https://github.com/microsoft/Federal-Business-Applications/blob/main/whitepapers/power-platform-azure-synapse/README.md)
