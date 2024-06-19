@@ -6,6 +6,9 @@ Welcome to US State & Local Government (SLG) open-source repository! Here, you'l
 ## Demos
 Visit [the demos page](./demos/) for a comprehensive list of available demonstrations and their associated assets. These demos are intended to showcase specific platform features and functions applied to the needs of State & Local Government.
 
+## Tech Series
+Established in December, 2022, the SLG Businesss Applications Tech Series has been a hit from day one. We've delivered dozens of sessions to thousands of viewers and the recordings are all available in the [Tech Series Archives](./Tech%20Series/)!
+
 ## Contributing
 This project welcomes contributions and suggestions. To learn how you can contribute, please visit the [contribution guidelines](./contributing/).
 
