@@ -1,4 +1,5 @@
 # Accessibility Accommodation Request
+![acr screenshot](https://i.imgur.com/6DLNBLT.png)
 This solution contains two applications (canvas and model) to support the tracking of accessibility accommodation requests. This solution can be leveraged by:
  - Employees to request an accommodation request via a canvas app.  
  - Managers to review and approve the accommodations request
