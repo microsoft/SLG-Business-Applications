@@ -8,7 +8,7 @@ The canvas app is designed with a fixed phone form factor and does not use respo
 
 ## Assets
 The following assets are provided:
-- AccommodationRequest_1_0_0_4.zip - The Power Platform solution file that can be imported into any Dataverse-activated environment
+- [AccommodationRequest_1_0_0_4.zip](https://github.com/microsoft/SLG-Business-Applications/releases/download/7/AccommodationRequest_1_0_0_4.zip) - The Power Platform solution file that can be imported into any Dataverse-activated environment
 
 ## Credit
 Asset created by Doug Furney
