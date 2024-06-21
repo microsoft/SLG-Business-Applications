@@ -7,7 +7,13 @@ This is a solution that showcases how State & Local Government's can monitor env
 - A **Power Apps** Model-Driven App to display collected Air Quality Reading Data
 - A **Power BI** dashboard that reports air quality data and trends in a visual report, reading directly from Dataverse.
 
-## Pictures
+## Why is Environmental Air Quality Important to SLG?
+- **Protect Public Health** - Poor air quality is a major environmental risk to human health, particularly for vulnerable populations such as children, older adults, and those with pre-existing medical conditions. Exposure to polluted air can lead to respiratory problems, cardiovascular disease, and even premature death. By tracking ambient air quality, you can identify areas of concern and take proactive measures to mitigate the health impacts of poor air quality.
+- **Improve Environmental Sustainability** - Ambient air quality tracking is a critical component of environmental sustainability efforts. By monitoring and addressing air quality issues, you can reduce the environmental footprint of your community and promote a healthier, more sustainable environment for future generations.
+- **Support Economic Develoment** - Clean air is essential for attracting businesses, tourists, and residents to your community. Areas with poor air quality can experience reduced economic growth, lower property values, and decreased quality of life. By demonstrating a commitment to air quality monitoring and improvement, you can enhance your community's reputation and competitiveness.
+- **Meet Regulatory Requirements** - State and local governments are responsible for implementing federal air quality standards and regulations. Effective tracking and monitoring of ambient air quality conditions are critical to meeting these requirements and avoiding non-compliance penalties.
+
+## Solution Gallery
 The Raspberry Pi Pico W, DHT-22, and ENS160 sensor it its 3D-printed housing: 
 
 ![housing](https://i.imgur.com/KcKyxU2.jpeg)
