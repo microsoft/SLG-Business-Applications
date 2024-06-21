@@ -1,7 +1,7 @@
 # Environmental Air Quality Monitoring
 ![AQM](https://i.imgur.com/ifQcQSQ.png)
 This is a solution that showcases how State & Local Government's can monitor environmental air quality with:
-- A **Raspberry Pi Pico W**, serving as an IoT device, that collects air quality data via an **ENS-160** and **DHT-22** sensor
+- A **Raspberry Pi Pico W**, serving as an IoT device, that collects air quality data via an **ENS160** and **DHT-22** sensor
 - A **Power Automate** flow that receives this data from the Raspberry Pi via an HTTP POST request trigger
 - A **Dataverse** table that the Power Automate flow places the data into, using several *Formula columns*
 - A **Power Apps** Model-Driven App to display collected Air Quality Reading Data
@@ -44,6 +44,7 @@ A Power BI dashboard is embedded within a Power Apps Canvas App, providing a cap
 We're providing the following assets so you can replicate this project as well:
 - The source code (written in MicroPython) that runs on the Raspberry Pi Pico W can be found in the [`src` folder](./src/)
 - The Raspberry Pi IoT device lives neatly in a 3D-printed housing. You can find the source files (.STL) files of the housing and print yourself [on Thingiverse](https://www.thingiverse.com/thing:6655576).
+- The Power Platform solution (*coming soon*)
 
 ## How to Calculate Absolute Humidity from Relative Humidity and Temperature
 In this project, we calculate *absolute* humidity from the *relative humidity* and *temperature* readings our IoT device samples and transmits. Below is the equation for calculating absolute humidity. We use this equation in our Dataverse **Formula** column.
