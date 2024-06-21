@@ -1,5 +1,5 @@
 # Environmental Air Quality Monitoring
-![AQM](https://i.imgur.com/MviktuE.png)
+![AQM](https://i.imgur.com/ifQcQSQ.png)
 This is a solution that showcases how State & Local Government's can monitor environmental air quality with:
 - A **Raspberry Pi Pico W**, serving as an IoT device, that collects air quality data via an **ENS-160** and **DHT-22** sensor
 - A **Power Automate** flow that receives this data from the Raspberry Pi via an HTTP POST request trigger
