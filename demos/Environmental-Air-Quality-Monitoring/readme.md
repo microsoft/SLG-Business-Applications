@@ -8,17 +8,31 @@ This is a solution that showcases how State & Local Government's can monitor env
 - A **Power BI** dashboard that reports air quality data and trends in a visual report, reading directly from Dataverse.
 
 ## Pictures
-Raspberry Pi in its casing
+The Raspberry Pi Pico W, DHT-22, and ENS160 sensor it its 3D-printed housing: 
 
-Mounted outside
+![housing](https://i.imgur.com/KcKyxU2.jpeg)
 
-Power Automate workflow
+Mounted outside, observing external conditions:
 
-Dataverse table and formula column
+![mounted](https://i.imgur.com/xvwSLxR.png)
 
-Model Driven App to show this data
+The IoT device sends sample data to Power Platform via HTTP POST request to a Power Automate workflow:
 
-Power BI Dashboard to report on this data
+![Power Automate post](https://i.imgur.com/My3Qeka.png)
+
+A Dataverse "Formula" Column is used to calculate the **Absolute Humidity** from two known values: *Relative Humidity* and *Temperature*.
+
+![dataverse formula](https://i.imgur.com/e5NtGmY.png)
+
+A model-driven Power App displays a simple yet effective interface for showing **Air Quality Reading** records received from the IoT device:
+
+![md data](https://i.imgur.com/dRHDaOQ.png)
+
+![md app form](https://i.imgur.com/Zja5WAf.png)
+
+A Power BI dashboard is embedded within a Power Apps Canvas App, providing a capable dashboard.
+
+*(photo coming soon)*
 
 ## Assets
 We're providing the following assets so you can replicate this project as well:
@@ -47,6 +61,7 @@ To convert the `createdon` field (stored in UTC time) to EST:
 ```
 
 ## Other Misc Resources
+- All photos of this project: https://imgur.com/a/9LA9yLG
 
 ## Credit
 Solution created by [Tim Hanewich](https://github.com/TimHanewich).
