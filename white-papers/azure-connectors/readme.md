@@ -42,4 +42,4 @@ We anticipate cross cloud flexibility for additional Azure connectors and will m
 
 ### Interim Options
 
-In the interim, the Azure service APIs called via HTTP or custom connector is always a possibility for a workaround. We have an example of this approach [here](https://github.com/microsoft/SLG-Business-Applications/tree/main/demos/GCC-to-Commercial). The example used happens to be obsolete as the Azure Blob Storage connector was our top priority for enhancement, but the patterns and techniques utilized remain valid.
+In the interim, the Azure service APIs called via HTTP or custom connector is always a possibility for a workaround. We have an example of this approach [here](../../demos/GCC-to-Commercial/). The example used happens to be obsolete as the Azure Blob Storage connector was our top priority for enhancement, but the patterns and techniques utilized remain valid.
