@@ -6,14 +6,14 @@ The goal of this whitepaper is to provide guidance on working with Azure connect
 
 An understanding of underlying architectural components is helpful for appreciating why this whitepaper is necessary. Most GCC customers view Azure Commercial as their natural landing zone for Azure Subscriptions and Resources. This is largely due to their Entra ID (formerly Azure Active Directory) presence residing in Azure Commercial and the beyond-adequate security and compliance assurances offered by Azure Commercial.
 
-However, GCC customers using Power Platform and/or Dynamics 365 are also consumers of Azure Government as the GCC versions of these services run in Azure Government. This reality is largely extrapolated from the customer's point of view as these services run in "Microsoft's Azure Subscription" and are served-up Software as a Service (SaaS) style to end customers.
+However, GCC customers using Power Platform and/or Dynamics 365 are also consumers of Azure Government, as the GCC versions of these services run in Azure Government. This reality is largely abstracted from the customer's point of view as these services run in "Microsoft's Azure Subscription" and are served-up Software as a Service (SaaS) style to end customers.
 
 ![GCC Architecture](https://github.com/microsoft/Federal-Business-Applications/blob/main/whitepapers/power-plat-d365-architecture/files/Slide2.PNG)
 Image credit: [Steve Winward](https://github.com/microsoft/Federal-Business-Applications/tree/main/whitepapers/power-plat-d365-architecture)
 
 ### Impact
 
-In certain instances this architecture leads to cross-cloud communication considerations. Consider Power Automate, for example. Power Automate is largely an extrapolation of Azure Logic Apps where Power Automate GCC builds upon Logic Apps in Azure Government. As such, when Power Automate GCC goes to make a connection to customer-owned Azure resources, it's only natural for it to seek out other resources in Azure Government. This of course leads to consternation for many GCC customers who are primarily (or exclusively) consumers of Azure Commercial services.
+In certain instances this architecture leads to cross-cloud communication considerations. Consider Power Automate, for example. Power Automate is largely an abstraction of Azure Logic Apps where Power Automate GCC builds upon Logic Apps in Azure Government. As such, when Power Automate GCC goes to make a connection to customer-owned Azure resources, it's only natural for it to seek out other resources in Azure Government. This of course leads to consternation for many GCC customers who are primarily (or exclusively) consumers of Azure Commercial services.
 
 ![Cross Cloud Connections](https://github.com/microsoft/Federal-Business-Applications/blob/main/whitepapers/power-plat-d365-architecture/files/Slide5.PNG)
 Image credit: [Steve Winward](https://github.com/microsoft/Federal-Business-Applications/tree/main/whitepapers/power-plat-d365-architecture)
