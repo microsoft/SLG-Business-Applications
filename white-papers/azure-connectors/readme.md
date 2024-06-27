@@ -36,7 +36,8 @@ We anticipate cross cloud flexibility for additional Azure connectors and will m
 |-|-|-|
 |Azure SQL (via SQL Server)|Available|Legacy|
 |Azure Blob Storage|Available|June 2024|
-|Azure Key Vault|Nominated Priority|TBD|
+|Azure Key Vault|Under Construction|~August, 2024|
+|Azure Cosmos DB|Under Construction|~August, 2024|
 |Azure Resource Manager|Nominated Priority|TBD|
 |All other Azure connectors|Under Consideration|TBD|
 
