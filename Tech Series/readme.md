@@ -39,4 +39,4 @@ When there is something very special to share, we sometimes host *special editio
 |Month|Session|
 |-|-|
 |April 2024|[Announcing Power Apps and Dynamics Copilots for the US Government Cloud](https://livesend.microsoft.com/i/NqaQHb___OBsMA0RCWxxyKORdH8U0E3GeFCTm8ZcE4dgi9YNGvVX6tPRABpItIuSI9ByCAHi3dw7PLUSSIGNwLWSmT7LRiAL1xNmkKLBGl5Tg3DGWLa___pnuaIiS3xlVDwlyZQm___PLUSSIGNP)|
-|June 2024|Unveiling AI Bias: More Than Meets The Eye|
+|June 2024|[Unveiling AI Bias: More Than Meets The Eye](https://livesend.microsoft.com/i/NqaQHb___OBsMA0RCWxxyKORdH8U0E3GeFCTm8ZcE4dggLMRAUPueI9EzuiNG2WTW7pwVYmG7SmgQ3dBN3QZMI0yTsQWjBkgNHm5X4YNQzcCu06G___oq1bZ1kKfo6ipzfmC)|
