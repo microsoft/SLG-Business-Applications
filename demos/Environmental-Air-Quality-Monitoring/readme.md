@@ -42,9 +42,10 @@ A Power BI dashboard is embedded within a Power Apps Canvas App, providing a cap
 
 ## Assets
 We're providing the following assets so you can replicate this project as well:
-- The source code (written in MicroPython) that runs on the Raspberry Pi Pico W can be found in the [`src` folder](./src/)
 - The Raspberry Pi IoT device lives neatly in a 3D-printed housing. You can find the source files (.STL) files of the housing and print yourself [on Thingiverse](https://www.thingiverse.com/thing:6655576).
-- The Power Platform solution (*coming soon*)
+- The source code (written in MicroPython) that runs on the Raspberry Pi Pico W can be found in the [`src` folder](./src/)
+- The Power Platform solution (.zip file)
+    - [Version 1.0.0.1](https://github.com/microsoft/SLG-Business-Applications/releases/download/8/AirQualityMonitoring_1_0_0_1.zip) - base solution (table, cloud flow, model-driven app)
 
 ## How to Calculate Absolute Humidity from Relative Humidity and Temperature
 In this project, we calculate *absolute* humidity from the *relative humidity* and *temperature* readings our IoT device samples and transmits. Below is the equation for calculating absolute humidity. We use this equation in our Dataverse **Formula** column.
