@@ -4,7 +4,7 @@ i2c_sda:int = 16
 i2c_scl:int = 17
 
 # DHT-22 settings
-dht22_gpio:int = 10
+dht22_gpio:int = 22
 
 # Wifi login
 ssid = ""
