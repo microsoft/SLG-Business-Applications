@@ -72,7 +72,7 @@ To convert the `createdon` field (stored in UTC time) to EST:
 - All photos of this project: https://imgur.com/a/9LA9yLG
 - PowerPoint decks used to design graphics seen above and in other places:
     - [Wide banner](https://github.com/microsoft/SLG-Business-Applications/releases/download/10/eq.pptx)
-    - [Square grahic version of above](https://github.com/microsoft/SLG-Business-Applications/releases/download/10/eq2.pptx)
+    - [Taller version of the banner grahic above](https://github.com/microsoft/SLG-Business-Applications/releases/download/11/eq2.pptx)
 
 ## Credit
 Solution created by [Tim Hanewich](https://github.com/TimHanewich).
