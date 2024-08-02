@@ -40,6 +40,12 @@ A Power BI dashboard is embedded within a Power Apps Canvas App, providing a cap
 
 *(photo coming soon)*
 
+A Power Automate flow is configured with an HTTP Trigger and HTTP response, allowing us to create a makeshift API endpoint that can return the most recent Air Quality Reading data (click [here](https://prod2-21.usgovtexas.logic.azure.us:443/workflows/4839d796eecb4d5f9048d015f9d4878c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=1NYbRqQP8uddqPoncZLRXdFeKuNCMW1c-1BmfGUYidw) to call to this endpoint!):
+
+![air quality reading data endpoint](https://i.imgur.com/CplQ8Tv.png)
+
+
+
 ## Assets
 We're providing the following assets so you can replicate this project as well:
 - The Raspberry Pi IoT device lives neatly in a 3D-printed housing. You can find the source files (.STL) files of the housing and print yourself [on Thingiverse](https://www.thingiverse.com/thing:6655576).
