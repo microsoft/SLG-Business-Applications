@@ -69,6 +69,20 @@ A Power Automate flow is configured with an HTTP Trigger and HTTP response, allo
 
 ![air quality reading data endpoint](https://i.imgur.com/CplQ8Tv.png)
 
+The data will be returned as JSON with the following format:
+
+```
+{
+    "sampled": "2024-08-15T14:31:24Z",
+    "temperaturef": 83.66,
+    "relhumidity": 0.45,
+    "abshumidity": 0.1273,
+    "aqi": 2,
+    "tvoc": 117,
+    "eco2": 578
+}
+```
+
 ## Assets
 We're providing the following assets so you can replicate this project as well:
 - The Raspberry Pi IoT device lives neatly in a 3D-printed housing. You can find the source files (.STL) files of the housing and print yourself [on Thingiverse](https://www.thingiverse.com/thing:6655576).
