@@ -59,6 +59,7 @@ We're providing the following assets so you can replicate this project as well:
 - The source code (written in MicroPython) that runs on the Raspberry Pi Pico W can be found in the [`src` folder](./src/)
 - The Power Platform solution (.zip file)
     - [Version 1.0.0.3](https://github.com/microsoft/SLG-Business-Applications/releases/download/9/AirQualityMonitoring_1_0_0_3.zip) - base solution (table, cloud flow, model-driven app)
+    - [Version 1.0.0.4](https://github.com/microsoft/SLG-Business-Applications/releases/download/12/AirQualityMonitoring_1_0_0_4.zip) - Added "Air Quality Monitoring Dashboard" Canvas App and "Get most recent AQR" Power Automate flow (serves data via HTTP call).
 
 ## How to Calculate Absolute Humidity from Relative Humidity and Temperature
 In this project, we calculate *absolute* humidity from the *relative humidity* and *temperature* readings our IoT device samples and transmits. Below is the equation for calculating absolute humidity. We use this equation in our Dataverse **Formula** column.
