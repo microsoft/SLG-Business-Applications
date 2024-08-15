@@ -14,32 +14,41 @@ This is a solution that showcases how State & Local Government's can monitor env
 - **Meet Regulatory Requirements** - State and local governments are responsible for implementing federal air quality standards and regulations. Effective tracking and monitoring of ambient air quality conditions are critical to meeting these requirements and avoiding non-compliance penalties.
 
 ## Solution Gallery
-The Raspberry Pi Pico W, DHT-22, and ENS160 sensor it its 3D-printed housing: 
+I've included some pictures below of this solution in action, broken into its functional components!
 
+### The Raspberry Pi Pico W, DHT-22, and ENS160 sensor it its 3D-printed housing
 ![housing](https://i.imgur.com/KcKyxU2.jpeg)
 
-Mounted outside, observing external conditions:
+I then mount these on the outside wall of my home where it can observe external conditions:
 
 ![mounted](https://i.imgur.com/xvwSLxR.png)
 
-The IoT device sends sample data to Power Platform via HTTP POST request to a Power Automate workflow:
-
+### The IoT device sends sample data to Power Platform via HTTP POST request to a Power Automate workflow
 ![Power Automate post](https://i.imgur.com/My3Qeka.png)
-
-A Dataverse "Formula" Column is used to calculate the **Absolute Humidity** from two known values: *Relative Humidity* and *Temperature*.
+ 
+### A Dataverse "Formula" Column is used to calculate the **Absolute Humidity** 
+A Dataverse **Formula Column** is used to calculator *Absolute Humidity* two known values: *Relative Humidity* and *Temperature*.
 
 ![dataverse formula](https://i.imgur.com/e5NtGmY.png)
 
+### Air Quality Reading Data is available via Model-Driven App
 A model-driven Power App displays a simple yet effective interface for showing **Air Quality Reading** records received from the IoT device:
 
 ![md data](https://i.imgur.com/dRHDaOQ.png)
 
 ![md app form](https://i.imgur.com/Zja5WAf.png)
 
-A Power BI dashboard is embedded within a Power Apps Canvas App, providing a capable dashboard.
+### A Power BI Report Shows natively connects to the data in Dataverse 
+A Power BI report is embedded within a Power Apps Canvas App, providing an easy to interpret visual.
 
-*(photo coming soon)*
+![power BI report](https://i.imgur.com/Ol7l3ld.png)
 
+### The Power BI Dashboard is embedded in a Power App as a "Dashboard"
+We can easily embed that Power BI report into a Power App Canvas app, with additional peripheral functionality, to create a nifty dashboard.
+
+![embedded in canvas app](https://i.imgur.com/ad8Eo2D.png)
+
+### Serving Data via Power Automate API Endpoint
 A Power Automate flow is configured with an HTTP Trigger and HTTP response, allowing us to create a makeshift API endpoint that can return the most recent Air Quality Reading data (click [here](https://prod2-21.usgovtexas.logic.azure.us:443/workflows/4839d796eecb4d5f9048d015f9d4878c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=1NYbRqQP8uddqPoncZLRXdFeKuNCMW1c-1BmfGUYidw) to call to this endpoint!):
 
 ![air quality reading data endpoint](https://i.imgur.com/CplQ8Tv.png)
