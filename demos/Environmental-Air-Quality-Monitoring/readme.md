@@ -17,6 +17,8 @@ This is a solution that showcases how State & Local Government's can monitor env
 I've included some pictures below of this solution in action, broken into its functional components!
 
 ### The Raspberry Pi Pico W, DHT-22, and ENS160 sensor it its 3D-printed housing
+After soldering the Raspberry Pi Pico W with the ENS160 and DHT-22 sensors, they are neatly placed in 3D-printed housing:
+
 ![housing](https://i.imgur.com/KcKyxU2.jpeg)
 
 I then mount these on the outside wall of my home where it can observe external conditions:
@@ -24,10 +26,12 @@ I then mount these on the outside wall of my home where it can observe external 
 ![mounted](https://i.imgur.com/xvwSLxR.png)
 
 ### The IoT device sends sample data to Power Platform via HTTP POST request to a Power Automate workflow
+The MicroPython script that runs on the Raspberry Pi will record the ambient air quality conditions once per minute and perform an HTTP POST request to an endpoint that will trigger a Power Automate flow where the data will subsequently be parsed and inserted as a new row into Dataverse:
+
 ![Power Automate post](https://i.imgur.com/My3Qeka.png)
  
 ### A Dataverse "Formula" Column is used to calculate the **Absolute Humidity** 
-A Dataverse **Formula Column** is used to calculator *Absolute Humidity* two known values: *Relative Humidity* and *Temperature*.
+A Dataverse **Formula Column** is used to calculator *Absolute Humidity* two known values: *Relative Humidity* and *Temperature*. This uses a rather complex formula that can be read about further towards the bottom of this document (see below).
 
 ![dataverse formula](https://i.imgur.com/e5NtGmY.png)
 
@@ -38,8 +42,8 @@ A model-driven Power App displays a simple yet effective interface for showing *
 
 ![md app form](https://i.imgur.com/Zja5WAf.png)
 
-### A Power BI Report Shows natively connects to the data in Dataverse 
-A Power BI report is embedded within a Power Apps Canvas App, providing an easy to interpret visual.
+### A Power BI Report natively connects to the data in Dataverse 
+Using Power BI, we can easily connect a new report to our data that lives in Dataverse and display it on a few charts:
 
 ![power BI report](https://i.imgur.com/Ol7l3ld.png)
 
