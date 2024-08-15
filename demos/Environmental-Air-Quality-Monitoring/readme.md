@@ -26,7 +26,19 @@ I then mount these on the outside wall of my home where it can observe external 
 ![mounted](https://i.imgur.com/xvwSLxR.png)
 
 ### The IoT device sends sample data to Power Platform via HTTP POST request to a Power Automate workflow
-The MicroPython script that runs on the Raspberry Pi will record the ambient air quality conditions once per minute and perform an HTTP POST request to an endpoint that will trigger a Power Automate flow where the data will subsequently be parsed and inserted as a new row into Dataverse:
+The MicroPython script that runs on the Raspberry Pi will record the ambient air quality conditions once per minute and perform an HTTP POST request to an endpoint that will trigger a Power Automate flow. The body of the POST request will contain the sensor data in the following format:
+
+```
+{
+    "temperature": 92.4,
+    "humidity": 0.63,
+    "aqi": 2,
+    "tvoc": 843,
+    "eco2": 481
+}
+```
+
+The data will subsequently be parsed and inserted as a new row into Dataverse:
 
 ![Power Automate post](https://i.imgur.com/My3Qeka.png)
  
