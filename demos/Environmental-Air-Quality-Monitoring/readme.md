@@ -21,7 +21,7 @@ While this example showcases using IoT technology paired with Power Platform to 
 - **Smart Parking**: IoT sensors in publicly-owned parking garages/lots can detect occupancy and transmit data to centralized systems. This information helps drivers find available parking spots more efficiently, reducing traffic congestion and emissions.
 - **Public Safety and Security**: IoT devices such as cameras, sensors, and smart streetlights enhance public safety. They can detect incidents, monitor crowds, analyze traffic patterns, and improve emergency response times.
 - **Water Management**: IoT sensors monitor water usage, detect leaks, and manage irrigation systems in parks and public spaces. This promotes water conservation and reduces operational costs for municipalities.
-- **Transportation** and Traffic Management: IoT technology can monitor traffic flow, manage traffic signals dynamically, and provide real-time updates to commuters. This improves transportation efficiency, reduces congestion, and enhances road safety.
+- **Transportation and Traffic Management**: IoT technology can monitor traffic flow, manage traffic signals dynamically, and provide real-time updates to commuters. This improves transportation efficiency, reduces congestion, and enhances road safety.
 - **Energy Efficiency**: IoT sensors in public buildings monitor energy consumption, optimize HVAC systems, and control lighting based on occupancy. This reduces energy costs, enhances sustainability efforts, and lowers carbon footprints.
 - **Waste Management**: IoT-enabled bins monitor waste levels and optimize collection routes. This reduces operational costs, minimizes overflow incidents, and promotes efficient waste disposal practices.
 
