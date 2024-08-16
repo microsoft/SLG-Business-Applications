@@ -4,8 +4,10 @@ This is a solution that showcases how State & Local Government's can monitor env
 - A **Raspberry Pi Pico W**, serving as an IoT device, that collects air quality data via an **ENS160** and **DHT-22** sensor
 - A **Power Automate** flow that receives this data from the Raspberry Pi via an HTTP POST request trigger
 - A **Dataverse** table that the Power Automate flow places the data into, using several *Formula columns*
-- A **Power Apps** Model-Driven App to display collected Air Quality Reading Data
+- A **Power Apps** *Model-Driven App* to display collected Air Quality Reading Data
 - A **Power BI** dashboard that reports air quality data and trends in a visual report, reading directly from Dataverse.
+- A **Power Apps** *Canvas App* with the embedded Power BI report and further "dashboard-like" indicators.
+- A **Power Automate** flow that serves the latest air quality data programmatically via API call.
 
 ## Why is Environmental Air Quality Important to SLG?
 - **Protect Public Health** - Poor air quality is a major environmental risk to human health, particularly for vulnerable populations such as children, older adults, and those with pre-existing medical conditions. Exposure to polluted air can lead to respiratory problems, cardiovascular disease, and even premature death. By tracking ambient air quality, you can identify areas of concern and take proactive measures to mitigate the health impacts of poor air quality.
