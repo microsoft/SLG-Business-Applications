@@ -16,7 +16,7 @@ This is a solution that showcases how State & Local Government's can monitor env
 - **Meet Regulatory Requirements** - State and local governments are responsible for implementing federal air quality standards and regulations. Effective tracking and monitoring of ambient air quality conditions are critical to meeting these requirements and avoiding non-compliance penalties.
 
 ## The Possibilities in SLG
-While this example showcases using IoT technology paired with Power Platform to track *air quality*, there are many use cases for the application of this technology through State & Local government. For example:
+While this example showcases using IoT technology paired with Power Platform to track *air quality*, there are many use cases for the application of this technology throughout State & Local government. For example:
 - **Infrastructure Management**: IoT devices monitor the condition of bridges, roads, and public buildings. They can detect structural issues, track usage patterns, and predict maintenance needs, ensuring public safety and optimizing infrastructure investments.
 - **Smart Parking**: IoT sensors in publicly-owned parking garages/lots can detect occupancy and transmit data to centralized systems. This information helps drivers find available parking spots more efficiently, reducing traffic congestion and emissions.
 - **Public Safety and Security**: IoT devices such as cameras, sensors, and smart streetlights enhance public safety. They can detect incidents, monitor crowds, analyze traffic patterns, and improve emergency response times.
