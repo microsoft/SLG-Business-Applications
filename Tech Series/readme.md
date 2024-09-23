@@ -4,7 +4,7 @@
 The Microsoft SLG Business Applications team presents a series of monthly sessions to educate, inform, and inspire State & Local government organizations to achieve more with Power Platform!
 
 We deliver valuable insights and expertise across three pillars, each month, to cater to diverse needs and skill levels:
-- **Dynamics 365 Pillar** - Focused on Microsoft Dynamics 365, this pillar explores Dynamics 365 first party capabilities, highlighting the opportunities to drive digital transformation in State & Local governments. We'll demonstrate how D365 can be leveraged to meet specific government needs.
+- **Solution Pillar** - This pillar focuses on showcasing capabilities and functionalities applied specifically to the unique needs of State & Local Government. We demonstrate how Microsoft technologies can address critical challenges, streamline operations, and enable government-specific digital transformation efforts.
 - **Low-Code Pillar** - Designed for non-technical users and business analysts, this pillar focuses on empowering citizen developers to build custom applications without extensive coding knowledge. We'll showcase the latest Power Platform features and best practices to accelerate digital transformation in State & Local governments.
 - **Pro-Code Pillar** - Geared towards professional developers and IT professionals, this pillar delves into the advanced capabilities of Power Platform, including integrations, APIs, and custom development. Our experts will share in-depth knowledge and hands-on guidance to help you unlock the full potential of Power Platform.
 
@@ -12,7 +12,7 @@ By attending these monthly sessions, you'll gain a deeper understanding of Power
 
 You can find an archive of all previous sessions below:
 
-|Month|Dynamics 365|Low Code|Pro Code|
+|Month|Solution|Low Code|Pro Code|
 |-|-|-|-|
 |December 2022|[What's new in Customer Service Wave 2 Release?](https://livesend.microsoft.com/ls/1a365ac1-986b-4ff7-9be0-b9e3a7309501/Krs_JZuf1uhaNguj#/content/d4c0a8df-3a2d-4391-97aa-20440c3d7a5a)|[Top Announcements at Power Platform Conference](https://livesend.microsoft.com/ls/1a365ac1-986b-4ff7-9be0-b9e3a7309501/Krs_JZuf1uhaNguj#/content/5c0e5bc5-480b-41d2-be1a-0f33d03bdaa2)|
 |January 2023||[Governance: General Practices & Considerations](https://livesend.microsoft.com/i/NqaQHb___OBsMA0RCWxxyKORdH8U0E3GeFCTm8ZcE4dghqq6ngwBIBnaEZ53PZvNoriCrnZB09DJRgC8NSw455iJBipQR863pjlv6tfA40PLUSSIGNZa2Zlb4dRyhMHegXuRhcz79)|
