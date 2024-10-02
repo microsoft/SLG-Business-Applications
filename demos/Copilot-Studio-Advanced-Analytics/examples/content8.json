@@ -1,0 +1,308 @@
+{
+  "activities": [
+    {
+      "valueType": "ConversationInfo",
+      "type": "trace",
+      "timestamp": 1725905280,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "isDesignMode": true,
+        "locale": "en-US"
+      }
+    },
+    {
+      "id": "f60dd0d0-84fb-4e81-a61d-e725666737cd",
+      "type": "event",
+      "timestamp": 1725905280,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "name": "startConversation",
+      "channelId": "pva-studio",
+      "attachments": []
+    },
+    {
+      "id": "31bd5134-bae2-4bee-b147-e9d991ab0f6c",
+      "type": "message",
+      "timestamp": 1725905280,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Hello, I'm Test Copilot, a virtual assistant. Just so you are aware, I sometimes use AI to answer your questions. If you provided a website during creation, try asking me about it! Next try giving me some more knowledge by setting up generative AI.",
+      "attachments": [],
+      "replyToId": "f60dd0d0-84fb-4e81-a61d-e725666737cd",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Thanks for calling, how can I help?</prosody></voice></speak>"
+    },
+    {
+      "id": "5b372d21-305e-4a62-a8fb-a216c6f25a54",
+      "type": "event",
+      "timestamp": 1725905280,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "f60dd0d0-84fb-4e81-a61d-e725666737cd",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_M0LuhV",
+            "topicId": "cr3e5_testCopilot.topic.ConversationStart",
+            "triggerId": "main",
+            "dialogComponentId": "0deb0421-454d-4e6a-9d67-0bfa0ca85aad",
+            "actionType": "SendActivity",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "cdfa2440-754e-47a2-bc0c-2d073db020ea",
+      "type": "message",
+      "timestamp": 1725905280,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Hello, I'm Test Copilot, a virtual assistant. Just so you are aware, I sometimes use AI to answer your questions. If you provided a website during creation, try asking me about it! Next try giving me some more knowledge by setting up generative AI.",
+      "attachments": [],
+      "replyToId": "f60dd0d0-84fb-4e81-a61d-e725666737cd",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Thanks for calling, how can I help?</prosody></voice></speak>"
+    },
+    {
+      "id": "757944b5-af4f-4605-ae80-7a43b7d0d19d",
+      "type": "event",
+      "timestamp": 1725905280,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "f60dd0d0-84fb-4e81-a61d-e725666737cd",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_M0LuhV",
+            "topicId": "cr3e5_testCopilot.topic.ConversationStart",
+            "triggerId": "main",
+            "dialogComponentId": "0deb0421-454d-4e6a-9d67-0bfa0ca85aad",
+            "actionType": "SendActivity",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "c11c32f0-5f00-407f-9768-b41392a14526",
+      "type": "message",
+      "timestamp": 1725905287,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "channelId": "pva-studio",
+      "textFormat": "plain",
+      "text": "Add a new account with name \"Cron Studios\"",
+      "attachments": [],
+      "channelData": {
+        "attachmentSizes": [],
+        "enableDiagnostics": true,
+        "testMode": "Text",
+        "clientActivityID": "qj73kbs127s"
+      }
+    },
+    {
+      "id": "141505a6-6279-4f51-b20f-4e431a4ab820",
+      "type": "event",
+      "timestamp": 1725905291,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanReceived",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "c11c32f0-5f00-407f-9768-b41392a14526",
+      "value": {
+        "steps": [
+          "cr3e5_testCopilot.component.AddAccountRowfromCS"
+        ],
+        "isFinalPlan": true
+      }
+    },
+    {
+      "id": "f2306cc8-93a2-497b-a629-3b3b76afca24",
+      "type": "event",
+      "timestamp": 1725905291,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanReceivedDebug",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "c11c32f0-5f00-407f-9768-b41392a14526",
+      "value": {
+        "planIdentifier": "367c938d-2e05-4b64-bcee-4cf2c03c2c7e",
+        "steps": [
+          {
+            "toolName": "cr3e5_testCopilot.component.AddAccountRowfromCS",
+            "inputBinding": {
+              "$kind": "ActionInputBinding",
+              "binding": {
+                "text": {
+                  "$kind": "ValueExpression",
+                  "literalValue": "Cron Studios"
+                }
+              }
+            },
+            "outputBinding": {
+              "$kind": "ActionOutputBinding"
+            },
+            "state": "created",
+            "hasRecommendations": false
+          }
+        ],
+        "isFinalPlan": true
+      }
+    },
+    {
+      "id": "942758a0-1198-4833-995e-db8cd50dab13",
+      "type": "event",
+      "timestamp": 1725905291,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanStepTriggered",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "c11c32f0-5f00-407f-9768-b41392a14526",
+      "value": {
+        "planIdentifier": "367c938d-2e05-4b64-bcee-4cf2c03c2c7e",
+        "taskDialogId": "cr3e5_testCopilot.component.AddAccountRowfromCS",
+        "thought": "Add a new account record with the name 'Cron Studios' using Add-a-new-Account-Record tool (text has value from _query). ",
+        "state": "inProgress",
+        "hasRecommendations": false
+      }
+    },
+    {
+      "id": "2bafe67e-3b0c-4c07-ba11-067172a5f988",
+      "type": "event",
+      "timestamp": 1725905291,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanStepBindUpdate",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "c11c32f0-5f00-407f-9768-b41392a14526",
+      "value": {
+        "taskDialogId": "cr3e5_testCopilot.component.AddAccountRowfromCS",
+        "arguments": {
+          "text": "Cron Studios"
+        }
+      }
+    },
+    {
+      "id": "2930de75-4b16-40d8-bdab-c604b3750ae7",
+      "type": "event",
+      "timestamp": 1725905291,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanStepBindUpdate",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "c11c32f0-5f00-407f-9768-b41392a14526",
+      "value": {
+        "taskDialogId": "cr3e5_testCopilot.component.AddAccountRowfromCS",
+        "arguments": {
+          "text": "Cron Studios"
+        }
+      }
+    },
+    {
+      "id": "535ae8a1-5320-49cd-b8a8-0e23c86bd7ea",
+      "type": "event",
+      "timestamp": 1725905292,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanStepFinished",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "c11c32f0-5f00-407f-9768-b41392a14526",
+      "value": {
+        "taskDialogId": "cr3e5_testCopilot.component.AddAccountRowfromCS",
+        "observation": {},
+        "planUsedOutputs": {},
+        "planIdentifier": "367c938d-2e05-4b64-bcee-4cf2c03c2c7e",
+        "state": "completed",
+        "hasRecommendations": false
+      }
+    },
+    {
+      "id": "9e022039-d8c9-402a-88df-0c0d59096a02",
+      "type": "event",
+      "timestamp": 1725905292,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanFinished",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "c11c32f0-5f00-407f-9768-b41392a14526",
+      "value": {
+        "planId": "367c938d-2e05-4b64-bcee-4cf2c03c2c7e"
+      }
+    },
+    {
+      "valueType": "SessionInfo",
+      "id": "0",
+      "type": "trace",
+      "timestamp": 1725905292,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "startTimeUtc": "2024-09-09T18:08:00Z",
+        "endTimeUtc": "2024-09-09T18:08:12Z",
+        "type": "Unengaged",
+        "outcome": "None",
+        "turnCount": 3,
+        "impliedSuccess": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "activities": [
+    {
+      "valueType": "ConversationInfo",
+      "type": "trace",
+      "timestamp": 1725905195,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "isDesignMode": true,
+        "locale": "en-US"
+      }
+    },
+    {
+      "id": "08e65833-1f0c-47b0-b47a-7855bf970e68",
+      "type": "event",
+      "timestamp": 1725905195,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "name": "startConversation",
+      "channelId": "pva-studio",
+      "attachments": []
+    },
+    {
+      "id": "f6bdd687-7443-42c9-ab6e-c764f79c606f",
+      "type": "message",
+      "timestamp": 1725905195,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Hello, I'm Test Copilot, a virtual assistant. Just so you are aware, I sometimes use AI to answer your questions. If you provided a website during creation, try asking me about it! Next try giving me some more knowledge by setting up generative AI.",
+      "attachments": [],
+      "replyToId": "08e65833-1f0c-47b0-b47a-7855bf970e68",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Thanks for calling, how can I help?</prosody></voice></speak>"
+    },
+    {
+      "id": "c6c0e629-022a-44cc-a4ce-323abc4b42bf",
+      "type": "event",
+      "timestamp": 1725905195,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "08e65833-1f0c-47b0-b47a-7855bf970e68",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_M0LuhV",
+            "topicId": "cr3e5_testCopilot.topic.ConversationStart",
+            "triggerId": "main",
+            "dialogComponentId": "0deb0421-454d-4e6a-9d67-0bfa0ca85aad",
+            "actionType": "SendActivity",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "9fb96264-5be3-4176-bb6f-4642d81f83c4",
+      "type": "message",
+      "timestamp": 1725905195,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Hello, I'm Test Copilot, a virtual assistant. Just so you are aware, I sometimes use AI to answer your questions. If you provided a website during creation, try asking me about it! Next try giving me some more knowledge by setting up generative AI.",
+      "attachments": [],
+      "replyToId": "08e65833-1f0c-47b0-b47a-7855bf970e68",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Thanks for calling, how can I help?</prosody></voice></speak>"
+    },
+    {
+      "id": "61471c35-b44e-4997-a47e-770f045e2636",
+      "type": "event",
+      "timestamp": 1725905195,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "08e65833-1f0c-47b0-b47a-7855bf970e68",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_M0LuhV",
+            "topicId": "cr3e5_testCopilot.topic.ConversationStart",
+            "triggerId": "main",
+            "dialogComponentId": "0deb0421-454d-4e6a-9d67-0bfa0ca85aad",
+            "actionType": "SendActivity",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "SessionInfo",
+      "id": "0",
+      "type": "trace",
+      "timestamp": 1725905195,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "startTimeUtc": "2024-09-09T18:06:35Z",
+        "endTimeUtc": "2024-09-09T18:06:35Z",
+        "type": "Unengaged",
+        "outcome": "None",
+        "turnCount": 2,
+        "impliedSuccess": false
+      }
+    }
+  ]
+}

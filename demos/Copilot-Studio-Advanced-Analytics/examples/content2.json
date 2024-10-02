@@ -1,0 +1,413 @@
+{
+  "activities": [
+    {
+      "valueType": "ConversationInfo",
+      "type": "trace",
+      "timestamp": 1725904974,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "isDesignMode": true,
+        "locale": "en-US"
+      }
+    },
+    {
+      "id": "66e1dbb1-e360-4258-8723-85b28293eaa6",
+      "type": "event",
+      "timestamp": 1725904974,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "name": "startConversation",
+      "channelId": "pva-studio",
+      "attachments": []
+    },
+    {
+      "id": "31ebd6b3-74c8-43ab-96bd-1fe83163325c",
+      "type": "message",
+      "timestamp": 1725904975,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Hello, I'm Test Copilot, a virtual assistant. Just so you are aware, I sometimes use AI to answer your questions. If you provided a website during creation, try asking me about it! Next try giving me some more knowledge by setting up generative AI.",
+      "attachments": [],
+      "replyToId": "66e1dbb1-e360-4258-8723-85b28293eaa6",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Thanks for calling, how can I help?</prosody></voice></speak>"
+    },
+    {
+      "id": "f8761179-68fe-4331-a822-d71c3b8943bd",
+      "type": "event",
+      "timestamp": 1725904975,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "66e1dbb1-e360-4258-8723-85b28293eaa6",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_M0LuhV",
+            "topicId": "cr3e5_testCopilot.topic.ConversationStart",
+            "triggerId": "main",
+            "dialogComponentId": "0deb0421-454d-4e6a-9d67-0bfa0ca85aad",
+            "actionType": "SendActivity",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+      "type": "message",
+      "timestamp": 1725904988,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "channelId": "pva-studio",
+      "textFormat": "plain",
+      "text": "Add a new account with the account name \"Conotos, Inc.\"",
+      "attachments": [],
+      "channelData": {
+        "attachmentSizes": [],
+        "enableDiagnostics": true,
+        "testMode": "Text",
+        "clientActivityID": "yp4k2r0l8gn"
+      }
+    },
+    {
+      "valueType": "UnknownIntent",
+      "id": "196f767f51684996b5d5a0525c767aa4",
+      "type": "trace",
+      "timestamp": 1725904989,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "value": {
+        "userQuery": "Add a new account with the account name \"Conotos, Inc.\""
+      }
+    },
+    {
+      "id": "78311638-b150-478d-8d88-ebb7271f556c",
+      "type": "event",
+      "timestamp": 1725904989,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "VariableAssignment",
+      "id": "b5406cda983d459e88582780b0d7a557",
+      "type": "trace",
+      "timestamp": 1725904991,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "replyToId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+      "value": {
+        "name": "Answer",
+        "id": "Topic.Answer",
+        "newValue": "Sure, I can guide you through the process of adding a new account with the name \"Conotos, Inc.\" Could you please specify the platform or system where you want to add this account? For example, is it a financial software, a social media platform, or something else?",
+        "type": "local"
+      }
+    },
+    {
+      "id": "2c4e7849-12ee-4caa-a267-8d63bd8644b2",
+      "type": "message",
+      "timestamp": 1725904991,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Sure, I can guide you through the process of adding a new account with the name \"Conotos, Inc.\" Could you please specify the platform or system where you want to add this account? For example, is it a financial software, a social media platform, or something else?\r\nAI-generated content may be incorrect",
+      "attachments": [],
+      "replyToId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">\r\nAI-generated content may be incorrect</prosody></voice></speak>",
+      "channelData": {
+        "pva:gpt-feedback": {
+          "endpoints": [],
+          "summarizationOpenAIResponse": {
+            "result": {
+              "summary": "Sure, I can guide you through the process of adding a new account with the name \"Conotos, Inc.\" Could you please specify the platform or system where you want to add this account? For example, is it a financial software, a social media platform, or something else?",
+              "textSummary": "Sure, I can guide you through the process of adding a new account with the name \"Conotos, Inc.\" Could you please specify the platform or system where you want to add this account? For example, is it a financial software, a social media platform, or something else?",
+              "speechSummary": "",
+              "containsConfidentialData": false,
+              "messageId": ""
+            },
+            "rawSummary": "",
+            "completionTokens": 0,
+            "promptTokens": 0,
+            "prompt": "",
+            "completionResponse": "noError"
+          },
+          "searchResults": [],
+          "verifiedSearchResults": [],
+          "searchErrors": [],
+          "message": "Add a new account with the account name \"Conotos, Inc.\"",
+          "activityId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+          "performedContentProvenanceCheck": true,
+          "performedContentModerationCheck": true,
+          "gptAnswerState": "Answered",
+          "triggeredGptFallback": true,
+          "completionState": "answered"
+        }
+      }
+    },
+    {
+      "valueType": "GPTAnswer",
+      "id": "540f31a1c86443bd9a5e5f7a61d4b3ff",
+      "type": "trace",
+      "timestamp": 1725904991,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "replyToId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+      "value": {
+        "gptAnswerState": "Answered"
+      }
+    },
+    {
+      "id": "563b02ca-3bdd-4a56-a2b4-730147676fa3",
+      "type": "event",
+      "timestamp": 1725904991,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "GenerativeAnswersSupportData",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+      "value": {
+        "endpoints": [],
+        "queryRewrittingOpenAIResponse": null,
+        "summarizationOpenAIResponse": {
+          "Result": {
+            "Summary": "Sure, I can guide you through the process of adding a new account with the name \"Conotos, Inc.\" Could you please specify the platform or system where you want to add this account? For example, is it a financial software, a social media platform, or something else?",
+            "TextSummary": "Sure, I can guide you through the process of adding a new account with the name \"Conotos, Inc.\" Could you please specify the platform or system where you want to add this account? For example, is it a financial software, a social media platform, or something else?",
+            "SpeechSummary": "",
+            "TextCitations": null,
+            "SpeechCitations": null,
+            "ContainsConfidentialData": false,
+            "HighestSensitivityLabelInfo": null,
+            "MessageId": ""
+          },
+          "RawSummary": "",
+          "CompletionTokens": 0,
+          "PromptTokens": 0,
+          "Prompt": "",
+          "CompletionResponse": "NoError",
+          "ErrorCode": null
+        },
+        "searchResults": [],
+        "verifiedSearchResults": [],
+        "searchErrors": [],
+        "message": "Add a new account with the account name \"Conotos, Inc.\"",
+        "screenedMessage": null,
+        "rewrittenMessage": null,
+        "rewrittenMessageKeywords": null,
+        "filteredOpenAISummary": null,
+        "screenedOpenAISummary": null,
+        "activityId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+        "conversationId": null,
+        "performedContentProvenanceCheck": true,
+        "performedContentModerationCheck": true,
+        "cdsBotId": null,
+        "tenantId": null,
+        "environmentId": null,
+        "gptAnswerState": "Answered",
+        "triggeredGptFallback": true,
+        "completionState": "Answered"
+      }
+    },
+    {
+      "id": "2f3cebee-189f-4577-b9ea-b64b6090c0e0",
+      "type": "event",
+      "timestamp": 1725904991,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {
+                "Answer": "Sure, I can guide you through the process of adding a new account with the name \"Conotos, Inc.\" Could you please specify the platform or system where you want to add this account? For example, is it a financial software, a social media platform, or something else?"
+              },
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "dc935016-0253-4315-8770-68a697ea8eab",
+      "type": "event",
+      "timestamp": 1725904991,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer-conditions",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "279c8544-e7a6-4745-b5c5-25fbe589edaf",
+      "type": "event",
+      "timestamp": 1725904991,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "ConditionItem",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "9f412b29-90c0-4257-a372-6ec57633f10e",
+      "type": "event",
+      "timestamp": 1725904991,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "30c65e53-433e-42dd-bf61-6b1d4c5ea8d5",
+      "value": {
+        "actions": [
+          {
+            "actionId": "end-topic",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "EndDialog",
+            "conditionItemExit": [
+              "has-answer"
+            ],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "SessionInfo",
+      "id": "0",
+      "type": "trace",
+      "timestamp": 1725904991,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "startTimeUtc": "2024-09-09T18:02:54Z",
+        "endTimeUtc": "2024-09-09T18:03:11Z",
+        "type": "Engaged",
+        "outcome": "Abandoned",
+        "turnCount": 3,
+        "impliedSuccess": false
+      }
+    }
+  ]
+}

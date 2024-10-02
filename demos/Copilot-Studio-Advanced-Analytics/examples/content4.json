@@ -1,0 +1,413 @@
+{
+  "activities": [
+    {
+      "valueType": "ConversationInfo",
+      "type": "trace",
+      "timestamp": 1725904552,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "isDesignMode": true,
+        "locale": "en-US"
+      }
+    },
+    {
+      "id": "91944349-ef69-43af-8aad-b26a230287ff",
+      "type": "event",
+      "timestamp": 1725904552,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "name": "startConversation",
+      "channelId": "pva-studio",
+      "attachments": []
+    },
+    {
+      "id": "ebb48024-74db-49cb-bc75-afc80acb9dac",
+      "type": "message",
+      "timestamp": 1725904553,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Hello, I'm Test Copilot, a virtual assistant. Just so you are aware, I sometimes use AI to answer your questions. If you provided a website during creation, try asking me about it! Next try giving me some more knowledge by setting up generative AI.",
+      "attachments": [],
+      "replyToId": "91944349-ef69-43af-8aad-b26a230287ff",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Thanks for calling, how can I help?</prosody></voice></speak>"
+    },
+    {
+      "id": "adc35c25-fe10-4151-a721-74732cd9cf5c",
+      "type": "event",
+      "timestamp": 1725904553,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "91944349-ef69-43af-8aad-b26a230287ff",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_M0LuhV",
+            "topicId": "cr3e5_testCopilot.topic.ConversationStart",
+            "triggerId": "main",
+            "dialogComponentId": "2eb4436a-681f-46b1-b2ae-df54a025da38",
+            "actionType": "SendActivity",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+      "type": "message",
+      "timestamp": 1725904766,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "channelId": "pva-studio",
+      "textFormat": "plain",
+      "text": "Add a row to Dataverse for me",
+      "attachments": [],
+      "channelData": {
+        "attachmentSizes": [],
+        "enableDiagnostics": true,
+        "testMode": "Text",
+        "clientActivityID": "j9dxg13w2pk"
+      }
+    },
+    {
+      "valueType": "UnknownIntent",
+      "id": "adb995eda2ae469a860038481bce24b1",
+      "type": "trace",
+      "timestamp": 1725904767,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "value": {
+        "userQuery": "Add a row to Dataverse for me"
+      }
+    },
+    {
+      "id": "c2fe17be-72ac-437a-ab5a-440979960b12",
+      "type": "event",
+      "timestamp": 1725904767,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "VariableAssignment",
+      "id": "07e1d5e27f824365b76eccdf5599fa51",
+      "type": "trace",
+      "timestamp": 1725904772,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "replyToId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+      "value": {
+        "name": "Answer",
+        "id": "Topic.Answer",
+        "newValue": "To add a row to Dataverse, you can use the Power Apps or Power Automate platform. Here’s a general guide on how to do it using Power Automate:\n\n1. **Log in to Power Automate**: Go to [Power Automate](https://flow.microsoft.com) and log in with your Microsoft account.\n\n2. **Create a new flow**:\n   - Click on \"Create\" from the left-hand menu.\n   - Choose \"Automated flow\" or \"Instant flow\" depending on your needs.\n\n3. **Set up the trigger**:\n   - For an automated flow, select a trigger like \"When a new item is created\" or \"When a new email arrives\".\n   - For an instant flow, you can use a manual trigger like \"Manually trigger a flow\".\n\n4. **Add a new step**:\n   - Click on \"New step\".\n   - Search for \"Dataverse\" and select the \"Add a new row\" action.\n\n5. **Configure the action**:\n   - Choose the table where you want to add the row.\n   - Fill in the required fields with the data you want to add.\n\n6. **Save and test your flow**:\n   - Click on \"Save\".\n   - Test your flow by triggering it and checking if the row is added to your Dataverse table.\n\nIf you need more specific instructions or run into any issues, feel free to ask!",
+        "type": "local"
+      }
+    },
+    {
+      "id": "e5167232-b37f-4e96-857a-cabd2aab0c32",
+      "type": "message",
+      "timestamp": 1725904772,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "To add a row to Dataverse, you can use the Power Apps or Power Automate platform. Here’s a general guide on how to do it using Power Automate:\n\n1. **Log in to Power Automate**: Go to [Power Automate](https://flow.microsoft.com) and log in with your Microsoft account.\n\n2. **Create a new flow**:\n   - Click on \"Create\" from the left-hand menu.\n   - Choose \"Automated flow\" or \"Instant flow\" depending on your needs.\n\n3. **Set up the trigger**:\n   - For an automated flow, select a trigger like \"When a new item is created\" or \"When a new email arrives\".\n   - For an instant flow, you can use a manual trigger like \"Manually trigger a flow\".\n\n4. **Add a new step**:\n   - Click on \"New step\".\n   - Search for \"Dataverse\" and select the \"Add a new row\" action.\n\n5. **Configure the action**:\n   - Choose the table where you want to add the row.\n   - Fill in the required fields with the data you want to add.\n\n6. **Save and test your flow**:\n   - Click on \"Save\".\n   - Test your flow by triggering it and checking if the row is added to your Dataverse table.\n\nIf you need more specific instructions or run into any issues, feel free to ask!\r\nAI-generated content may be incorrect",
+      "attachments": [],
+      "replyToId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">\r\nAI-generated content may be incorrect</prosody></voice></speak>",
+      "channelData": {
+        "pva:gpt-feedback": {
+          "endpoints": [],
+          "summarizationOpenAIResponse": {
+            "result": {
+              "summary": "To add a row to Dataverse, you can use the Power Apps or Power Automate platform. Here’s a general guide on how to do it using Power Automate:\n\n1. **Log in to Power Automate**: Go to [Power Automate](https://flow.microsoft.com) and log in with your Microsoft account.\n\n2. **Create a new flow**:\n   - Click on \"Create\" from the left-hand menu.\n   - Choose \"Automated flow\" or \"Instant flow\" depending on your needs.\n\n3. **Set up the trigger**:\n   - For an automated flow, select a trigger like \"When a new item is created\" or \"When a new email arrives\".\n   - For an instant flow, you can use a manual trigger like \"Manually trigger a flow\".\n\n4. **Add a new step**:\n   - Click on \"New step\".\n   - Search for \"Dataverse\" and select the \"Add a new row\" action.\n\n5. **Configure the action**:\n   - Choose the table where you want to add the row.\n   - Fill in the required fields with the data you want to add.\n\n6. **Save and test your flow**:\n   - Click on \"Save\".\n   - Test your flow by triggering it and checking if the row is added to your Dataverse table.\n\nIf you need more specific instructions or run into any issues, feel free to ask!",
+              "textSummary": "To add a row to Dataverse, you can use the Power Apps or Power Automate platform. Here’s a general guide on how to do it using Power Automate:\n\n1. **Log in to Power Automate**: Go to [Power Automate](https://flow.microsoft.com) and log in with your Microsoft account.\n\n2. **Create a new flow**:\n   - Click on \"Create\" from the left-hand menu.\n   - Choose \"Automated flow\" or \"Instant flow\" depending on your needs.\n\n3. **Set up the trigger**:\n   - For an automated flow, select a trigger like \"When a new item is created\" or \"When a new email arrives\".\n   - For an instant flow, you can use a manual trigger like \"Manually trigger a flow\".\n\n4. **Add a new step**:\n   - Click on \"New step\".\n   - Search for \"Dataverse\" and select the \"Add a new row\" action.\n\n5. **Configure the action**:\n   - Choose the table where you want to add the row.\n   - Fill in the required fields with the data you want to add.\n\n6. **Save and test your flow**:\n   - Click on \"Save\".\n   - Test your flow by triggering it and checking if the row is added to your Dataverse table.\n\nIf you need more specific instructions or run into any issues, feel free to ask!",
+              "speechSummary": "",
+              "containsConfidentialData": false,
+              "messageId": ""
+            },
+            "rawSummary": "",
+            "completionTokens": 0,
+            "promptTokens": 0,
+            "prompt": "",
+            "completionResponse": "noError"
+          },
+          "searchResults": [],
+          "verifiedSearchResults": [],
+          "searchErrors": [],
+          "message": "Add a row to Dataverse for me",
+          "activityId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+          "performedContentProvenanceCheck": true,
+          "performedContentModerationCheck": true,
+          "gptAnswerState": "Answered",
+          "triggeredGptFallback": true,
+          "completionState": "answered"
+        }
+      }
+    },
+    {
+      "valueType": "GPTAnswer",
+      "id": "867f590276964df6a59fdb1e24ce9fdb",
+      "type": "trace",
+      "timestamp": 1725904772,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "replyToId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+      "value": {
+        "gptAnswerState": "Answered"
+      }
+    },
+    {
+      "id": "6004c7ed-dfd4-44fd-8112-697b122e6127",
+      "type": "event",
+      "timestamp": 1725904772,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "GenerativeAnswersSupportData",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+      "value": {
+        "endpoints": [],
+        "queryRewrittingOpenAIResponse": null,
+        "summarizationOpenAIResponse": {
+          "Result": {
+            "Summary": "To add a row to Dataverse, you can use the Power Apps or Power Automate platform. Here’s a general guide on how to do it using Power Automate:\n\n1. **Log in to Power Automate**: Go to [Power Automate](https://flow.microsoft.com) and log in with your Microsoft account.\n\n2. **Create a new flow**:\n   - Click on \"Create\" from the left-hand menu.\n   - Choose \"Automated flow\" or \"Instant flow\" depending on your needs.\n\n3. **Set up the trigger**:\n   - For an automated flow, select a trigger like \"When a new item is created\" or \"When a new email arrives\".\n   - For an instant flow, you can use a manual trigger like \"Manually trigger a flow\".\n\n4. **Add a new step**:\n   - Click on \"New step\".\n   - Search for \"Dataverse\" and select the \"Add a new row\" action.\n\n5. **Configure the action**:\n   - Choose the table where you want to add the row.\n   - Fill in the required fields with the data you want to add.\n\n6. **Save and test your flow**:\n   - Click on \"Save\".\n   - Test your flow by triggering it and checking if the row is added to your Dataverse table.\n\nIf you need more specific instructions or run into any issues, feel free to ask!",
+            "TextSummary": "To add a row to Dataverse, you can use the Power Apps or Power Automate platform. Here’s a general guide on how to do it using Power Automate:\n\n1. **Log in to Power Automate**: Go to [Power Automate](https://flow.microsoft.com) and log in with your Microsoft account.\n\n2. **Create a new flow**:\n   - Click on \"Create\" from the left-hand menu.\n   - Choose \"Automated flow\" or \"Instant flow\" depending on your needs.\n\n3. **Set up the trigger**:\n   - For an automated flow, select a trigger like \"When a new item is created\" or \"When a new email arrives\".\n   - For an instant flow, you can use a manual trigger like \"Manually trigger a flow\".\n\n4. **Add a new step**:\n   - Click on \"New step\".\n   - Search for \"Dataverse\" and select the \"Add a new row\" action.\n\n5. **Configure the action**:\n   - Choose the table where you want to add the row.\n   - Fill in the required fields with the data you want to add.\n\n6. **Save and test your flow**:\n   - Click on \"Save\".\n   - Test your flow by triggering it and checking if the row is added to your Dataverse table.\n\nIf you need more specific instructions or run into any issues, feel free to ask!",
+            "SpeechSummary": "",
+            "TextCitations": null,
+            "SpeechCitations": null,
+            "ContainsConfidentialData": false,
+            "HighestSensitivityLabelInfo": null,
+            "MessageId": ""
+          },
+          "RawSummary": "",
+          "CompletionTokens": 0,
+          "PromptTokens": 0,
+          "Prompt": "",
+          "CompletionResponse": "NoError",
+          "ErrorCode": null
+        },
+        "searchResults": [],
+        "verifiedSearchResults": [],
+        "searchErrors": [],
+        "message": "Add a row to Dataverse for me",
+        "screenedMessage": null,
+        "rewrittenMessage": null,
+        "rewrittenMessageKeywords": null,
+        "filteredOpenAISummary": null,
+        "screenedOpenAISummary": null,
+        "activityId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+        "conversationId": null,
+        "performedContentProvenanceCheck": true,
+        "performedContentModerationCheck": true,
+        "cdsBotId": null,
+        "tenantId": null,
+        "environmentId": null,
+        "gptAnswerState": "Answered",
+        "triggeredGptFallback": true,
+        "completionState": "Answered"
+      }
+    },
+    {
+      "id": "6cacadd1-d325-4181-aad9-af9a76f0ed2e",
+      "type": "event",
+      "timestamp": 1725904772,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {
+                "Answer": "To add a row to Dataverse, you can use the Power Apps or Power Automate platform. Here’s a general guide on how to do it using Power Automate:\n\n1. **Log in to Power Automate**: Go to [Power Automate](https://flow.microsoft.com) and log in with your Microsoft account.\n\n2. **Create a new flow**:\n   - Click on \"Create\" from the left-hand menu.\n   - Choose \"Automated flow\" or \"Instant flow\" depending on your needs.\n\n3. **Set up the trigger**:\n   - For an automated flow, select a trigger like \"When a new item is created\" or \"When a new email arrives\".\n   - For an instant flow, you can use a manual trigger like \"Manually trigger a flow\".\n\n4. **Add a new step**:\n   - Click on \"New step\".\n   - Search for \"Dataverse\" and select the \"Add a new row\" action.\n\n5. **Configure the action**:\n   - Choose the table where you want to add the row.\n   - Fill in the required fields with the data you want to add.\n\n6. **Save and test your flow**:\n   - Click on \"Save\".\n   - Test your flow by triggering it and checking if the row is added to your Dataverse table.\n\nIf you need more specific instructions or run into any issues, feel free to ask!"
+              },
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "79da6d59-4563-43e9-be55-f673f2781049",
+      "type": "event",
+      "timestamp": 1725904772,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer-conditions",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "b6e7daed-3242-47cb-98de-b9f5a21de4bf",
+      "type": "event",
+      "timestamp": 1725904772,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "ConditionItem",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "7f889ed1-0f90-4080-90da-b1c72ced323e",
+      "type": "event",
+      "timestamp": 1725904772,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3bb01be9-a6ec-490b-98c2-d4a74e4a10d9",
+      "value": {
+        "actions": [
+          {
+            "actionId": "end-topic",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "EndDialog",
+            "conditionItemExit": [
+              "has-answer"
+            ],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "SessionInfo",
+      "id": "0",
+      "type": "trace",
+      "timestamp": 1725904772,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "startTimeUtc": "2024-09-09T17:55:52Z",
+        "endTimeUtc": "2024-09-09T17:59:32Z",
+        "type": "Engaged",
+        "outcome": "Abandoned",
+        "turnCount": 3,
+        "impliedSuccess": false
+      }
+    }
+  ]
+}

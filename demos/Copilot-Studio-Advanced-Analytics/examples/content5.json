@@ -1,0 +1,1480 @@
+{
+  "activities": [
+    {
+      "valueType": "ConversationInfo",
+      "type": "trace",
+      "timestamp": 1726157593,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "isDesignMode": true,
+        "locale": "en-US"
+      }
+    },
+    {
+      "id": "0408dfdf-f0ed-4a73-a055-a7406ac2549f",
+      "type": "event",
+      "timestamp": 1726157593,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 1
+      },
+      "name": "startConversation",
+      "channelId": "pva-studio",
+      "attachments": []
+    },
+    {
+      "id": "3f2f8a05-a938-42e3-bb2c-f6f2a104bdc3",
+      "type": "message",
+      "timestamp": 1726157594,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Hello, I'm DOR Bot, a virtual assistant. Just so you are aware, I sometimes use AI to answer your questions. If you provided a website during creation, try asking me about it! Next try giving me some more knowledge by setting up generative AI.",
+      "attachments": [],
+      "replyToId": "0408dfdf-f0ed-4a73-a055-a7406ac2549f",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Thanks for calling, how can I help?</prosody></voice></speak>"
+    },
+    {
+      "id": "84730282-a596-476c-b66d-1bfe0c1f78f9",
+      "type": "event",
+      "timestamp": 1726157594,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "0408dfdf-f0ed-4a73-a055-a7406ac2549f",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_M0LuhV",
+            "topicId": "cr3e5_dorBot.topic.ConversationStart",
+            "triggerId": "main",
+            "dialogComponentId": "d8cdd0cd-c7c2-4211-a4d4-b72d15475172",
+            "actionType": "SendActivity",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+      "type": "message",
+      "timestamp": 1726157612,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 1
+      },
+      "channelId": "pva-studio",
+      "textFormat": "plain",
+      "text": "What are the tax filing deadlines for Minnesota state income tax?",
+      "attachments": [],
+      "channelData": {
+        "attachmentSizes": [],
+        "enableDiagnostics": true,
+        "testMode": "Text",
+        "clientActivityID": "ugr5jhg6xg"
+      }
+    },
+    {
+      "valueType": "UnknownIntent",
+      "id": "da190f95ea094a87a6ce1d6eb7c202f2",
+      "type": "trace",
+      "timestamp": 1726157613,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "value": {
+        "userQuery": "What are the tax filing deadlines for Minnesota state income tax?"
+      }
+    },
+    {
+      "id": "18fa4149-0f0e-4865-888e-f016a4c41932",
+      "type": "event",
+      "timestamp": 1726157613,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "VariableAssignment",
+      "id": "00d0e119861c4ebd9fa4d0d583f27b08",
+      "type": "trace",
+      "timestamp": 1726157617,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "replyToId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+      "value": {
+        "name": "Answer",
+        "id": "Topic.Answer",
+        "newValue": "Most people must file their 2023 Minnesota tax return by April 15, 2024. The Minnesota Department of Revenue must receive your return electronically – or have it delivered or postmarked – by that date. If you owe tax, you must pay by that date, even if you file your return later [1]​[2].\n\n[1]: https://www.revenue.state.mn.us/income-tax-due-dates \"Income Tax Due Dates | Minnesota Department of Revenue\"\n[2]: https://www.revenue.state.mn.us/press-release/2024-01-09/minnesota-individual-income-tax-filing-season-opens-january-29-2024 \"Minnesota Individual Income Tax filing season opens January 29, 2024\"",
+        "type": "local"
+      }
+    },
+    {
+      "id": "8254f390-91cf-43fc-9147-4a2314ea8205",
+      "type": "message",
+      "timestamp": 1726157617,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Most people must file their 2023 Minnesota tax return by April 15, 2024. The Minnesota Department of Revenue must receive your return electronically – or have it delivered or postmarked – by that date. If you owe tax, you must pay by that date, even if you file your return later [1]​[2].\n\n[1]: https://www.revenue.state.mn.us/income-tax-due-dates \"Income Tax Due Dates | Minnesota Department of Revenue\"\n[2]: https://www.revenue.state.mn.us/press-release/2024-01-09/minnesota-individual-income-tax-filing-season-opens-january-29-2024 \"Minnesota Individual Income Tax filing season opens January 29, 2024\"",
+      "attachments": [],
+      "replyToId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Most people must file their 2023 Minnesota tax return by April 15, 2024. The Minnesota Department of Revenue must receive your return electronically – or have it delivered or postmarked – by that date. If you owe tax, you must pay by that date, even if you file your return later 1​2.</prosody></voice></speak>",
+      "channelData": {
+        "pva:gpt-feedback": {
+          "endpoints": [
+            "https://www.revenue.state.mn.us/"
+          ],
+          "summarizationOpenAIResponse": {
+            "result": {
+              "summary": "Most people must file their 2023 Minnesota tax return by April 15, 2024. The Minnesota Department of Revenue must receive your return electronically – or have it delivered or postmarked – by that date. If you owe tax, you must pay by that date, even if you file your return later [1]​[2].\n\n[1]: https://www.revenue.state.mn.us/income-tax-due-dates \"Income Tax Due Dates | Minnesota Department of Revenue\"\n[2]: https://www.revenue.state.mn.us/press-release/2024-01-09/minnesota-individual-income-tax-filing-season-opens-january-29-2024 \"Minnesota Individual Income Tax filing season opens January 29, 2024\"",
+              "textSummary": "Most people must file their 2023 Minnesota tax return by April 15, 2024. The Minnesota Department of Revenue must receive your return electronically – or have it delivered or postmarked – by that date. If you owe tax, you must pay by that date, even if you file your return later [1]​[2].",
+              "speechSummary": "",
+              "textCitations": [
+                {
+                  "id": "https://www.revenue.state.mn.us/income-tax-due-dates",
+                  "text": "Income Tax Due Dates. Most people must file their 2023 Minnesota tax return by April 15, 2024. The Minnesota Department of Revenue must receive your return electronically – or have it delivered or postmarked – by that date. If you owe tax, you must pay by that date, even if you file your return later.",
+                  "title": "Income Tax Due Dates | Minnesota Department of Revenue",
+                  "type": "unknown",
+                  "position": 1,
+                  "entityType": "Claim",
+                  "entityContext": "https://schema.org",
+                  "url": "https://www.revenue.state.mn.us/income-tax-due-dates"
+                },
+                {
+                  "id": "https://www.revenue.state.mn.us/press-release/2024-01-09/minnesota-individual-income-tax-filing-season-opens-january-29-2024",
+                  "text": "The filing deadline to submit 2023 Minnesota income tax returns is Monday, April 15, 2024. This date matches the filing deadline for 2024 federal income tax returns. Tax software providers and tax professionals may be accepting and preparing tax returns before January 29 and will submit those returns when the IRS and state systems open.",
+                  "title": "Minnesota Individual Income Tax filing season opens January 29, 2024",
+                  "type": "unknown",
+                  "position": 2,
+                  "entityType": "Claim",
+                  "entityContext": "https://schema.org",
+                  "url": "https://www.revenue.state.mn.us/press-release/2024-01-09/minnesota-individual-income-tax-filing-season-opens-january-29-2024"
+                }
+              ],
+              "containsConfidentialData": false,
+              "messageId": ""
+            },
+            "rawSummary": "",
+            "completionTokens": 0,
+            "promptTokens": 0,
+            "prompt": "",
+            "completionResponse": "noError",
+            "errorCode": "stop"
+          },
+          "searchResults": [],
+          "verifiedSearchResults": [],
+          "searchErrors": [],
+          "message": "What are the tax filing deadlines for Minnesota state income tax?",
+          "activityId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+          "conversationId": "b74d3113-7ba3-4f4c-aa5a-03cc402195e4",
+          "performedContentProvenanceCheck": true,
+          "performedContentModerationCheck": true,
+          "cdsBotId": "9479e387-2171-ef11-a670-001dd804edd8",
+          "tenantId": "426a6ef4-2476-4eab-ae1c-1c9dc2bfca80",
+          "environmentId": "09cc0cd1-512f-ed5a-b0fb-72ad2a697eb6",
+          "gptAnswerState": "Answered",
+          "triggeredGptFallback": false,
+          "completionState": "answered"
+        }
+      }
+    },
+    {
+      "valueType": "GPTAnswer",
+      "id": "b098fb8d43bb40528b56e939fd071649",
+      "type": "trace",
+      "timestamp": 1726157617,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "replyToId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+      "value": {
+        "gptAnswerState": "Answered"
+      }
+    },
+    {
+      "id": "91ab3838-69f7-460d-a137-e590aa853327",
+      "type": "event",
+      "timestamp": 1726157617,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "GenerativeAnswersSupportData",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+      "value": {
+        "endpoints": [
+          "https://www.revenue.state.mn.us/"
+        ],
+        "queryRewrittingOpenAIResponse": null,
+        "summarizationOpenAIResponse": {
+          "Result": {
+            "Summary": "Most people must file their 2023 Minnesota tax return by April 15, 2024. The Minnesota Department of Revenue must receive your return electronically – or have it delivered or postmarked – by that date. If you owe tax, you must pay by that date, even if you file your return later [1]​[2].\n\n[1]: https://www.revenue.state.mn.us/income-tax-due-dates \"Income Tax Due Dates | Minnesota Department of Revenue\"\n[2]: https://www.revenue.state.mn.us/press-release/2024-01-09/minnesota-individual-income-tax-filing-season-opens-january-29-2024 \"Minnesota Individual Income Tax filing season opens January 29, 2024\"",
+            "TextSummary": "Most people must file their 2023 Minnesota tax return by April 15, 2024. The Minnesota Department of Revenue must receive your return electronically – or have it delivered or postmarked – by that date. If you owe tax, you must pay by that date, even if you file your return later [1]​[2].",
+            "SpeechSummary": "",
+            "TextCitations": [
+              {
+                "Id": "https://www.revenue.state.mn.us/income-tax-due-dates",
+                "Text": "Income Tax Due Dates. Most people must file their 2023 Minnesota tax return by April 15, 2024. The Minnesota Department of Revenue must receive your return electronically – or have it delivered or postmarked – by that date. If you owe tax, you must pay by that date, even if you file your return later.",
+                "Title": "Income Tax Due Dates | Minnesota Department of Revenue",
+                "Type": 0,
+                "Position": 1,
+                "EntityType": "Claim",
+                "EntityContext": "https://schema.org",
+                "Url": "https://www.revenue.state.mn.us/income-tax-due-dates",
+                "SensitivityLabelInfo": null
+              },
+              {
+                "Id": "https://www.revenue.state.mn.us/press-release/2024-01-09/minnesota-individual-income-tax-filing-season-opens-january-29-2024",
+                "Text": "The filing deadline to submit 2023 Minnesota income tax returns is Monday, April 15, 2024. This date matches the filing deadline for 2024 federal income tax returns. Tax software providers and tax professionals may be accepting and preparing tax returns before January 29 and will submit those returns when the IRS and state systems open.",
+                "Title": "Minnesota Individual Income Tax filing season opens January 29, 2024",
+                "Type": 0,
+                "Position": 2,
+                "EntityType": "Claim",
+                "EntityContext": "https://schema.org",
+                "Url": "https://www.revenue.state.mn.us/press-release/2024-01-09/minnesota-individual-income-tax-filing-season-opens-january-29-2024",
+                "SensitivityLabelInfo": null
+              }
+            ],
+            "SpeechCitations": null,
+            "ContainsConfidentialData": false,
+            "HighestSensitivityLabelInfo": null,
+            "MessageId": ""
+          },
+          "RawSummary": "",
+          "CompletionTokens": 0,
+          "PromptTokens": 0,
+          "Prompt": "",
+          "CompletionResponse": "NoError",
+          "ErrorCode": "stop"
+        },
+        "searchResults": [],
+        "verifiedSearchResults": [],
+        "searchErrors": [],
+        "message": "What are the tax filing deadlines for Minnesota state income tax?",
+        "screenedMessage": null,
+        "rewrittenMessage": null,
+        "rewrittenMessageKeywords": null,
+        "filteredOpenAISummary": null,
+        "screenedOpenAISummary": null,
+        "activityId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+        "conversationId": "b74d3113-7ba3-4f4c-aa5a-03cc402195e4",
+        "performedContentProvenanceCheck": true,
+        "performedContentModerationCheck": true,
+        "cdsBotId": "9479e387-2171-ef11-a670-001dd804edd8",
+        "tenantId": "426a6ef4-2476-4eab-ae1c-1c9dc2bfca80",
+        "environmentId": "09cc0cd1-512f-ed5a-b0fb-72ad2a697eb6",
+        "gptAnswerState": "Answered",
+        "triggeredGptFallback": false,
+        "completionState": "Answered"
+      }
+    },
+    {
+      "id": "70d3151b-921f-432b-ba2d-c42796c5165e",
+      "type": "event",
+      "timestamp": 1726157617,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {
+                "Answer": "Most people must file their 2023 Minnesota tax return by April 15, 2024. The Minnesota Department of Revenue must receive your return electronically – or have it delivered or postmarked – by that date. If you owe tax, you must pay by that date, even if you file your return later [1]​[2].\n\n[1]: https://www.revenue.state.mn.us/income-tax-due-dates \"Income Tax Due Dates | Minnesota Department of Revenue\"\n[2]: https://www.revenue.state.mn.us/press-release/2024-01-09/minnesota-individual-income-tax-filing-season-opens-january-29-2024 \"Minnesota Individual Income Tax filing season opens January 29, 2024\""
+              },
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "3c6980c3-1dd6-4a44-b046-9f272f7744d2",
+      "type": "event",
+      "timestamp": 1726157617,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer-conditions",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "1ee2c42a-e902-4991-82d0-86a81c5c5231",
+      "type": "event",
+      "timestamp": 1726157617,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "ConditionItem",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "f4665bee-73d6-404d-ae76-3e918b0a355f",
+      "type": "event",
+      "timestamp": 1726157617,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "9b1b33bc-6786-4dc8-869e-dd18d22c288f",
+      "value": {
+        "actions": [
+          {
+            "actionId": "end-topic",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "EndDialog",
+            "conditionItemExit": [
+              "has-answer"
+            ],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "type": "message",
+      "timestamp": 1726157674,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 1
+      },
+      "channelId": "pva-studio",
+      "textFormat": "plain",
+      "text": "When can I expect my Minnesota state tax refund?",
+      "attachments": [],
+      "channelData": {
+        "attachmentSizes": [],
+        "enableDiagnostics": true,
+        "testMode": "Text",
+        "clientActivityID": "qgn36f29unn"
+      }
+    },
+    {
+      "valueType": "UnknownIntent",
+      "id": "690aaa4e630d490ebeaa571abcb72cd3",
+      "type": "trace",
+      "timestamp": 1726157674,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "value": {
+        "userQuery": "When can I expect my Minnesota state tax refund?"
+      }
+    },
+    {
+      "id": "9c18f894-18fc-4a70-ac85-b9ef0a6eb055",
+      "type": "event",
+      "timestamp": 1726157674,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "VariableAssignment",
+      "id": "79c9dd42a6c24886b60b7d3387f74c27",
+      "type": "trace",
+      "timestamp": 1726157675,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "value": {
+        "name": "Answer",
+        "id": "Topic.Answer",
+        "newValue": "",
+        "type": "local"
+      }
+    },
+    {
+      "valueType": "GPTAnswer",
+      "id": "369138e236f3404b9c366064dc99f6e9",
+      "type": "trace",
+      "timestamp": 1726157675,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "value": {
+        "gptAnswerState": "SystemError"
+      }
+    },
+    {
+      "id": "94d4ca71-988b-4645-8ec4-2c12062ce6f0",
+      "type": "event",
+      "timestamp": 1726157675,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "GenerativeAnswersSupportData",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "value": {
+        "endpoints": [
+          "https://www.revenue.state.mn.us/"
+        ],
+        "queryRewrittingOpenAIResponse": null,
+        "summarizationOpenAIResponse": null,
+        "searchResults": [],
+        "verifiedSearchResults": [],
+        "searchErrors": [],
+        "message": "When can I expect my Minnesota state tax refund?",
+        "screenedMessage": null,
+        "rewrittenMessage": null,
+        "rewrittenMessageKeywords": null,
+        "filteredOpenAISummary": null,
+        "screenedOpenAISummary": null,
+        "activityId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+        "conversationId": "b74d3113-7ba3-4f4c-aa5a-03cc402195e4",
+        "performedContentProvenanceCheck": true,
+        "performedContentModerationCheck": true,
+        "cdsBotId": "9479e387-2171-ef11-a670-001dd804edd8",
+        "tenantId": "426a6ef4-2476-4eab-ae1c-1c9dc2bfca80",
+        "environmentId": "09cc0cd1-512f-ed5a-b0fb-72ad2a697eb6",
+        "gptAnswerState": "SystemError",
+        "triggeredGptFallback": false,
+        "completionState": "InternalError"
+      }
+    },
+    {
+      "id": "4877c778-ef29-427b-9a91-dd97cdbe8de8",
+      "type": "event",
+      "timestamp": 1726157675,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {
+                "Answer": ""
+              },
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "b30bdea4-e476-470b-849a-a6eebe108f99",
+      "type": "event",
+      "timestamp": 1726157675,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer-conditions",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "b35c0120-4312-4416-846b-faa5a3642fc3",
+      "type": "event",
+      "timestamp": 1726157675,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer-conditionsElseActions",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [
+              "has-answer-conditionsElseActions"
+            ],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "96d2b8a2-b30b-4b33-83f8-c4ee9b3be9e5",
+      "type": "event",
+      "timestamp": 1726157675,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "value": {
+        "actions": [
+          {
+            "actionId": "conditionGroup_LktzXw",
+            "topicId": "cr3e5_dorBot.topic.Fallback",
+            "triggerId": "main",
+            "dialogComponentId": "db077dd7-5fd5-49ae-b98c-8d3d71f049ae",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "fca8b39e-2b04-4d05-9713-c57fae40583d",
+      "type": "event",
+      "timestamp": 1726157675,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "value": {
+        "actions": [
+          {
+            "actionId": "conditionItem_tlGIVo",
+            "topicId": "cr3e5_dorBot.topic.Fallback",
+            "triggerId": "main",
+            "dialogComponentId": "db077dd7-5fd5-49ae-b98c-8d3d71f049ae",
+            "actionType": "ConditionItem",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "0b414ced-3ab5-44a1-a40a-260775a15ead",
+      "type": "message",
+      "timestamp": 1726157675,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "I'm sorry, I'm not sure how to help with that. Can you try rephrasing?",
+      "attachments": [],
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">I'm sorry, I'm not sure how to help with that. Can you try rephrasing?</prosody></voice></speak>"
+    },
+    {
+      "id": "197a975f-0656-4134-bc31-c95f1274de1a",
+      "type": "event",
+      "timestamp": 1726157675,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "11770f62-49df-43cf-afc9-87855cbc85bc",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_QZreqo",
+            "topicId": "cr3e5_dorBot.topic.Fallback",
+            "triggerId": "main",
+            "dialogComponentId": "db077dd7-5fd5-49ae-b98c-8d3d71f049ae",
+            "actionType": "SendActivity",
+            "conditionItemExit": [
+              "conditionItem_tlGIVo"
+            ],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+      "type": "message",
+      "timestamp": 1726157693,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 1
+      },
+      "channelId": "pva-studio",
+      "textFormat": "plain",
+      "text": "Do I need to file a Minnesota state tax return if I only worked part-time or had a small amount of income?",
+      "attachments": [],
+      "channelData": {
+        "attachmentSizes": [],
+        "enableDiagnostics": true,
+        "testMode": "Text",
+        "clientActivityID": "9eepelgbdbe"
+      }
+    },
+    {
+      "valueType": "UnknownIntent",
+      "id": "b1034575bcbb4154a231b64f8415cee6",
+      "type": "trace",
+      "timestamp": 1726157694,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "value": {
+        "userQuery": "Do I need to file a Minnesota state tax return if I only worked part-time or had a small amount of income?"
+      }
+    },
+    {
+      "id": "ce49acfb-2c80-45ca-88c5-bfe2a7f57ac1",
+      "type": "event",
+      "timestamp": 1726157694,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "VariableAssignment",
+      "id": "e3543b6b63ea4878816a198cd4fd34ec",
+      "type": "trace",
+      "timestamp": 1726157697,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "replyToId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+      "value": {
+        "name": "Answer",
+        "id": "Topic.Answer",
+        "newValue": "You are required to file a Minnesota income tax return if your Minnesota gross income meets the minimum filing requirement, which is $13,825 for 2023. If your Minnesota gross income is less than the requirement, you should not be required to file a return [1].\n\n[1]: https://www.revenue.state.mn.us/part-year-residents-income-tax-fact-sheet-2 \"Part-Year Residents - Minnesota Department of Revenue\"",
+        "type": "local"
+      }
+    },
+    {
+      "id": "64a72cae-5ca7-4bd9-8e8a-6b034653fcd8",
+      "type": "message",
+      "timestamp": 1726157697,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "You are required to file a Minnesota income tax return if your Minnesota gross income meets the minimum filing requirement, which is $13,825 for 2023. If your Minnesota gross income is less than the requirement, you should not be required to file a return [1].\n\n[1]: https://www.revenue.state.mn.us/part-year-residents-income-tax-fact-sheet-2 \"Part-Year Residents - Minnesota Department of Revenue\"",
+      "attachments": [],
+      "replyToId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">You are required to file a Minnesota income tax return if your Minnesota gross income meets the minimum filing requirement, which is $13,825 for 2023. If your Minnesota gross income is less than the requirement, you should not be required to file a return 1.</prosody></voice></speak>",
+      "channelData": {
+        "pva:gpt-feedback": {
+          "endpoints": [
+            "https://www.revenue.state.mn.us/"
+          ],
+          "summarizationOpenAIResponse": {
+            "result": {
+              "summary": "You are required to file a Minnesota income tax return if your Minnesota gross income meets the minimum filing requirement, which is $13,825 for 2023. If your Minnesota gross income is less than the requirement, you should not be required to file a return [1].\n\n[1]: https://www.revenue.state.mn.us/part-year-residents-income-tax-fact-sheet-2 \"Part-Year Residents - Minnesota Department of Revenue\"",
+              "textSummary": "You are required to file a Minnesota income tax return if your Minnesota gross income meets the minimum filing requirement, which is $13,825 for 2023. If your Minnesota gross income is less than the requirement, you should not be required to file a return [1].",
+              "speechSummary": "",
+              "textCitations": [
+                {
+                  "id": "https://www.revenue.state.mn.us/part-year-residents-income-tax-fact-sheet-2",
+                  "text": "You are required to file a Minnesota income tax return if your Minnesota gross income meets the minimum filing requirement ($13,825 for 2023). File electronically, or use , and Schedule M1NR, Nonresidents/Part-Year Residents, to file your return. For more information, see. If your Minnesota gross income is less than the requirement, you should ...",
+                  "title": "Part-Year Residents - Minnesota Department of Revenue",
+                  "type": "unknown",
+                  "position": 1,
+                  "entityType": "Claim",
+                  "entityContext": "https://schema.org",
+                  "url": "https://www.revenue.state.mn.us/part-year-residents-income-tax-fact-sheet-2"
+                }
+              ],
+              "containsConfidentialData": false,
+              "messageId": ""
+            },
+            "rawSummary": "",
+            "completionTokens": 0,
+            "promptTokens": 0,
+            "prompt": "",
+            "completionResponse": "noError",
+            "errorCode": "stop"
+          },
+          "searchResults": [],
+          "verifiedSearchResults": [],
+          "searchErrors": [],
+          "message": "Do I need to file a Minnesota state tax return if I only worked part-time or had a small amount of income?",
+          "activityId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+          "conversationId": "b74d3113-7ba3-4f4c-aa5a-03cc402195e4",
+          "performedContentProvenanceCheck": true,
+          "performedContentModerationCheck": true,
+          "cdsBotId": "9479e387-2171-ef11-a670-001dd804edd8",
+          "tenantId": "426a6ef4-2476-4eab-ae1c-1c9dc2bfca80",
+          "environmentId": "09cc0cd1-512f-ed5a-b0fb-72ad2a697eb6",
+          "gptAnswerState": "Answered",
+          "triggeredGptFallback": false,
+          "completionState": "answered"
+        }
+      }
+    },
+    {
+      "valueType": "GPTAnswer",
+      "id": "db43895e9fe541ab863f97cba0c02e9f",
+      "type": "trace",
+      "timestamp": 1726157697,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "replyToId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+      "value": {
+        "gptAnswerState": "Answered"
+      }
+    },
+    {
+      "id": "1acd5461-d3f7-42b8-9b60-0973059b350d",
+      "type": "event",
+      "timestamp": 1726157697,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "GenerativeAnswersSupportData",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+      "value": {
+        "endpoints": [
+          "https://www.revenue.state.mn.us/"
+        ],
+        "queryRewrittingOpenAIResponse": null,
+        "summarizationOpenAIResponse": {
+          "Result": {
+            "Summary": "You are required to file a Minnesota income tax return if your Minnesota gross income meets the minimum filing requirement, which is $13,825 for 2023. If your Minnesota gross income is less than the requirement, you should not be required to file a return [1].\n\n[1]: https://www.revenue.state.mn.us/part-year-residents-income-tax-fact-sheet-2 \"Part-Year Residents - Minnesota Department of Revenue\"",
+            "TextSummary": "You are required to file a Minnesota income tax return if your Minnesota gross income meets the minimum filing requirement, which is $13,825 for 2023. If your Minnesota gross income is less than the requirement, you should not be required to file a return [1].",
+            "SpeechSummary": "",
+            "TextCitations": [
+              {
+                "Id": "https://www.revenue.state.mn.us/part-year-residents-income-tax-fact-sheet-2",
+                "Text": "You are required to file a Minnesota income tax return if your Minnesota gross income meets the minimum filing requirement ($13,825 for 2023). File electronically, or use , and Schedule M1NR, Nonresidents/Part-Year Residents, to file your return. For more information, see. If your Minnesota gross income is less than the requirement, you should ...",
+                "Title": "Part-Year Residents - Minnesota Department of Revenue",
+                "Type": 0,
+                "Position": 1,
+                "EntityType": "Claim",
+                "EntityContext": "https://schema.org",
+                "Url": "https://www.revenue.state.mn.us/part-year-residents-income-tax-fact-sheet-2",
+                "SensitivityLabelInfo": null
+              }
+            ],
+            "SpeechCitations": null,
+            "ContainsConfidentialData": false,
+            "HighestSensitivityLabelInfo": null,
+            "MessageId": ""
+          },
+          "RawSummary": "",
+          "CompletionTokens": 0,
+          "PromptTokens": 0,
+          "Prompt": "",
+          "CompletionResponse": "NoError",
+          "ErrorCode": "stop"
+        },
+        "searchResults": [],
+        "verifiedSearchResults": [],
+        "searchErrors": [],
+        "message": "Do I need to file a Minnesota state tax return if I only worked part-time or had a small amount of income?",
+        "screenedMessage": null,
+        "rewrittenMessage": null,
+        "rewrittenMessageKeywords": null,
+        "filteredOpenAISummary": null,
+        "screenedOpenAISummary": null,
+        "activityId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+        "conversationId": "b74d3113-7ba3-4f4c-aa5a-03cc402195e4",
+        "performedContentProvenanceCheck": true,
+        "performedContentModerationCheck": true,
+        "cdsBotId": "9479e387-2171-ef11-a670-001dd804edd8",
+        "tenantId": "426a6ef4-2476-4eab-ae1c-1c9dc2bfca80",
+        "environmentId": "09cc0cd1-512f-ed5a-b0fb-72ad2a697eb6",
+        "gptAnswerState": "Answered",
+        "triggeredGptFallback": false,
+        "completionState": "Answered"
+      }
+    },
+    {
+      "id": "d2addc4c-2324-4c32-a2d8-e44d0e4dad53",
+      "type": "event",
+      "timestamp": 1726157697,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {
+                "Answer": "You are required to file a Minnesota income tax return if your Minnesota gross income meets the minimum filing requirement, which is $13,825 for 2023. If your Minnesota gross income is less than the requirement, you should not be required to file a return [1].\n\n[1]: https://www.revenue.state.mn.us/part-year-residents-income-tax-fact-sheet-2 \"Part-Year Residents - Minnesota Department of Revenue\""
+              },
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "81907a88-6895-4ace-b4e0-a13c9ad79543",
+      "type": "event",
+      "timestamp": 1726157697,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer-conditions",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "06436d77-f4fd-4e0c-a779-730c2b23306c",
+      "type": "event",
+      "timestamp": 1726157697,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "ConditionItem",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "8cd63aff-cfe9-499d-b384-a8edef678137",
+      "type": "event",
+      "timestamp": 1726157697,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "038b0ffc-ba35-45d6-ba4b-f4124def3765",
+      "value": {
+        "actions": [
+          {
+            "actionId": "end-topic",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "EndDialog",
+            "conditionItemExit": [
+              "has-answer"
+            ],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+      "type": "message",
+      "timestamp": 1726158099,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 1
+      },
+      "channelId": "pva-studio",
+      "textFormat": "plain",
+      "text": "When did Michael Jordan retire?",
+      "attachments": [],
+      "channelData": {
+        "attachmentSizes": [],
+        "enableDiagnostics": true,
+        "testMode": "Text",
+        "clientActivityID": "w79q0fax9p9"
+      }
+    },
+    {
+      "valueType": "UnknownIntent",
+      "id": "0c6d54df42cd4813860b1828cc7678c3",
+      "type": "trace",
+      "timestamp": 1726158100,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "value": {
+        "userQuery": "When did Michael Jordan retire?"
+      }
+    },
+    {
+      "id": "3313d6d4-d312-4c31-87e4-f5f81c2a4052",
+      "type": "event",
+      "timestamp": 1726158100,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "VariableAssignment",
+      "id": "0cc3164fa0e4472daeb026e54211b761",
+      "type": "trace",
+      "timestamp": 1726158104,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "replyToId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+      "value": {
+        "name": "Answer",
+        "id": "Topic.Answer",
+        "newValue": "Michael Jordan retired from professional basketball three times during his career:\n\n1. **First Retirement:** October 6, 1993 - After winning three consecutive NBA championships with the Chicago Bulls, Jordan retired to pursue a career in baseball.\n2. **Second Retirement:** January 13, 1999 - After returning to the NBA and winning three more championships with the Bulls, Jordan retired again.\n3. **Third Retirement:** April 16, 2003 - Jordan came out of retirement to play for the Washington Wizards and retired for the final time after the 2002-2003 season.",
+        "type": "local"
+      }
+    },
+    {
+      "id": "cf75789d-f8c8-4b4b-861c-8aa18e01745a",
+      "type": "message",
+      "timestamp": 1726158104,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Michael Jordan retired from professional basketball three times during his career:\n\n1. **First Retirement:** October 6, 1993 - After winning three consecutive NBA championships with the Chicago Bulls, Jordan retired to pursue a career in baseball.\n2. **Second Retirement:** January 13, 1999 - After returning to the NBA and winning three more championships with the Bulls, Jordan retired again.\n3. **Third Retirement:** April 16, 2003 - Jordan came out of retirement to play for the Washington Wizards and retired for the final time after the 2002-2003 season.\r\nAI-generated content may be incorrect",
+      "attachments": [],
+      "replyToId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">\r\nAI-generated content may be incorrect</prosody></voice></speak>",
+      "channelData": {
+        "pva:gpt-feedback": {
+          "endpoints": [],
+          "summarizationOpenAIResponse": {
+            "result": {
+              "summary": "Michael Jordan retired from professional basketball three times during his career:\n\n1. **First Retirement:** October 6, 1993 - After winning three consecutive NBA championships with the Chicago Bulls, Jordan retired to pursue a career in baseball.\n2. **Second Retirement:** January 13, 1999 - After returning to the NBA and winning three more championships with the Bulls, Jordan retired again.\n3. **Third Retirement:** April 16, 2003 - Jordan came out of retirement to play for the Washington Wizards and retired for the final time after the 2002-2003 season.",
+              "textSummary": "Michael Jordan retired from professional basketball three times during his career:\n\n1. **First Retirement:** October 6, 1993 - After winning three consecutive NBA championships with the Chicago Bulls, Jordan retired to pursue a career in baseball.\n2. **Second Retirement:** January 13, 1999 - After returning to the NBA and winning three more championships with the Bulls, Jordan retired again.\n3. **Third Retirement:** April 16, 2003 - Jordan came out of retirement to play for the Washington Wizards and retired for the final time after the 2002-2003 season.",
+              "speechSummary": "",
+              "containsConfidentialData": false,
+              "messageId": ""
+            },
+            "rawSummary": "",
+            "completionTokens": 0,
+            "promptTokens": 0,
+            "prompt": "",
+            "completionResponse": "noError"
+          },
+          "searchResults": [],
+          "verifiedSearchResults": [],
+          "searchErrors": [],
+          "message": "When did Michael Jordan retire?",
+          "activityId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+          "performedContentProvenanceCheck": true,
+          "performedContentModerationCheck": true,
+          "gptAnswerState": "Answered",
+          "triggeredGptFallback": true,
+          "completionState": "answered"
+        }
+      }
+    },
+    {
+      "valueType": "GPTAnswer",
+      "id": "4b335c8ce85c4fe6a784d45c783afdd7",
+      "type": "trace",
+      "timestamp": 1726158104,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "replyToId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+      "value": {
+        "gptAnswerState": "Answered"
+      }
+    },
+    {
+      "id": "f51b01e6-9487-44b0-9e41-c2fc449d5f33",
+      "type": "event",
+      "timestamp": 1726158104,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "GenerativeAnswersSupportData",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+      "value": {
+        "endpoints": [],
+        "queryRewrittingOpenAIResponse": null,
+        "summarizationOpenAIResponse": {
+          "Result": {
+            "Summary": "Michael Jordan retired from professional basketball three times during his career:\n\n1. **First Retirement:** October 6, 1993 - After winning three consecutive NBA championships with the Chicago Bulls, Jordan retired to pursue a career in baseball.\n2. **Second Retirement:** January 13, 1999 - After returning to the NBA and winning three more championships with the Bulls, Jordan retired again.\n3. **Third Retirement:** April 16, 2003 - Jordan came out of retirement to play for the Washington Wizards and retired for the final time after the 2002-2003 season.",
+            "TextSummary": "Michael Jordan retired from professional basketball three times during his career:\n\n1. **First Retirement:** October 6, 1993 - After winning three consecutive NBA championships with the Chicago Bulls, Jordan retired to pursue a career in baseball.\n2. **Second Retirement:** January 13, 1999 - After returning to the NBA and winning three more championships with the Bulls, Jordan retired again.\n3. **Third Retirement:** April 16, 2003 - Jordan came out of retirement to play for the Washington Wizards and retired for the final time after the 2002-2003 season.",
+            "SpeechSummary": "",
+            "TextCitations": null,
+            "SpeechCitations": null,
+            "ContainsConfidentialData": false,
+            "HighestSensitivityLabelInfo": null,
+            "MessageId": ""
+          },
+          "RawSummary": "",
+          "CompletionTokens": 0,
+          "PromptTokens": 0,
+          "Prompt": "",
+          "CompletionResponse": "NoError",
+          "ErrorCode": null
+        },
+        "searchResults": [],
+        "verifiedSearchResults": [],
+        "searchErrors": [],
+        "message": "When did Michael Jordan retire?",
+        "screenedMessage": null,
+        "rewrittenMessage": null,
+        "rewrittenMessageKeywords": null,
+        "filteredOpenAISummary": null,
+        "screenedOpenAISummary": null,
+        "activityId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+        "conversationId": null,
+        "performedContentProvenanceCheck": true,
+        "performedContentModerationCheck": true,
+        "cdsBotId": null,
+        "tenantId": null,
+        "environmentId": null,
+        "gptAnswerState": "Answered",
+        "triggeredGptFallback": true,
+        "completionState": "Answered"
+      }
+    },
+    {
+      "id": "c4ac6d19-5c15-445d-9daa-3b26bcf1cba4",
+      "type": "event",
+      "timestamp": 1726158104,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {
+                "Answer": "Michael Jordan retired from professional basketball three times during his career:\n\n1. **First Retirement:** October 6, 1993 - After winning three consecutive NBA championships with the Chicago Bulls, Jordan retired to pursue a career in baseball.\n2. **Second Retirement:** January 13, 1999 - After returning to the NBA and winning three more championships with the Bulls, Jordan retired again.\n3. **Third Retirement:** April 16, 2003 - Jordan came out of retirement to play for the Washington Wizards and retired for the final time after the 2002-2003 season."
+              },
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "5cf3c35e-9f7c-4f23-b2e5-58b5e97b7b0a",
+      "type": "event",
+      "timestamp": 1726158104,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer-conditions",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "9aa65127-d9c9-4f6a-b3b4-1426616bd19c",
+      "type": "event",
+      "timestamp": 1726158104,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "ConditionItem",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "93eb45e4-81f9-474e-b5d1-d0c06dffd840",
+      "type": "event",
+      "timestamp": 1726158104,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "caaa796a-b252-44c7-9e17-7da6f2c562e9",
+      "value": {
+        "actions": [
+          {
+            "actionId": "end-topic",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "EndDialog",
+            "conditionItemExit": [
+              "has-answer"
+            ],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "SessionInfo",
+      "id": "0",
+      "type": "trace",
+      "timestamp": 1726158104,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "startTimeUtc": "2024-09-12T16:13:13Z",
+        "endTimeUtc": "2024-09-12T16:21:44Z",
+        "type": "Engaged",
+        "outcome": "Abandoned",
+        "turnCount": 9,
+        "impliedSuccess": false
+      }
+    }
+  ]
+}

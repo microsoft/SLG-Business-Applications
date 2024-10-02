@@ -1,0 +1,433 @@
+{
+  "activities": [
+    {
+      "valueType": "ConversationInfo",
+      "type": "trace",
+      "timestamp": 1726158113,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "isDesignMode": true,
+        "locale": "en-US"
+      }
+    },
+    {
+      "id": "47d1e797-6f74-4dbc-8f40-9719e66dc7c5",
+      "type": "event",
+      "timestamp": 1726158113,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 1
+      },
+      "name": "startConversation",
+      "channelId": "pva-studio",
+      "attachments": []
+    },
+    {
+      "id": "a4bfb189-b03c-441a-ab51-f9ead14de2a4",
+      "type": "message",
+      "timestamp": 1726158114,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Hello, I'm DOR Bot, a virtual assistant. Just so you are aware, I sometimes use AI to answer your questions. If you provided a website during creation, try asking me about it! Next try giving me some more knowledge by setting up generative AI.",
+      "attachments": [],
+      "replyToId": "47d1e797-6f74-4dbc-8f40-9719e66dc7c5",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Thanks for calling, how can I help?</prosody></voice></speak>"
+    },
+    {
+      "id": "793c07a7-14a3-44d3-81f3-ed8433c6fd3a",
+      "type": "event",
+      "timestamp": 1726158114,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "47d1e797-6f74-4dbc-8f40-9719e66dc7c5",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_M0LuhV",
+            "topicId": "cr3e5_dorBot.topic.ConversationStart",
+            "triggerId": "main",
+            "dialogComponentId": "d8cdd0cd-c7c2-4211-a4d4-b72d15475172",
+            "actionType": "SendActivity",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "ca647785-5143-4e4a-b689-141c09065c22",
+      "type": "message",
+      "timestamp": 1726158117,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 1
+      },
+      "channelId": "pva-studio",
+      "textFormat": "plain",
+      "text": "When did Michael Jordan retire?",
+      "attachments": [],
+      "channelData": {
+        "attachmentSizes": [],
+        "enableDiagnostics": true,
+        "testMode": "Text",
+        "clientActivityID": "e3hhmj9618"
+      }
+    },
+    {
+      "valueType": "UnknownIntent",
+      "id": "6bc7f7ed04b64069ab90e84f243cabfe",
+      "type": "trace",
+      "timestamp": 1726158117,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "value": {
+        "userQuery": "When did Michael Jordan retire?"
+      }
+    },
+    {
+      "id": "954e86a2-2821-4410-b4fe-8b6ed605a314",
+      "type": "event",
+      "timestamp": 1726158117,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "VariableAssignment",
+      "id": "284e018b8a3046929b30834830eb2eb3",
+      "type": "trace",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "value": {
+        "name": "Answer",
+        "id": "Topic.Answer",
+        "newValue": "",
+        "type": "local"
+      }
+    },
+    {
+      "valueType": "GPTAnswer",
+      "id": "a1cc7aa155d448f2bcd87195dfc37367",
+      "type": "trace",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "value": {
+        "gptAnswerState": "No Search Results"
+      }
+    },
+    {
+      "id": "b6eb6ea4-e9dc-4527-84e9-06160ac4462e",
+      "type": "event",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "GenerativeAnswersSupportData",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "value": {
+        "endpoints": [
+          "https://www.revenue.state.mn.us/"
+        ],
+        "queryRewrittingOpenAIResponse": null,
+        "summarizationOpenAIResponse": null,
+        "searchResults": [],
+        "verifiedSearchResults": [],
+        "searchErrors": [],
+        "message": "When did Michael Jordan retire?",
+        "screenedMessage": null,
+        "rewrittenMessage": null,
+        "rewrittenMessageKeywords": null,
+        "filteredOpenAISummary": null,
+        "screenedOpenAISummary": null,
+        "activityId": "ca647785-5143-4e4a-b689-141c09065c22",
+        "conversationId": "203c7a0c-8ae2-4e76-97ae-df19e9ef3d95",
+        "performedContentProvenanceCheck": true,
+        "performedContentModerationCheck": true,
+        "cdsBotId": "9479e387-2171-ef11-a670-001dd804edd8",
+        "tenantId": "426a6ef4-2476-4eab-ae1c-1c9dc2bfca80",
+        "environmentId": "09cc0cd1-512f-ed5a-b0fb-72ad2a697eb6",
+        "gptAnswerState": "No Search Results",
+        "triggeredGptFallback": false,
+        "completionState": "NoValidSearchResults"
+      }
+    },
+    {
+      "id": "864c6912-40a3-4ee3-922e-b0395a23fd3a",
+      "type": "event",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {
+                "Answer": ""
+              },
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "8baff7de-cb05-40a4-bef6-0380c9975642",
+      "type": "event",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer-conditions",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "8018177f-e096-4f7e-b82e-f0d906f6ab8d",
+      "type": "event",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer-conditionsElseActions",
+            "topicId": "cr3e5_dorBot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "2342fa2d-b9e5-488e-9781-e683599f5155",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [
+              "has-answer-conditionsElseActions"
+            ],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "c9280a67-14f5-457d-ac40-fc42d101220f",
+      "type": "event",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "value": {
+        "actions": [
+          {
+            "actionId": "conditionGroup_LktzXw",
+            "topicId": "cr3e5_dorBot.topic.Fallback",
+            "triggerId": "main",
+            "dialogComponentId": "db077dd7-5fd5-49ae-b98c-8d3d71f049ae",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "6ba8abb9-f5da-447c-ada5-10c4fc89021a",
+      "type": "event",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "value": {
+        "actions": [
+          {
+            "actionId": "conditionItem_tlGIVo",
+            "topicId": "cr3e5_dorBot.topic.Fallback",
+            "triggerId": "main",
+            "dialogComponentId": "db077dd7-5fd5-49ae-b98c-8d3d71f049ae",
+            "actionType": "ConditionItem",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "24e1f3b1-e734-4e52-a6a4-fce95a64b9c5",
+      "type": "message",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "I'm sorry, I'm not sure how to help with that. Can you try rephrasing?",
+      "attachments": [],
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">I'm sorry, I'm not sure how to help with that. Can you try rephrasing?</prosody></voice></speak>"
+    },
+    {
+      "id": "d9b237ed-a2ed-4dbd-8820-675a3ea48949",
+      "type": "event",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "d7686855-64ed-7306-3e84-76b1b3869627",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "ca647785-5143-4e4a-b689-141c09065c22",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_QZreqo",
+            "topicId": "cr3e5_dorBot.topic.Fallback",
+            "triggerId": "main",
+            "dialogComponentId": "db077dd7-5fd5-49ae-b98c-8d3d71f049ae",
+            "actionType": "SendActivity",
+            "conditionItemExit": [
+              "conditionItem_tlGIVo"
+            ],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "SessionInfo",
+      "id": "0",
+      "type": "trace",
+      "timestamp": 1726158119,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "startTimeUtc": "2024-09-12T16:21:53Z",
+        "endTimeUtc": "2024-09-12T16:21:59Z",
+        "type": "Engaged",
+        "outcome": "Abandoned",
+        "turnCount": 3,
+        "impliedSuccess": false
+      }
+    }
+  ]
+}
