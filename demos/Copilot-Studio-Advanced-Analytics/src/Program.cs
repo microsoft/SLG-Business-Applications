@@ -24,6 +24,7 @@ namespace CopilotStudioAnalytics
             {
                 throw new Exception("Unable to parse DataverseAuthenticator credentials from file '" + dataverse_authenticator_json_path + "'");
             }
+            auth.ClientId = Guid.Parse("51f81489-12ee-4a9e-aaae-a2591f45987d"); //fill in default (standard) clientid
             Console.WriteLine("Dataverse credentials received!");
             Console.Write("Authenticating as '" + auth.Username + "' to environment '" + auth.Resource + "'... ");
             
