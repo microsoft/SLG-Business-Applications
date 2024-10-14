@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Runtime.InteropServices;
 using Spectre.Console;
+using System.Collections.Specialized;
 
 namespace CopilotStudioAnalytics
 {
@@ -47,6 +48,9 @@ namespace CopilotStudioAnalytics
             JArray bots = await ds.ReadAsync("bots");
             AnsiConsole.MarkupLine("[italic][green]" + bots.Count.ToString("#,##0") + " bots found![/][/]");
 
+            //Parse them!
+            CopilotStudioBot[] csbots = CopilotStudioBot.Parse(bots, transcripts);
+
             //Retrieve users
             AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving System Users... ");
             TimHanewich.Dataverse.AdvancedRead.DataverseReadOperation dro = new TimHanewich.Dataverse.AdvancedRead.DataverseReadOperation();
@@ -58,9 +62,150 @@ namespace CopilotStudioAnalytics
             SystemUser[] users = SystemUser.Parse(systemusers);
             AnsiConsole.MarkupLine("[italic][green]" + users.Length.ToString("#,##0") + " users found![/][/]");
             
-            //Parse them!
-            CopilotStudioBot[] csbots = CopilotStudioBot.Parse(bots, transcripts);
+            
 
+            //First, we'll do high-level statistics
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+            # region "Environment level statistics"
+
+            AnsiConsole.MarkupLine("[bold][underline][navy]Environment-Level Analytics[/][/][/]");
+
+            Table t = new Table();
+
+            //Add Statistic column
+            TableColumn tc_statistic = new TableColumn("Statistic");
+            tc_statistic.Alignment = Justify.Left;
+            t.AddColumn(tc_statistic);
+
+            //Add Value column
+            TableColumn tc_value = new TableColumn("Value");
+            tc_value.Alignment = Justify.Right;
+            t.AddColumn(tc_value);
+
+            //Add bots
+            t.AddRow("# of Bots", csbots.Length.ToString());
+
+
+            //Add sessions
+            int sessionsc = 0;
+            foreach (CopilotStudioBot bot in csbots)
+            {
+                sessionsc = sessionsc + bot.Sessions.Length;
+            }
+            t.AddRow("# of Sessions", sessionsc.ToString("#,##0"));
+
+            //Add message
+            int messagesc = 0;
+            foreach (CopilotStudioBot bot in csbots)
+            {
+                foreach (CopilotStudioSession ses in bot.Sessions)
+                {
+                    messagesc = messagesc + ses.Messages.Length;
+                }
+            }
+            t.AddRow("# of Messages, total", messagesc.ToString("#,##0"));
+
+            //Earliest Session
+            DateTime EarliestStart = DateTime.UtcNow;
+            foreach (CopilotStudioBot bot in csbots)
+            {
+                foreach (CopilotStudioSession session in bot.Sessions)
+                {
+                    if (session.ConversationStart < EarliestStart)
+                    {
+                        EarliestStart = session.ConversationStart;
+                    }
+                }
+            }
+            TimeSpan ts = DateTime.UtcNow - EarliestStart;
+            t.AddRow("Oldest session", EarliestStart.ToShortDateString() + " (" + ts.TotalDays.ToString("#,##0") + " days ago)");            
+
+            //Most recent session
+            DateTime MostRecentSession = EarliestStart.AddYears(-1);
+            foreach (CopilotStudioBot bot in csbots)
+            {
+                foreach (CopilotStudioSession session in bot.Sessions)
+                {
+                    if (session.ConversationStart > MostRecentSession)
+                    {
+                        MostRecentSession = session.ConversationStart;
+                    }
+                }
+            }
+            ts = DateTime.UtcNow - MostRecentSession;
+            t.AddRow("Most recent session", MostRecentSession.ToShortDateString() + " (" + ts.TotalDays.ToString("#,##0") + " days ago)");
+
+            //Messages per day avg
+            TimeSpan ElapsedTimeSinceFirstSession = DateTime.UtcNow - EarliestStart;
+            float msg_per_day = Convert.ToSingle(messagesc) / Convert.ToSingle(ElapsedTimeSinceFirstSession.TotalDays);
+            t.AddRow("Avg. Messages/Day", msg_per_day.ToString("#,##0.0"));
+
+            AnsiConsole.Write(t);
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            # endregion
+
+            # region "Bot Ownership"
+
+            AnsiConsole.MarkupLine("[bold][underline][navy]Bot Ownership Breakdown, by User[/][/][/]");
+
+            //Get bot ownership, by owner
+            Dictionary<SystemUser, int> BotOwnership = new Dictionary<SystemUser, int>();
+            foreach (SystemUser user in users)
+            {
+                //Count the # of bots they own
+                int bots_owned = 0;
+                foreach (CopilotStudioBot bot in csbots)
+                {
+                    if (bot.Owner == user.SystemUserId)
+                    {
+                        bots_owned = bots_owned + 1;
+                    }
+                }
+
+                //Log the # that they own if they have at least one
+                if (bots_owned > 0)
+                {
+                    BotOwnership.Add(user, bots_owned);
+                }
+            }
+
+            //Sort those
+            Dictionary<SystemUser, int> BotOwnershipSorted = new Dictionary<SystemUser, int>();
+            while (BotOwnership.Count > 0)
+            {
+                KeyValuePair<SystemUser, int> Winner = BotOwnership.First();
+                foreach (KeyValuePair<SystemUser, int> item in BotOwnership)
+                {
+                    if (item.Value > Winner.Value)
+                    {
+                        Winner = item;
+                    }
+                }
+                BotOwnershipSorted.Add(Winner.Key, Winner.Value);
+                BotOwnership.Remove(Winner.Key);
+            }
+
+            //Write a Spectre.Console breakdown chart
+            BreakdownChart bc = new BreakdownChart();
+            bc.FullSize();
+            foreach (KeyValuePair<SystemUser, int> kvp in BotOwnershipSorted)
+            {
+                bc.AddItem(kvp.Key.FullName, kvp.Value, Color.Blue);
+            }
+            AnsiConsole.Write(bc);
+            
+            Console.WriteLine();
+            Console.WriteLine();
+
+            #endregion
+
+            # region "Bot info node"
 
             Tree root = new Tree("Bots in environment '" + auth.Resource + "'");
             
@@ -89,30 +234,54 @@ namespace CopilotStudioAnalytics
                 TreeNode ncitations = botnode.AddNode(citations.ToString("#,##0") + " citations");
             }
 
-
             AnsiConsole.Write(root);
 
-            Console.ReadLine();
+            #endregion
 
 
+            
+            # region "What to do next?"
 
+            Console.WriteLine();
+            Console.WriteLine();
 
-
-
-
-            //Present a list of options
-            SelectionPrompt<string> BotSelection = new SelectionPrompt<string>();
-            BotSelection.Title("Which bot would you like to learn more about?");
-            foreach (CopilotStudioBot csbot in csbots)
+            while (true)
             {
-                BotSelection.AddChoice(csbot.PreviewText());
+                SelectionPrompt<string> DoNext = new SelectionPrompt<string>();
+                DoNext.Title("What do you want to do next?");
+                DoNext.AddChoice("Examine an individual bot's usage");
+                DoNext.AddChoice("Exit");
+                string DoNextSelection = AnsiConsole.Prompt(DoNext);
+
+                if (DoNextSelection == "Examine an individual bot's usage")
+                {
+                    Console.WriteLine("Sure, we can examine a bot!");
+                }
+                else
+                {
+                    AnsiConsole.MarkupLine("[red]I'm not sure I understand that! Sorry![/]");
+                }
+
+                //Wait for them to press enter before clearing
+                Console.WriteLine();
+                AnsiConsole.Markup("[gray][italic]Enter to continue...[/][/]");
+                Console.ReadLine();
+                Console.Clear();
             }
 
-            string SelectedBot = AnsiConsole.Prompt(BotSelection);
-            Console.WriteLine("You selected '" + SelectedBot + "'");
+            
+            
 
-            //Print
-            //Console.WriteLine(JsonConvert.SerializeObject(csbots, Formatting.Indented));
+
+            # endregion
+
+
+
+
+
+
+
+            
         }
     }
 }

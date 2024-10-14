@@ -17,7 +17,7 @@ This `content` property is what contains most of the valuable telemetry we can l
 
 ## Statistics to show
 - Breakdown of how many bots are owned by users
-- In a session
+- In a bot
     - Earliest Session (days ago)
     - Latest session  (days ago)
     - WHen it was made

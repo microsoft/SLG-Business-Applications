@@ -6,13 +6,12 @@ namespace CopilotStudioAnalytics
     public class SystemUser
     {
         public string FullName {get; set;}
-        public string SystemUserId {get; set;}
+        public Guid SystemUserId {get; set;}
         public string Email {get; set;}
 
         public SystemUser()
         {
             FullName = "";
-            SystemUserId = "";
             Email = "";
         }
 
@@ -34,7 +33,7 @@ namespace CopilotStudioAnalytics
                 JProperty? prop_systemuserid = systemuser.Property("systemuserid");
                 if (prop_systemuserid != null)
                 {
-                    su.SystemUserId = prop_systemuserid.Value.ToString();
+                    su.SystemUserId = Guid.Parse(prop_systemuserid.Value.ToString());
                 }
 
                 //Get Email
