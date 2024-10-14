@@ -21,5 +21,14 @@ namespace CopilotStudioAnalytics
             Messages = new CopilotStudioMessage[]{}; //blank array
             Citations = new CopilotTextCitation[]{}; //blank array
         }
+
+        public int MessageCount
+        {
+            get
+            {
+                return Messages.Length;
+            }
+        }
+
     }
 }

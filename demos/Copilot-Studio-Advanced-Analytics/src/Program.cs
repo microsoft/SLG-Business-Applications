@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 using Spectre.Console;
 using System.Collections.Specialized;
 using System.Security.Cryptography.X509Certificates;
+using System.Runtime.CompilerServices;
 
 namespace CopilotStudioAnalytics
 {
@@ -18,8 +19,10 @@ namespace CopilotStudioAnalytics
 
         public static async Task DoThis()
         {
+
+            Console.WriteLine();
             AnsiConsole.MarkupLine("Welcome to :robot: [bold][blue]Copilot Studio Advanced Analytics[/][/] :robot:, a demonstration application by the [underline]Microsoft State & Local Government Business Applications team[/]!");
-            
+            Console.WriteLine();
 
             //Parse Dataverse Credentials from JSON in file.
             string dataverse_authenticator_json_path = @".\DataverseAuthenticator.json";
@@ -40,8 +43,8 @@ namespace CopilotStudioAnalytics
             //Retrieve transcripts
             DataverseService ds = new DataverseService(auth.Resource, auth.AccessToken);
             AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving Copilot Studio transcripts... ");
-            //JArray transcripts = await ds.ReadAsync("conversationtranscripts");
-            JArray transcripts = JArray.Parse(System.IO.File.ReadAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Copilot-Studio-Advanced-Analytics\examples\conversationtranscripts.json")); //Collect from local, optionally
+            JArray transcripts = await ds.ReadAsync("conversationtranscripts");
+            //JArray transcripts = JArray.Parse(System.IO.File.ReadAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Copilot-Studio-Advanced-Analytics\examples\conversationtranscripts.json")); //Collect from local, optionally
             AnsiConsole.MarkupLine("[italic][green]" + transcripts.Count.ToString("#,##0") + " transcripts retrieved![/][/]");
 
             //Retrieve bots
@@ -62,6 +65,8 @@ namespace CopilotStudioAnalytics
             JArray systemusers = await ds.ReadAsync(dro);
             SystemUser[] users = SystemUser.Parse(systemusers);
             AnsiConsole.MarkupLine("[italic][green]" + users.Length.ToString("#,##0") + " users found![/][/]");
+
+            Console.WriteLine();
             
             # region "What to do next?"
 
@@ -86,6 +91,7 @@ namespace CopilotStudioAnalytics
                 if (DoNextSelection == "Review environment-level statistics")
                 {
                     AnsiConsole.MarkupLine("[bold][underline][navy]Environment-Level Analytics[/][/][/]");
+                    AnsiConsole.MarkupLine("[gray]Copilot Studio Statistics for enviornment '" + auth.Resource + "':[/]");
 
                     Table t = new Table();
 
@@ -162,6 +168,7 @@ namespace CopilotStudioAnalytics
                 else if (DoNextSelection == "See bot ownership breakdown")
                 {
                     AnsiConsole.MarkupLine("[bold][underline][navy]Bot Ownership Breakdown, by User[/][/][/]");
+                    Console.WriteLine();
 
                     //Get bot ownership, by owner
                     Dictionary<SystemUser, int> BotOwnership = new Dictionary<SystemUser, int>();
@@ -213,21 +220,16 @@ namespace CopilotStudioAnalytics
                 {
                     Tree root = new Tree("Bots in environment '" + auth.Resource + "'");
             
-                    //Add each bot
+                    //Write a bit of info about each bot in a tree
                     foreach (CopilotStudioBot csbot in csbots)
                     {
-                        TreeNode botnode = root.AddNode(csbot.Name + " (" + csbot.SchemaName + ")");
+                        TreeNode botnode = root.AddNode("[bold][blue]" + csbot.Name + "[/][/] [grey46][italic](" + csbot.SchemaName + ")[/][/]");
 
                         //Add # of sessions
-                        TreeNode sessions = botnode.AddNode(csbot.Sessions.Length.ToString() + " sessions");
+                        TreeNode sessions = botnode.AddNode("[bold]" + csbot.Sessions.Length.ToString() + "[/] sessions");
 
                         //Add # of messages
-                        int msgs = 0;
-                        foreach (CopilotStudioSession ses in csbot.Sessions)
-                        {
-                            msgs = msgs + ses.TurnCount;
-                        }
-                        TreeNode messages = botnode.AddNode(msgs.ToString("#,##0") + " exchanged messages");
+                        TreeNode messages = botnode.AddNode("[bold]" + csbot.MessageCount.ToString("#,##0") + "[/] exchanged messages");
 
                         //Add # of citations
                         int citations = 0;
@@ -235,10 +237,139 @@ namespace CopilotStudioAnalytics
                         {
                             citations = citations + ses.Citations.Length;
                         }
-                        TreeNode ncitations = botnode.AddNode(citations.ToString("#,##0") + " citations");
+                        TreeNode ncitations = botnode.AddNode("[bold]" + citations.ToString("#,##0") + "[/] citations");
+                    }
+                    AnsiConsole.Write(root);
+
+                    //Offer a list of bots to pick from
+                    SelectionPrompt<string> BotPick = new SelectionPrompt<string>();
+                    Console.WriteLine();
+                    BotPick.Title("Which bot would you like to learn more about?");
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        BotPick.AddChoice("[bold][blue]" + csbot.Name + "[/][/] [grey46][italic](" + csbot.SchemaName + ")[/][/]");
+                    }
+                    BotPick.AddChoice("Go back to main menu");
+                    string PickedBot = AnsiConsole.Prompt(BotPick);
+
+                    //If they selected to go back to main menu, go back
+                    if (PickedBot == "Go back to main menu")
+                    {
+                        break; //Will this work?
                     }
 
-                    AnsiConsole.Write(root);
+                    //Handle bot pick
+                    //Find the bot they selected
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        if (PickedBot.Contains(csbot.SchemaName)) //If it is a match (using SchemaName to check)
+                        {
+                            //Clear
+                            Console.Clear();
+
+                            Tree broot = new Tree("Bot [bold][blue]" + csbot.Name + "[/][/] [grey46][italic](" + csbot.SchemaName + ")[/][/]");
+
+                            //Add # of sessions
+                            TreeNode sessions = broot.AddNode("[bold]" + csbot.Sessions.Length.ToString() + "[/] sessions");
+
+                            //Add # of messages
+                            TreeNode msgs = broot.AddNode("[bold]" + csbot.MessageCount.ToString("#,##0") + "[/] messages");
+
+                            //Owner
+                            foreach (SystemUser user in users)
+                            {
+                                if (user.SystemUserId == csbot.Owner)
+                                {
+                                    TreeNode ownernode = broot.AddNode("Owned by [bold]" + user.FullName + "[/] (" + user.Email + ")");
+                                }
+                            }
+
+                            //Oldest session
+                            CopilotStudioSession? OldestSession = csbot.OldestSession;
+                            if (OldestSession != null)
+                            {
+                                broot.AddNode("Oldest Session: " + OldestSession.ConversationStart.ToShortDateString());
+                            }
+
+                            //Newest (most recent session)
+                            CopilotStudioSession? MostRecentSession = csbot.NewestSession;
+                            if (MostRecentSession != null)
+                            {
+                                broot.AddNode("Newest (most recent) session: " + MostRecentSession.ConversationStart.ToShortDateString());
+                            }
+
+                            // Print the tree
+                            AnsiConsole.Write(broot);
+
+                            //Ask which transcript they want to analyze
+                            SelectionPrompt<string> SessionSelection = new SelectionPrompt<string>();
+                            SessionSelection.Title("What session would you like to further analyze?");
+                            foreach (CopilotStudioSession ses in csbot.Sessions)
+                            {
+                                SessionSelection.AddChoice("Session '" + ses.SessionId.ToString() + "' from [bold]" + ses.ConversationStart.ToShortDateString() + "[/] - [bold]" + ses.MessageCount.ToString("#,##0") + "[/] exchanged messages");
+                            }
+                            Console.WriteLine(); //Buffer room
+                            string SessionSelectionChoice = AnsiConsole.Prompt(SessionSelection);
+
+                            //Handle what transcript they selected
+                            foreach (CopilotStudioSession ses in csbot.Sessions)
+                            {
+                                if (SessionSelectionChoice.Contains(ses.SessionId.ToString())) //If there is a match, using the ID showing up in the selection option
+                                {
+                                    Console.Clear(); //Clear
+
+                                    AnsiConsole.MarkupLine("[bold][underline][blue]Transcript of session '" + ses.SessionId.ToString() + "' with bot '" + csbot.Name + "'[/][/][/]");
+
+                                    //Create a table
+                                    Table ChatTable = new Table();
+                                    ChatTable.Width(Convert.ToInt32(Convert.ToSingle(Console.WindowWidth) / 1.5f));
+                                    ChatTable.Border = TableBorder.Horizontal;
+
+                                    //Add agent
+                                    TableColumn tc_agent = new TableColumn("Agent");
+                                    tc_agent.Alignment = Justify.Left;
+                                    ChatTable.AddColumn(tc_agent);
+
+                                    //Add human
+                                    TableColumn tc_human = new TableColumn("Human");
+                                    tc_human.Alignment = Justify.Right;
+                                    ChatTable.AddColumn(tc_human);
+                                    
+
+                                    //Print every message
+                                    foreach (CopilotStudioMessage msg in ses.Messages)
+                                    {
+                                        string txt_to_show = msg.Text.Replace("[", "[[").Replace("]", "]]");
+                                        if (msg.Role == "human")
+                                        {
+                                            ChatTable.AddRow("", txt_to_show);
+                                        }
+                                        else if (msg.Role == "bot")
+                                        {
+                                            ChatTable.AddRow(txt_to_show, "");
+                                        }
+
+                                        //Add a buffer space
+                                        ChatTable.AddRow("", "");
+                                    }
+
+                                    //Show the table!
+                                    AnsiConsole.Write(ChatTable);
+                                }
+                            }
+
+
+
+                        }
+                    }
+
+
+
+
+                }
+                else if (DoNextSelection == "Exit")
+                {
+                    Environment.Exit(0);
                 }
                 else
                 {

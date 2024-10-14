@@ -252,5 +252,60 @@ namespace CopilotStudioAnalytics
 
             return Name + " (" + SchemaName + ") - " + Sessions.Length.ToString("#,##0") + " sessions, " + msgs.ToString("#,##0") + " messages";
         }
+    
+        public int MessageCount
+        {
+            get
+            {
+                int c = 0;
+                foreach (CopilotStudioSession session in Sessions)
+                {
+                    c = c + session.MessageCount;
+                }
+                return c;
+            }
+        }
+
+        //Returns the oldest session
+        public CopilotStudioSession? OldestSession
+        {
+            get
+            {
+                if (Sessions.Length == 0)
+                {
+                    return null;
+                }
+                CopilotStudioSession Winner = Sessions[0];
+                foreach (CopilotStudioSession ses in Sessions)
+                {
+                    if (ses.ConversationStart < Winner.ConversationStart)
+                    {
+                        Winner = ses; 
+                    }
+                }
+                return Winner;
+            }
+        }
+
+        //Returns the most recent session
+        public CopilotStudioSession? NewestSession 
+        {
+            get
+            {
+                if (Sessions.Length == 0)
+                {
+                    return null;
+                }
+                CopilotStudioSession Winner = Sessions[0];
+                foreach (CopilotStudioSession ses in Sessions)
+                {
+                    if (ses.ConversationStart > Winner.ConversationStart)
+                    {
+                        Winner = ses; 
+                    }
+                }
+                return Winner;
+            }
+        }
     }
 }
