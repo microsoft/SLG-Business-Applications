@@ -45,9 +45,10 @@ namespace CopilotStudioAnalytics
             Console.WriteLine(bots.Count.ToString("#,##0") + " bots found!");
             
             //Parse them!
-            CopilotStudioSession[] sessions = CopilotStudioSession.Parse(transcripts, bots);
+            //CopilotStudioSession[] sessions = CopilotStudioSession.Parse(transcripts, bots);
+            CopilotStudioBot[] csbots = CopilotStudioBot.Parse(bots, transcripts);
 
-            Console.WriteLine(JsonConvert.SerializeObject(sessions, Formatting.Indented));
+            Console.WriteLine(JsonConvert.SerializeObject(csbots, Formatting.Indented));
 
 
         }
