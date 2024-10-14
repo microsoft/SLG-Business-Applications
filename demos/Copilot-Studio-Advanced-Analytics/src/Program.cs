@@ -62,19 +62,29 @@ namespace CopilotStudioAnalytics
             SystemUser[] users = SystemUser.Parse(systemusers);
             AnsiConsole.MarkupLine("[italic][green]" + users.Length.ToString("#,##0") + " users found![/][/]");
 
-            Console.WriteLine();
+            Console.Clear(); //Clear the loading information stuff.
             
-            # region "What to do next?"
-
-
+            //Infinite "what to do next?" loop
             while (true)
             {
+                Markup title1 = new Markup(":robot: [bold][blue]Copilot Studio Advanced Analytics[/][/] :robot:");
+                title1.Centered();
+                AnsiConsole.Write(title1);
+
+                Markup title2 = new Markup("[grey84]aka.ms/CSAA[/]");
+                title2.Centered();
+                AnsiConsole.Write(title2);
 
                 Console.WriteLine();
-                AnsiConsole.MarkupLine("Welcome to :robot: [bold][blue]Copilot Studio Advanced Analytics[/][/] :robot:, a demonstration application by the [underline]Microsoft State & Local Government Business Applications team[/]!");
+                AnsiConsole.MarkupLine("[gray]Thank you for using [b]Copilot Studio Advanced Analytics (CSAA)[/]! CSAA is intended to showcase how professional developers can harness the power of the Dataverse API to extract session telemetry from Copilot Studio and transform this raw data into actionable insights. This application was developed by Tim Hanewich (aka.ms/timh) and the Microsoft U.S. State & Local Government Team.[/]");
                 Console.WriteLine();
+
+                //Data connections
+                AnsiConsole.MarkupLine(":link: [green]Connected to Dataverse Environment [underline]'" + auth.Resource + "'[/] :link:[/]");
+
                 
                 //Prompt with options
+                Console.WriteLine();
                 SelectionPrompt<string> DoNext = new SelectionPrompt<string>();
                 DoNext.Title("What do you want to do next?");
                 DoNext.AddChoices("Review environment-level statistics");
@@ -210,11 +220,17 @@ namespace CopilotStudioAnalytics
                     //Write a Spectre.Console breakdown chart
                     BreakdownChart bc = new BreakdownChart();
                     bc.FullSize();
+
+
+                    //Write the values
                     foreach (KeyValuePair<SystemUser, int> kvp in BotOwnershipSorted)
                     {
-                        bc.AddItem(kvp.Key.FullName, kvp.Value, Color.Blue);
+                        bc.AddItem(kvp.Key.FullName, kvp.Value, RandomColor());
                     }
                     AnsiConsole.Write(bc);
+
+
+
                 }
                 else if (DoNextSelection == "Examine an individual bot's usage")
                 {
@@ -391,7 +407,6 @@ namespace CopilotStudioAnalytics
             
 
 
-            # endregion
 
 
 
@@ -400,6 +415,15 @@ namespace CopilotStudioAnalytics
 
 
             
+        }
+    
+        public static Color RandomColor()
+        {
+            Random rand = new Random();
+            int r = rand.Next(0, 256);
+            int g = rand.Next(0, 256);
+            int b = rand.Next(0, 256);
+            return new Color((byte)r, (byte)g, (byte)b);
         }
     }
 }
