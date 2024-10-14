@@ -242,126 +242,130 @@ namespace CopilotStudioAnalytics
                     AnsiConsole.Write(root);
 
                     //Offer a list of bots to pick from
-                    SelectionPrompt<string> BotPick = new SelectionPrompt<string>();
-                    Console.WriteLine();
-                    BotPick.Title("Which bot would you like to learn more about?");
-                    foreach (CopilotStudioBot csbot in csbots)
+                    if (csbots.Length > 0) //Only if there are bots
                     {
-                        BotPick.AddChoice("[bold][blue]" + csbot.Name + "[/][/] [grey46][italic](" + csbot.SchemaName + ")[/][/]");
-                    }
-                    BotPick.AddChoice("Go back to main menu");
-                    string PickedBot = AnsiConsole.Prompt(BotPick);
-
-                    //If they selected to go back to main menu, go back
-                    if (PickedBot == "Go back to main menu")
-                    {
-                        break; //Will this work?
-                    }
-
-                    //Handle bot pick
-                    //Find the bot they selected
-                    foreach (CopilotStudioBot csbot in csbots)
-                    {
-                        if (PickedBot.Contains(csbot.SchemaName)) //If it is a match (using SchemaName to check)
+                        SelectionPrompt<string> BotPick = new SelectionPrompt<string>();
+                        Console.WriteLine();
+                        BotPick.Title("Which bot would you like to learn more about?");
+                        foreach (CopilotStudioBot csbot in csbots)
                         {
-                            //Clear
-                            Console.Clear();
+                            BotPick.AddChoice("[bold][blue]" + csbot.Name + "[/][/] [grey46][italic](" + csbot.SchemaName + ")[/][/]");
+                        }
+                        BotPick.AddChoice("Go back to main menu");
+                        string PickedBot = AnsiConsole.Prompt(BotPick);
 
-                            Tree broot = new Tree("Bot [bold][blue]" + csbot.Name + "[/][/] [grey46][italic](" + csbot.SchemaName + ")[/][/]");
+                        //If they selected to go back to main menu, go back
+                        if (PickedBot == "Go back to main menu")
+                        {
+                            break; //Will this work?
+                        }
 
-                            //Add # of sessions
-                            TreeNode sessions = broot.AddNode("[bold]" + csbot.Sessions.Length.ToString() + "[/] sessions");
-
-                            //Add # of messages
-                            TreeNode msgs = broot.AddNode("[bold]" + csbot.MessageCount.ToString("#,##0") + "[/] messages");
-
-                            //Owner
-                            foreach (SystemUser user in users)
+                        //Handle bot pick
+                        //Find the bot they selected
+                        foreach (CopilotStudioBot csbot in csbots)
+                        {
+                            if (PickedBot.Contains(csbot.SchemaName)) //If it is a match (using SchemaName to check)
                             {
-                                if (user.SystemUserId == csbot.Owner)
+                                //Clear
+                                Console.Clear();
+
+                                Tree broot = new Tree("Bot [bold][blue]" + csbot.Name + "[/][/] [grey46][italic](" + csbot.SchemaName + ")[/][/]");
+
+                                //Add # of sessions
+                                TreeNode sessions = broot.AddNode("[bold]" + csbot.Sessions.Length.ToString() + "[/] sessions");
+
+                                //Add # of messages
+                                TreeNode msgs = broot.AddNode("[bold]" + csbot.MessageCount.ToString("#,##0") + "[/] messages");
+
+                                //Owner
+                                foreach (SystemUser user in users)
                                 {
-                                    TreeNode ownernode = broot.AddNode("Owned by [bold]" + user.FullName + "[/] (" + user.Email + ")");
-                                }
-                            }
-
-                            //Oldest session
-                            CopilotStudioSession? OldestSession = csbot.OldestSession;
-                            if (OldestSession != null)
-                            {
-                                broot.AddNode("Oldest Session: " + OldestSession.ConversationStart.ToShortDateString());
-                            }
-
-                            //Newest (most recent session)
-                            CopilotStudioSession? MostRecentSession = csbot.NewestSession;
-                            if (MostRecentSession != null)
-                            {
-                                broot.AddNode("Newest (most recent) session: " + MostRecentSession.ConversationStart.ToShortDateString());
-                            }
-
-                            // Print the tree
-                            AnsiConsole.Write(broot);
-
-                            //Ask which transcript they want to analyze
-                            SelectionPrompt<string> SessionSelection = new SelectionPrompt<string>();
-                            SessionSelection.Title("What session would you like to further analyze?");
-                            foreach (CopilotStudioSession ses in csbot.Sessions)
-                            {
-                                SessionSelection.AddChoice("Session '" + ses.SessionId.ToString() + "' from [bold]" + ses.ConversationStart.ToShortDateString() + "[/] - [bold]" + ses.MessageCount.ToString("#,##0") + "[/] exchanged messages");
-                            }
-                            Console.WriteLine(); //Buffer room
-                            string SessionSelectionChoice = AnsiConsole.Prompt(SessionSelection);
-
-                            //Handle what transcript they selected
-                            foreach (CopilotStudioSession ses in csbot.Sessions)
-                            {
-                                if (SessionSelectionChoice.Contains(ses.SessionId.ToString())) //If there is a match, using the ID showing up in the selection option
-                                {
-                                    Console.Clear(); //Clear
-
-                                    AnsiConsole.MarkupLine("[bold][underline][blue]Transcript of session '" + ses.SessionId.ToString() + "' with bot '" + csbot.Name + "'[/][/][/]");
-
-                                    //Create a table
-                                    Table ChatTable = new Table();
-                                    ChatTable.Width(Convert.ToInt32(Convert.ToSingle(Console.WindowWidth) / 1.5f));
-                                    ChatTable.Border = TableBorder.Horizontal;
-
-                                    //Add agent
-                                    TableColumn tc_agent = new TableColumn("Agent");
-                                    tc_agent.Alignment = Justify.Left;
-                                    ChatTable.AddColumn(tc_agent);
-
-                                    //Add human
-                                    TableColumn tc_human = new TableColumn("Human");
-                                    tc_human.Alignment = Justify.Right;
-                                    ChatTable.AddColumn(tc_human);
-                                    
-
-                                    //Print every message
-                                    foreach (CopilotStudioMessage msg in ses.Messages)
+                                    if (user.SystemUserId == csbot.Owner)
                                     {
-                                        string txt_to_show = msg.Text.Replace("[", "[[").Replace("]", "]]");
-                                        if (msg.Role == "human")
-                                        {
-                                            ChatTable.AddRow("", txt_to_show);
-                                        }
-                                        else if (msg.Role == "bot")
-                                        {
-                                            ChatTable.AddRow(txt_to_show, "");
-                                        }
-
-                                        //Add a buffer space
-                                        ChatTable.AddRow("", "");
+                                        TreeNode ownernode = broot.AddNode("Owned by [bold]" + user.FullName + "[/] (" + user.Email + ")");
                                     }
+                                }
 
-                                    //Show the table!
-                                    AnsiConsole.Write(ChatTable);
+                                //Oldest session
+                                CopilotStudioSession? OldestSession = csbot.OldestSession;
+                                if (OldestSession != null)
+                                {
+                                    broot.AddNode("Oldest Session: " + OldestSession.ConversationStart.ToShortDateString());
+                                }
+
+                                //Newest (most recent session)
+                                CopilotStudioSession? MostRecentSession = csbot.NewestSession;
+                                if (MostRecentSession != null)
+                                {
+                                    broot.AddNode("Newest (most recent) session: " + MostRecentSession.ConversationStart.ToShortDateString());
+                                }
+
+                                // Print the tree
+                                AnsiConsole.Write(broot);
+
+                                //Ask which transcript they want to analyze
+                                if (csbot.Sessions.Length > 0) //If there are sessions
+                                {
+                                    SelectionPrompt<string> SessionSelection = new SelectionPrompt<string>();
+                                    SessionSelection.Title("What session would you like to further analyze?");
+                                    foreach (CopilotStudioSession ses in csbot.Sessions)
+                                    {
+                                        SessionSelection.AddChoice("Session '" + ses.SessionId.ToString() + "' from [bold]" + ses.ConversationStart.ToShortDateString() + "[/] - [bold]" + ses.MessageCount.ToString("#,##0") + "[/] exchanged messages");
+                                    }
+                                    Console.WriteLine(); //Buffer room
+                                    string SessionSelectionChoice = AnsiConsole.Prompt(SessionSelection);
+
+                                    //Handle what transcript they selected
+                                    foreach (CopilotStudioSession ses in csbot.Sessions)
+                                    {
+                                        if (SessionSelectionChoice.Contains(ses.SessionId.ToString())) //If there is a match, using the ID showing up in the selection option
+                                        {
+                                            Console.Clear(); //Clear
+
+                                            AnsiConsole.MarkupLine("[bold][underline][blue]Transcript of session '" + ses.SessionId.ToString() + "' with bot '" + csbot.Name + "'[/][/][/]");
+
+                                            //Create a table
+                                            Table ChatTable = new Table();
+                                            ChatTable.Width(Convert.ToInt32(Convert.ToSingle(Console.WindowWidth) / 1.5f));
+                                            ChatTable.Border = TableBorder.Horizontal;
+
+                                            //Add agent
+                                            TableColumn tc_agent = new TableColumn("Agent");
+                                            tc_agent.Alignment = Justify.Left;
+                                            ChatTable.AddColumn(tc_agent);
+
+                                            //Add human
+                                            TableColumn tc_human = new TableColumn("Human");
+                                            tc_human.Alignment = Justify.Right;
+                                            ChatTable.AddColumn(tc_human);
+                                            
+
+                                            //Print every message
+                                            foreach (CopilotStudioMessage msg in ses.Messages)
+                                            {
+                                                string txt_to_show = msg.Text.Replace("[", "[[").Replace("]", "]]");
+                                                if (msg.Role == "human")
+                                                {
+                                                    ChatTable.AddRow("", txt_to_show);
+                                                }
+                                                else if (msg.Role == "bot")
+                                                {
+                                                    ChatTable.AddRow(txt_to_show, "");
+                                                }
+
+                                                //Add a buffer space
+                                                ChatTable.AddRow("", "");
+                                            }
+
+                                            //Show the table!
+                                            AnsiConsole.Write(ChatTable);
+                                        }
+                                    }
                                 }
                             }
-
-
-
                         }
                     }
+                    
 
 
 
