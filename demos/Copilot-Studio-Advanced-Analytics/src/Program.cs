@@ -35,7 +35,8 @@ namespace CopilotStudioAnalytics
             //Retrieve transcripts
             DataverseService ds = new DataverseService(auth.Resource, auth.AccessToken);
             Console.Write("Retrieving Copilot Studio transcripts... ");
-            JArray transcripts = await ds.ReadAsync("conversationtranscripts");
+            //JArray transcripts = await ds.ReadAsync("conversationtranscripts");
+            JArray transcripts = JArray.Parse(System.IO.File.ReadAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Copilot-Studio-Advanced-Analytics\examples\conversationtranscripts.json")); //Collect from local, optionally
             Console.WriteLine(transcripts.Count.ToString("#,##0") + " transcripts retrieved!");
 
             //Retrieve bots
