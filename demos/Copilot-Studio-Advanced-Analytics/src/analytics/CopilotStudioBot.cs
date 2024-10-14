@@ -231,5 +231,18 @@ namespace CopilotStudioAnalytics
             //Return the bots
             return ToReturn.ToArray();
         }
+    
+        public string PreviewText()
+        {
+
+            //Count # of messages across sessions
+            int msgs = 0;
+            foreach (CopilotStudioSession ses in Sessions)
+            {
+                msgs = msgs + ses.TurnCount;
+            }
+
+            return Name + " (" + SchemaName + ") - " + Sessions.Length.ToString("#,##0") + " sessions, " + msgs.ToString("#,##0") + " messages";
+        }
     }
 }

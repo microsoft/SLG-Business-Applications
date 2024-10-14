@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Spectre.Console" Version="0.49.1" />
     <PackageReference Include="TimHanewich.Dataverse" Version="3.0.0" />
   </ItemGroup>
 
