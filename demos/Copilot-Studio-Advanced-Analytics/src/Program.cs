@@ -20,10 +20,6 @@ namespace CopilotStudioAnalytics
         public static async Task DoThis()
         {
 
-            Console.WriteLine();
-            AnsiConsole.MarkupLine("Welcome to :robot: [bold][blue]Copilot Studio Advanced Analytics[/][/] :robot:, a demonstration application by the [underline]Microsoft State & Local Government Business Applications team[/]!");
-            Console.WriteLine();
-
             //Parse Dataverse Credentials from JSON in file.
             string dataverse_authenticator_json_path = @".\DataverseAuthenticator.json";
             string dataverse_authenticator_json = System.IO.File.ReadAllText(dataverse_authenticator_json_path);
@@ -73,6 +69,10 @@ namespace CopilotStudioAnalytics
 
             while (true)
             {
+
+                Console.WriteLine();
+                AnsiConsole.MarkupLine("Welcome to :robot: [bold][blue]Copilot Studio Advanced Analytics[/][/] :robot:, a demonstration application by the [underline]Microsoft State & Local Government Business Applications team[/]!");
+                Console.WriteLine();
                 
                 //Prompt with options
                 SelectionPrompt<string> DoNext = new SelectionPrompt<string>();
