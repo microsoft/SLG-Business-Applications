@@ -15,12 +15,14 @@ namespace CopilotStudioAnalytics
         public string Outcome {get; set;} //From the final "SessionInfo"
         public int TurnCount {get; set;} //From the final "SessionInfo"
         public CopilotStudioMessage[] Messages {get; set;}
+        public CopilotTextCitation[] Citations {get; set;}
 
         public CopilotStudioSession()
         {
             BotName = "";
             Outcome = "";
-            Messages = new CopilotStudioMessage[0]; //blank array
+            Messages = new CopilotStudioMessage[]{}; //blank array
+            Citations = new CopilotTextCitation[]{}; //blank array
         }
 
         public static CopilotStudioSession[] Parse(JArray conversation_transcripts, JArray bots)
@@ -32,6 +34,7 @@ namespace CopilotStudioAnalytics
                 //Create this session data holds
                 CopilotStudioSession ThisSession = new CopilotStudioSession();
                 List<CopilotStudioMessage> ThisSessionsMessages = new List<CopilotStudioMessage>();
+                List<CopilotTextCitation> ThisSessionsCitations = new List<CopilotTextCitation>();
 
                 //Transcript ID
                 JProperty? id = transcipt.Property("conversationtranscriptid");
@@ -67,9 +70,6 @@ namespace CopilotStudioAnalytics
                     {
                         ThisSession.BotName = pBotName.Value.ToString();
                     }
-
-                    //Bot friendly name
-                    //Fish through other bot list.
                 }
 
 
@@ -125,7 +125,53 @@ namespace CopilotStudioAnalytics
                                 ThisSession.TurnCount = turnCount.Value<int>();
                             }
 
+                            //Was this GPT generated content from a website?
+                            JToken? TextCitations = activity.SelectToken("channelData.pva:gpt-feedback.summarizationOpenAIResponse.result.textCitations");
+                            if (TextCitations != null)
+                            {
+
+                                //If text citations are there, there is also a "summary" in the object above. Grab that, that is the generated messaged
+                                JToken? summary = activity.SelectToken("channelData.pva:gpt-feedback.summarizationOpenAIResponse.result.summary");
+                                string summary_str = "";
+                                if (summary != null)
+                                {
+                                    string? s = summary.Value<string>();
+                                    if (s != null)
+                                    {
+                                        summary_str = s;
+                                    } 
+                                }
+
+                                //Loop through and save each text citation
+                                foreach (JObject tcitation in TextCitations)
+                                {
+                                    CopilotTextCitation ctc = new CopilotTextCitation();
+                                    
+                                    //Get URL
+                                    JProperty? prop_url = tcitation.Property("url");
+                                    if (prop_url != null)
+                                    {
+                                        ctc.URL = prop_url.Value.ToString();
+                                    }
+                                    
+                                    //Get text
+                                    JProperty? prop_text = tcitation.Property("text");
+                                    if (prop_text != null)
+                                    {
+                                        ctc.Text = prop_text.Value.ToString();
+                                    }
+
+                                    //Plug in generated summary
+                                    ctc.GeneratedSummary = summary_str;
+                                    
+                                    //Add it
+                                    ThisSessionsCitations.Add(ctc);
+                                }
+                            }
+                            
+
                             //Get the "type" property
+                            //This is for messages
                             JProperty? prop_type = activity.Property("type");
                             if (prop_type != null)
                             {
@@ -172,6 +218,7 @@ namespace CopilotStudioAnalytics
             
                 //Add this session to the list of items to return
                 ThisSession.Messages = ThisSessionsMessages.ToArray(); //First, append the messages to it
+                ThisSession.Citations = ThisSessionsCitations.ToArray();
                 ToReturn.Add(ThisSession); //Save it in the array that will be returned.
             }
             return ToReturn.ToArray();
