@@ -46,6 +46,17 @@ namespace CopilotStudioAnalytics
             AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving list of Copilot Studio bots... ");
             JArray bots = await ds.ReadAsync("bots");
             AnsiConsole.MarkupLine("[italic][green]" + bots.Count.ToString("#,##0") + " bots found![/][/]");
+
+            //Retrieve users
+            AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving System Users... ");
+            TimHanewich.Dataverse.AdvancedRead.DataverseReadOperation dro = new TimHanewich.Dataverse.AdvancedRead.DataverseReadOperation();
+            dro.TableIdentifier = "systemusers";
+            dro.AddColumn("fullname");
+            dro.AddColumn("systemuserid");
+            dro.AddColumn("internalemailaddress");
+            JArray systemusers = await ds.ReadAsync(dro);
+            SystemUser[] users = SystemUser.Parse(systemusers);
+            AnsiConsole.MarkupLine("[italic][green]" + users.Length.ToString("#,##0") + " users found![/][/]");
             
             //Parse them!
             CopilotStudioBot[] csbots = CopilotStudioBot.Parse(bots, transcripts);

@@ -14,3 +14,12 @@ This `content` property is what contains most of the valuable telemetry we can l
 |Conversation End (DateTime)|"timestamp" of last "ConversationInfo"|
 |Conversation Duration (timespan)|Conversation End - Conversation Start|
 |Messages (array of `Message`)|Strip out messages|
+
+## Statistics to show
+- Breakdown of how many bots are owned by users
+- In a session
+    - Earliest Session (days ago)
+    - Latest session  (days ago)
+    - WHen it was made
+    - Number of messages, number of messages per day
+    - Who owns it
