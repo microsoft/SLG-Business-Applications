@@ -21,6 +21,9 @@ namespace CopilotStudioAnalytics
 
         public static async Task DoThis()
         {
+            
+
+            Console.ReadLine();
 
             //Create empty strings for secrets
             string username = "";
@@ -544,15 +547,52 @@ namespace CopilotStudioAnalytics
                     }
                     AnsiConsole.Write(bc);
 
-                    //Print out the sources
+                    //Select a source?
                     Console.WriteLine();
-                    AnsiConsole.MarkupLine("[underline][grey82]Source Key[/][/]");
+                    SelectionPrompt<string> SourceSelection = new SelectionPrompt<string>();
+                    SourceSelection.Title("Which source would you like to research further?");
                     on_footer_index = 1;
                     foreach (KeyValuePair<string, int> kvp in citationsSorted)
                     {
-                        AnsiConsole.MarkupLine("[italic][grey82]Source " + on_footer_index.ToString() + " = " + kvp.Key + "[/][/]");
+                        SourceSelection.AddChoice("[italic][grey82]Source " + on_footer_index.ToString() + " = " + kvp.Key + "[/][/]");
                         on_footer_index = on_footer_index + 1;
                     }
+                    string SourceSelectionChoice = AnsiConsole.Prompt(SourceSelection);
+                    
+                    //Handle source selection
+                    Console.Clear();
+                    Table CitationSources = new Table();
+                    CitationSources.Title("Sourced Content from ");
+                    TableColumn tc1 = new TableColumn("Extracted Content").Alignment(Justify.Center);
+                    TableColumn tc2 = new TableColumn("Generated Content").Alignment(Justify.Center);
+                    CitationSources.AddColumn(tc1);
+                    CitationSources.AddColumn(tc2);
+                    foreach (CopilotTextCitation ctc in AllCitations)
+                    {
+                        bool ThisIsOne = false;
+
+                        //Title contained?
+                        if (SourceSelectionChoice.Contains(ctc.Title))
+                        {
+                            ThisIsOne = true;
+                        }
+
+                        //URL contained?
+                        if (ctc.URL != null)
+                        {
+                            ThisIsOne = true;
+                        }
+
+                        //If this is one of the citations w/ this particular source, list out info about it
+                        if (ThisIsOne)
+                        {
+                            ctc.Text = ctc.Text.Replace("[", "[[").Replace("]", "]]");
+                            ctc.GeneratedSummary = ctc.GeneratedSummary.Replace("[", "[[").Replace("]", "]]");
+                            CitationSources.AddRow(ctc.Text, ctc.GeneratedSummary);
+                        }
+                    }
+                    AnsiConsole.Write(CitationSources);
+
 
                 }
                 else if (DoNextSelection == "Exit")
