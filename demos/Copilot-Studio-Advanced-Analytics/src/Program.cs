@@ -7,6 +7,8 @@ using Spectre.Console;
 using System.Collections.Specialized;
 using System.Security.Cryptography.X509Certificates;
 using System.Runtime.CompilerServices;
+using System.Runtime.Intrinsics.X86;
+using System.Text.Json.Nodes;
 
 namespace CopilotStudioAnalytics
 {
@@ -20,16 +22,99 @@ namespace CopilotStudioAnalytics
         public static async Task DoThis()
         {
 
-            //Parse Dataverse Credentials from JSON in file.
-            string dataverse_authenticator_json_path = @".\DataverseAuthenticator.json";
-            string dataverse_authenticator_json = System.IO.File.ReadAllText(dataverse_authenticator_json_path);
-            DataverseAuthenticator? auth = JsonConvert.DeserializeObject<DataverseAuthenticator>(dataverse_authenticator_json);
-            if (auth == null)
+            //Create empty strings for secrets
+            string username = "";
+            string password = "";
+            string resource = "";
+            string azblobconstr = "";
+
+            //Try to get these from the "key.json" file
+            string expected_path = @".\keys.json";
+            if (System.IO.File.Exists(expected_path))
             {
-                throw new Exception("Unable to parse DataverseAuthenticator credentials from file '" + dataverse_authenticator_json_path + "'");
+                string keystxt = System.IO.File.ReadAllText(expected_path);
+                JObject jokeys = JObject.Parse(keystxt);
+                
+                //Username?
+                JProperty? prop_username = jokeys.Property("username");
+                if (prop_username != null)
+                {
+                    username = prop_username.Value.ToString();
+                }
+
+                //Password?
+                JProperty? prop_password = jokeys.Property("password");
+                if (prop_password != null)
+                {
+                    password = prop_password.Value.ToString();
+                }
+
+                //Resource?
+                JProperty? prop_resource = jokeys.Property("environment");
+                if (prop_resource != null)
+                {
+                    resource = prop_resource.Value.ToString();
+                }
+
+                //Azure Blob Connection string?
+                JProperty? prop_azblob = jokeys.Property("azblob");
+                if (prop_azblob != null)
+                {
+                    azblobconstr = prop_azblob.Value.ToString();
+                }
             }
+
+            //Get username if not already
+            while (username == "")
+            {
+                Console.Write("Username to log into Dataverse > ");
+                string? s = Console.ReadLine();
+                if (s != null)
+                {
+                    username = s;
+                }
+            }
+
+            //Get password if not already
+            while (password == "")
+            {
+                Console.Write("Password to log into Dataverse > ");
+                string? s = Console.ReadLine();
+                if (s != null)
+                {
+                    password = s;
+                }
+            }
+
+            //Get resource if not already
+            while (resource == "")
+            {
+                Console.Write("Dataverse Environment URL > ");
+                string? s = Console.ReadLine();
+                if (s != null)
+                {
+                    resource = s;
+                }
+            }
+
+            //Get azure blob storage connection string
+            if (azblobconstr == "")
+            {
+                Console.Write("Azure Blob Storage Connection String (optional) > ");
+                string? s = Console.ReadLine();
+                if (s != null)
+                {
+                    azblobconstr = s;
+                }
+            }
+
+            //Parse Dataverse Credentials from JSON in file.
+            DataverseAuthenticator auth = new DataverseAuthenticator();
+            auth.Username = username;
+            auth.Password = password;
+            auth.Resource = resource;
             auth.ClientId = Guid.Parse("51f81489-12ee-4a9e-aaae-a2591f45987d"); //fill in default (standard) clientid
-            AnsiConsole.MarkupLine("[italic]Dataverse credentials received![/]");
+            AnsiConsole.MarkupLine("[italic]Dataverse credentials locked and loaded![/]");
             
             //Authenticate (call to Dataverse OAuth API and get access token that we can then use to make)
             AnsiConsole.Markup("[green][bold]Dataverse Auth[/][/]: Authenticating as '" + auth.Username + "' to environment '" + auth.Resource + "'... ");
@@ -90,6 +175,7 @@ namespace CopilotStudioAnalytics
                 DoNext.AddChoices("Review environment-level statistics");
                 DoNext.AddChoice("See bot ownership breakdown");
                 DoNext.AddChoice("Examine an individual bot's usage");
+                DoNext.AddChoice("Review gen-AI content citations");
                 DoNext.AddChoice("Exit");
                 string DoNextSelection = AnsiConsole.Prompt(DoNext);
 
@@ -385,6 +471,88 @@ namespace CopilotStudioAnalytics
 
 
 
+
+                }
+                else if (DoNextSelection == "Review gen-AI content citations")
+                {
+                    //Collect all citations for this environment
+                    List<CopilotTextCitation> AllCitations = new List<CopilotTextCitation>();
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        foreach (CopilotStudioSession ses in csbot.Sessions)
+                        {
+                            foreach (CopilotTextCitation ctt in ses.Citations)
+                            {
+                                AllCitations.Add(ctt);
+                            }
+                        }
+                    }
+
+                    //Collect # of times each site has been hit
+                    Dictionary<string, int> citations = new Dictionary<string, int>();
+                    foreach (CopilotTextCitation ctt in AllCitations)
+                    {
+                        string KeyToUse = ""; //Will either be using the URL or the Title. URL for websites, Title for documents and others (if the URL isn't there).
+                        if (ctt.URL != null)
+                        {
+                            KeyToUse = ctt.URL;
+                        }
+                        else
+                        {
+                            KeyToUse = ctt.Title;
+                        }
+
+                        //Increment count
+                        if (citations.ContainsKey(KeyToUse))
+                        {
+                            int curval = citations[KeyToUse];
+                            curval = curval + 1;
+                            citations[KeyToUse] = curval; //set to the new number (1 higher).
+                        }
+                        else
+                        {
+                            citations[KeyToUse] = 1;
+                        }
+                    }
+                    
+                    //Sort from most to least
+                    Dictionary<string, int> citationsSorted = new Dictionary<string, int>();
+                    while (citations.Count > 0)
+                    {
+                        KeyValuePair<string, int> winner = citations.First();
+                        foreach (KeyValuePair<string, int> kvp in citations)
+                        {
+                            if (kvp.Value > winner.Value)
+                            {
+                                winner = kvp;
+                            }
+                        }
+                        citationsSorted.Add(winner.Key, winner.Value);
+                        citations.Remove(winner.Key);
+                    }
+
+                    //Write to bar chart
+                    BarChart bc = new BarChart();
+                    bc.Width = Console.WindowWidth;
+                    bc.Label("[bold]Gen-AI Citations, by Source[/]");
+                    bc.CenterLabel();
+                    int on_footer_index = 1;
+                    foreach (KeyValuePair<string, int> kvp in citationsSorted)
+                    { 
+                        bc.AddItem("[italic]Source " + on_footer_index.ToString() + "[/]", kvp.Value, RandomColor());
+                        on_footer_index = on_footer_index + 1;
+                    }
+                    AnsiConsole.Write(bc);
+
+                    //Print out the sources
+                    Console.WriteLine();
+                    AnsiConsole.MarkupLine("[underline][grey82]Source Key[/][/]");
+                    on_footer_index = 1;
+                    foreach (KeyValuePair<string, int> kvp in citationsSorted)
+                    {
+                        AnsiConsole.MarkupLine("[italic][grey82]Source " + on_footer_index.ToString() + " = " + kvp.Key + "[/][/]");
+                        on_footer_index = on_footer_index + 1;
+                    }
 
                 }
                 else if (DoNextSelection == "Exit")

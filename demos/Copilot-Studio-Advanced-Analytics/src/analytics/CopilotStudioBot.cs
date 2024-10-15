@@ -158,11 +158,25 @@ namespace CopilotStudioAnalytics
                                         {
                                             CopilotTextCitation ctc = new CopilotTextCitation();
                                             
-                                            //Get URL
+                                            //Get title
+                                            JProperty? prop_title = tcitation.Property("title");
+                                            if (prop_title != null)
+                                            {
+                                                ctc.Title = prop_title.Value.ToString().Replace("%20", " ");
+                                            }
+
+                                            //Get URL (only if it exists, it is only there for website content, and only if it is not "")
                                             JProperty? prop_url = tcitation.Property("url");
                                             if (prop_url != null)
                                             {
-                                                ctc.URL = prop_url.Value.ToString();
+                                                if (prop_url.Value.ToString() != "")
+                                                {
+                                                    ctc.URL = prop_url.Value.ToString();
+                                                }
+                                            }
+                                            else
+                                            {
+                                                ctc.URL = null;
                                             }
                                             
                                             //Get text
