@@ -21,10 +21,6 @@ namespace CopilotStudioAnalytics
 
         public static async Task DoThis()
         {
-            
-
-            Console.ReadLine();
-
             //Create empty strings for secrets
             string username = "";
             string password = "";
