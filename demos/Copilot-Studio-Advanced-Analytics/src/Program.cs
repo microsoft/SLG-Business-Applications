@@ -423,6 +423,7 @@ namespace CopilotStudioAnalytics
                                         {
                                             Console.Clear(); //Clear
 
+                                            Console.WriteLine();
                                             AnsiConsole.MarkupLine("[bold][underline][blue]Transcript of session '" + ses.SessionId.ToString() + "' with bot '" + csbot.Name + "'[/][/][/]");
 
                                             //Create a table
