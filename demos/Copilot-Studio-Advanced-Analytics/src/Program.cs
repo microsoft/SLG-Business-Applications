@@ -558,6 +558,9 @@ namespace CopilotStudioAnalytics
                     //Handle source selection #2
                     Console.Clear();
 
+                    //Below is some pretty bad + inefficient coding.
+                    //I could improve this but... I'll save it for later :)
+
                     //Find at least a single citation that this is shared with, so that we we have where it came from
                     string FROM_SOURCE_FOR_TITLE = "";
                     foreach (CopilotTextCitation ctc in AllCitations)
