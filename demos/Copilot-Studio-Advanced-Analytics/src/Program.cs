@@ -554,21 +554,18 @@ namespace CopilotStudioAnalytics
                         on_footer_index = on_footer_index + 1;
                     }
                     string SourceSelectionChoice = AnsiConsole.Prompt(SourceSelection);
-                    
-                    //Handle source selection
+
+                    //Handle source selection #2
                     Console.Clear();
-                    Table CitationSources = new Table();
-                    CitationSources.Title("Sourced Content from ");
-                    TableColumn tc1 = new TableColumn("Extracted Content").Alignment(Justify.Center);
-                    TableColumn tc2 = new TableColumn("Generated Content").Alignment(Justify.Center);
-                    CitationSources.AddColumn(tc1);
-                    CitationSources.AddColumn(tc2);
+
+                    //Find at least a single citation that this is shared with, so that we we have where it came from
+                    string FROM_SOURCE_FOR_TITLE = "";
                     foreach (CopilotTextCitation ctc in AllCitations)
                     {
                         bool ThisIsOne = false;
 
                         //Title contained?
-                        if (SourceSelectionChoice.Contains(ctc.Title))
+                        if (SourceSelectionChoice.EndsWith(ctc.Title + "[/][/]")) //Have to append the closing tags because those are in included in the selection (the selection was in markup)
                         {
                             ThisIsOne = true;
                         }
@@ -576,18 +573,93 @@ namespace CopilotStudioAnalytics
                         //URL contained?
                         if (ctc.URL != null)
                         {
+                            if (SourceSelectionChoice.EndsWith(ctc.URL + "[/][/]")) //Have to append the closing tags because those are in included in the selection (the selection was in markup)
+                            {
+                                ThisIsOne = true;
+                            }
+                        }
+
+                        if (ThisIsOne)
+                        {
+                            //Set up source we will cite as "from"
+                            if (ctc.URL != null && ctc.URL != "")
+                            {
+                                FROM_SOURCE_FOR_TITLE = ctc.URL;
+                            }
+                            else
+                            {
+                                FROM_SOURCE_FOR_TITLE = ctc.Title;
+                            }
+                        }
+                    }
+
+                    //Show title
+                    Markup sourcesTitle = new Markup("[bold][blue]Content Sourced from '" + FROM_SOURCE_FOR_TITLE + "'[/][/]");
+                    sourcesTitle.Centered();
+                    AnsiConsole.Write(sourcesTitle);
+                    for (int t = 0; t < Console.WindowWidth; t++)
+                    {
+                        AnsiConsole.Markup("[gray]─[/]");
+                    }
+
+                    //Print each
+                    foreach (CopilotTextCitation ctc in AllCitations)
+                    {
+                        bool ThisIsOne = false;
+
+                        //Title contained?
+                        if (SourceSelectionChoice.EndsWith(ctc.Title + "[/][/]")) //Have to append the closing tags because those are in included in the selection (the selection was in markup)
+                        {
                             ThisIsOne = true;
+                        }
+
+                        //URL contained?
+                        if (ctc.URL != null)
+                        {
+                            if (SourceSelectionChoice.EndsWith(ctc.URL + "[/][/]")) //Have to append the closing tags because those are in included in the selection (the selection was in markup)
+                            {
+                                ThisIsOne = true;
+                            }
                         }
 
                         //If this is one of the citations w/ this particular source, list out info about it
                         if (ThisIsOne)
                         {
+                            //Set up grid
+                            Grid g = new Grid();
+                            g.AddColumn();
+                            g.AddColumn();
+                            g.AddRow("[bold][underline]Sourced Content[/][/]", "[bold][underline]Generated Content[/][/]");
+
+                            //Set up text + generated summary
                             ctc.Text = ctc.Text.Replace("[", "[[").Replace("]", "]]");
                             ctc.GeneratedSummary = ctc.GeneratedSummary.Replace("[", "[[").Replace("]", "]]");
-                            CitationSources.AddRow(ctc.Text, ctc.GeneratedSummary);
+
+                            //Set up source we will cite as "from"
+                            string FromSource = "";
+                            if (ctc.URL != null && ctc.URL != "")
+                            {
+                                FromSource = ctc.URL;
+                            }
+                            else
+                            {
+                                FromSource = ctc.Title;
+                            }
+
+                            //Print!
+                            g.AddRow(ctc.Text + "\n\n" + "[italic]from '" + FromSource + "'[/]", ctc.GeneratedSummary);
+
+                            //Print and add a space
+                            AnsiConsole.Write(g);
+                            Console.WriteLine();
+                            for (int t = 0; t < Console.WindowWidth; t++)
+                            {
+                                AnsiConsole.Markup("[gray]─[/]");
+                            }
+                            Console.WriteLine();
                         }
                     }
-                    AnsiConsole.Write(CitationSources);
+
 
 
                 }
