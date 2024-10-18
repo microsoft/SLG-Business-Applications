@@ -693,12 +693,14 @@ namespace CopilotStudioAnalytics
                     int sessions = 0;
                     foreach (CopilotStudioBot csbot in csbots)
                     {
-                        sessions = csbot.Sessions.Length;
+                        sessions = sessions + csbot.Sessions.Length;
                     }
 
+                    AnsiConsole.MarkupLine("[bold][underline][blue]Archive Transcripts to Azure Blob Storage[/][/][/]");
                     AnsiConsole.MarkupLine("I'm ready to begin archiving [bold]" + sessions.ToString() + "[/] Copilot Studio session transcripts to Azure Blob Storage!");
                     AnsiConsole.MarkupLine("This will only archive [bold]new[/] transcripts - any transcripts that are [italic]already[/] in Dataverse will be ignored.");
-                    AnsiConsole.Markup("Ready when you are! Press enter to begin the upload process!");
+                    Console.WriteLine();
+                    AnsiConsole.Markup("[italic]Ready when you are! Press enter to begin the upload process![/]");
                     Console.ReadLine();
 
                     //Authenticate and make container
@@ -723,12 +725,12 @@ namespace CopilotStudioAnalytics
                     int uploaded = 0;
                     int already_archived = 0;
                     int upload_errors = 0;
+                    int ON_TICKER = 1;
                     foreach (CopilotStudioBot csbot in csbots)
                     {
                         foreach (CopilotStudioSession ses in csbot.Sessions)
                         {
-
-                            AnsiConsole.Markup("Uploading session '" + ses.SessionId.ToString() + "' of bot '" + csbot.Name + "' from " + ses.ConversationStart.ToShortDateString() + "... ");
+                            AnsiConsole.Markup("[grey](" + ON_TICKER.ToString() + "/" + sessions.ToString() + ")[/] Uploading session '" + ses.SessionId.ToString() + "' of bot '" + csbot.Name + "' from " + ses.ConversationStart.ToShortDateString() + "... ");
 
                             //Get blob client
                             string name = ses.SessionId.ToString().Replace("-", "") + ".json"; //File name that will be saved to blob
@@ -758,15 +760,18 @@ namespace CopilotStudioAnalytics
                                 already_archived = already_archived + 1;
                                 AnsiConsole.MarkupLine("[gray][italic](already archived)[/][/]");
                             }
+
+                            //Increment on ticker
+                            ON_TICKER = ON_TICKER + 1;
                         }
                     }
 
                     //Now that we are done, print completion
                     Console.WriteLine();
                     Console.WriteLine("Archiving of sessions to Azure Blob Storage complete!");
-                    AnsiConsole.MarkupLine("- [bold]" + uploaded.ToString("#,##0") + "[/] sessions uploaded");
-                    AnsiConsole.MarkupLine("- [bold]" + already_archived.ToString("#,##0") + " sessions already uploaded previously");
-                    AnsiConsole.MarkupLine("- [bold]" + upload_errors.ToString("#,##0") + " errors during upload");
+                    AnsiConsole.MarkupLine("- [bold][blue]" + uploaded.ToString("#,##0") + "[/][/] sessions uploaded");
+                    AnsiConsole.MarkupLine("- [bold][blue]" + already_archived.ToString("#,##0") + "[/][/] sessions already uploaded previously");
+                    AnsiConsole.MarkupLine("- [bold][blue]" + upload_errors.ToString("#,##0") + "[/][/] errors during upload");
                 }
                 else if (DoNextSelection == "Exit")
                 {
