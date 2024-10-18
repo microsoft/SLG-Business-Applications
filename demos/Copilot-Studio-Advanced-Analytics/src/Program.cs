@@ -739,8 +739,15 @@ namespace CopilotStudioAnalytics
                             {
                                 try
                                 {
+                                    //Prepare JSON object to upload
+                                    JObject ToUpload = JObject.Parse(JsonConvert.SerializeObject(ses));
+                                    JObject botinfo = new JObject();
+                                    botinfo.Add("schemaName", csbot.SchemaName);
+                                    botinfo.Add("name", csbot.Name);
+                                    ToUpload.Add("bot", botinfo);
+
                                     //Upload
-                                    string fcontent = JsonConvert.SerializeObject(ses, Formatting.Indented);
+                                    string fcontent = ToUpload.ToString(Formatting.Indented);
                                     byte[] asbytes = Encoding.ASCII.GetBytes(fcontent);
                                     MemoryStream ms = new MemoryStream(asbytes);
                                     await bc.UploadAsync(ms);
