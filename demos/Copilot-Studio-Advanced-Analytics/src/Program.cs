@@ -740,7 +740,7 @@ namespace CopilotStudioAnalytics
                                 try
                                 {
                                     //Upload
-                                    string fcontent = JsonConvert.SerializeObject(ses.Messages, Formatting.Indented);
+                                    string fcontent = JsonConvert.SerializeObject(ses, Formatting.Indented);
                                     byte[] asbytes = Encoding.ASCII.GetBytes(fcontent);
                                     MemoryStream ms = new MemoryStream(asbytes);
                                     await bc.UploadAsync(ms);
