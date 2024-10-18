@@ -6,10 +6,11 @@
 This demonstration application showcases how professional developers can authenticate into Dataverse, extract Copilot Studio telemetry logs and transcripts, and write code to analyze this data to uncover key insights.
 
 This application provides the following out-of-the-box functionality:
-- Review environment-level statistics, including total number of bots, sessions, messages, and daily message consumption.
-- View a breakdown of bot ownership, detailing which users own specific bots.
-- Examine the message consumption and transcripts of any bot in your environment.
-- Review the source content used by generative AI and the corresponding answers produced from that content.
+- 📈 Review environment-level statistics, including total number of bots, sessions, messages, and daily message consumption.
+- 🔍 View a breakdown of bot ownership, detailing which users own specific bots.
+- 📜 Examine the message consumption and transcripts of any bot in your environment.
+- 🤖 Review the source content used by generative AI and the corresponding answers produced from that content.
+- ☁️ Archive Copilot Studio session transcripts to Azure Blob Storage.
 
 ## How to run this application
 The application in the [src](./src/) is a .NET Console Application. It is based on the [.NET 8.0](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8/overview) runtime, so you will need the **.NET 8.0** SDK to run it. You can download and install the .NET 8.0 SDK from [here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0).
