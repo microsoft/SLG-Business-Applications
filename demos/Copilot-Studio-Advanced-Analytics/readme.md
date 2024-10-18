@@ -1,7 +1,9 @@
 ![csaa](https://i.imgur.com/X8s6bNH.jpeg)
 
 # Copilot Studio Advanced Analytics
-![csaa_app](https://i.imgur.com/9mUg4nD.png)
+[![csaa_app](https://i.imgur.com/CrVSyzh.png)](https://youtu.be/Rj9aH3xAggo)
+
+*Click the image above for a demo video!*
 
 This demonstration application showcases how professional developers can authenticate into Dataverse, extract Copilot Studio telemetry logs and transcripts, and write code to analyze this data to uncover key insights.
 
