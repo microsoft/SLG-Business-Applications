@@ -716,7 +716,7 @@ namespace CopilotStudioAnalytics
                     {
                         AnsiConsole.MarkupLine("[red]Authentication against Az Blob Storage did not work! Exception Message: " + ex.Message + "[/]");
                         Console.WriteLine();
-                        AnsiConsole.WriteLine("[italic]Enter to close error msg.[/]");
+                        AnsiConsole.MarkupLine("[italic]Enter to close error msg.[/]");
                         Console.ReadLine();
                         continue; //Go to next loop
                     }
