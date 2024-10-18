@@ -730,7 +730,7 @@ namespace CopilotStudioAnalytics
                     {
                         foreach (CopilotStudioSession ses in csbot.Sessions)
                         {
-                            AnsiConsole.Markup("[grey](" + ON_TICKER.ToString() + "/" + sessions.ToString() + ")[/] Uploading session '" + ses.SessionId.ToString() + "' of bot '" + csbot.Name + "' from " + ses.ConversationStart.ToShortDateString() + "... ");
+                            AnsiConsole.Markup("[grey](" + ON_TICKER.ToString() + "/" + sessions.ToString() + ")[/] Uploading session '[bold]" + ses.SessionId.ToString() + "[/]' of bot '[bold]" + csbot.Name + "[/]' from [bold]" + ses.ConversationStart.ToShortDateString() + "[/]... ");
 
                             //Get blob client
                             string name = ses.SessionId.ToString().Replace("-", "") + ".json"; //File name that will be saved to blob
