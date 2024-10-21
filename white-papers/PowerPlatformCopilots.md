@@ -1,4 +1,4 @@
-# Power Platform Copilot Availabality in GCC
+# Power Platform Copilot Feature Availability in GCC
 > [!IMPORTANT]
 > November 7, 2024 through Nov 12, 2024 we are going live with Phase 2 of Copilot availbility for Power Platform and Dynamics 365 in GCC and GCC High!  For more information on what this means, [go here](https://github.com/microsoft/Federal-Business-Applications/blob/main/whitepapers/copilot/README.md).
 
