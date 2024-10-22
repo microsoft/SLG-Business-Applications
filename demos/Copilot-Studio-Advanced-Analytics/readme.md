@@ -49,4 +49,9 @@ This application is provided as a demonstration tool and is intended for informa
 
 Neither the developer nor Microsoft will be held responsible for any errors, data loss, or other issues that may arise from the use of this application. This includes, but is not limited to, incorrect insights, system errors, or any impact on data in your environment.
 
+## Other Resources
+- [This .zip folder](https://github.com/microsoft/SLG-Business-Applications/releases/download/15/BACKUP.DATA.FOR.CSAA.zip) contains raw dumps of `bots`, `conversationtranscripts`, and `systemusers`, the three Dataverse tables that are used in this application. If you do not have good data in your Dataverse environment to work with, you could use this and configure the data acquisition code to load this from local (instead of actually pulling from Dataverse). 
+- Here is the [.MP3 file](https://github.com/microsoft/SLG-Business-Applications/releases/download/15/Tech.Beats.mp3) of the background music used in the demo video above (it is AI generated).
+
+## Credit
 *This application was created by [Tim Hanewich](https://github.com/TimHanewich).*
