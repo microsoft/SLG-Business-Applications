@@ -258,11 +258,24 @@ namespace CopilotStudioAnalytics
                     ts = DateTime.UtcNow - MostRecentSession;
                     t.AddRow("Most recent session", MostRecentSession.ToShortDateString() + " (" + ts.TotalDays.ToString("#,##0") + " days ago)");
 
-                    //Messages per day avg (all time)
-                    t.AddRow("", ""); //Add spacer to separate Avg Msg/Day counts from others
-                    TimeSpan ElapsedTimeSinceFirstSession = DateTime.UtcNow - EarliestStart;
-                    float msg_per_day = Convert.ToSingle(messagesc) / Convert.ToSingle(ElapsedTimeSinceFirstSession.TotalDays);
-                    t.AddRow("Msg/Day, all time", msg_per_day.ToString("#,##0.0"));
+                    //Enter in empty row to serve as break from avg message counts
+                    t.AddRow("", "");
+
+                    //Messages per day, last 180 days
+                    DateTime cutoff180 = DateTime.UtcNow.AddDays(-180); //180 days ago
+                    int messages180 = 0; //count of messags from sessions held within the last 30 days
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        foreach (CopilotStudioSession ses in csbot.Sessions)
+                        {
+                            if (ses.ConversationStart >= cutoff180) //If this session started within the last 30 days
+                            {
+                                messages180 = messages180 + ses.TurnCount; //Add the turncount
+                            }
+                        }
+                    }
+                    float msg_per_day_180day = Convert.ToSingle(messages180) / 180f;
+                    t.AddRow("Msg/Day, last 180 days", msg_per_day_180day.ToString("#,##0.0"));
 
                     //Messages per day, last 90 days
                     DateTime cutoff90 = DateTime.UtcNow.AddDays(-90); //90 days ago
