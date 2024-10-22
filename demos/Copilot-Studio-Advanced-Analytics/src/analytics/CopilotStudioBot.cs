@@ -8,6 +8,7 @@ namespace CopilotStudioAnalytics
         public string Name {get; set;} //Display name
         public string SchemaName {get; set;} //Schema name (unique)
         public Guid Owner {get; set;} //GUID of the SystemUser (user) that owns this bot.
+        public DateTime CreatedOn {get; set;}
         public CopilotStudioSession[] Sessions {get; set;} //All sessions
 
         CopilotStudioBot()
@@ -38,6 +39,13 @@ namespace CopilotStudioAnalytics
                 if (prop_schemaname != null)
                 {
                     nbot.SchemaName = prop_schemaname.Value.ToString();
+                }
+
+                //Get CreatedOn
+                JProperty? prop_createdon = bot.Property("createdon");
+                if (prop_createdon != null)
+                {
+                    nbot.CreatedOn = DateTime.Parse(prop_createdon.Value.ToString());
                 }
 
                 //Get owner
