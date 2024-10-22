@@ -223,7 +223,7 @@ namespace CopilotStudioAnalytics
                     {
                         foreach (CopilotStudioSession ses in bot.Sessions)
                         {
-                            messagesc = messagesc + ses.Messages.Length;
+                            messagesc = messagesc + ses.TurnCount;
                         }
                     }
                     t.AddRow("# of Messages, total", messagesc.ToString("#,##0"));
