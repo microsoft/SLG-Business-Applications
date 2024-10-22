@@ -258,11 +258,61 @@ namespace CopilotStudioAnalytics
                     ts = DateTime.UtcNow - MostRecentSession;
                     t.AddRow("Most recent session", MostRecentSession.ToShortDateString() + " (" + ts.TotalDays.ToString("#,##0") + " days ago)");
 
-                    //Messages per day avg
+                    //Messages per day avg (all time)
+                    t.AddRow("", ""); //Add spacer to separate Avg Msg/Day counts from others
                     TimeSpan ElapsedTimeSinceFirstSession = DateTime.UtcNow - EarliestStart;
                     float msg_per_day = Convert.ToSingle(messagesc) / Convert.ToSingle(ElapsedTimeSinceFirstSession.TotalDays);
-                    t.AddRow("Avg. Messages/Day", msg_per_day.ToString("#,##0.0"));
+                    t.AddRow("Msg/Day, all time", msg_per_day.ToString("#,##0.0"));
 
+                    //Messages per day, last 90 days
+                    DateTime cutoff90 = DateTime.UtcNow.AddDays(-90); //90 days ago
+                    int messages90 = 0; //count of messags from sessions held within the last 30 days
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        foreach (CopilotStudioSession ses in csbot.Sessions)
+                        {
+                            if (ses.ConversationStart >= cutoff90) //If this session started within the last 30 days
+                            {
+                                messages90 = messages90 + ses.TurnCount; //Add the turncount
+                            }
+                        }
+                    }
+                    float msg_per_day_90day = Convert.ToSingle(messages90) / 90f;
+                    t.AddRow("Msg/Day, last 90 days", msg_per_day_90day.ToString("#,##0.0"));
+
+                    //Messages per day, last 60 days
+                    DateTime cutoff60 = DateTime.UtcNow.AddDays(-60); //60 days ago
+                    int messages60 = 0; //count of messags from sessions held within the last 30 days
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        foreach (CopilotStudioSession ses in csbot.Sessions)
+                        {
+                            if (ses.ConversationStart >= cutoff60) //If this session started within the last 30 days
+                            {
+                                messages60 = messages60 + ses.TurnCount; //Add the turncount
+                            }
+                        }
+                    }
+                    float msg_per_day_60day = Convert.ToSingle(messages60) / 60f;
+                    t.AddRow("Msg/Day, last 60 days", msg_per_day_60day.ToString("#,##0.0"));
+
+                    //Messages per day, last 30 days
+                    DateTime cutoff30 = DateTime.UtcNow.AddDays(-30); //30 days ago
+                    int messages30 = 0; //count of messags from sessions held within the last 30 days
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        foreach (CopilotStudioSession ses in csbot.Sessions)
+                        {
+                            if (ses.ConversationStart >= cutoff30) //If this session started within the last 30 days
+                            {
+                                messages30 = messages30 + ses.TurnCount; //Add the turncount
+                            }
+                        }
+                    }
+                    float msg_per_day_30day = Convert.ToSingle(messages30) / 30f;
+                    t.AddRow("Msg/Day, last 30 days", msg_per_day_30day.ToString("#,##0.0")); 
+
+                    //Write table and be done
                     AnsiConsole.Write(t);
                 }
                 else if (DoNextSelection == "See bot ownership breakdown")
