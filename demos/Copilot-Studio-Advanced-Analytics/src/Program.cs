@@ -325,8 +325,87 @@ namespace CopilotStudioAnalytics
                     float msg_per_day_30day = Convert.ToSingle(messages30) / 30f;
                     t.AddRow("Msg/Day, last 30 days", msg_per_day_30day.ToString("#,##0.0")); 
 
-                    //Write table and be done
+                    //Write table
                     AnsiConsole.Write(t);
+
+
+                    //Create parent tree to show bot creation timeline breakdown.
+                    Tree bctree = new Tree("Bot creation timeline");
+
+                    //Bots created in last 30 days
+                    TreeNode tn30 = bctree.AddNode("[purple]Bots created within last 30 days[/]");
+                    DateTime after = DateTime.UtcNow.AddDays(-30);
+                    DateTime before = DateTime.UtcNow;
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        if (csbot.CreatedOn >= after && csbot.CreatedOn < before) //within timeframe
+                        {
+                            foreach (SystemUser user in users) //Let's got find the owner
+                            {
+                                if (user.SystemUserId == csbot.Owner) //The owner matches
+                                {
+                                    TreeNode botnode = tn30.AddNode("[bold][blue]" + csbot.Name + "[/][/] (" + csbot.SchemaName + "), created by " + user.FullName + " (" + user.Email + ")");
+                                }
+                            }
+                        }
+                    }
+
+                    //Bots created in last 30 - 60 days
+                    TreeNode tn60 = bctree.AddNode("[purple]Bots created 30-60 days ago[/]");
+                    after = DateTime.UtcNow.AddDays(-60);
+                    before = DateTime.UtcNow.AddDays(-30);
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        if (csbot.CreatedOn >= after && csbot.CreatedOn < before) //within timeframe
+                        {
+                            foreach (SystemUser user in users) //Let's got find the owner
+                            {
+                                if (user.SystemUserId == csbot.Owner) //The owner matches
+                                {
+                                    TreeNode botnode = tn60.AddNode("[bold][blue]" + csbot.Name + "[/][/] (" + csbot.SchemaName + "), created by " + user.FullName + " (" + user.Email + ")");
+                                }
+                            }
+                        }
+                    }
+
+                    //Bots created in last 60 - 90 days
+                    TreeNode tn90 = bctree.AddNode("[purple]Bots created 60-90 days ago[/]");
+                    after = DateTime.UtcNow.AddDays(-90);
+                    before = DateTime.UtcNow.AddDays(-60);
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        if (csbot.CreatedOn >= after && csbot.CreatedOn < before) //within timeframe
+                        {
+                            foreach (SystemUser user in users) //Let's got find the owner
+                            {
+                                if (user.SystemUserId == csbot.Owner) //The owner matches
+                                {
+                                    TreeNode botnode = tn90.AddNode("[bold][blue]" + csbot.Name + "[/][/] (" + csbot.SchemaName + "), created by " + user.FullName + " (" + user.Email + ")");
+                                }
+                            }
+                        }
+                    }
+
+                    //Bots created 90+ days ago
+                    TreeNode tn_plus = bctree.AddNode("[purple]Bots created 90+ days ago[/]");
+                    before = DateTime.UtcNow.AddDays(-90);
+                    foreach (CopilotStudioBot csbot in csbots)
+                    {
+                        if (csbot.CreatedOn < before) //before 90+ days
+                        {
+                            foreach (SystemUser user in users) //Let's got find the owner
+                            {
+                                if (user.SystemUserId == csbot.Owner) //The owner matches
+                                {
+                                    TreeNode botnode = tn_plus.AddNode("[bold][blue]" + csbot.Name + "[/][/] (" + csbot.SchemaName + "), created by " + user.FullName + " (" + user.Email + ")");
+                                }
+                            }
+                        }
+                    }
+
+                    //Print the tree!
+                    Console.WriteLine();
+                    AnsiConsole.Write(bctree);
                 }
                 else if (DoNextSelection == "See bot ownership breakdown")
                 {
