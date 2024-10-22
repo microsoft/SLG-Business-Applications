@@ -129,11 +129,13 @@ namespace CopilotStudioAnalytics
             AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving Copilot Studio transcripts... ");
             JArray transcripts = await ds.ReadAsync("conversationtranscripts");
             //JArray transcripts = JArray.Parse(System.IO.File.ReadAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Copilot-Studio-Advanced-Analytics\examples\conversationtranscripts.json")); //Collect from local, optionally
+            //System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\BACKUP DATA FOR CSAA\conversationtranscripts.json", transcripts.ToString(Formatting.Indented));
             AnsiConsole.MarkupLine("[italic][green]" + transcripts.Count.ToString("#,##0") + " transcripts retrieved![/][/]");
 
             //Retrieve bots
             AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving list of Copilot Studio bots... ");
             JArray bots = await ds.ReadAsync("bots");
+            //System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\BACKUP DATA FOR CSAA\bots.json", bots.ToString(Formatting.Indented));
             AnsiConsole.MarkupLine("[italic][green]" + bots.Count.ToString("#,##0") + " bots found![/][/]");
 
             //Parse them!
@@ -147,6 +149,7 @@ namespace CopilotStudioAnalytics
             dro.AddColumn("systemuserid");
             dro.AddColumn("internalemailaddress");
             JArray systemusers = await ds.ReadAsync(dro);
+            //System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\BACKUP DATA FOR CSAA\systemusers.json", systemusers.ToString(Formatting.Indented));
             SystemUser[] users = SystemUser.Parse(systemusers);
             AnsiConsole.MarkupLine("[italic][green]" + users.Length.ToString("#,##0") + " users found![/][/]");
 
