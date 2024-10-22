@@ -40,6 +40,12 @@ For a full description of Azure OpenAI's data, privacy and security details, you
 
 ## Power Platform Copilots
 The sections and tables that follow identify all known Power Platform Copilot features.  The tables show to availability of each feature in both commercial cloud and in GCC.  The Dates shown are when each feature's availability was last evaluated.
+
+> [!IMPORTANT] 
+> There's now a central Microsoft documentation page that outlines all Dynamics 365 and Power Platform Generative AI features and the controls you have for each of them.  That document can be found in the link below,
+> 
+> [Copilot in Dynamics 365 apps and Power Platform Governance Controls](https://learn.microsoft.com/en-us/power-platform/faqs-copilot-data-security-privacy#copilot-in-dynamics-365-apps-and-power-platform)
+
 * GA = Generally Available
 * "Early Access" is a phase that may come prior to "Preview".
 
