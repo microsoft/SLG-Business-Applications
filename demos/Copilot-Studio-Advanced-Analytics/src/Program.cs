@@ -555,50 +555,54 @@ namespace CopilotStudioAnalytics
                                 AnsiConsole.Write(broot);
 
                                 //Produce a breakdown of bot outcomes
+                                //But only produce the breakdown if there are sessions!
                                 // https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/measuring-outcomes
-                                int outcome_unengaged = 0;
-                                int outcome_escalated = 0;
-                                int outcome_resolved = 0;
-                                int outcome_abandoned = 0;
-                                foreach (CopilotStudioSession ses in csbot.Sessions)
+                                if (csbot.Sessions.Length > 0)
                                 {
-                                    if (ses.Outcome.ToLower().Contains("unengaged") || ses.Outcome.ToLower().Contains("none"))
+                                    int outcome_unengaged = 0;
+                                    int outcome_escalated = 0;
+                                    int outcome_resolved = 0;
+                                    int outcome_abandoned = 0;
+                                    foreach (CopilotStudioSession ses in csbot.Sessions)
                                     {
-                                        outcome_unengaged = outcome_unengaged + 1;
+                                        if (ses.Outcome.ToLower().Contains("unengaged") || ses.Outcome.ToLower().Contains("none"))
+                                        {
+                                            outcome_unengaged = outcome_unengaged + 1;
+                                        }
+                                        else if (ses.Outcome.ToLower().Contains("escalated") || ses.Outcome.ToLower().Contains("handoff"))
+                                        {
+                                            outcome_escalated = outcome_escalated + 1;
+                                        }
+                                        else if (ses.Outcome.ToLower().Contains("resolved"))
+                                        {
+                                            outcome_resolved = outcome_resolved + 1;
+                                        }
+                                        else if (ses.Outcome.ToLower().Contains("abandoned"))
+                                        {
+                                            outcome_abandoned = outcome_abandoned + 1;
+                                        }
                                     }
-                                    else if (ses.Outcome.ToLower().Contains("escalated") || ses.Outcome.ToLower().Contains("handoff"))
-                                    {
-                                        outcome_escalated = outcome_escalated + 1;
-                                    }
-                                    else if (ses.Outcome.ToLower().Contains("resolved"))
-                                    {
-                                        outcome_resolved = outcome_resolved + 1;
-                                    }
-                                    else if (ses.Outcome.ToLower().Contains("abandoned"))
-                                    {
-                                        outcome_abandoned = outcome_abandoned + 1;
-                                    }
+
+                                    //Produce the breakdown chart
+                                    BreakdownChart bdc = new BreakdownChart();
+                                    bdc.Width(Console.WindowWidth);
+                                    bdc.AddItem("Unengaged", outcome_unengaged, RandomColor());
+                                    bdc.AddItem("Escalated (hand-off)", outcome_escalated, RandomColor());
+                                    bdc.AddItem("Resolved", outcome_resolved, RandomColor());
+                                    bdc.AddItem("Abandoned", outcome_abandoned, RandomColor());
+                                    Console.WriteLine();
+                                    AnsiConsole.MarkupLine("[bold][underline][navy]Session Outcome Breakdown[/][/][/]");
+                                    AnsiConsole.Write(bdc); //Print
+
+                                    //Explain the breakdown chart
+                                    Console.WriteLine();
+                                    AnsiConsole.MarkupLine("[italic][grey]Unengaged = The bot was presented but not interacted with.[/][/]");
+                                    AnsiConsole.MarkupLine("[italic][grey]Escalated = The conversation was elevated to a human agent.[/][/]");
+                                    AnsiConsole.MarkupLine("[italic][grey]Resolved = The conversation ended and the user confirms it was a success.[/][/]");
+                                    AnsiConsole.MarkupLine("[italic][grey]Abandoned = The user stopped using the bot before confirming it was a success.[/][/]");
+                                    Console.WriteLine();
                                 }
-
-                                //Produce the breakdown chart
-                                BreakdownChart bdc = new BreakdownChart();
-                                bdc.Width(Console.WindowWidth);
-                                bdc.AddItem("Unengaged", outcome_unengaged, RandomColor());
-                                bdc.AddItem("Escalated (hand-off)", outcome_escalated, RandomColor());
-                                bdc.AddItem("Resolved", outcome_resolved, RandomColor());
-                                bdc.AddItem("Abandoned", outcome_abandoned, RandomColor());
-                                Console.WriteLine();
-                                AnsiConsole.MarkupLine("[bold][underline][navy]Session Outcome Breakdown[/][/][/]");
-                                AnsiConsole.Write(bdc); //Print
-
-                                //Explain the breakdown chart
-                                Console.WriteLine();
-                                AnsiConsole.MarkupLine("[italic][grey]Unengaged = The bot was presented but not interacted with.[/][/]");
-                                AnsiConsole.MarkupLine("[italic][grey]Escalated = The conversation was elevated to a human agent.[/][/]");
-                                AnsiConsole.MarkupLine("[italic][grey]Resolved = The conversation ended and the user confirms it was a success.[/][/]");
-                                AnsiConsole.MarkupLine("[italic][grey]Abandoned = The user stopped using the bot before confirming it was a success.[/][/]");
-                                Console.WriteLine();
-
+                                
                                 //Ask which transcript they want to analyze
                                 if (csbot.Sessions.Length > 0) //If there are sessions
                                 {
