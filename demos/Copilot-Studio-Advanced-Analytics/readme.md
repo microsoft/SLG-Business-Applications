@@ -51,6 +51,7 @@ Neither the developer nor Microsoft will be held responsible for any errors, dat
 
 ## Other Resources
 - [This .zip folder](https://github.com/microsoft/SLG-Business-Applications/releases/download/15/BACKUP.DATA.FOR.CSAA.zip) contains raw dumps of `bots`, `conversationtranscripts`, and `systemusers`, the three Dataverse tables that are used in this application. If you do not have good data in your Dataverse environment to work with, you could use this and configure the data acquisition code to load this from local (instead of actually pulling from Dataverse). 
+    - But if you do this, you may also need to adjust the date that is considered "today" (will have to write code to do this). This is because if you use this data far into the future as of the time of this writing, every bot + session will be old and the breakdown of "last 30 days, last 90 days, etc." will make ALL bots/sessions/messages land in the 180+ day category. Adjust it to October 22, 2024 (time of this writing) for a good breakdown.
 - Here is the [.MP3 file](https://github.com/microsoft/SLG-Business-Applications/releases/download/15/Tech.Beats.mp3) of the background music used in the demo video above (it is AI generated).
 
 ## Credit
