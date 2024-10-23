@@ -1,4 +1,4 @@
-# Power Platform Copilot Feature Availability in GCC
+# Dynamics 365 and Power Platform Copilot Feature Availability in GCC
 > [!IMPORTANT]
 > November 7, 2024 through Nov 12, 2024 we are going live with Phase 2 of Copilot availbility for Power Platform and Dynamics 365 in GCC and GCC High!  For more information on what this means, [go here](https://github.com/microsoft/Federal-Business-Applications/blob/main/whitepapers/copilot/README.md).
 
@@ -38,8 +38,8 @@ For a full description of Azure OpenAI's data, privacy and security details, you
 
 * [Data, privacy, and security for Azure OpenAI Service](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy)
 
-## Power Platform Copilots
-The sections and tables that follow identify all known Power Platform Copilot features.  The tables show to availability of each feature in both commercial cloud and in GCC.
+## Dynamics 365 and Power Platform Copilots
+The sections and tables that follow identify all known Copilot features in Dynamics 365 Customer Service and Power Platform.  The tables show to availability of each feature in both commercial cloud and in GCC.
 > [!IMPORTANT] 
 > There's now a central Microsoft documentation page that outlines all Dynamics 365 and Power Platform Generative AI features and the controls you have for each of them.  That document can be found in the link below,
 > 
@@ -48,6 +48,24 @@ The sections and tables that follow identify all known Power Platform Copilot fe
 * The Dates shown are when each feature's availability was last evaluated.
 * GA = Generally Available
 * "Early Access" is a phase that may come prior to "Preview".
+
+## Dynamics 365 Copilots
+
+### Dynamics 365 Customer Service Copilots
+|Feature|Commercial|GCC|Eval Date|
+|-|-|-|-|
+|[Case summary](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/copilot-enable-summary#enable-case-summaries)|GA|Yes|10.23.24|
+|[Live conversation summary](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/copilot-enable-summary#enable-conversation-summaries)|GA|||
+|[Translation](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/copilot-enable-help-pane#enable-translation)|GA|Yes|10.23.24|
+|[Create a case from conversation](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/copilot-use-summary#get-a-conversation-summary:~:text=Copy%20the%20summary.-,Select%20Create%20case,-to%20create%20a)|GA|||
+|[Draft a response](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-copilot-features#draft-a-chat-response-preview)|Preview|No|10.23.24|
+|[Write an email](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-copilot-email?tabs=richtexteditor)|GA|Yes|10.23.24|
+|[Ask a question (knowledge search)](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-copilot-features#ask-a-question)|GA|Yes|10.23.24|
+|[Plugins for generative AI](https://learn.microsoft.com/en-us/dynamics365/customer-service/administer/enable-copilot-plugins-for-generative-ai)|Preview|Preview|10.23.24|
+|[Suggest knowledge from cases](https://learn.microsoft.com/en-us/dynamics365/customer-service/use/use-copilot-knowledge-from-cases)|Preview|No|10.23.24|
+
+
+## Power Platform Copilots
 
 ### Power Apps - Canvas Apps
 Maker Copilot features
