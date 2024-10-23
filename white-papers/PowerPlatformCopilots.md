@@ -39,13 +39,19 @@ For a full description of Azure OpenAI's data, privacy and security details, you
 * [Data, privacy, and security for Azure OpenAI Service](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy)
 
 ## Power Platform Copilots
-The sections and tables that follow identify all known Power Platform Copilot features.  The tables show to availability of each feature in both commercial cloud and in GCC.  The Dates shown are when each feature's availability was last evaluated.
+The sections and tables that follow identify all known Power Platform Copilot features.  The tables show to availability of each feature in both commercial cloud and in GCC.
+> [!IMPORTANT] 
+> There's now a central Microsoft documentation page that outlines all Dynamics 365 and Power Platform Generative AI features and the controls you have for each of them.  That document can be found in the link below,
+> 
+> [Copilot in Dynamics 365 apps and Power Platform Governance Controls](https://learn.microsoft.com/en-us/power-platform/faqs-copilot-data-security-privacy#copilot-in-dynamics-365-apps-and-power-platform)
+
+* The Dates shown are when each feature's availability was last evaluated.
 * GA = Generally Available
 * "Early Access" is a phase that may come prior to "Preview".
 
 ### Power Apps - Canvas Apps
 Maker Copilot features
-|Feature|Commercial|GCC|Date|
+|Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
 |[Explain this PowerFX formula](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#explain-a-formula)|GA|Yes|10.18.24|
 |[Generate formula from code comments](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#generate-formulas-from-code-comments-preview)|Preview|No|10.18.24|
@@ -55,7 +61,7 @@ Maker Copilot features
 |[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)|Preview|No|10.21.24|
 
 User Copilot features
-|Feature|Commercial|GCC|Date|
+|Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
 |[Copilot control (open-ended chat)](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-ai-copilot)|Preview|No|10.18.24|
 |[Copilot answer control (Pre-baked prompt)](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/copilot-answer-control-overview)|Preview|No|10.18.24|
@@ -65,13 +71,13 @@ User Copilot features
 
 ### Power Apps - Model Driven Apps
 Maker Copilot features
-|Feature|Commercial|GCC|Date|
+|Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
 |[Column suggestions by Copilot](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-and-edit-forms#column-suggestions-by-copilot-preview)|Preview|No|10.18.24|
 |[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/build-first-model-driven-app#create-an-app-description-with-copilot-preview)|Preview|No|10.21.24|
 
 User Copilot features
-|Feature|Commercial|GCC|Date|
+|Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
 |[Copilot in rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/copilot-control)|Early Access|No|10.18.24|
 |[Copilot in email rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/use-copilot-email-assist)|Early Access|No|10.18.24|
@@ -80,14 +86,14 @@ User Copilot features
 |[Timeline highlights](https://learn.microsoft.com/en-us/power-apps/user/add-activities#use-timeline-highlights-powered-by-generative-ai)|GA|No|10.18.24|
 
 ### Power Automate
-|Feature|Commercial|GCC|Date|
+|Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
 |[Describe to design](https://learn.microsoft.com/en-us/power-automate/create-cloud-flow-from-description)|Preview|Yes|9.15.24|
 |[Edit a flow with Copilot](https://learn.microsoft.com/en-us/power-automate/get-started-with-copilot#edit-a-flow-using-the-designer-with-copilot-capabilities)|Preview|Yes|10.18.24|
 |[Troubleshoot in Copilot](https://learn.microsoft.com/en-us/power-automate/fix-flow-failures#troubleshoot-in-copilot)|GA|No|10.18.24|
 
 ### Power Pages
-|Feature|Commercial|GCC|Date|
+|Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
 |[Site creation with Copilot](https://learn.microsoft.com/en-us/power-pages/getting-started/create-site-copilot)|GA|Yes|10.21.24|
 |[Add Copilot to Power Pages site](https://learn.microsoft.com/en-us/power-pages/getting-started/enable-chatbot)|GA|Yes|10.21.24|
@@ -95,5 +101,5 @@ User Copilot features
 |[Add an AI-generated form](https://learn.microsoft.com/en-us/power-pages/getting-started/add-form-copilot)|GA|Yes|10.21.24|
 |[Add an AI-generated multi-step form](https://learn.microsoft.com/en-us/power-pages/getting-started/multistep-forms-copilot)|Preview|Yes|10.21.24|
 |[Create AI-generated theme](https://learn.microsoft.com/en-us/power-pages/getting-started/theme-copilot)|GA|Yes|10.21.24|
-|[Add AI-generated code](https://learn.microsoft.com/en-us/power-pages/configure/add-code-copilot)|Preview|||
+|[Add AI-generated code](https://learn.microsoft.com/en-us/power-pages/configure/add-code-copilot)|Preview|No|10.23.24|
 |[Power Pages Search with gen AI](https://learn.microsoft.com/en-us/power-pages/configure/search/generative-ai)|Preview|No|10.21.24|
