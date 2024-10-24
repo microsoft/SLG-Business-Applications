@@ -1,6 +1,6 @@
 # ![Copilot Studio Advanced Analytics](https://i.imgur.com/X8s6bNH.jpeg)
 
-[![csaa_app](https://i.imgur.com/CrVSyzh.png)](https://youtu.be/Rj9aH3xAggo)
+[![csaa_app](https://i.imgur.com/CrVSyzh.png)](https://youtu.be/N-TJxYpAl5Q)
 
 *Click the image above for a demo video!*
 
