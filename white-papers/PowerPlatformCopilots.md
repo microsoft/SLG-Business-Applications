@@ -77,6 +77,7 @@ Maker Copilot features
 |[Field suggestions by Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-field-suggestions)|GA|No|10.18.24|
 |[Natural language to formulas](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-ideas-transform)|GA|No|10.18.24|
 |[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)|Preview|No|10.21.24|
+|[Dataverse Data Workspace](https://www.microsoft.com/en-us/power-platform/blog/power-apps/data-workspace-is-now-generally-available/?msockid=30d3025b988b65e001ec13a7997364df)|GA|No|10.24.24|
 
 User Copilot features
 |Feature|Commercial|GCC|Eval Date|
