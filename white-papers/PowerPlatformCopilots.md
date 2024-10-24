@@ -126,7 +126,7 @@ User Copilot features
 |Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
 |[Generative answers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#generative-answers)|GA|Yes|10.24.24|
-|AI general knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#ai-general-knowledge)|GA|Yes|10.24.24|
+|[AI general knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#ai-general-knowledge)|GA|Yes|10.24.24|
 |[Orchestrate copilot topics and actions with generative AI](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-generative-actions)|Preview|Yes|10.24.24|
 |[Create a Copilot with natural language](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot)|GA|No|10.24.24|
 |[Create and edit topics with natural language](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot)|GA|Yes|10.24.24|
