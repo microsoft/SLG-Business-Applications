@@ -69,15 +69,14 @@ The sections and tables that follow identify all known Copilot features in Dynam
 
 ### Power Apps - Canvas Apps
 Maker Copilot features
-|Feature|Commercial|GCC|Eval Date|
-|-|-|-|-|
-|[Explain this PowerFX formula](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#explain-a-formula)|GA|Yes|10.18.24|
-|[Generate formula from code comments](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#generate-formulas-from-code-comments-preview)|Preview|No|10.18.24|
-|[Build apps through conversation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-conversations-create-app)|GA|No|10.18.24|
-|[Field suggestions by Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-field-suggestions)|GA|No|10.18.24|
-|[Natural language to formulas](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-ideas-transform)|GA|No|10.18.24|
-|[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)|Preview|No|10.21.24|
-|[Dataverse Data Workspace](https://www.microsoft.com/en-us/power-platform/blog/power-apps/data-workspace-is-now-generally-available/?msockid=30d3025b988b65e001ec13a7997364df)|GA|No|10.24.24|
+|Feature|Commercial|GCC|Eval Date|Notes|
+|-|-|-|-|-|
+|[Explain this PowerFX formula](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#explain-a-formula)|GA|Yes|10.18.24||
+|[Generate formula from code comments](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#generate-formulas-from-code-comments-preview)|Preview|No|10.18.24||
+|[Build apps through conversation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-conversations-create-app)|GA|No|10.18.24||
+|[Field suggestions by Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-field-suggestions)|GA|No|10.18.24|UI exists but doesn't provide suggestions|
+|[Natural language to formulas](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-ideas-transform)|GA|No|10.18.24||
+|[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)|Preview|No|10.21.24||
 
 User Copilot features
 |Feature|Commercial|GCC|Eval Date|
@@ -122,3 +121,19 @@ User Copilot features
 |[Create AI-generated theme](https://learn.microsoft.com/en-us/power-pages/getting-started/theme-copilot)|GA|Yes|10.21.24|
 |[Add AI-generated code](https://learn.microsoft.com/en-us/power-pages/configure/add-code-copilot)|Preview|No|10.23.24|
 |[Power Pages Search with gen AI](https://learn.microsoft.com/en-us/power-pages/configure/search/generative-ai)|Preview|No|10.21.24|
+
+### Copilot Studio
+|Feature|Commercial|GCC|Eval Date|
+|-|-|-|-|
+|[Generative answers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#generative-answers)|GA|Yes|10.24.24|
+|AI general knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#ai-general-knowledge)|GA|Yes|10.24.24|
+|[Orchestrate copilot topics and actions with generative AI](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-generative-actions)|Preview|Yes|10.24.24|
+|[Create a Copilot with natural language](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot)|GA|No|10.24.24|
+|[Create and edit topics with natural language](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot)|GA|Yes|10.24.24|
+
+### Platform
+|Feature|Commercial|GCC|Eval Date|Notes|
+|-|-|-|-|-|
+|[Dataverse Data Workspace](https://www.microsoft.com/en-us/power-platform/blog/power-apps/data-workspace-is-now-generally-available/?msockid=30d3025b988b65e001ec13a7997364df)|GA|No|10.24.24||
+|[Dataverse AI functions](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-ai)|GA|No|10.24.24|Functions exist but throw errors when called|
+|[AI Builder - AI prompts](https://learn.microsoft.com/en-us/ai-builder/prompts-overview)|GA|Yes|10.24.24|| 
