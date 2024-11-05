@@ -99,6 +99,7 @@ namespace DataversePerformanceTesting
             ToPerformChoice.Title("What do you want to do?");
             ToPerformChoice.AddChoice("Test #1 - Upload one-by-one");
             ToPerformChoice.AddChoice("Test #2 - Upload one-by-one, but in parallel");
+            ToPerformChoice.AddChoice("Test #4 - Upload multiple records per HTTP call using the CreateMultiple service, but HTTP requests sent in parallel");
             string ToPerform = AnsiConsole.Prompt(ToPerformChoice);
 
             //Handle
@@ -147,7 +148,6 @@ namespace DataversePerformanceTesting
                 //Stats to control the upload process
                 HttpClient hc = new HttpClient();
                 int UploadBatch = 52; //How many uploads to do concurrently
-
 
                 //Begin recording
                 DateTime UploadStarted = DateTime.UtcNow;
@@ -214,6 +214,107 @@ namespace DataversePerformanceTesting
                 TimeSpan TotalUploadTime = UploadEnded - UploadStarted;
                 AnsiConsole.MarkupLine("[underline]Test #2 results @ batch of " + UploadBatch + "[/]");
                 AnsiConsole.MarkupLine("[bold]" + RecordsUploaded.ToString("#,##0") + "[/] records uploaded in [bold]" + TotalUploadTime.TotalSeconds.ToString("#,##0") + " seconds[/]!");
+            }
+            else if (ToPerform == "Test #4 - Upload multiple records per HTTP call using the CreateMultiple service, but HTTP requests sent in parallel")
+            {
+                //Get records per HTTP call
+                int RecordsPerApiCall = 1;
+                Console.Write("How many records to include in each API call? > ");
+                string? input_RecordsPerHttpCall = Console.ReadLine();
+                if (input_RecordsPerHttpCall != null)
+                {
+                    RecordsPerApiCall = Convert.ToInt32(input_RecordsPerHttpCall);
+                }
+
+                //Get API calls to make concurrently
+                int ConcurrentApiCalls = 1;
+                Console.Write("How many API calls to make concurrently? > ");
+                string? input_ApiCallsInParallelStr = Console.ReadLine();
+                if (input_ApiCallsInParallelStr != null)
+                {
+                    ConcurrentApiCalls = Convert.ToInt32(input_ApiCallsInParallelStr);
+                }
+
+                //Print
+                AnsiConsole.MarkupLine("[blue]I will make [bold]" + ConcurrentApiCalls.ToString() + "[/] concurrent [italic]CreateMultiple[/] API calls, with each call containing [bold]" + RecordsPerApiCall.ToString() + "[/bold] records.");
+
+                //Authenticate to Dataverse - we are now ready to start
+                DataverseService ds = await AuthenticateAndValidateAsync(auth);
+                
+                //Set up stuff
+                HttpClient hc = new HttpClient();
+                
+                //Begin recording
+                DateTime UploadStarted = DateTime.UtcNow;
+                int RecordsUploaded = 0;
+                string ErrorMessage = string.Empty;
+                while (ErrorMessage == string.Empty)
+                {
+
+                    //Prepare list of HTTP requests to make (concurrently, if there are multiple)
+                    List<Task<HttpResponseMessage>> UploadsToMake = new List<Task<HttpResponseMessage>>();
+                    for (int u = 0; u < ConcurrentApiCalls; u++)
+                    {
+                        //Set up HTTP request
+                        HttpRequestMessage req = new HttpRequestMessage();
+                        req.Method = HttpMethod.Post;
+                        req.RequestUri = new Uri(auth.Resource + "api/data/v9.2/timh_animals/Microsoft.Dynamics.CRM.CreateMultiple"); //CreateMultiple service
+                        req.Headers.Add("Authorization", "Bearer " + auth.AccessToken);
+
+                        //Construct body with the specified number of records
+                        JObject body = new JObject();
+                        JArray targets = new JArray();
+                        for (int rc = 0; rc < RecordsPerApiCall; rc++)
+                        {
+                            JObject NewAnimalRecord = Animal.Random().ForDataverseUpload();
+                            NewAnimalRecord.Add("@odata.type", "Microsoft.Dynamics.CRM.tah_animal"); //Must add this to each record as per the CreateMultiple documentation.
+                            targets.Add(NewAnimalRecord);
+                        }
+                        body.Add("Targets", targets);
+                        
+                        //Append body
+                        req.Content = new StringContent(body.ToString(), Encoding.UTF8, "application/json");
+
+                        //Add this HTTP request to the list of requests to do
+                        UploadsToMake.Add(hc.SendAsync(req));
+                    }
+
+                    //Make all requests concurrently
+                    AnsiConsole.Markup("POSTing " + UploadsToMake.Count.ToString("#,##0") + " [italic]CreateMultiple[/] API calls... ");
+                    try
+                    {
+                        HttpResponseMessage[] responses = await Task.WhenAll(UploadsToMake);
+                        
+                        //Validate that all uploaded successfully
+                        bool EveryApiCallWasSuccessful = true; //assume true
+                        foreach (HttpResponseMessage response in responses)
+                        {
+                            if (response.StatusCode != System.Net.HttpStatusCode.OK) //The Dataverse API returns 200 OK to the CreateMultiple requests when they are successful
+                            {
+                                EveryApiCallWasSuccessful = false;
+                                ErrorMessage = "Code: " + response.StatusCode.ToString() + " Msg: " + await response.Content.ReadAsStringAsync();
+                                AnsiConsole.MarkupLine("[red]At least one API call from the last batch of API calls did NOT return 200 OK! " + ErrorMessage + "[/]");
+                            }
+                            else //This API call was successful (200 OK)!
+                            {
+                                RecordsUploaded = RecordsUploaded + RecordsPerApiCall; //This request worked, so increment by the number of individual records this API call created.
+                            }
+                        }
+
+                        //If all was successful, print
+                        if (EveryApiCallWasSuccessful)
+                        {
+                            AnsiConsole.MarkupLine("[green]Success![/]");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        ErrorMessage = ex.Message;
+                        AnsiConsole.MarkupLine("[red]Error! Msg: " + ex.Message + "[/]");
+                    }
+                }
+
+
             }
             else
             {
