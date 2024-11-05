@@ -136,6 +136,7 @@ namespace DataversePerformanceTesting
 
                 //Print statistics
                 TimeSpan TotalUploadTime = UploadEnded - UploadStarted;
+                AnsiConsole.MarkupLine("[underline]Test #3 results[/]");
                 AnsiConsole.MarkupLine("[bold]" + RecordsUploaded.ToString("#,##0") + "[/] records uploaded in [bold]" + TotalUploadTime.TotalSeconds.ToString("#,##0") + " seconds[/]!");
             }
             else if (ToPerform == "Test #2 - Upload one-by-one, but in parallel")
@@ -207,6 +208,12 @@ namespace DataversePerformanceTesting
                         ErrorMessage = ex.Message;
                     }
                 }
+                DateTime UploadEnded = DateTime.UtcNow;
+
+                //Print statistics
+                TimeSpan TotalUploadTime = UploadEnded - UploadStarted;
+                AnsiConsole.MarkupLine("[underline]Test #2 results @ batch of " + UploadBatch + "[/]");
+                AnsiConsole.MarkupLine("[bold]" + RecordsUploaded.ToString("#,##0") + "[/] records uploaded in [bold]" + TotalUploadTime.TotalSeconds.ToString("#,##0") + " seconds[/]!");
             }
             else
             {
