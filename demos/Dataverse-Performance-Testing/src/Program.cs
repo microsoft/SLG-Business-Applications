@@ -13,7 +13,7 @@ namespace DataversePerformanceTesting
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("hi");
+            MainProgramAsync().Wait();
         }
 
         public static async Task MainProgramAsync()
@@ -100,7 +100,7 @@ namespace DataversePerformanceTesting
             string ToPerform = AnsiConsole.Prompt(ToPerformChoice);
 
             //Handle
-            if (ToPerform == "")
+            if (ToPerform == "Test #1 - Upload one-by-one")
             {
                 
                 //Authenticate against Dataverse
@@ -116,7 +116,24 @@ namespace DataversePerformanceTesting
                 EntityMetadataSummary[] metadatasummaries = await ds.GetEntityMetadataSummariesAsync();
                 AnsiConsole.MarkupLine(metadatasummaries.Length.ToString("#,##0") + " tables found.");
                 bool AnimalTableExists = false;
-                Console.WriteLine(JsonConvert.SerializeObject(metadatasummaries));
+                foreach (EntityMetadataSummary ems in metadatasummaries)
+                {
+                    if (ems.EntitySetName == "timh_animals")
+                    {
+                        AnimalTableExists = true;
+                    }
+                }
+                if (AnimalTableExists)
+                {
+                    AnsiConsole.MarkupLine("[green]timh_animals table confirmed to exist in environment '" + auth.Resource + "'![/]");
+                }
+                else
+                {
+                    AnsiConsole.MarkupLine("[red]timh_animals table does not exist in environment '" + auth.Resource + "'! Make sure you install the necessary solution in this environment before continuing.[/]");
+                    Environment.Exit(0);
+                }
+
+
 
             }
             else
