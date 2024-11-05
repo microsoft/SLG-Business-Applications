@@ -97,43 +97,15 @@ namespace DataversePerformanceTesting
             SelectionPrompt<string> ToPerformChoice = new SelectionPrompt<string>();
             ToPerformChoice.Title("What do you want to do?");
             ToPerformChoice.AddChoice("Test #1 - Upload one-by-one");
+            ToPerformChoice.AddChoice("Test #2 - Upload one-by-one, but in parallel");
             string ToPerform = AnsiConsole.Prompt(ToPerformChoice);
 
             //Handle
             if (ToPerform == "Test #1 - Upload one-by-one")
             {
+                //Authenticate and validate
+                DataverseService ds = await AuthenticateAndValidateAsync(auth);
                 
-                //Authenticate against Dataverse
-                AnsiConsole.Markup("Authenticating against Dataverse... ");
-                await auth.GetAccessTokenAsync();
-                Console.WriteLine(auth.AccessToken);
-                AnsiConsole.MarkupLine("[green]Success![/]");
-                TimeSpan GoodFor = auth.AccessTokenExpiresUtc - DateTime.UtcNow;
-                AnsiConsole.MarkupLine("Access token is good for [bold]" + GoodFor.TotalMinutes.ToString("#,##0") + " minutes[/]");
-
-                //Validate the Animal table exists
-                DataverseService ds = new DataverseService(auth.Resource, auth.AccessToken);
-                AnsiConsole.Markup("Downloading metadata... ");
-                EntityMetadataSummary[] metadatasummaries = await ds.GetEntityMetadataSummariesAsync();
-                AnsiConsole.MarkupLine(metadatasummaries.Length.ToString("#,##0") + " tables found.");
-                bool AnimalTableExists = false;
-                foreach (EntityMetadataSummary ems in metadatasummaries)
-                {
-                    if (ems.EntitySetName == "timh_animals")
-                    {
-                        AnimalTableExists = true;
-                    }
-                }
-                if (AnimalTableExists)
-                {
-                    AnsiConsole.MarkupLine("[green]timh_animals table confirmed to exist in environment '" + auth.Resource + "'![/]");
-                }
-                else
-                {
-                    AnsiConsole.MarkupLine("[red]timh_animals table does not exist in environment '" + auth.Resource + "'! Make sure you install the necessary solution in this environment before continuing.[/]");
-                    Environment.Exit(0);
-                }
-
                 //Begin recording
                 DateTime UploadStarted = DateTime.UtcNow;
                 int RecordsUploaded = 0;
@@ -165,11 +137,54 @@ namespace DataversePerformanceTesting
                 TimeSpan TotalUploadTime = UploadEnded - UploadStarted;
                 AnsiConsole.MarkupLine("[bold]" + RecordsUploaded.ToString("#,##0") + "[/] records uploaded in [bold]" + TotalUploadTime.TotalSeconds.ToString("#,##0") + " seconds[/]!");
             }
+            else if (ToPerform == "Test #2 - Upload one-by-one, but in parallel")
+            {
+
+            }
             else
             {
                 AnsiConsole.MarkupLine("[red]I do not know how to handle selection '" + ToPerform + "'![/]");
             }
 
+        }
+
+
+        //Authenticates against Dataverse and verifies that the timh_animals table exists.
+        public static async Task<DataverseService> AuthenticateAndValidateAsync(DataverseAuthenticator auth)
+        {
+            //Authenticate against Dataverse
+            AnsiConsole.Markup("Authenticating against Dataverse... ");
+            await auth.GetAccessTokenAsync();
+            Console.WriteLine(auth.AccessToken);
+            AnsiConsole.MarkupLine("[green]Success![/]");
+            TimeSpan GoodFor = auth.AccessTokenExpiresUtc - DateTime.UtcNow;
+            AnsiConsole.MarkupLine("Access token is good for [bold]" + GoodFor.TotalMinutes.ToString("#,##0") + " minutes[/]");
+
+            //Validate the Animal table exists
+            DataverseService ds = new DataverseService(auth.Resource, auth.AccessToken);
+            AnsiConsole.Markup("Downloading metadata... ");
+            EntityMetadataSummary[] metadatasummaries = await ds.GetEntityMetadataSummariesAsync();
+            AnsiConsole.MarkupLine(metadatasummaries.Length.ToString("#,##0") + " tables found.");
+            bool AnimalTableExists = false;
+            foreach (EntityMetadataSummary ems in metadatasummaries)
+            {
+                if (ems.EntitySetName == "timh_animals")
+                {
+                    AnimalTableExists = true;
+                }
+            }
+            if (AnimalTableExists)
+            {
+                AnsiConsole.MarkupLine("[green]timh_animals table confirmed to exist in environment '" + auth.Resource + "'![/]");
+            }
+            else
+            {
+                AnsiConsole.MarkupLine("[red]timh_animals table does not exist in environment '" + auth.Resource + "'! Make sure you install the necessary solution in this environment before continuing.[/]");
+                Environment.Exit(0);
+            }
+
+            //Return
+            return ds;
         }
     }
 }
