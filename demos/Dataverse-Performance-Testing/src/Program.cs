@@ -137,8 +137,8 @@ namespace DataversePerformanceTesting
                 //Begin recording
                 DateTime UploadStarted = DateTime.UtcNow;
                 int RecordsUploaded = 0;
-                bool EncounteredUploadError = false;
-                while (EncounteredUploadError == false)
+                string ErrorMessage = string.Empty;
+                while (ErrorMessage == string.Empty)
                 {
                     TimeSpan Remaining = auth.AccessTokenExpiresUtc - DateTime.UtcNow; //Estimate time remaining until token expires
                     TimeSpan Elapsed = DateTime.UtcNow - UploadStarted;
@@ -155,7 +155,7 @@ namespace DataversePerformanceTesting
                     }
                     catch (Exception ex)
                     {
-                        EncounteredUploadError = true;
+                        ErrorMessage = ex.Message;
                         AnsiConsole.MarkupLine("[red]Error! Msg: " + ex.Message + "[/]");
                     }
                 }
