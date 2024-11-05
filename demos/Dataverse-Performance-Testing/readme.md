@@ -25,6 +25,8 @@ The `Animal Species` option set will have the following options
 
 You can download a **solution** with the option set, table, and a simple model-driven app [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/16/DataversePerformanceTesting_1_0_0_1.zip).
 
+You can download a **solution** with all the content as the solution above, **except the table is a virtual table** (not a standard table) [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/17/DataversePerformanceTestingwElasticTable_1_0_0_1.zip). *(you have to append `powerappsEntities.elasticTables=true` to the URL in GCC when creating the table to have the option of a virtual table)*
+
 ## Tests
 Tests will run for at least 60 minutes, or as long as a single programmatic authentication into Dataverse lasts (generally ~70 minutes). Continuous uploads/upserts/updates will be POSTed to the Dataverse web API, in various formats, and this will continue with no delay/wait until the access token expires (and thus an error is given). By comparing the ratio of records impacted vs. time, we can determine which methods were fastest.
 
