@@ -41,7 +41,7 @@ We will be comparing the performance of the following methods:
     - Batches of 100 per HTTP call
     - Batches of 500 per HTTP call
     - Batches of 1000 per HTTP call
-- **Test 5**: Multiple records per HTTP request, using the [CreateMultiple](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/bulk-operations?tabs=webapi#createmultiple) service, each HTTP request one-by-one, but against an [Elastic Tables](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/elastic-tables)
+- **Test 5**: Multiple records per HTTP request, using the [CreateMultiple](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/bulk-operations?tabs=webapi#createmultiple) service, each HTTP request one-by-one, but against an [Elastic Table](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/elastic-tables)
     - Batches of 25 per HTTP call
     - Batches of 100 per HTTP call
     - Batches of 500 per HTTP call
