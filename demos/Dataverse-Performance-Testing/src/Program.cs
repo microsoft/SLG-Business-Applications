@@ -155,7 +155,6 @@ namespace DataversePerformanceTesting
             //Authenticate against Dataverse
             AnsiConsole.Markup("Authenticating against Dataverse... ");
             await auth.GetAccessTokenAsync();
-            Console.WriteLine(auth.AccessToken);
             AnsiConsole.MarkupLine("[green]Success![/]");
             TimeSpan GoodFor = auth.AccessTokenExpiresUtc - DateTime.UtcNow;
             AnsiConsole.MarkupLine("Access token is good for [bold]" + GoodFor.TotalMinutes.ToString("#,##0") + " minutes[/]");
