@@ -236,7 +236,7 @@ namespace DataversePerformanceTesting
                 }
 
                 //Print
-                AnsiConsole.MarkupLine("[blue]I will make [bold]" + ConcurrentApiCalls.ToString() + "[/] concurrent [italic]CreateMultiple[/] API calls, with each call containing [bold]" + RecordsPerApiCall.ToString() + "[/bold] records.");
+                AnsiConsole.MarkupLine("[blue]I will make [bold]" + ConcurrentApiCalls.ToString() + "[/] concurrent [italic]CreateMultiple[/] API calls, with each call containing [bold]" + RecordsPerApiCall.ToString() + "[/] records.[/]");
 
                 //Authenticate to Dataverse - we are now ready to start
                 DataverseService ds = await AuthenticateAndValidateAsync(auth);
@@ -250,6 +250,11 @@ namespace DataversePerformanceTesting
                 string ErrorMessage = string.Empty;
                 while (ErrorMessage == string.Empty)
                 {
+                    //Progress statistics
+                    TimeSpan Remaining = auth.AccessTokenExpiresUtc - DateTime.UtcNow; //Estimate time remaining until token expires
+                    TimeSpan Elapsed = DateTime.UtcNow - UploadStarted;
+                    float RecordsPerMinute = Convert.ToSingle(RecordsUploaded) / Convert.ToSingle(Elapsed.TotalMinutes); //The avg records per minute so far
+                    int UploadEstimate = Convert.ToInt32(RecordsUploaded + (RecordsPerMinute * Convert.ToSingle(Remaining.TotalMinutes))); //An estimate for how many records will be uploaded during this entire test, based on the trailing performance.
 
                     //Prepare list of HTTP requests to make (concurrently, if there are multiple)
                     List<Task<HttpResponseMessage>> UploadsToMake = new List<Task<HttpResponseMessage>>();
@@ -267,7 +272,7 @@ namespace DataversePerformanceTesting
                         for (int rc = 0; rc < RecordsPerApiCall; rc++)
                         {
                             JObject NewAnimalRecord = Animal.Random().ForDataverseUpload();
-                            NewAnimalRecord.Add("@odata.type", "Microsoft.Dynamics.CRM.tah_animal"); //Must add this to each record as per the CreateMultiple documentation.
+                            NewAnimalRecord.Add("@odata.type", "Microsoft.Dynamics.CRM.timh_animal"); //Must add this to each record as per the CreateMultiple documentation.
                             targets.Add(NewAnimalRecord);
                         }
                         body.Add("Targets", targets);
@@ -280,10 +285,11 @@ namespace DataversePerformanceTesting
                     }
 
                     //Make all requests concurrently
-                    AnsiConsole.Markup("POSTing " + UploadsToMake.Count.ToString("#,##0") + " [italic]CreateMultiple[/] API calls... ");
+                    AnsiConsole.Markup("[gray](" + Remaining.TotalMinutes.ToString("#,##0") + " mins remaining, est. " + UploadEstimate.ToString("#,##0") + " records @ " + RecordsPerMinute.ToString("#,##0.0") + " records/min)[/] "  + "POSTing [bold]" + UploadsToMake.Count.ToString("#,##0") + "[/] [italic]CreateMultiple[/] API calls with each call containing [bold]" + RecordsPerApiCall.ToString("#,##0") + "[/] records... ");
                     try
                     {
                         HttpResponseMessage[] responses = await Task.WhenAll(UploadsToMake);
+                        AnsiConsole.Markup("[gray]completed... [/]");
                         
                         //Validate that all uploaded successfully
                         bool EveryApiCallWasSuccessful = true; //assume true
@@ -293,7 +299,8 @@ namespace DataversePerformanceTesting
                             {
                                 EveryApiCallWasSuccessful = false;
                                 ErrorMessage = "Code: " + response.StatusCode.ToString() + " Msg: " + await response.Content.ReadAsStringAsync();
-                                AnsiConsole.MarkupLine("[red]At least one API call from the last batch of API calls did NOT return 200 OK! " + ErrorMessage + "[/]");
+                                AnsiConsole.MarkupLine("[red]At least one API call from the last batch of API calls did NOT return 200 OK![/]");
+                                AnsiConsole.WriteLine("Failed HTTP call: " + ErrorMessage);
                             }
                             else //This API call was successful (200 OK)!
                             {
@@ -311,6 +318,7 @@ namespace DataversePerformanceTesting
                     {
                         ErrorMessage = ex.Message;
                         AnsiConsole.MarkupLine("[red]Error! Msg: " + ex.Message + "[/]");
+                        Console.WriteLine(ex.StackTrace);
                     }
                 }
 
