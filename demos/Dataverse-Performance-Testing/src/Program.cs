@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using TimHanewich.Dataverse.Metadata;
+using System.Text;
 
 namespace DataversePerformanceTesting
 {
@@ -139,7 +140,73 @@ namespace DataversePerformanceTesting
             }
             else if (ToPerform == "Test #2 - Upload one-by-one, but in parallel")
             {
+                //Auth and validate
+                DataverseService ds = await AuthenticateAndValidateAsync(auth);
 
+                //Stats to control the upload process
+                HttpClient hc = new HttpClient();
+                int UploadBatch = 52; //How many uploads to do concurrently
+
+
+                //Begin recording
+                DateTime UploadStarted = DateTime.UtcNow;
+                int RecordsUploaded = 0;
+                string ErrorMessage = string.Empty;
+                while (ErrorMessage == string.Empty)
+                {
+                    TimeSpan Remaining = auth.AccessTokenExpiresUtc - DateTime.UtcNow; //Estimate time remaining until token expires
+                    TimeSpan Elapsed = DateTime.UtcNow - UploadStarted;
+                    float RecordsPerMinute = Convert.ToSingle(RecordsUploaded) / Convert.ToSingle(Elapsed.TotalMinutes); //The avg records per minute so far
+                    int UploadEstimate = Convert.ToInt32(RecordsUploaded + (RecordsPerMinute * Convert.ToSingle(Remaining.TotalMinutes))); //An estimate for how many records will be uploaded during this entire test, based on the trailing performance.
+
+                    //Create list of tasks
+                    List<Task<HttpResponseMessage>> UploadsToDo = new List<Task<HttpResponseMessage>>();
+                    for (int i = 0; i < UploadBatch; i++)
+                    {
+                        Animal a = Animal.Random();
+                        HttpRequestMessage req = new HttpRequestMessage();
+                        req.Method = HttpMethod.Post;
+                        req.RequestUri = new Uri(auth.Resource + "api/data/v9.2/timh_animals");
+                        req.Headers.Add("Authorization", "Bearer " + auth.AccessToken);
+                        req.Content = new StringContent(a.ForDataverseUpload().ToString(), Encoding.UTF8, "application/json");
+                        UploadsToDo.Add(hc.SendAsync(req));
+                    }
+
+                    //Wait for all the tasks to be upload
+                    AnsiConsole.Markup("[gray](" + Remaining.TotalMinutes.ToString("#,##0") + " mins remaining, est. " + UploadEstimate.ToString("#,##0") + " records @ " + RecordsPerMinute.ToString("#,##0.0") + " records/min)[/] "  + "POSTing " + UploadsToDo.Count.ToString("#,##0") + " concurrent upload calls... ");
+                    try
+                    {
+                        //Call!
+                        HttpResponseMessage[] responses = await Task.WhenAll(UploadsToDo);
+
+                        //Check for errors
+                        bool AllUploadedSuccessfully = true; //Assume true
+                        foreach (HttpResponseMessage resp in responses)
+                        {
+                            if (resp.StatusCode != System.Net.HttpStatusCode.NoContent) //NoContent is what the Dataverse API returns when creation was successful
+                            {
+                                AllUploadedSuccessfully = false;
+                                ErrorMessage = "Status Code: " + resp.StatusCode.ToString() + ", Msg: " + await resp.Content.ReadAsStringAsync();
+                                AnsiConsole.MarkupLine("[red]At least one upload from this batch failed! " + ErrorMessage + "[/]");
+                            }
+                            else //It was successful
+                            {
+                                RecordsUploaded = RecordsUploaded + 1; //Count it!
+                            }
+                        }
+                        
+                        //Success?
+                        if (AllUploadedSuccessfully)
+                        {
+                            AnsiConsole.MarkupLine("[green]Success![/]");
+                        } 
+                    }
+                    catch (Exception ex)
+                    {
+                        AnsiConsole.MarkupLine("[red]Error! Msg: " + ex.Message + "[/]");
+                        ErrorMessage = ex.Message;
+                    }
+                }
             }
             else
             {
