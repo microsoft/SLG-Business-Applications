@@ -30,13 +30,13 @@ Tests will run for at least 60 minutes, or as long as a single programmatic auth
 
 We will be comparing the performance of the following methods:
 - **Test 1**: One record per HTTP request, each request one-by-one
-- **Test 2**: One record per HTTP reqquest, but HTTP requests sent concurrently @ 52 per batch.
+- **Test 2**: One record per HTTP reqquest, but HTTP requests sent concurrently in groups of 50.
 - **Test 3**: Multiple records per HTTP request using the [CreateMultiple](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/bulk-operations?tabs=webapi#createmultiple) service, each HTTP request one-by-one.
     - Batches of 25 per HTTP call
     - Batches of 100 per HTTP call
     - Batches of 500 per HTTP call
     - Batches of 1000 per HTTP call
-- **Test 4**: Multiple records per HTTP requests using the [CreateMultiple](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/bulk-operations?tabs=webapi#createmultiple) service, but HTTP requests sent concurrently @ 52 per batch.
+- **Test 4**: Multiple records per HTTP requests using the [CreateMultiple](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/bulk-operations?tabs=webapi#createmultiple) service, but HTTP requests sent concurrently in groups of 50.
     - Batches of 25 per HTTP call
     - Batches of 100 per HTTP call
     - Batches of 500 per HTTP call
