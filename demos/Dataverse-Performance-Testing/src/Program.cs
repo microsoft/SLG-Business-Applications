@@ -97,50 +97,12 @@ namespace DataversePerformanceTesting
             //Give option on what to do
             SelectionPrompt<string> ToPerformChoice = new SelectionPrompt<string>();
             ToPerformChoice.Title("What do you want to do?");
-            ToPerformChoice.AddChoice("Test #1 - Upload one-by-one");
             ToPerformChoice.AddChoice("Test #2 - Upload one-by-one, but in parallel");
             ToPerformChoice.AddChoice("Test #4 - Upload multiple records per HTTP call using the CreateMultiple service, but HTTP requests sent in parallel");
             string ToPerform = AnsiConsole.Prompt(ToPerformChoice);
 
             //Handle
-            if (ToPerform == "Test #1 - Upload one-by-one")
-            {
-                //Authenticate and validate
-                DataverseService ds = await AuthenticateAndValidateAsync(auth);
-                
-                //Begin recording
-                DateTime UploadStarted = DateTime.UtcNow;
-                int RecordsUploaded = 0;
-                string ErrorMessage = string.Empty;
-                while (ErrorMessage == string.Empty)
-                {
-                    TimeSpan Remaining = auth.AccessTokenExpiresUtc - DateTime.UtcNow; //Estimate time remaining until token expires
-                    TimeSpan Elapsed = DateTime.UtcNow - UploadStarted;
-                    float RecordsPerMinute = Convert.ToSingle(RecordsUploaded) / Convert.ToSingle(Elapsed.TotalMinutes); //The avg records per minute so far
-                    int UploadEstimate = Convert.ToInt32(RecordsUploaded + (RecordsPerMinute * Convert.ToSingle(Remaining.TotalMinutes))); //An estimate for how many records will be uploaded during this entire test, based on the trailing performance.
-
-                    Animal ToUpload = Animal.Random();
-                    AnsiConsole.Markup("[gray](" + Remaining.TotalMinutes.ToString("#,##0") + " mins remaining, est. " + UploadEstimate.ToString("#,##0") + " records @ " + RecordsPerMinute.ToString("#,##0.0") + " records/min)[/] " + "Uploading animal #" + (RecordsUploaded + 1).ToString("#,##0") + " (" + ToUpload.Name + ")... ");
-                    try
-                    {
-                        await ds.CreateAsync("timh_animals", ToUpload.ForDataverseUpload());
-                        RecordsUploaded = RecordsUploaded + 1;
-                        AnsiConsole.MarkupLine("[green]Uploaded![/]");
-                    }
-                    catch (Exception ex)
-                    {
-                        ErrorMessage = ex.Message;
-                        AnsiConsole.MarkupLine("[red]Error! Msg: " + ex.Message + "[/]");
-                    }
-                }
-                DateTime UploadEnded = DateTime.UtcNow;
-
-                //Print statistics
-                TimeSpan TotalUploadTime = UploadEnded - UploadStarted;
-                AnsiConsole.MarkupLine("[underline]Test #3 results[/]");
-                AnsiConsole.MarkupLine("[bold]" + RecordsUploaded.ToString("#,##0") + "[/] records uploaded in [bold]" + TotalUploadTime.TotalSeconds.ToString("#,##0") + " seconds[/]!");
-            }
-            else if (ToPerform == "Test #2 - Upload one-by-one, but in parallel")
+            if (ToPerform == "Test #2 - Upload one-by-one, but in parallel")
             {
                 AnsiConsole.MarkupLine("Great! I will upload new records to Dataverse with one record per API call.");
 
