@@ -48,3 +48,13 @@ We will be comparing the performance of the following methods:
     - Batches of 100 per HTTP call
     - Batches of 500 per HTTP call
     - Batches of 1000 per HTTP call
+
+## Number of Requests Limit
+After receiving the following error, it appears the maximum number of requests cannot exceed 8,000 requests over a 300 second period.
+
+```
+{"error":{"code":"0x80072322","message":"Number of requests exceeded the limit of
+8000 over time window of 300 seconds."}}
+```
+
+So, we cannot exceed 8,000 requests per 5 minutes, or 26.67 requests per second.
