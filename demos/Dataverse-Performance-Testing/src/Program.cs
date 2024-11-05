@@ -141,9 +141,12 @@ namespace DataversePerformanceTesting
                 while (EncounteredUploadError == false)
                 {
                     TimeSpan Remaining = auth.AccessTokenExpiresUtc - DateTime.UtcNow; //Estimate time remaining until token expires
-                    
+                    TimeSpan Elapsed = DateTime.UtcNow - UploadStarted;
+                    float RecordsPerMinute = Convert.ToSingle(RecordsUploaded) / Convert.ToSingle(Elapsed.TotalMinutes); //The avg records per minute so far
+                    int UploadEstimate = Convert.ToInt32(RecordsUploaded + (RecordsPerMinute * Convert.ToSingle(Remaining.TotalMinutes))); //An estimate for how many records will be uploaded during this entire test, based on the trailing performance.
+
                     Animal ToUpload = Animal.Random();
-                    AnsiConsole.Markup("[gray](" + Remaining.TotalMinutes.ToString("#,##0") + " mins remaining)[/] " + "Uploading animal #" + (RecordsUploaded + 1).ToString("#,##0") + " (" + ToUpload.Name + ")... ");
+                    AnsiConsole.Markup("[gray](" + Remaining.TotalMinutes.ToString("#,##0") + " mins remaining, est. " + UploadEstimate.ToString("#,##0") + " records @ " + RecordsPerMinute.ToString("#,##0.0") + " records/min)[/] " + "Uploading animal #" + (RecordsUploaded + 1).ToString("#,##0") + " (" + ToUpload.Name + ")... ");
                     try
                     {
                         await ds.CreateAsync("timh_animals", ToUpload.ForDataverseUpload());
