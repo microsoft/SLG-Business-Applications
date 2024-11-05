@@ -96,9 +96,9 @@ namespace DataversePerformanceTesting
 
             //Give option on what to do
             SelectionPrompt<string> ToPerformChoice = new SelectionPrompt<string>();
-            ToPerformChoice.Title("What do you want to do?");
-            ToPerformChoice.AddChoice("Test #2 - Upload one-by-one, but in parallel");
-            ToPerformChoice.AddChoice("Test #4 - Upload multiple records per HTTP call using the CreateMultiple service, but HTTP requests sent in parallel");
+            ToPerformChoice.Title("How do you want to perform your upload test to Dataverse? [gray](all alllow for concurrency)[/]");
+            ToPerformChoice.AddChoice("Standard uploads via POST request (one new record per HTTP request).");
+            ToPerformChoice.AddChoice("Use [italic]CreateMultiple[/] to upload multiple records per HTTP request.");
             string ToPerform = AnsiConsole.Prompt(ToPerformChoice);
 
             //Handle
