@@ -142,12 +142,24 @@ namespace DataversePerformanceTesting
             }
             else if (ToPerform == "Test #2 - Upload one-by-one, but in parallel")
             {
+                AnsiConsole.MarkupLine("Great! I will upload new records to Dataverse with one record per API call.");
+
+                //Get numnber of records to do in parallel?
+                Console.Write("How many records do you want to upload at a time (in parallel)? Enter 1 if you want to do one-by-one. > ");
+                int UploadBatch = 1;
+                string? ParallelInput = Console.ReadLine();
+                if (ParallelInput != null)
+                {
+                    UploadBatch = Convert.ToInt32(ParallelInput);
+                }
+
+                AnsiConsole.MarkupLine("I will upload new records to Dataverse with one record per API call, in batches of [bold]" + UploadBatch.ToString() + "[/] calls at a time (in parallel).");
+
                 //Auth and validate
                 DataverseService ds = await AuthenticateAndValidateAsync(auth);
 
                 //Stats to control the upload process
                 HttpClient hc = new HttpClient();
-                int UploadBatch = 52; //How many uploads to do concurrently
 
                 //Begin recording
                 DateTime UploadStarted = DateTime.UtcNow;
