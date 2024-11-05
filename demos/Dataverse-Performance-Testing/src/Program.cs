@@ -12,7 +12,7 @@ namespace DataversePerformanceTesting
     public class Program
     {
         public static void Main(string[] args)
-        {
+        {            
             MainProgramAsync().Wait();
         }
 
@@ -106,6 +106,7 @@ namespace DataversePerformanceTesting
                 //Authenticate against Dataverse
                 AnsiConsole.Markup("Authenticating against Dataverse... ");
                 await auth.GetAccessTokenAsync();
+                Console.WriteLine(auth.AccessToken);
                 AnsiConsole.MarkupLine("[green]Success![/]");
                 TimeSpan GoodFor = auth.AccessTokenExpiresUtc - DateTime.UtcNow;
                 AnsiConsole.MarkupLine("Access token is good for [bold]" + GoodFor.TotalMinutes.ToString("#,##0") + " minutes[/]");
@@ -133,8 +134,33 @@ namespace DataversePerformanceTesting
                     Environment.Exit(0);
                 }
 
+                //Begin recording
+                DateTime UploadStarted = DateTime.UtcNow;
+                int RecordsUploaded = 0;
+                bool EncounteredUploadError = false;
+                while (EncounteredUploadError == false)
+                {
+                    TimeSpan Remaining = auth.AccessTokenExpiresUtc - DateTime.UtcNow; //Estimate time remaining until token expires
+                    
+                    Animal ToUpload = Animal.Random();
+                    AnsiConsole.Markup("[gray](" + Remaining.TotalMinutes.ToString("#,##0") + " mins remaining)[/] " + "Uploading animal #" + (RecordsUploaded + 1).ToString("#,##0") + " (" + ToUpload.Name + ")... ");
+                    try
+                    {
+                        await ds.CreateAsync("timh_animals", ToUpload.ForDataverseUpload());
+                        RecordsUploaded = RecordsUploaded + 1;
+                        AnsiConsole.MarkupLine("[green]Uploaded![/]");
+                    }
+                    catch (Exception ex)
+                    {
+                        EncounteredUploadError = true;
+                        AnsiConsole.MarkupLine("[red]Error! Msg: " + ex.Message + "[/]");
+                    }
+                }
+                DateTime UploadEnded = DateTime.UtcNow;
 
-
+                //Print statistics
+                TimeSpan TotalUploadTime = UploadEnded - UploadStarted;
+                AnsiConsole.MarkupLine("[bold]" + RecordsUploaded.ToString("#,##0") + "[/] records uploaded in [bold]" + TotalUploadTime.TotalSeconds.ToString("#,##0") + " seconds[/]!");
             }
             else
             {
