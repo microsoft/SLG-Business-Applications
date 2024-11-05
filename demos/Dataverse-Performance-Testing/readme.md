@@ -31,7 +31,7 @@ You can download a **solution** with all the content as the solution above, **ex
 Tests will run for at least 60 minutes, or as long as a single programmatic authentication into Dataverse lasts (generally ~70 minutes). Continuous uploads/upserts/updates will be POSTed to the Dataverse web API, in various formats, and this will continue with no delay/wait until the access token expires (and thus an error is given). By comparing the ratio of records impacted vs. time, we can determine which methods were fastest.
 
 We will be comparing the performance of the following methods:
-- **Test 1**: One record per HTTP request, each request one-by-one
+- **Test 1**: One record per HTTP request, each request one-by-one - 30,642 records in 62.4 minutes, or **490.8 records/minute**
 - **Test 2**: One record per HTTP reqquest, but HTTP requests sent concurrently in groups of 50.
 - **Test 3**: Multiple records per HTTP request using the [CreateMultiple](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/bulk-operations?tabs=webapi#createmultiple) service, each HTTP request one-by-one.
     - Batches of 50 per HTTP call
