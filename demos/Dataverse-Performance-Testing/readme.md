@@ -58,3 +58,5 @@ After receiving the following error, it appears the maximum number of requests c
 ```
 
 So, we cannot exceed 8,000 requests per 5 minutes, or 26.67 requests per second.
+
+This rate limit, and the error code, are documented [here](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits?tabs=sdk).
