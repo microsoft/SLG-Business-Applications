@@ -102,7 +102,7 @@ namespace DataversePerformanceTesting
             string ToPerform = AnsiConsole.Prompt(ToPerformChoice);
 
             //Handle
-            if (ToPerform == "Test #2 - Upload one-by-one, but in parallel")
+            if (ToPerform == "Standard uploads via POST request (one new record per HTTP request).")
             {
                 AnsiConsole.MarkupLine("Great! I will upload new records to Dataverse with one record per API call.");
 
@@ -189,7 +189,7 @@ namespace DataversePerformanceTesting
                 AnsiConsole.MarkupLine("[underline]Test #2 results @ batch of " + UploadBatch + "[/]");
                 AnsiConsole.MarkupLine("[bold]" + RecordsUploaded.ToString("#,##0") + "[/] records uploaded in [bold]" + TotalUploadTime.TotalSeconds.ToString("#,##0") + " seconds[/]!");
             }
-            else if (ToPerform == "Test #4 - Upload multiple records per HTTP call using the CreateMultiple service, but HTTP requests sent in parallel")
+            else if (ToPerform == "Use [italic]CreateMultiple[/] to upload multiple records per HTTP request.")
             {
                 //Get records per HTTP call
                 int RecordsPerApiCall = 1;
