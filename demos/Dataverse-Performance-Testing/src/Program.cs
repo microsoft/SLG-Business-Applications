@@ -241,7 +241,6 @@ namespace DataversePerformanceTesting
                         req.Headers.Add("Authorization", "Bearer " + auth.AccessToken);
 
                         //Construct body with the specified number of records
-                        JObject body = new JObject();
                         JArray targets = new JArray();
                         for (int rc = 0; rc < RecordsPerApiCall; rc++)
                         {
@@ -249,6 +248,7 @@ namespace DataversePerformanceTesting
                             NewAnimalRecord.Add("@odata.type", "Microsoft.Dynamics.CRM.timh_animal"); //Must add this to each record as per the CreateMultiple documentation.
                             targets.Add(NewAnimalRecord);
                         }
+                        JObject body = new JObject();
                         body.Add("Targets", targets);
                         
                         //Append body
@@ -278,7 +278,19 @@ namespace DataversePerformanceTesting
                             }
                             else //This API call was successful (200 OK)!
                             {
-                                RecordsUploaded = RecordsUploaded + RecordsPerApiCall; //This request worked, so increment by the number of individual records this API call created.
+                                string responseBodyStr = await response.Content.ReadAsStringAsync();
+                                JObject responseBody = JObject.Parse(responseBodyStr);
+                                JToken? Ids = responseBody.SelectToken("Ids");
+                                if (Ids != null)
+                                {
+                                    JArray IdsJArray = (JArray)Ids;
+                                    RecordsUploaded = RecordsUploaded = IdsJArray.Count; //Increment the # of records uploaded by the confirmed number of IDs (GUIDs) that come back, confirming record creation.
+                                }
+                                else //It is very unlikely for this to happen... because if it returned 200 OK, it will for sure return the correct response above where the "Ids" property contains GUIDS
+                                {
+                                    AnsiConsole.MarkupLine("[red]Unable to confirm upload of records via CreateMultiple! Property 'Ids' not found in response![/]");
+                                    EveryApiCallWasSuccessful = false;
+                                }
                             }
                         }
 
@@ -286,6 +298,10 @@ namespace DataversePerformanceTesting
                         if (EveryApiCallWasSuccessful)
                         {
                             AnsiConsole.MarkupLine("[green]Success![/]");
+                        }
+                        else
+                        {
+                            AnsiConsole.MarkupLine("[red]At least partially failed![/]");
                         }
                     }
                     catch (Exception ex)
