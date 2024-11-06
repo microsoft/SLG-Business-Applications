@@ -34,10 +34,10 @@ We will be comparing the performance of the following methods:
 - **Test 1**: One record per HTTP request, each request one-by-one - 30,642 records in 62.4 minutes, or **491 records/minute**
 - **Test 2**: One record per HTTP reqquest, but HTTP requests sent concurrently in groups of 50. - **1,600 records/minute** (rate limited to 8,000 calls per 300 second period)
 - **Test 3**: Multiple records per HTTP request using the [CreateMultiple](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/bulk-operations?tabs=webapi#createmultiple) service, each HTTP request one-by-one.
-    - Batches of 50 per HTTP call - **7,592 records/minute**
-    - Batches of 100 per HTTP call - **7,746 records/minute**
-    - Batches of 500 per HTTP call
-    - Batches of 1000 per HTTP call
+    - Batches of 50 per HTTP call - **7,870 records/minute**
+    - Batches of 100 per HTTP call - **8,241 records/minute**
+    - Batches of 500 per HTTP call - **9,202 records/minute**
+    - Batches of 1000 per HTTP call - **9,100 records/minute**
 - **Test 4**: Multiple records per HTTP requests using the [CreateMultiple](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/bulk-operations?tabs=webapi#createmultiple) service, but HTTP requests sent concurrently in groups of 50.
     - Batches of 50 per HTTP call
     - Batches of 100 per HTTP call
