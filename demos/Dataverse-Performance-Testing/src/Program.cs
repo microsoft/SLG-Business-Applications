@@ -284,7 +284,7 @@ namespace DataversePerformanceTesting
                                 if (Ids != null)
                                 {
                                     JArray IdsJArray = (JArray)Ids;
-                                    RecordsUploaded = RecordsUploaded = IdsJArray.Count; //Increment the # of records uploaded by the confirmed number of IDs (GUIDs) that come back, confirming record creation.
+                                    RecordsUploaded = RecordsUploaded + IdsJArray.Count; //Increment the # of records uploaded by the confirmed number of IDs (GUIDs) that come back, confirming record creation.
                                 }
                                 else //It is very unlikely for this to happen... because if it returned 200 OK, it will for sure return the correct response above where the "Ids" property contains GUIDS
                                 {
