@@ -39,10 +39,10 @@ We will be comparing the performance of the following methods:
     - Batches of 500 per HTTP call - **9,202 records/minute**
     - Batches of 1000 per HTTP call - **9,100 records/minute**
 - **Test 4**: Multiple records per HTTP requests using the [CreateMultiple](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/bulk-operations?tabs=webapi#createmultiple) service, but HTTP requests sent concurrently in groups of 50.
-    - Batches of 50 per HTTP call
-    - Batches of 100 per HTTP call
-    - Batches of 500 per HTTP call
-    - Batches of 1000 per HTTP call
+    - Batches of 50 per HTTP call - **29,837 records/minute**
+    - Batches of 100 per HTTP call - **30,900 records/minute**, but execution time limited
+    - Batches of 500 per HTTP call - **30,330 records/minute**, but execution time limited
+    - Batches of 1000 per HTTP call - **30,080 records/minute**, but execution time limited
 - **Test 5**: Multiple records per HTTP requests using the [CreateMultiple](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/bulk-operations?tabs=webapi#createmultiple) service, but HTTP requests sent concurrently in groups of 50, against an [Elastic Table](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/elastic-tables).
     - Batches of 50 per HTTP call
     - Batches of 100 per HTTP call
@@ -60,3 +60,11 @@ After receiving the following error, it appears the maximum number of requests c
 So, we cannot exceed 8,000 individual requests per 5 minutes, which is 1,600 calls per minute.
 
 This rate limit, and the error code, are documented [here](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits?tabs=sdk).
+
+## Request Duration Limit
+The combined execution time of each request is also tracked, summed together, and rate limited. This became apparent in the error message below that occured while doing a `CreateMultiple` request @ 50 concurrent requests, each containing 100 records.
+
+```
+{"error":{"code":"0x80072321","message":"Combined execution time of incoming requests exceeded limit of 1200000     
+milliseconds over time window of 300 seconds. Decrease number of concurrent requests or reduce the duration of requests and try again later."}}
+```
