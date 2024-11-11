@@ -29,7 +29,6 @@ namespace CopilotStudioAnalytics
             string username = "";
             string password = "";
             string resource = "";
-            string azblobconstr = "";
 
             //Try to get these from the "key.json" file
             string expected_path = @".\keys.json";
@@ -57,13 +56,6 @@ namespace CopilotStudioAnalytics
                 if (prop_resource != null)
                 {
                     resource = prop_resource.Value.ToString();
-                }
-
-                //Azure Blob Connection string?
-                JProperty? prop_azblob = jokeys.Property("azblob");
-                if (prop_azblob != null)
-                {
-                    azblobconstr = prop_azblob.Value.ToString();
                 }
             }
 
@@ -97,17 +89,6 @@ namespace CopilotStudioAnalytics
                 if (s != null)
                 {
                     resource = s;
-                }
-            }
-
-            //Get azure blob storage connection string
-            if (azblobconstr == "")
-            {
-                Console.Write("Azure Blob Storage Connection String (optional) > ");
-                string? s = Console.ReadLine();
-                if (s != null)
-                {
-                    azblobconstr = s;
                 }
             }
 
@@ -865,114 +846,6 @@ namespace CopilotStudioAnalytics
 
 
 
-                }
-                else if (DoNextSelection == "Archive session transcripts to Azure Blob Storage")
-                {
-
-                    //If we don't have an azure con string yet, get it
-                    while (azblobconstr == "")
-                    {
-                        Console.Write("What is your Azure Blob Storage connection string? > ");
-                        string? i = Console.ReadLine();
-                        if (i != null)
-                        {
-                            azblobconstr = i;
-                        }
-                    }
-
-                    //CLEAR
-                    Console.Clear();
-
-                    //Count # of sessions
-                    int sessions = 0;
-                    foreach (CopilotStudioBot csbot in csbots)
-                    {
-                        sessions = sessions + csbot.Sessions.Length;
-                    }
-
-                    AnsiConsole.MarkupLine("[bold][underline][blue]Archive Transcripts to Azure Blob Storage[/][/][/]");
-                    AnsiConsole.MarkupLine("I'm ready to begin archiving [bold]" + sessions.ToString() + "[/] Copilot Studio session transcripts to Azure Blob Storage!");
-                    AnsiConsole.MarkupLine("This will only archive [bold]new[/] transcripts - any transcripts that are [italic]already[/] in Dataverse will be ignored.");
-                    Console.WriteLine();
-                    AnsiConsole.Markup("[italic]Ready when you are! Press enter to begin the upload process![/]");
-                    Console.ReadLine();
-
-                    //Authenticate and make container
-                    BlobServiceClient bsc;
-                    BlobContainerClient bcc;
-                    try
-                    {
-                        bsc = new BlobServiceClient(azblobconstr);
-                        bcc = bsc.GetBlobContainerClient("transcripts");
-                        bcc.CreateIfNotExists();
-                    }
-                    catch (Exception ex)
-                    {
-                        AnsiConsole.MarkupLine("[red]Authentication against Az Blob Storage did not work! Exception Message: " + ex.Message + "[/]");
-                        Console.WriteLine();
-                        AnsiConsole.MarkupLine("[italic]Enter to close error msg.[/]");
-                        Console.ReadLine();
-                        continue; //Go to next loop
-                    }
-
-                    //Loop through each session
-                    int uploaded = 0;
-                    int already_archived = 0;
-                    int upload_errors = 0;
-                    int ON_TICKER = 1;
-                    foreach (CopilotStudioBot csbot in csbots)
-                    {
-                        foreach (CopilotStudioSession ses in csbot.Sessions)
-                        {
-                            AnsiConsole.Markup("[grey](" + ON_TICKER.ToString() + "/" + sessions.ToString() + ")[/] Uploading session '[bold]" + ses.SessionId.ToString() + "[/]' of bot '[bold]" + csbot.Name + "[/]' from [bold]" + ses.ConversationStart.ToShortDateString() + "[/]... ");
-
-                            //Get blob client
-                            string name = ses.SessionId.ToString().Replace("-", "") + ".json"; //File name that will be saved to blob
-                            BlobClient bc = bcc.GetBlobClient(name);
-                            if (bc.Exists() == false) //If the blob isn't already there
-                            {
-                                try
-                                {
-                                    //Prepare JSON object to upload
-                                    JObject ToUpload = JObject.Parse(JsonConvert.SerializeObject(ses));
-                                    JObject botinfo = new JObject();
-                                    botinfo.Add("schemaName", csbot.SchemaName);
-                                    botinfo.Add("name", csbot.Name);
-                                    ToUpload.Add("bot", botinfo);
-
-                                    //Upload
-                                    string fcontent = ToUpload.ToString(Formatting.Indented);
-                                    byte[] asbytes = Encoding.ASCII.GetBytes(fcontent);
-                                    MemoryStream ms = new MemoryStream(asbytes);
-                                    await bc.UploadAsync(ms);
-
-                                    //Success msg
-                                    uploaded = uploaded + 1;
-                                    AnsiConsole.MarkupLine("[green]Success![/]");
-                                }
-                                catch (Exception ex)
-                                {
-                                    upload_errors = upload_errors + 1;   
-                                    AnsiConsole.MarkupLine("[red]That did not work! Error msg: " + ex.Message + "[/]");
-                                }                                
-                            }
-                            else
-                            {
-                                already_archived = already_archived + 1;
-                                AnsiConsole.MarkupLine("[gray][italic](already archived)[/][/]");
-                            }
-
-                            //Increment on ticker
-                            ON_TICKER = ON_TICKER + 1;
-                        }
-                    }
-
-                    //Now that we are done, print completion
-                    Console.WriteLine();
-                    Console.WriteLine("Archiving of sessions to Azure Blob Storage complete!");
-                    AnsiConsole.MarkupLine("- [bold][blue]" + uploaded.ToString("#,##0") + "[/][/] sessions uploaded");
-                    AnsiConsole.MarkupLine("- [bold][blue]" + already_archived.ToString("#,##0") + "[/][/] sessions already uploaded previously");
-                    AnsiConsole.MarkupLine("- [bold][blue]" + upload_errors.ToString("#,##0") + "[/][/] errors during upload");
                 }
                 else if (DoNextSelection == "Exit")
                 {
