@@ -122,18 +122,6 @@ namespace CopilotStudioAnalytics
             //Parse them!
             CopilotStudioBot[] csbots = CopilotStudioBot.Parse(bots, transcripts);
 
-            //Retrieve users
-            AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving System Users... ");
-            TimHanewich.Dataverse.AdvancedRead.DataverseReadOperation dro = new TimHanewich.Dataverse.AdvancedRead.DataverseReadOperation();
-            dro.TableIdentifier = "systemusers";
-            dro.AddColumn("fullname");
-            dro.AddColumn("systemuserid");
-            dro.AddColumn("internalemailaddress");
-            JArray systemusers = await ds.ReadAsync(dro);
-            //System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\BACKUP DATA FOR CSAA\systemusers.json", systemusers.ToString(Formatting.Indented));
-            SystemUser[] users = SystemUser.Parse(systemusers);
-            AnsiConsole.MarkupLine("[italic][green]" + users.Length.ToString("#,##0") + " users found![/][/]");
-
             
         }
     }
