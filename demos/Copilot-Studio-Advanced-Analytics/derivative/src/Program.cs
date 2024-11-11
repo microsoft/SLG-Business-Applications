@@ -122,7 +122,7 @@ namespace CopilotStudioAnalytics
             //Parse them!
             CopilotStudioBot[] csbots = CopilotStudioBot.Parse(bots, transcripts);
 
-            
+            System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Copilot-Studio-Advanced-Analytics\derivative\dump.json", JsonConvert.SerializeObject(csbots, Formatting.Indented));
         }
     }
 }

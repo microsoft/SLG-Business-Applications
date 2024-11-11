@@ -7,6 +7,7 @@ namespace CopilotStudioAnalytics
 {
     public class CopilotStudioSession
     {
+        public Guid BotID {get; set;} //The ID (GUID) of the bot this transcript corresponds with
         public Guid SessionId {get; set;}
         public DateTime ConversationStart {get; set;}
         public DateTime ConversationEnd {get; set;}

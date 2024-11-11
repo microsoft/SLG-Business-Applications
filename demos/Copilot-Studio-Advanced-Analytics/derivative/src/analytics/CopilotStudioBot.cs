@@ -5,6 +5,7 @@ namespace CopilotStudioAnalytics
 {
     public class CopilotStudioBot
     {
+        public Guid BotID {get; set;} //Guid (primary key) of the bot
         public string Name {get; set;} //Display name
         public string SchemaName {get; set;} //Schema name (unique)
         public Guid Owner {get; set;} //GUID of the SystemUser (user) that owns this bot.
@@ -26,6 +27,13 @@ namespace CopilotStudioAnalytics
             foreach (JObject bot in bots)
             {
                 CopilotStudioBot nbot = new CopilotStudioBot();
+
+                //Get BotID
+                JProperty? prop_botid = bot.Property("botid");
+                if (prop_botid != null)
+                {
+                    nbot.BotID = Guid.Parse(prop_botid.Value.ToString());
+                }
                 
                 //Get name
                 JProperty? prop_name = bot.Property("name");
@@ -89,8 +97,14 @@ namespace CopilotStudioAnalytics
                         if (id != null)
                         {
                             ThisSession.SessionId = Guid.Parse(id.Value.ToString());
-                        }                   
+                        }     
 
+                        //Retrieve bot ID
+                        JProperty? prop_botid_relationship = transcipt.Property("_bot_conversationtranscriptid_value"); //A foreign key (lookup)
+                        if (prop_botid_relationship != null)
+                        {
+                            ThisSession.BotID = Guid.Parse(prop_botid_relationship.Value.ToString());
+                        }              
 
                         //Parse the "content" property, which contains the transcript data.
                         JProperty? pcontent = transcipt.Property("content");
