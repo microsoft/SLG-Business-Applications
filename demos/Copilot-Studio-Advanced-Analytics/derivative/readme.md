@@ -1,0 +1,2 @@
+# CSAA Derivative Application
+While [the original CSAA application](../) allows you to view your Copilot Studio data through a C# Console App, this derivative of that app logs the data directly into Dataverse tables where you can build apps to view your data!
