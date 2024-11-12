@@ -32,7 +32,7 @@ namespace CopilotStudioAnalytics
             string resource = "";
 
             //Try to get these from the "key.json" file
-            string expected_path = @".\keys.json";
+            string expected_path = Path.Combine(Directory.GetCurrentDirectory(), "keys.json");
             if (System.IO.File.Exists(expected_path))
             {
                 string keystxt = System.IO.File.ReadAllText(expected_path);
