@@ -193,8 +193,8 @@ namespace CopilotStudioAnalytics
                     TimeSpan TimeUntilNextLoop = NextLoopAt - DateTime.UtcNow;
 
                     //Print time
-                    string TimeToGo = TimeUntilNextLoop.Hours.ToString("#,##0") + " hours, " + TimeUntilNextLoop.Minutes.ToString("#,##0") + ", " + TimeUntilNextLoop.Seconds.ToString("#,##0") + " seconds";
-                    AnsiConsole.Markup("\r" + TimeToGo + " until next update...");
+                    string TimeToGo = TimeUntilNextLoop.Hours.ToString("#,##0") + " hours, " + TimeUntilNextLoop.Minutes.ToString("#,##0") + " minutes, " + TimeUntilNextLoop.Seconds.ToString("#,##0") + " seconds";
+                    AnsiConsole.Markup("\r" + "[bold][blue]" + TimeToGo + "[/][/] until next update...");
                     await Task.Delay(1000); //wait 1 second
                 }
                 AnsiConsole.MarkupLine("[italic]Moving on to next loop now![/]");
