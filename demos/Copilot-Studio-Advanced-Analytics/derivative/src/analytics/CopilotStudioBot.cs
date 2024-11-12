@@ -252,6 +252,15 @@ namespace CopilotStudioAnalytics
                                                 msg.Text = text.Value.ToString();
                                             }
 
+                                            //Get timestamp
+                                            JProperty? timestamp = activity.Property("timestamp");
+                                            if (timestamp != null)
+                                            {
+                                                int unixtime = Convert.ToInt32(timestamp.Value.ToString());
+                                                DateTime epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc); //Unix time is the time since 1970, the epoch.
+                                                msg.TimeStamp = epoch.AddSeconds(unixtime);
+                                            }
+
                                             //Add to message list
                                             ThisSessionsMessages.Add(msg);
                                         }

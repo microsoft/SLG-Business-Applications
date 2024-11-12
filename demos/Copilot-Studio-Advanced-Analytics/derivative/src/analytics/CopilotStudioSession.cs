@@ -31,5 +31,33 @@ namespace CopilotStudioAnalytics
             }
         }
 
+        public JObject ForDataverseUpload(CopilotStudioBot? bot_it_is_for = null)
+        {
+            JObject ToReturn = new JObject();
+            ToReturn.Add("tsp_copilotsessionid", SessionId); //This is the primary key... we want the primary key (GUID) of the tsp_copilotsessions record to MATCH the ID of the associated conversationtranscripts record.
+            ToReturn.Add("tsp_conversationstart", ConversationStart.ToString());
+            ToReturn.Add("tsp_conversationend", ConversationEnd.ToString());
+            ToReturn.Add("tsp_turncount", TurnCount);
+            ToReturn.Add("tsp_outcome", Outcome);
+
+            //Add primary name field
+            if (bot_it_is_for == null)
+            {
+                ToReturn.Add("tsp_copilotstudiosessionid", MessageCount.ToString("#,##0") + " messages from " + ConversationStart.ToShortDateString()); //This is the primary column, not primary key
+            }
+            else //They provided the bot it came from
+            {
+                ToReturn.Add("tsp_copilotstudiosessionid", MessageCount.ToString("#,##0") + " messages with '" + bot_it_is_for.Name + "' from " + ConversationStart.ToShortDateString()); //This is the primary column, not primary key
+            }
+
+            //Form relationship to parent entity, the "bot" table
+            if (bot_it_is_for != null)
+            {
+                ToReturn.Add("tsp_Copilot@odata.bind", "bots(" + bot_it_is_for.BotID.ToString() + ")");
+            }
+            
+            return ToReturn;
+        }
+
     }
 }

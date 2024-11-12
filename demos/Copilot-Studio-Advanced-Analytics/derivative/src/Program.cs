@@ -13,6 +13,7 @@ using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 using System.IO;
 using System.Text;
+using TimHanewich.Dataverse.Metadata;
 
 namespace CopilotStudioAnalytics
 {
@@ -99,30 +100,108 @@ namespace CopilotStudioAnalytics
             auth.Resource = resource;
             auth.ClientId = Guid.Parse("51f81489-12ee-4a9e-aaae-a2591f45987d"); //fill in default (standard) clientid
             AnsiConsole.MarkupLine("[italic]Dataverse credentials locked and loaded![/]");
-            
-            //Authenticate (call to Dataverse OAuth API and get access token that we can then use to make)
-            AnsiConsole.Markup("[green][bold]Dataverse Auth[/][/]: Authenticating as '" + auth.Username + "' to environment '" + auth.Resource + "'... ");
-            await auth.GetAccessTokenAsync();      
-            AnsiConsole.MarkupLine("[italic][green]Authenticated![/][/]");     
 
-            //Retrieve transcripts
-            DataverseService ds = new DataverseService(auth.Resource, auth.AccessToken);
-            AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving Copilot Studio transcripts... ");
-            JArray transcripts = await ds.ReadAsync("conversationtranscripts");
-            //JArray transcripts = JArray.Parse(System.IO.File.ReadAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Copilot-Studio-Advanced-Analytics\examples\conversationtranscripts.json")); //Collect from local, optionally
-            //System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\BACKUP DATA FOR CSAA\conversationtranscripts.json", transcripts.ToString(Formatting.Indented));
-            AnsiConsole.MarkupLine("[italic][green]" + transcripts.Count.ToString("#,##0") + " transcripts retrieved![/][/]");
+            //Infinite loop
+            while (true)
+            {
+                //Authenticate (call to Dataverse OAuth API and get access token that we can then use to make)
+                AnsiConsole.Markup("[green][bold]Dataverse Auth[/][/]: Authenticating as '" + auth.Username + "' to environment '" + auth.Resource + "'... ");
+                await auth.GetAccessTokenAsync();    
+                AnsiConsole.MarkupLine("[italic][green]Authenticated![/][/]");    
 
-            //Retrieve bots
-            AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving list of Copilot Studio bots... ");
-            JArray bots = await ds.ReadAsync("bots");
-            //System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\BACKUP DATA FOR CSAA\bots.json", bots.ToString(Formatting.Indented));
-            AnsiConsole.MarkupLine("[italic][green]" + bots.Count.ToString("#,##0") + " bots found![/][/]");
+                DataverseService ds = new DataverseService(auth.Resource, auth.AccessToken);
 
-            //Parse them!
-            CopilotStudioBot[] csbots = CopilotStudioBot.Parse(bots, transcripts);
+                //Retrieve transcripts
+                AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving Copilot Studio transcripts... ");
+                JArray transcripts = await ds.ReadAsync("conversationtranscripts");
+                AnsiConsole.MarkupLine("[italic][green]" + transcripts.Count.ToString("#,##0") + " transcripts retrieved![/][/]");
 
-            System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Copilot-Studio-Advanced-Analytics\derivative\dump.json", JsonConvert.SerializeObject(csbots, Formatting.Indented));
+                //Retrieve bots
+                AnsiConsole.Markup("[green][bold]Dataverse Read[/][/]: Retrieving list of Copilot Studio bots... ");
+                JArray bots = await ds.ReadAsync("bots");
+                AnsiConsole.MarkupLine("[italic][green]" + bots.Count.ToString("#,##0") + " bots found![/][/]");
+
+                //Parse them!
+                CopilotStudioBot[] csbots = CopilotStudioBot.Parse(bots, transcripts);
+
+                //Loop through all sessions, see if they've already been saved
+                int SessionsUploaded = 0;
+                int MessagesUploaded = 0;
+                int SessionsSkipped = 0; //skipped due to it already being there
+                foreach (CopilotStudioBot bot in csbots)
+                {
+                    foreach (CopilotStudioSession session in bot.Sessions)
+                    {
+
+                        //First, see if this session has already been saved
+                        bool AlreadyDecompressedSession = false; //assume false
+                        AnsiConsole.Markup("Checking if we alredy decompressed session '" + session.SessionId.ToString() + "'... ");
+                        JArray records = await ds.ReadAsync("tsp_copilotsessions");
+                        foreach (JObject tsp_copilotsession in records)
+                        {
+                            JProperty? id = tsp_copilotsession.Property("tsp_copilotsessionid");
+                            if (id != null)
+                            {
+                                Guid idguid = Guid.Parse(id.Value.ToString());
+                                if (idguid == session.SessionId)
+                                {
+                                    AlreadyDecompressedSession = true;
+                                }
+                            }
+                        }
+
+                        //Handle if we have or not already
+                        if (!AlreadyDecompressedSession)
+                        {
+                            AnsiConsole.MarkupLine("[green]Not yet![/]");
+
+                            //Upload the session
+                            AnsiConsole.Markup("\tUploading session '" + session.SessionId.ToString() + "'... ");
+                            await ds.CreateAsync("tsp_copilotsessions", session.ForDataverseUpload(bot));
+                            SessionsUploaded = SessionsUploaded + 1;
+                            AnsiConsole.MarkupLine("\t[green]Uploaded![/]");
+
+                            //Upload each message
+                            for (int i = 0; i < session.Messages.Length; i++)
+                            {
+                                AnsiConsole.Markup("\t" + "[gray]Uploading message " + (i + 1).ToString("#,##0") + " / " + session.Messages.Length.ToString("#,##0") + "...[/] ");
+                                await ds.CreateAsync("tsp_copilotmessages", session.Messages[i].ForDataverseUpload(session.SessionId));
+                                MessagesUploaded = MessagesUploaded + 1;
+                                AnsiConsole.MarkupLine("[green]Uploadeded![/]");
+                            }
+                        }
+                        else
+                        {
+                            AnsiConsole.MarkupLine("[italic]already decompressed[/]");
+                            SessionsSkipped = SessionsSkipped + 1;
+                        }
+                    }
+                }
+
+                //Print the results
+                Console.WriteLine();
+                AnsiConsole.MarkupLine("[green]Decompression complete![/]");
+                AnsiConsole.MarkupLine("[bold]" + SessionsUploaded.ToString("#,##0") +  "[/] sessions uploaded");
+                AnsiConsole.MarkupLine("[bold]" + MessagesUploaded.ToString("#,##0") +  "[/] messages uploaded");
+                AnsiConsole.MarkupLine("[bold]" + SessionsSkipped.ToString("#,##0") + "[/] sessions skipped (already uploaded)");
+                Console.WriteLine();
+
+                //Wait 24 hours (do this once every 24 hours)
+                DateTime NextLoopAt = DateTime.UtcNow.AddHours(24);
+                while (DateTime.UtcNow < NextLoopAt)
+                {
+                    TimeSpan TimeUntilNextLoop = NextLoopAt - DateTime.UtcNow;
+
+                    //Print time
+                    string TimeToGo = TimeUntilNextLoop.Hours.ToString("#,##0") + " hours, " + TimeUntilNextLoop.Minutes.ToString("#,##0") + ", " + TimeUntilNextLoop.Seconds.ToString("#,##0") + " seconds";
+                    AnsiConsole.Markup("\r" + TimeToGo + " until next update...");
+                    await Task.Delay(1000); //wait 1 second
+                }
+                AnsiConsole.MarkupLine("[italic]Moving on to next loop now![/]");
+
+
+
+            } //Infinite while loop ends here
         }
     }
 }
