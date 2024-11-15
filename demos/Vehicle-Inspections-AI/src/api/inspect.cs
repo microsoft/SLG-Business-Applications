@@ -11,6 +11,7 @@ using System.Net.Http;
 using System.Net;
 using Newtonsoft.Json.Linq;
 using VehicleInspectionAI;
+using System.Collections.Generic;
 
 namespace VehicleInspectionsAPI
 {
@@ -46,26 +47,50 @@ namespace VehicleInspectionsAPI
 
             //Grab the "image" property (it is a long base64 string)
             JProperty image = bodyjo.Property("image");
-            if (image == null)
+            JProperty images = bodyjo.Property("images");
+            if (image == null && images == null)
             {
                 HttpResponseMessage bresp = new HttpResponseMessage();
                 bresp.StatusCode = HttpStatusCode.BadRequest;
-                bresp.Content = new StringContent("Must specify property 'image' with base64, including data URI scheme. 'image' property was not specified in your request.");
+                bresp.Content = new StringContent("Must specify property 'image' with base64, including data URI scheme, or 'images' if you are providing multiple images as base64, encoded as a JSON array of strings. Neither 'image' nor 'images' was not specified in your request.");
                 return bresp;
             }
-            string imagestr = image.Value.ToString();
 
+            //Create a list of base64s to analyze
+            List<string> base64s = new List<string>();
+            if (image != null)
+            {
+                base64s.Add(image.Value.ToString());
+            }
+            if (images != null)
+            {
+                string[] imagesStrings = JsonConvert.DeserializeObject<string[]>(images.Value.ToString());
+                foreach (string imageString in imagesStrings)
+                {
+                    base64s.Add(imageString);
+                }
+            }
+
+            //If there are no base64s to analyze, return bad request
+            if (base64s.Count == 0)
+            {
+                HttpResponseMessage bresp = new HttpResponseMessage();
+                bresp.StatusCode = HttpStatusCode.BadRequest;
+                bresp.Content = new StringContent("No base64s were provided for analysis!");
+                return bresp;
+            }
+            
             //Perform inspection
             VehicleInspection vi;
             try
             {
-                vi = await VehicleInspectionGPT.InspectAsync(imagestr);
+                vi = await VehicleInspectionGPT.InspectAsync(base64s.ToArray());
             }
             catch (Exception ex)
             {
                 HttpResponseMessage bresp = new HttpResponseMessage();
                 bresp.StatusCode = HttpStatusCode.BadRequest;
-                bresp.Content = new StringContent("There was an error while inspecting the provided base64 data: " + ex.Message);
+                bresp.Content = new StringContent("There was an error while inspecting the provided base64 data(s): " + ex.Message);
                 return bresp;
             }
 

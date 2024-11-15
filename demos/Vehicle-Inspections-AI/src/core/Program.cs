@@ -16,12 +16,14 @@ namespace VehicleInspectionAI
             string b642 = Convert.ToBase64String(content);
             b642 = "data:image/jpeg;base64," + b642;
 
+            System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Vehicle-Inspections-AI\b64.txt", b642);
+
             //string inspection = VehicleInspectionGPT.CallAsync(b64).Result.ToString();
             //Console.WriteLine(inspection);
             
 
-            VehicleInspection vi = VehicleInspectionGPT.InspectAsync(b64, b642).Result;
-            Console.WriteLine(JsonConvert.SerializeObject(vi));
+            //VehicleInspection vi = VehicleInspectionGPT.InspectAsync(b64, b642).Result;
+            //Console.WriteLine(JsonConvert.SerializeObject(vi));
 
             
         
