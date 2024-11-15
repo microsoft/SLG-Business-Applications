@@ -1,4 +1,6 @@
 using System;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace VehicleInspectionAI
 {
@@ -12,6 +14,15 @@ namespace VehicleInspectionAI
         {
             Description = "";
             SeverityLevel = 0;
+        }
+
+        public JObject ToJson()
+        {
+            JObject ToReturn = new JObject();
+            ToReturn.Add("area", Convert.ToInt32(Area));
+            ToReturn.Add("description", Description);
+            ToReturn.Add("severityLevel", SeverityLevel);
+            return ToReturn;
         }
     }
 }

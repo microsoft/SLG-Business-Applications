@@ -17,6 +17,7 @@ namespace VehicleInspectionsAPI
 {
     public class Inspect
     {
+        //Pass this function an image or images, in base 64, and it will return a VehicleInspection.
         [FunctionName("inspect")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequest req)
         {
@@ -97,7 +98,7 @@ namespace VehicleInspectionsAPI
             //Return!
             HttpResponseMessage ToReturn = new HttpResponseMessage();
             ToReturn.StatusCode = HttpStatusCode.OK;
-            ToReturn.Content = new StringContent(JsonConvert.SerializeObject(vi), System.Text.Encoding.UTF8, "application/json");
+            ToReturn.Content = new StringContent(vi.ToJson().ToString(), System.Text.Encoding.UTF8, "application/json");
             return ToReturn;
         }
     }
