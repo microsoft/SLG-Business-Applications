@@ -46,51 +46,62 @@ If there is no visible damage to the vehicle, set area to ""NoDamage"", set seve
         }
 
         //Prepares the HTTP request message to Azure OpenAI services
-        public static HttpRequestMessage PrepareRequest(string image_base64)
+        public static HttpRequestMessage PrepareRequest(params string[] base64s)
         {
             //Check if the base 64 they provide has the prefix in it (i.e. "data:image/png;base64,")
-            if (image_base64.ToLower().Contains("data:image") == false || image_base64.ToLower().Contains("base64,") == false)
+            foreach (string base64 in base64s)
             {
-                throw new Exception("When providing your base64 data, you must also include the data URI scheme before the base64 data itself. For example, the base64 string you provide should look like this: 'data:image/png;base64,iVBORw0KGgoAAAANSUhE...'.");
+                if (base64.ToLower().Contains("data:image") == false || base64.ToLower().Contains("base64,") == false)
+                {
+                    throw new Exception("When providing your base64 data, you must also include the data URI scheme before the base64 data itself. For example, the base64 string you provide should look like this: 'data:image/png;base64,iVBORw0KGgoAAAANSUhE...'.");
+                }
             }
-
+            
             HttpRequestMessage ToReturn = new HttpRequestMessage();
             ToReturn.Method = HttpMethod.Post;
             ToReturn.RequestUri = new Uri(AzureOpenAICredentialsProvider.RequestUrl);
             ToReturn.Headers.Add("api-key", AzureOpenAICredentialsProvider.ApiKey);
 
-            //Construct system message
+            //Construct list of messages
+            JArray messages = new JArray();
+
+            //Construct system message and add it
             JObject SystemMessage = new JObject();
             SystemMessage.Add("role", "system");
             SystemMessage.Add("content", SystemPrompt);
+            messages.Add(SystemMessage);
 
-            //Construct url portion
-            JObject UrlPortion = new JObject();
-            UrlPortion.Add("url", image_base64);
 
-            //Construct image url portion of user message
-            JObject ImageUrlPortion = new JObject();
-            ImageUrlPortion.Add("type", "image_url");
-            ImageUrlPortion.Add("image_url", UrlPortion);
+            //Now we will start working on the user message
+            JArray content = new JArray(); //multiple portions of the user's message (text & images)
+            foreach (string base64 in base64s)
+            {
+                //Construct url portion
+                JObject UrlPortion = new JObject();
+                UrlPortion.Add("url", base64);
 
-            //Construct text portion of user message
+                //Construct image url portion of user message
+                JObject ImageUrlPortion = new JObject();
+                ImageUrlPortion.Add("type", "image_url");
+                ImageUrlPortion.Add("image_url", UrlPortion);
+
+                //Add to the content
+                content.Add(ImageUrlPortion);
+            }
+
+            //Now that all images have been added to the user's message, add the text prompt.
             JObject TextPortion = new JObject();
             TextPortion.Add("type", "text");
             TextPortion.Add("text", "This is a picture of damage to a Police Officer's vehicle. Document the damage to the vehicle, if any, in JSON.");
+            content.Add(TextPortion);
             
-            //Construct user message
-            JArray ja = new JArray();
-            ja.Add(ImageUrlPortion);
-            ja.Add(TextPortion);
+            //Construct user message and add it
             JObject UserMessage = new JObject();
             UserMessage.Add("role", "user");
-            UserMessage.Add("content", ja);
-            
+            UserMessage.Add("content", content);
+            messages.Add(UserMessage);
 
             //Start to consturct the body
-            JArray messages = new JArray();
-            messages.Add(SystemMessage);
-            messages.Add(UserMessage);
             JObject body = new JObject();
             body.Add("messages", messages);
 
@@ -106,9 +117,9 @@ If there is no visible damage to the vehicle, set area to ""NoDamage"", set seve
         }
     
         //Calls to Azure OpenAI services, parsing out the JSON as a JObject
-        public static async Task<JObject> CallAsync(string image_base64)
+        public static async Task<JObject> CallAsync(params string[] base64s)
         {
-            HttpRequestMessage request = PrepareRequest(image_base64);
+            HttpRequestMessage request = PrepareRequest(base64s);
             HttpClient hc = new HttpClient();
             HttpResponseMessage response = await hc.SendAsync(request);
             string content = await response.Content.ReadAsStringAsync();
@@ -128,9 +139,9 @@ If there is no visible damage to the vehicle, set area to ""NoDamage"", set seve
             return ToReturn;
         }
 
-        public static async Task<VehicleInspection> InspectAsync(string image_base64)
+        public static async Task<VehicleInspection> InspectAsync(params string[] base64s)
         {
-            JObject jo = await CallAsync(image_base64);
+            JObject jo = await CallAsync(base64s);
 
             VehicleInspection ToReturn = new VehicleInspection();
 
