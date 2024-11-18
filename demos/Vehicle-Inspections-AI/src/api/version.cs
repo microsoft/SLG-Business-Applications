@@ -22,7 +22,7 @@ namespace VehicleInspectionsAPI
         {
             HttpResponseMessage response = new HttpResponseMessage();
             response.StatusCode = HttpStatusCode.OK;
-            response.Content = new StringContent("0.1.0");
+            response.Content = new StringContent("0.1.1");
             return response;
         }
     }
