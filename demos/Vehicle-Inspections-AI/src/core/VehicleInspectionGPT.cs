@@ -18,7 +18,7 @@ namespace VehicleInspectionAI
 
 {
     ""area"": ""<area of the car the damage is to here>"",
-    ""descrption"": ""<describe the damage to the car>"",
+    ""description"": ""<describe the damage to the car>"",
     ""severityLevel"": 3
 }
 
