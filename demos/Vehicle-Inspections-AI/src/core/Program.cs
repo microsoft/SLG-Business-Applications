@@ -8,11 +8,11 @@ namespace VehicleInspectionAI
     {
         public static void Main(string[] args)
         {
-            byte[] content = System.IO.File.ReadAllBytes(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Vehicle-Inspections-AI\damage1.jpg");
+            byte[] content = System.IO.File.ReadAllBytes(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Vehicle-Inspections-AI\damage2.jpg");
             string b64 = Convert.ToBase64String(content);
             b64 = "data:image/jpeg;base64," + b64;
 
-            System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Vehicle-Inspections-AI\b64_damage1.txt", b64);
+            System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Vehicle-Inspections-AI\b64_damage2.txt", b64);
         }
     }
 }
