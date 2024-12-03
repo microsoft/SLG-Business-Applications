@@ -1,6 +1,8 @@
 # E.V.V.I.E.: Enterprise Visual Vehicle Inspection Engine
 E.V.V.I.E. is a proof-of-concept system that uses advanced artificial intelligence models to automatically evaluate and document vehicle damage for an organization's fleet.
 
+**E.V.V.I.E. is still in development - more coming soon, stay tuned!**
+
 ## Potential Car Sketches to Use for Mapping Damage
 - https://i.imgur.com/WRsVzjt.jpeg
     - Front: https://imgur.com/wF1aA3f
