@@ -8,10 +8,10 @@ namespace VehicleInspectionAI
     {
         public static void Main(string[] args)
         {
-            byte[] content = System.IO.File.ReadAllBytes(@"C:\Users\timh\Downloads\totaled.jpg");
+            byte[] content = System.IO.File.ReadAllBytes(@"C:\Users\timh\Downloads\png2jpg\damage2.jpg");
             string b64 = Convert.ToBase64String(content);
             b64 = "data:image/jpeg;base64," + b64;
-            System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\Vehicle-Inspections-AI\b64.txt", b64);
+            System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\EVVIE\b64.txt", b64);
         }
     }
 }
