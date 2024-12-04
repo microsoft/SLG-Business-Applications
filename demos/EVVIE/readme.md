@@ -1,7 +1,10 @@
 # E.V.V.I.E. - **E**nterprise **V**isual **V**ehicle **I**nspection **E**ngine
 E.V.V.I.E. is a proof-of-concept system that uses advanced artificial intelligence models to automatically evaluate and document vehicle damage for an organization's fleet.
 
-*E.V.V.I.E. is still in development - more coming soon, stay tuned!*
+Click the image below for a demonstration of E.V.V.I.E.
+
+[![demo video](https://i.imgur.com/iNToam3.png)](https://youtu.be/Kw98NkFkoXI)
+
 
 ## E.V.V.I.E. Source Code
 The source code of E.V.V.I.E. is provided in the `src` folder as follows:
