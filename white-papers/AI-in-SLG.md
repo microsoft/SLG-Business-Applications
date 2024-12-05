@@ -38,3 +38,12 @@ Click the image below to watch a short demo of EVVIE:
 [![demo video](https://i.imgur.com/iNToam3.png)](https://youtu.be/Kw98NkFkoXI)
 
 Visit [EVVIE on GitHub](https://aka.ms/evvie) to learn more!
+
+## Department of Revenue: Citizen-Facing Tax Chatbot
+Managing tax collection from businesses and citizens is a complex and demanding responsibility for Departments of Revenue. Staff members often find themselves inundated with an overwhelming volume of inquiries regarding tax applications, payment statuses, and other related questions. This can place significant strain on resources, leading to longer response times and decreased efficiency in handling tax-related matters.
+
+With Microsoft's [Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio), an innovative no-code/low-code AI chatbot solution, intelligent agents can easily be created and integrated into any public-facing portal, using internal knowledge sources to provide accurate and timely answers to common tax-related questions. By harnessing the power of natural language understanding, the Copilot Studio chatbot enables citizens and businesses to get the information they need without waiting for human assistance. This not only enhances the efficiency of the Department of Revenue but also improves the overall experience for taxpayers, allowing staff to focus on more complex and high-priority tasks.
+
+Click the image below to see how this could be done:
+
+[![demo video](https://i.imgur.com/v7Tm7kR.png)](https://youtu.be/CuHNL1TgfB0)
