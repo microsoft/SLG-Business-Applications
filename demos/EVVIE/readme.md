@@ -5,6 +5,15 @@ Click the image below for a demonstration of E.V.V.I.E.
 
 [![demo video](https://i.imgur.com/iNToam3.png)](https://youtu.be/Kw98NkFkoXI)
 
+## EVVIE's One-Pager
+A "one-pager" flyer exists for EVVIE:
+
+![one-pager](https://i.imgur.com/Y3dUY0M.jpeg)
+
+The one-pager can be downloaded in various formats below:
+- [As a PowerPoint deck](./one-pager/one-pager.pptx)
+- [In PDF Form](./one-pager/one-pager.pdf)
+
 
 ## E.V.V.I.E. Source Code
 The source code of E.V.V.I.E. is provided in the `src` folder as follows:
