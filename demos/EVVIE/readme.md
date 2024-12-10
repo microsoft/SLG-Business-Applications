@@ -8,7 +8,7 @@ Click the image below for a demonstration of E.V.V.I.E.
 ## How does EVVIE Work?
 EVVIE uses a unique blend of Microsoft Power Platform and Microsoft Azure resources to automate the vehicle inspection process using advanced, state-of-the-art AI models. EVVIE's internal process is described below, at a high level:
 
-A **Power Apps** app is built and used by the user as the interface to collect photos of damage to a vehicle as part of a vehicle inspection.
+A **Power Apps** app used by the user and serves as the interface to collect photos of damage to a vehicle as part of a vehicle inspection.
 
 The Power App leverages a **custom connector** (API integration) to provide the captured images to a custom API, a .NET-based **Azure Function**.
 
