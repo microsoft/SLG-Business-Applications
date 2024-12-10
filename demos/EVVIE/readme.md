@@ -8,11 +8,11 @@ Click the image below for a demonstration of E.V.V.I.E.
 ## How does EVVIE Work?
 EVVIE uses a unique blend of Microsoft Power Platform and Microsoft Azure resources to automate the vehicle inspection process using advanced, state-of-the-art AI models. EVVIE's internal process is described below, at a high level:
 
-A **Power Apps** app used by the user and serves as the interface to collect photos of damage to a vehicle as part of a vehicle inspection.
+A **Power Apps** (canvas) app used by the user and serves as the interface to collect photos of damage to a vehicle as part of a vehicle inspection.
 
 The Power App leverages a **custom connector** (API integration) to provide the captured images to a custom API, a .NET-based **Azure Function**.
 
-The Azure Function receives and parses the HTTP API calls from the Power App, takes these photos, and interfaces with a multimodal LLM in **Azure OpenAI Service**. The multimodal LLM is instructed to review the photos and classify the damage into three distrinct fields: 1) area of car, 2) severity level (1-5), and 3) general description of the damage.
+The Azure Function receives and parses the HTTP API call (images are encoded as a `base64` string) from the Power App, takes these photos, and interfaces with a multimodal LLM in **Azure OpenAI Service**. The multimodal LLM is instructed to review the photos and classify the damage into three distrinct fields: 1) area of car, 2) severity level (1-5), and 3) general description of the damage.
 
 The **Power Apps** inspection app receives this response back from the **Azure Function**, presenting the AI-created damage assessment to the user, where the user has the option of *accepting*, *modifying*, or *rejecting* the assessment altogether. After finalizing the assessment, they then submit this assessment for the given vehicle where it is securely stored in **Dataverse**.
 
