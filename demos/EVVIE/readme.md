@@ -3,7 +3,9 @@ EVVIE, short for “Enterprise Visual Vehicle Inspection Engine”, is an AI-pow
 
 Click the image below for a demonstration of E.V.V.I.E.
 
-[![demo video](https://i.imgur.com/5OIfuG4.png)](https://youtu.be/KvEFX-in2TM)
+[![demo video](https://i.imgur.com/5OIfuG4.png)](https://livesend.microsoft.com/i/DUFrJEz77SXgL85JbBg___Wio6___QrDyqYH7e0RigS84AIiHLC3WpVWVDDfooWSJ3PQpIq2iXxfS8jrzrqedqUQyBkGlTJR3slPbCyUqy6FOpY0dwIM38eR3YiOOSHP7___37)
+
+*If the video above does not work, click [here](https://youtu.be/KvEFX-in2TM).*
 
 ## How does EVVIE Work?
 EVVIE uses a unique blend of Microsoft Power Platform and Microsoft Azure resources to automate the vehicle inspection process using advanced, state-of-the-art AI models. EVVIE's internal process is described below, at a high level:
