@@ -26,9 +26,23 @@ EVVIE's architecture is a unique blend of Power Platform (low-code) and Azure (p
 ![architecture](https://i.imgur.com/uT6N82Y.jpeg)
 
 ## E.V.V.I.E. Source Code
-The source code of E.V.V.I.E. is provided in the `src` folder as follows:
+You can find EVVIE's source code below, split into two sections:
+
+### Azure Functions Backend API
+As described in the architecture diagram above, EVVIE uses a backend API running on Azure Functions to serve almost as a broker between inspection app that is used and the multimodal AI model running in Azure.
+
+You can find the source code of EVVIE's Azure Function-based API in the [src folder](./src/).
 - [core](./src/core/) - this contains a C# console application that is used essentially as a library of functions and capabilities that E.V.V.I.E. relies on for communicating with the Azure OpenAI service. This allows E.V.V.I.E. to reach out to the Azure OpenAI service to do things like identify vehicles via their license plate and assess damage to vehicles.
 - [api](./src/api/) - this contains the code to a **v4**, **.NET 8.0-based** Azure Function, written in C#, that exposes two endpoints that the E.V.V.I.E. interface, built in Power Apps, can call to. Those endpoints are `/plate`, reading a license plate number from a single provided image in *base64* format, and `/inspect`, assessing the damage to a vehicle based on one or multiple provided images of the damage to the car in *base64* format.
+
+Before deploying this code to your own Azure Functions deployment, be sure to modidfy the Azure OpenAI credentials to your own Azure OpenAI deployment in the [`AzureOpenAICredentialsProvider` class](./src/core/AzureOpenAICredentialsProvider.cs).
+
+### Power Platform Solution
+EVVIE's user interface and data residency is built in Microsoft's Power Platform. 
+
+You can download the solution file (a .zip file) [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/18/EVVIE_1_0_0_3.zip). This solution contains the underlying tables and option sets that make up the data structure, the Power Apps Canvas App that staff use while inspecting their vehicle, the Power Apps Model-Driven App that administrative staff can use to review these inspections, and the custom connector that is used to communicate with the EVVIE backend API system based on Azure Functions.
+
+**After importing the solution file into your environment, be sure to update the custom connector's actions so they point to your specific Azure Function endpoints**.
 
 ## One-Pager
 A "one-pager" flyer exists for EVVIE:
