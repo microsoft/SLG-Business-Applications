@@ -52,3 +52,8 @@ A "one-pager" flyer exists for EVVIE:
 The one-pager can be downloaded in various formats below:
 - [As a PowerPoint deck](./one-pager/one-pager.pptx)
 - [In PDF Form](./one-pager/one-pager.pdf)
+
+## Development Team
+EVVIE was created by the U.S. State & Local Government team at Microsoft:
+- [Tim Hanewich](https://www.linkedin.com/in/timhanewich), *Power Platform Technical Specialist* - Complete Design and Implementation
+- [Kelly Cason](https://www.linkedin.com/in/kellycason/), *Business Applications Technical Specialist* - UI & UX Design
