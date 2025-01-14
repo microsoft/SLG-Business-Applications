@@ -24,6 +24,7 @@ These demos are focused on Human Resources-related functions.
 |Title|Description|
 |-|-|
 |[HR Onboarding/Offboarding and Approval Routing](./onboarding-offboarding-approval/)|Following the request/approval process for onboarding of employees, managing of access catalogs, security roles, and more|
+|[Desk Booking](./desk-booking)|App for employees to book desk and offices for the day at their place of work|
 
 ### Pro-Dev Focused
 These demos are focused on demonstrating a particular technology, feature, or functionality in the platform.
