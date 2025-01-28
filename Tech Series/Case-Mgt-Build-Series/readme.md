@@ -11,7 +11,7 @@ Watch the recording [here](https://livesend.microsoft.com/i/NqaQHb___OBsMA0RCWxx
 ## Part 2: Expanding your D365 Case Management System with Power Pages
 In the second part of the build series, we extend the functionality of our Case Mgmt system with a public-facing Power Pages-based portal!
 
-Register for this January 23, 2025 session [here](https://msit.events.teams.microsoft.com/event/ee881759-a044-44d1-9649-e355ad71c842@72f988bf-86f1-41af-91ab-2d7cd011db47).
+Watch the recording [here](https://livesend.microsoft.com/i/NqaQHb___OBsMA0RCWxxyKORdH8U0E3GeFCTm8ZcE4dgi9YNGvVX6tPRABpItIuSI9jJk83TKzYDHUb2G6qcJHEhtaZhwWKFiX2pLiQaHVlwmaQcvemQi3ic8pN6MR5f6c).
 
 ## Part 3: Adding a Canvas App for the Front Line Inspection Worker
 In the third and final part of the build series, we create a Power Apps Canvas app to be used by a front-line inspection worker!
