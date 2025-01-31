@@ -28,7 +28,7 @@ Both Power Automate Flows use an HTTP action to send the request to Azure Open A
 
 The rest of the Flow will parse the API response and format a text string to return to Copilot Studio.  This text string will include the name of, and a link to, the source documents used by Azure AI to generate the main content of the response.  (Note: this aspect is subject to the availability of those data elements in the API response.)
 
-##How to: Copilot Studio Configuration
+## How to: Copilot Studio Configuration
 Next, we'll configure your Copilot Studio agent.  In simple scenarios, we'll be fully surprising the native generative AI capabilities within Copilot Studio and replacing them with an action to call our Power Automate Flow.
 
 In your agent, go to Topics and find the Conversational Boosting topic (under system topics).  This topic is triggered on unknown intent and, by default, uses the Generative Answers action to respond to questions using Generative AI.  We're going to adjust the structure of this topic by removing the Generative Answers node, and the condition that follows, and replacing them with our Power Automate Flow.  To insert the flow, add a node to the topic designer, use the "Call an action" menu item, and select the appropriate Power Automate Flow from the list of Basic actions.  Populate the input parameter(s) using System variables and return the Response output to the user in a subsequent message.  When complete, your new Conversational Boosting topic will look like this:
