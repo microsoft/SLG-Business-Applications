@@ -16,4 +16,6 @@ Watch the recording [here](https://livesend.microsoft.com/i/NqaQHb___OBsMA0RCWxx
 ## Part 3: Adding a Canvas App for the Front Line Inspection Worker
 In the third and final part of the build series, we create a Power Apps Canvas app to be used by a front-line inspection worker!
 
-Register for this January 30, 2025 session [here](https://msit.events.teams.microsoft.com/event/eb7b7e6c-32a1-40e2-979a-fe4939c13c22@72f988bf-86f1-41af-91ab-2d7cd011db47).
+Watch the recording [here](https://livesend.microsoft.com/i/NqaQHb___OBsMA0RCWxxyKORdH8U0E3GeFCTm8ZcE4dggLMRAUPueI9EzuiNG2WTW7jdjt8CUactVxkoQOa71MPO46GFR0Hqbmg1___AqTo6HsxEyfagC1WMWNPLUSSIGNqxoX7zmh1).
+
+You can open the slide deck that was used in the presentation [here](https://livesend.microsoft.com/i/NqaQHb___OBsMA0RCWxxyKORdH8U0E3GeFCTm8ZcE4dghqq6ngwBIBnaEZ53PZvNorfY0aw60xHdSFVsCwU6L3WzLgi4iCjUorUXyXIPLUSSIGNO3d4pk6aC0v97SE3niSZHKThan).
