@@ -44,6 +44,24 @@ You can download the solution file (a .zip file) [here](https://github.com/micro
 
 **After importing the solution file into your environment, be sure to update the custom connector's actions so they point to your specific Azure Function endpoints**.
 
+## How to Deploy EVVIE
+Deploying EVVIE is not a complicated process. In its current state, EVVIE is a functioning proof of concept and can certainly provide value to an organization. Follow the steps below to deploy EVVIE:
+1. **Create your own Azure OpenAI instance** - A multi-modal large language model serves as the "brain" of EVVIE. This is the AI model that reviews the photos of damage to vehicles, assess the damages, and then documents its assessment.
+    1. You can follow [this guide](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) on how to deploy your own Azure OpenAI model in either Azure Commercial or Azure for Government (whichever you prefer or are already using!).
+    2. When you go to deploy a model, we recommend you use **GPT-4o**; As of the time of this writing, GPT-4o provides the right balance of intelligence, multi-modal capabilities, and cost savings. GPT-4o was used in the demo.
+2. **Deploy the Azure Function API** - A lightweight API system (application programming interface) serves as the intermediary between the Power App and the Azure OpenAI model.
+    1. Clone (copy to your local PC) the code for this Azure Function in the [src folder](./src/).
+    2. You want the API to know what Azure OpenAI model it should be calling to for the AI-driven assessment! You want it to be callign to the Azure OpenAI model you stood up in the last step! Grab your secret credentials (endpoint, API key, etc.) from step 1 and place them in their appropriate variables in the [`AzureOpenAICredentialsProvider` class](./src/core/AzureOpenAICredentialsProvider.cs).
+    3. Create a new **Azure Functions App** in your Azure Instance. Ensure it is a .NET 8.0 -based Azure Function.
+    4. Using VS Code or Visual Studio, deploy the Azure Function code (what you cloned to your local PC and tweaked a bit with your credentials) to the cloud-based Azure Functions App you just created!
+3. **Deploy the Power Platform EVVIE Solution** - The Power Platform solution, found above, contains the Power Platform source code for the EVVIE interface, tables, schema, custom connector, and more.
+    1. In Power Apps, go to "solutions". Click "import solution" and then select the .zip solution file you downloaded (see above).
+    2. Let it import! (should take 3-5 minutes)
+    3. After importing, open your solution. Open (edit) the EVVIE custom connector. Update the specific HTTP endpoints that EVVIE is set to call from *the sample* endpoints to *the actual endpoints of your Azure Function*.
+    4. Open, save, and publish the "EVVIE - Vehicle Inspector" canvas app.
+    5. Share the app with whoever you wish to inspect vehicles. 
+    6. You're done! Now you should see all inspections appear in the "Fleet Inspection Management" model-driven app.
+
 ## One-Pager
 A "one-pager" flyer exists for EVVIE:
 
