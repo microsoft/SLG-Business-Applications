@@ -3,6 +3,8 @@ Social workers play a critical role in ensuring that foster homes are safe and s
 
 We can leverage an AI-driven approach to streamline and enhance this process. By allowing social workers to capture photos of the home using a mobile app, an advanced multimodal AI model can automatically assess the images against a pre-defined set of criteria. This technology evaluates the home's preparedness level for foster child placement and generates a readiness report, saving valuable time and resources for social workers.
 
+*Click the image below for a demo!*
+
 [![video_image](https://i.imgur.com/QTh0TbT.png)](https://youtu.be/gAyiKXlnkYo)
 
 ## Benefits
