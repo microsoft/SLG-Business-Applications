@@ -5,7 +5,9 @@ We can leverage an AI-driven approach to streamline and enhance this process. By
 
 *Click the image below for a demo!*
 
-[![video_image](https://i.imgur.com/QTh0TbT.png)](https://youtu.be/gAyiKXlnkYo)
+[![video_image](https://i.imgur.com/QTh0TbT.png)](https://livesend.microsoft.com/i/DUFrJEz77SXgL85JbBg___Wio6___QrDyqYH7e0RigS84AK9yVbcKYZoi5wSo98V1d___PLUSSIGNIk4SAe6DIwVEdCKseQO8rCdFg9VX6doEKUrzYyryei1guwa1___h4iAv0kHJNu3m60)
+
+*If the video above does not work, click [here](https://youtu.be/gAyiKXlnkYo).*
 
 ## Benefits
 - **Efficiency**: Automating the assessment process reduces the time required for social workers to complete home inspections, allowing them to focus on other critical tasks.
