@@ -6,5 +6,10 @@ A component library that consists of reusable components for your Canvas Apps. L
 
 [Click here for more information about the Canvas App Component Library!](./Canvas-App-Component-Library/)
 
+## Responsive Design Template
+A fully responsive canvas app design template to help folks familiarize themselves with responsive design techniques in Canvas Apps.
+
+[Click here for more information about the Responsive Design Template!](./Responsive-Design-Template/)
+
 ## HR Hub
 [HR Hub (Asset Management + Kudos App)](https://github.com/TimHanewich/Power-Platform-Assets/releases/download/11/HR_Hub_Solution_1_0_0_2.zip)
