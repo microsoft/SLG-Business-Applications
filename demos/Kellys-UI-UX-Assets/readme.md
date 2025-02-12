@@ -12,7 +12,7 @@ A fully responsive canvas app design template to help folks familiarize themselv
 [Click here for more information about the Responsive Design Template!](./Responsive-Design-Template/)
 
 ## [NEW] HR Hub (Employee Hub + Kudos App)
-![HR Hub still](https://i.imgur.com/dOJwslV.jpeg)
+![HR Hub still](https://i.imgur.com/Vh6zgC0.png)
 
 ![HR Hub gif](https://i.imgur.com/LUAKaDI.gif)
 
