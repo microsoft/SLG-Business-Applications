@@ -17,5 +17,5 @@ Below are whitepapers that have been created specifically for use in the US Gove
 * [Using Azure Connectors in Power Platform GCC](./azure-connectors/readme.md)
 * [Power Platform / Dynamics 365 Gov Architecture](https://github.com/microsoft/Federal-Business-Applications/blob/main/whitepapers/power-plat-d365-architecture/README.md)
 * [Azure Synapse Link Integration](https://github.com/microsoft/Federal-Business-Applications/blob/main/whitepapers/power-platform-azure-synapse/README.md)
-* [Dynamics 365 and Power Platform Copilot features and GCC availability](./PowerPlatformCopilots.md)
+* [Copilot feature availability for Dynamics 365 and Power Platform GCC](./PowerPlatformCopilots.md)
 * [Connect Copilot Studio GCC to customer-owned Azure AI resources](./Copilot-Studio+Azure-AI-GCC/README.md)
