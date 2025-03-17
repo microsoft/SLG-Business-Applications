@@ -72,10 +72,12 @@ Maker Copilot features
 |Feature|Commercial|GCC|Eval Date|Notes|
 |-|-|-|-|-|
 |[Explain this PowerFX formula](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#explain-a-formula)|GA|Yes|10.18.24||
-|[Generate formula from code comments](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#generate-formulas-from-code-comments-preview)|Preview|No|10.18.24||
-|[Build apps through conversation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-conversations-create-app)|GA|No|10.18.24||
-|[Field suggestions by Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-field-suggestions)|GA|No|10.18.24|UI exists but doesn't provide suggestions|
-|[Natural language to formulas](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-ideas-transform)|GA|No|10.18.24||
+|[Generate formula from code comments](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#generate-formulas-from-code-comments)|GA|No|3.17.25||
+|[Create a formula](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#create-a-formula-preview)|Preview|No|3.17.25||
+|[Build apps through conversation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-conversations-create-app)|GA|No|3.17.25||
+|[Edit your app with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-edit-app)|Preview|No|3.17.25||
+|[Field suggestions by Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-field-suggestions)|GA|No|3.17.25||
+|["Ideas" - Natural language to formulas for galleries](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-ideas-transform)|GA|Yes|3.17.25||
 |[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)|Preview|No|10.21.24||
 
 User Copilot features
