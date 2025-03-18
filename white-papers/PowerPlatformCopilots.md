@@ -69,47 +69,47 @@ The sections and tables that follow identify all known Copilot features in Dynam
 
 ### Power Apps - Canvas Apps
 Maker Copilot features
-|Feature|Commercial|GCC|Eval Date|Notes|
-|-|-|-|-|-|
-|[Explain this PowerFX formula](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#explain-a-formula)|GA|Yes|10.18.24||
-|[Generate formula from code comments](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#generate-formulas-from-code-comments)|GA|No|3.17.25||
-|[Create a formula](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#create-a-formula-preview)|Preview|No|3.17.25||
-|[Build apps through conversation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-conversations-create-app)|GA|No|3.17.25||
-|[Edit your app with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-edit-app)|Preview|No|3.17.25||
-|[Field suggestions by Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-field-suggestions)|GA|No|3.17.25||
-|["Ideas" - Natural language to formulas for galleries](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-ideas-transform)|GA|Yes|3.17.25||
-|[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)|Preview|No|10.21.24||
+|Feature|Commercial|GCC|Eval Date|
+|-|-|-|-|
+|[Explain this PowerFX formula](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#explain-a-formula)|GA|Yes|10.18.24|
+|[Generate formula from code comments](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#generate-formulas-from-code-comments)|GA|No|3.17.25|
+|[Create a formula](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-formulas-formulabar#create-a-formula-preview)|Preview|No|3.17.25|
+|[Build apps through conversation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-conversations-create-app)|GA|No|3.17.25|
+|[Edit your app with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-edit-app)|Preview|No|3.17.25|
+|[Field suggestions by Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-field-suggestions)|GA|No|3.17.25|
+|["Ideas" - Natural language to formulas for galleries](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/power-apps-ideas-transform)|GA|Yes|3.17.25|
+|[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)|Preview|No|3.18.25|
 
 User Copilot features
 |Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
-|[Copilot control (open-ended chat)](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-ai-copilot)|Preview|No|10.18.24|
-|[Copilot answer control (Pre-baked prompt)](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/copilot-answer-control-overview)|Preview|No|10.18.24|
-|[Add a custom copilot to a canvas app](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-custom-copilot)|Preview|No|10.18.24|
-|[Filter, sort, search galleries with Copilot](https://learn.microsoft.com/en-us/power-apps/user/smartgrid)|Preview|No|10.3.24|
-|[Draft well-written input text with Copilot](https://learn.microsoft.com/en-us/power-apps/user/well-written-input-text-copilot)|Preview|No|10.3.24|
+|[Copilot control (open-ended chat)](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-ai-copilot)|Preview|No|3.18.25|
+|[Copilot answer control (Pre-baked prompt)](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/copilot-answer-control-overview)|Preview|No|3.18.25|
+|[Add a custom copilot to a canvas app](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-custom-copilot)|Preview|No|3.18.25|
+|[Filter, sort, search galleries with Copilot](https://learn.microsoft.com/en-us/power-apps/user/smartgrid)|Preview|No|3.18.25|
+|[Draft well-written input text with Copilot](https://learn.microsoft.com/en-us/power-apps/user/well-written-input-text-copilot)|Preview|No|3.18.25|
 
 ### Power Apps - Model Driven Apps
 Maker Copilot features
 |Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
-|[Column suggestions by Copilot](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-and-edit-forms#column-suggestions-by-copilot-preview)|Preview|No|10.18.24|
-|[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/build-first-model-driven-app#create-an-app-description-with-copilot-preview)|Preview|No|10.21.24|
+|[Create, edit and configure forms using Form Designer](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-and-edit-forms)|GA|No|3.18.25|
+|[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/build-first-model-driven-app#create-an-app-description-with-copilot-preview)|Preview|No|3.18.25|
 
 User Copilot features
 |Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
-|[Copilot in rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/copilot-control)|Early Access|No|10.18.24|
-|[Copilot in email rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/use-copilot-email-assist)|Early Access|No|10.18.24|
-|[Copilot for App Users](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-ai-copilot)|Preview|No|10.18.24|
-|[Form filling assistance with Copilot](https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance)|Preview|No|10.18.24|
-|[Timeline highlights](https://learn.microsoft.com/en-us/power-apps/user/add-activities#use-timeline-highlights-powered-by-generative-ai)|GA|No|10.18.24|
+|[Copilot in rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/copilot-control)|Early Access|No|3.18.25|
+|[Copilot in email rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/use-copilot-email-assist)|Early Access|No|3.18.25|
+|[Copilot for App Users](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-ai-copilot)|Preview|No|3.18.25|
+|[Form filling assistance with Copilot](https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance)|Preview|No|3.18.25|
+|[Timeline highlights](https://learn.microsoft.com/en-us/power-apps/user/add-activities#use-timeline-highlights-powered-by-generative-ai)|GA|No|3.18.25|
 
 ### Power Automate
 |Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
-|[Describe to design](https://learn.microsoft.com/en-us/power-automate/create-cloud-flow-from-description)|Preview|Yes|9.15.24|
-|[Edit a flow with Copilot](https://learn.microsoft.com/en-us/power-automate/get-started-with-copilot#edit-a-flow-using-the-designer-with-copilot-capabilities)|Preview|Yes|10.18.24|
+|[Describe to design](https://learn.microsoft.com/en-us/power-automate/create-cloud-flow-from-description)|GA|Yes|9.15.24|
+|[Edit a flow with Copilot](https://learn.microsoft.com/en-us/power-automate/get-started-with-copilot#edit-a-flow-using-the-designer-with-copilot-capabilities)|GA|Yes|10.18.24|
 |[Troubleshoot in Copilot](https://learn.microsoft.com/en-us/power-automate/fix-flow-failures#troubleshoot-in-copilot)|GA|No|10.18.24|
 
 ### Power Pages
@@ -138,4 +138,5 @@ User Copilot features
 |-|-|-|-|-|
 |[Dataverse Data Workspace](https://www.microsoft.com/en-us/power-platform/blog/power-apps/data-workspace-is-now-generally-available/?msockid=30d3025b988b65e001ec13a7997364df)|GA|No|10.24.24||
 |[Dataverse AI functions](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-ai)|GA|No|10.24.24|Functions exist but throw errors when called|
-|[AI Builder - AI prompts](https://learn.microsoft.com/en-us/ai-builder/prompts-overview)|GA|Yes|10.24.24|| 
+|[AI Builder - AI prompts](https://learn.microsoft.com/en-us/ai-builder/prompts-overview)|GA|Yes|10.24.24||
+|[Power Designer - Copilot-first development](https://learn.microsoft.com/en-us/power-apps/maker/plan-designer/plan-designer)|Preview|No|3.18.25|
