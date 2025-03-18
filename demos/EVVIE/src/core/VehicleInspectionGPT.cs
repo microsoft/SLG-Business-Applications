@@ -14,7 +14,7 @@ namespace VehicleInspectionAI
         {
             get
             {
-                return @"You will be provided pictures of damage to police vehicles, assets of the LA County Sheriff's department. The vehicles are being inspected as part of a regular before-shift check. Your job is to classify this damage into the following format:
+                return @"You will be provided pictures of damage to police vehicles, assets of a police department. The vehicles are being inspected as part of a regular before-shift check. Your job is to classify this damage into the following format:
 
 {
     ""area"": ""<area of the car the damage is to here>"",
