@@ -1,0 +1,24 @@
+<entities >
+  <entity name="ogdwgcc_inventoryitem" displayname="Item" etc="10631" primaryidfield="ogdwgcc_inventoryitemid" primarynamefield="ogdwgcc_name" disableplugins="false">
+    <fields>
+      <field displayname="Snooze to Date" name="ogdwgcc_snoozetodate" type="datetime" customfield="true" />
+      <field displayname="Classifications" name="ogdwgcc_classifications" type="optionsetvaluecollection" customfield="true" />
+      <field displayname="Count by Item Type" name="ogdwgcc_countbyitemtype" type="decimal" customfield="true" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Inventory Item" name="ogdwgcc_inventoryitemid" type="guid" primaryKey="true" />
+      <field displayname="Inventory Item Type" name="ogdwgcc_inventoryitemtype" type="optionsetvalue" customfield="true" />
+      <field displayname="Item Current Count" name="ogdwgcc_itemcurrentcount" type="number" customfield="true" />
+      <field displayname="Item Expiration" name="ogdwgcc_itemexpiration" type="datetime" customfield="true" />
+      <field displayname="Item Image" name="ogdwgcc_itemimage" type="imagedata" customfield="true" />
+      <field displayname="Item Shelf Life" name="ogdwgcc_itemshelflife" type="string" customfield="true" />
+      <field displayname="Item Storage Location" name="ogdwgcc_itemstoragelocation" type="string" customfield="true" />
+      <field displayname="LOT #" name="ogdwgcc_lot" type="string" customfield="true" />
+      <field displayname="Name" name="ogdwgcc_name" type="string" customfield="true" />
+      <field displayname="ogdwgcc_itemimageid" name="ogdwgcc_itemimageid" type="guid" customfield="true" />
+      <field displayname="UPC Code" name="ogdwgcc_upccode" type="string" customfield="true" />
+      <field displayname="Vendor" name="ogdwgcc_vendor" type="entityreference" lookupType="account" customfield="true" />
+      <field displayname="Warehouse" name="ogdwgcc_warehouse" type="entityreference" lookupType="ogdwgcc_warehouse" customfield="true" />
+      <field displayname="Warning Threshold Quantity" name="ogdwgcc_warningthresholdquantity" type="number" customfield="true" />
+    </fields>
+  </entity>
+</entities>
