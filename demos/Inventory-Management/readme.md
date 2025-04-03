@@ -22,3 +22,6 @@ The **schema** can be found [here](./inventory-mgt-schema.xml), while the sample
 
 ## Install Instructions
 *Set up instructions to come*
+
+## Credits
+Made by [Patrick O'Gorman](https://www.linkedin.com/in/patrick-ogorman/).
