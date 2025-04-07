@@ -3,7 +3,9 @@
 
 Click the image below for a demo of TIPLI:
 
-[![TIPLI demo](https://i.imgur.com/bkn56vM.png)](https://youtu.be/z85WHeHtLQc)
+[![TIPLI demo](https://i.imgur.com/bkn56vM.png)](https://livesend.microsoft.com/i/DUFrJEz77SXgL85JbBg___Wio6___QrDyqYH7e0RigS84AJwgGLFzWMPagG4JvXJRYyTaTzRA4GU7sdW0h0nyQVr___2x8mM3bIstDdwCBCZnv4gzbQmHz13dyk3nMVeSU0___2U)
+
+*If the video above does not work, click [here](https://youtu.be/z85WHeHtLQc)*
 
 ## How does TIPLI work?
 Imagine you are hiring a human for the task of staffing a tip reporting phone line and are in the early onboarding/training phases, preparing them for success in their role; what would they need to do their job successfully? 
