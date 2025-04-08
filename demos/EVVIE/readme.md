@@ -62,7 +62,10 @@ Deploying EVVIE is not a complicated process. In its current state, EVVIE is a f
     5. Share the app with whoever you wish to inspect vehicles. 
     6. You're done! Now you should see all inspections appear in the "Fleet Inspection Management" model-driven app.
 
-## One-Pager
+## Marketing Material
+Below you can find various forms of marketing material for EVVIE:
+
+### One Pager
 A "one-pager" flyer exists for EVVIE:
 
 ![one-pager](https://i.imgur.com/Y3dUY0M.jpeg)
@@ -70,6 +73,11 @@ A "one-pager" flyer exists for EVVIE:
 The one-pager can be downloaded in various formats below:
 - [As a PowerPoint deck](./one-pager/one-pager.pptx)
 - [In PDF Form](./one-pager/one-pager.pdf)
+
+### Single Slide
+A one-slide description of EVVIE can be downloaded [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/25/one-pager-horizontal.pptx). See the preview below:
+
+![evvie](https://i.imgur.com/kdquuAR.jpeg)
 
 ## Development Team
 EVVIE was created by the U.S. State & Local Government team at Microsoft:
