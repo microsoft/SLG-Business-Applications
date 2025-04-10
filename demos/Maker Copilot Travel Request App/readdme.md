@@ -8,5 +8,5 @@ The presentation demonstrates using Maker Copilot to build a Travel Request App.
 
 ## Assets
 - Powerpoint with recorded steps
-
+- Travel Request Solution
 
