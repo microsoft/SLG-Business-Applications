@@ -17,4 +17,6 @@ https://github.com/user-attachments/assets/a5ce7238-30a9-49b6-87c5-c31af3f34e7f
 
 ## Assets
 - TravelRequests_1_0_0_1.zip 
-
+-Step1-Create Table With Prompts.mp4
+-Step2-Create Canvas App from Table.mp4
+-Step3-Create Model Driven App for Approvers.mp4
