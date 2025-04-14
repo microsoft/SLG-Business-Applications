@@ -48,4 +48,4 @@ For use cases that don't fit a particular agency or department:
 |-|-|
 |[Connecting Power Platform GCC to Azure Commercial Resources](./GCC-to-Commercial/)|Demonstrates a workaround that allows a Power Platform/Dynamics 365 environment in GCC to interact with Azure resources that reside in Commercial (not Azure Government)|
 |[Dataverse vs. SQL Delegation Testing](./Dataverse-Delegation/)|Testing delegation of Dataverse against SQL in Power Apps, using Power Fx|
-|[PowerGPT](./PowerGpt)|Power App for low-code chat interface using the pre-built AI Builder GPT model|
+|[PowerGPT](./PowerGPT)|Power App for low-code chat interface using the pre-built AI Builder GPT model|
