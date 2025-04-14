@@ -1,0 +1,413 @@
+{
+  "activities": [
+    {
+      "valueType": "ConversationInfo",
+      "type": "trace",
+      "timestamp": 1725905065,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "isDesignMode": true,
+        "locale": "en-US"
+      }
+    },
+    {
+      "id": "628a2570-a721-49ef-bc78-0e77ea664865",
+      "type": "event",
+      "timestamp": 1725905065,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "name": "startConversation",
+      "channelId": "pva-studio",
+      "attachments": []
+    },
+    {
+      "id": "a701199d-d03f-4a24-bfb8-11eab63fcf97",
+      "type": "message",
+      "timestamp": 1725905066,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Hello, I'm Test Copilot, a virtual assistant. Just so you are aware, I sometimes use AI to answer your questions. If you provided a website during creation, try asking me about it! Next try giving me some more knowledge by setting up generative AI.",
+      "attachments": [],
+      "replyToId": "628a2570-a721-49ef-bc78-0e77ea664865",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Thanks for calling, how can I help?</prosody></voice></speak>"
+    },
+    {
+      "id": "14dfa8e3-b52b-4b4b-b7c7-dbe0b56e553b",
+      "type": "event",
+      "timestamp": 1725905066,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "628a2570-a721-49ef-bc78-0e77ea664865",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_M0LuhV",
+            "topicId": "cr3e5_testCopilot.topic.ConversationStart",
+            "triggerId": "main",
+            "dialogComponentId": "0deb0421-454d-4e6a-9d67-0bfa0ca85aad",
+            "actionType": "SendActivity",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+      "type": "message",
+      "timestamp": 1725905074,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "channelId": "pva-studio",
+      "textFormat": "plain",
+      "text": "Add a new account with the name \"Contoso, Inc.\"",
+      "attachments": [],
+      "channelData": {
+        "attachmentSizes": [],
+        "enableDiagnostics": true,
+        "testMode": "Text",
+        "clientActivityID": "j80juuf314"
+      }
+    },
+    {
+      "valueType": "UnknownIntent",
+      "id": "edaab8b0cadf4fe7a8d94f12678f5249",
+      "type": "trace",
+      "timestamp": 1725905074,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "value": {
+        "userQuery": "Add a new account with the name \"Contoso, Inc.\""
+      }
+    },
+    {
+      "id": "cf59339f-ea89-4e5e-925a-4e941b3eeb72",
+      "type": "event",
+      "timestamp": 1725905074,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "VariableAssignment",
+      "id": "4e157a225257423fa92bd49f68be6c90",
+      "type": "trace",
+      "timestamp": 1725905083,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "replyToId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+      "value": {
+        "name": "Answer",
+        "id": "Topic.Answer",
+        "newValue": "To add a new account with the name \"Contoso, Inc.,\" you can follow these general steps, which may vary slightly depending on the specific software or platform you are using:\n\n### For Accounting Software (e.g., QuickBooks, Xero)\n1. **Log in** to your accounting software.\n2. **Navigate to the Accounts section**: This is usually found under a menu like \"Chart of Accounts\" or \"Accounts.\"\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Asset, Liability, Income, Expense).\n   - **Description**: Optionally, add a description for the account.\n5. **Save** the new account.\n\n### For CRM Software (e.g., Salesforce, HubSpot)\n1. **Log in** to your CRM software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Companies,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Other Details**: Fill in other relevant details like contact information, address, etc.\n5. **Save** the new account.\n\n### For Banking or Financial Software\n1. **Log in** to your banking or financial software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Manage Accounts,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Checking, Savings, Credit).\n   - **Other Details**: Fill in other relevant details as required.\n5. **Save** the new account.\n\nIf you provide more specific details about the platform or software you are using, I can give more tailored instructions!",
+        "type": "local"
+      }
+    },
+    {
+      "id": "385cb070-9d35-411c-ab20-fc1bff31c458",
+      "type": "message",
+      "timestamp": 1725905083,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "To add a new account with the name \"Contoso, Inc.,\" you can follow these general steps, which may vary slightly depending on the specific software or platform you are using:\n\n### For Accounting Software (e.g., QuickBooks, Xero)\n1. **Log in** to your accounting software.\n2. **Navigate to the Accounts section**: This is usually found under a menu like \"Chart of Accounts\" or \"Accounts.\"\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Asset, Liability, Income, Expense).\n   - **Description**: Optionally, add a description for the account.\n5. **Save** the new account.\n\n### For CRM Software (e.g., Salesforce, HubSpot)\n1. **Log in** to your CRM software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Companies,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Other Details**: Fill in other relevant details like contact information, address, etc.\n5. **Save** the new account.\n\n### For Banking or Financial Software\n1. **Log in** to your banking or financial software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Manage Accounts,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Checking, Savings, Credit).\n   - **Other Details**: Fill in other relevant details as required.\n5. **Save** the new account.\n\nIf you provide more specific details about the platform or software you are using, I can give more tailored instructions!\r\nAI-generated content may be incorrect",
+      "attachments": [],
+      "replyToId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">\r\nAI-generated content may be incorrect</prosody></voice></speak>",
+      "channelData": {
+        "pva:gpt-feedback": {
+          "endpoints": [],
+          "summarizationOpenAIResponse": {
+            "result": {
+              "summary": "To add a new account with the name \"Contoso, Inc.,\" you can follow these general steps, which may vary slightly depending on the specific software or platform you are using:\n\n### For Accounting Software (e.g., QuickBooks, Xero)\n1. **Log in** to your accounting software.\n2. **Navigate to the Accounts section**: This is usually found under a menu like \"Chart of Accounts\" or \"Accounts.\"\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Asset, Liability, Income, Expense).\n   - **Description**: Optionally, add a description for the account.\n5. **Save** the new account.\n\n### For CRM Software (e.g., Salesforce, HubSpot)\n1. **Log in** to your CRM software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Companies,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Other Details**: Fill in other relevant details like contact information, address, etc.\n5. **Save** the new account.\n\n### For Banking or Financial Software\n1. **Log in** to your banking or financial software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Manage Accounts,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Checking, Savings, Credit).\n   - **Other Details**: Fill in other relevant details as required.\n5. **Save** the new account.\n\nIf you provide more specific details about the platform or software you are using, I can give more tailored instructions!",
+              "textSummary": "To add a new account with the name \"Contoso, Inc.,\" you can follow these general steps, which may vary slightly depending on the specific software or platform you are using:\n\n### For Accounting Software (e.g., QuickBooks, Xero)\n1. **Log in** to your accounting software.\n2. **Navigate to the Accounts section**: This is usually found under a menu like \"Chart of Accounts\" or \"Accounts.\"\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Asset, Liability, Income, Expense).\n   - **Description**: Optionally, add a description for the account.\n5. **Save** the new account.\n\n### For CRM Software (e.g., Salesforce, HubSpot)\n1. **Log in** to your CRM software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Companies,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Other Details**: Fill in other relevant details like contact information, address, etc.\n5. **Save** the new account.\n\n### For Banking or Financial Software\n1. **Log in** to your banking or financial software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Manage Accounts,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Checking, Savings, Credit).\n   - **Other Details**: Fill in other relevant details as required.\n5. **Save** the new account.\n\nIf you provide more specific details about the platform or software you are using, I can give more tailored instructions!",
+              "speechSummary": "",
+              "containsConfidentialData": false,
+              "messageId": ""
+            },
+            "rawSummary": "",
+            "completionTokens": 0,
+            "promptTokens": 0,
+            "prompt": "",
+            "completionResponse": "noError"
+          },
+          "searchResults": [],
+          "verifiedSearchResults": [],
+          "searchErrors": [],
+          "message": "How can I add a new account with the name \"Contoso, Inc.\"?",
+          "activityId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+          "performedContentProvenanceCheck": true,
+          "performedContentModerationCheck": true,
+          "gptAnswerState": "Answered",
+          "triggeredGptFallback": true,
+          "completionState": "answered"
+        }
+      }
+    },
+    {
+      "valueType": "GPTAnswer",
+      "id": "46daee12eeb44483824e82f193c72237",
+      "type": "trace",
+      "timestamp": 1725905083,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "replyToId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+      "value": {
+        "gptAnswerState": "Answered"
+      }
+    },
+    {
+      "id": "97fd9f1f-b064-4cf4-a6c8-4b03d122fbe1",
+      "type": "event",
+      "timestamp": 1725905083,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "GenerativeAnswersSupportData",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+      "value": {
+        "endpoints": [],
+        "queryRewrittingOpenAIResponse": null,
+        "summarizationOpenAIResponse": {
+          "Result": {
+            "Summary": "To add a new account with the name \"Contoso, Inc.,\" you can follow these general steps, which may vary slightly depending on the specific software or platform you are using:\n\n### For Accounting Software (e.g., QuickBooks, Xero)\n1. **Log in** to your accounting software.\n2. **Navigate to the Accounts section**: This is usually found under a menu like \"Chart of Accounts\" or \"Accounts.\"\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Asset, Liability, Income, Expense).\n   - **Description**: Optionally, add a description for the account.\n5. **Save** the new account.\n\n### For CRM Software (e.g., Salesforce, HubSpot)\n1. **Log in** to your CRM software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Companies,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Other Details**: Fill in other relevant details like contact information, address, etc.\n5. **Save** the new account.\n\n### For Banking or Financial Software\n1. **Log in** to your banking or financial software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Manage Accounts,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Checking, Savings, Credit).\n   - **Other Details**: Fill in other relevant details as required.\n5. **Save** the new account.\n\nIf you provide more specific details about the platform or software you are using, I can give more tailored instructions!",
+            "TextSummary": "To add a new account with the name \"Contoso, Inc.,\" you can follow these general steps, which may vary slightly depending on the specific software or platform you are using:\n\n### For Accounting Software (e.g., QuickBooks, Xero)\n1. **Log in** to your accounting software.\n2. **Navigate to the Accounts section**: This is usually found under a menu like \"Chart of Accounts\" or \"Accounts.\"\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Asset, Liability, Income, Expense).\n   - **Description**: Optionally, add a description for the account.\n5. **Save** the new account.\n\n### For CRM Software (e.g., Salesforce, HubSpot)\n1. **Log in** to your CRM software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Companies,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Other Details**: Fill in other relevant details like contact information, address, etc.\n5. **Save** the new account.\n\n### For Banking or Financial Software\n1. **Log in** to your banking or financial software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Manage Accounts,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Checking, Savings, Credit).\n   - **Other Details**: Fill in other relevant details as required.\n5. **Save** the new account.\n\nIf you provide more specific details about the platform or software you are using, I can give more tailored instructions!",
+            "SpeechSummary": "",
+            "TextCitations": null,
+            "SpeechCitations": null,
+            "ContainsConfidentialData": false,
+            "HighestSensitivityLabelInfo": null,
+            "MessageId": ""
+          },
+          "RawSummary": "",
+          "CompletionTokens": 0,
+          "PromptTokens": 0,
+          "Prompt": "",
+          "CompletionResponse": "NoError",
+          "ErrorCode": null
+        },
+        "searchResults": [],
+        "verifiedSearchResults": [],
+        "searchErrors": [],
+        "message": "How can I add a new account with the name \"Contoso, Inc.\"?",
+        "screenedMessage": null,
+        "rewrittenMessage": null,
+        "rewrittenMessageKeywords": null,
+        "filteredOpenAISummary": null,
+        "screenedOpenAISummary": null,
+        "activityId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+        "conversationId": null,
+        "performedContentProvenanceCheck": true,
+        "performedContentModerationCheck": true,
+        "cdsBotId": null,
+        "tenantId": null,
+        "environmentId": null,
+        "gptAnswerState": "Answered",
+        "triggeredGptFallback": true,
+        "completionState": "Answered"
+      }
+    },
+    {
+      "id": "1eb6d685-a895-4a74-a85f-3f09540bf62e",
+      "type": "event",
+      "timestamp": 1725905083,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+      "value": {
+        "actions": [
+          {
+            "actionId": "search-content",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "SearchAndSummarizeContent",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {
+                "Answer": "To add a new account with the name \"Contoso, Inc.,\" you can follow these general steps, which may vary slightly depending on the specific software or platform you are using:\n\n### For Accounting Software (e.g., QuickBooks, Xero)\n1. **Log in** to your accounting software.\n2. **Navigate to the Accounts section**: This is usually found under a menu like \"Chart of Accounts\" or \"Accounts.\"\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Asset, Liability, Income, Expense).\n   - **Description**: Optionally, add a description for the account.\n5. **Save** the new account.\n\n### For CRM Software (e.g., Salesforce, HubSpot)\n1. **Log in** to your CRM software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Companies,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Other Details**: Fill in other relevant details like contact information, address, etc.\n5. **Save** the new account.\n\n### For Banking or Financial Software\n1. **Log in** to your banking or financial software.\n2. **Navigate to the Accounts section**: This might be under \"Accounts,\" \"Manage Accounts,\" or a similar menu.\n3. **Add a New Account**:\n   - Look for an option to add a new account, often labeled as \"New,\" \"Add Account,\" or a \"+\" button.\n4. **Enter Account Details**:\n   - **Account Name**: Enter \"Contoso, Inc.\"\n   - **Account Type**: Select the appropriate account type (e.g., Checking, Savings, Credit).\n   - **Other Details**: Fill in other relevant details as required.\n5. **Save** the new account.\n\nIf you provide more specific details about the platform or software you are using, I can give more tailored instructions!"
+              },
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "56b3d4dc-8acd-4f98-b31e-273170d18be7",
+      "type": "event",
+      "timestamp": 1725905083,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer-conditions",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "ConditionGroup",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "b5557c44-1ad4-4f5a-9129-6fec43158221",
+      "type": "event",
+      "timestamp": 1725905083,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+      "value": {
+        "actions": [
+          {
+            "actionId": "has-answer",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "ConditionItem",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "21bbd1e7-582e-4bdf-878f-469af2a683d5",
+      "type": "event",
+      "timestamp": 1725905083,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "94c270d4-ee8d-4625-b78e-90da6a9a33fa",
+      "value": {
+        "actions": [
+          {
+            "actionId": "end-topic",
+            "topicId": "cr3e5_testCopilot.topic.Search",
+            "triggerId": "main",
+            "dialogComponentId": "3c296721-5b41-4b8d-8fc6-32e3c637c232",
+            "actionType": "EndDialog",
+            "conditionItemExit": [
+              "has-answer"
+            ],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "valueType": "SessionInfo",
+      "id": "0",
+      "type": "trace",
+      "timestamp": 1725905083,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "startTimeUtc": "2024-09-09T18:04:25Z",
+        "endTimeUtc": "2024-09-09T18:04:43Z",
+        "type": "Engaged",
+        "outcome": "Abandoned",
+        "turnCount": 3,
+        "impliedSuccess": false
+      }
+    }
+  ]
+}

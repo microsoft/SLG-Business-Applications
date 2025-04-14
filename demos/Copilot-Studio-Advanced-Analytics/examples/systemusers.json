@@ -1,0 +1,3250 @@
+[
+  {
+    "@odata.etag": "W/\"5140266\"",
+    "fullname": "Vani Duddilla",
+    "systemuserid": "ccc60db7-0649-ef11-a316-001dd804c670",
+    "internalemailaddress": "vani.duddilla@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ccc60db7-0649-ef11-a316-001dd804c670"
+  },
+  {
+    "@odata.etag": "W/\"5140265\"",
+    "fullname": "Patrick O'Gorman",
+    "systemuserid": "cec60db7-0649-ef11-a316-001dd804c670",
+    "internalemailaddress": "patrick.ogorman@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "cec60db7-0649-ef11-a316-001dd804c670"
+  },
+  {
+    "@odata.etag": "W/\"5713070\"",
+    "fullname": "ITS Student5",
+    "systemuserid": "fb79c935-0670-ef11-a670-001dd804edd8",
+    "internalemailaddress": "ITS.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "fb79c935-0670-ef11-a670-001dd804edd8"
+  },
+  {
+    "@odata.etag": "W/\"5713068\"",
+    "fullname": "ITS Student1",
+    "systemuserid": "fc79c935-0670-ef11-a670-001dd804edd8",
+    "internalemailaddress": "ITS.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "fc79c935-0670-ef11-a670-001dd804edd8"
+  },
+  {
+    "@odata.etag": "W/\"5713069\"",
+    "fullname": "ITS Student2",
+    "systemuserid": "ff79c935-0670-ef11-a670-001dd804edd8",
+    "internalemailaddress": "ITS.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ff79c935-0670-ef11-a670-001dd804edd8"
+  },
+  {
+    "@odata.etag": "W/\"5713083\"",
+    "fullname": "ITS Student3",
+    "systemuserid": "007ac935-0670-ef11-a670-001dd804edd8",
+    "internalemailaddress": "ITS.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "007ac935-0670-ef11-a670-001dd804edd8"
+  },
+  {
+    "@odata.etag": "W/\"5713071\"",
+    "fullname": "ITS Student4",
+    "systemuserid": "f2bac13b-0670-ef11-a670-001dd804edd8",
+    "internalemailaddress": "ITS.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f2bac13b-0670-ef11-a670-001dd804edd8"
+  },
+  {
+    "@odata.etag": "W/\"5712028\"",
+    "fullname": "# Portals-Tim Test Site",
+    "systemuserid": "2c54198c-d979-ef11-a670-001dd804edd8",
+    "internalemailaddress": "Portals-TimTestSite_d7aaf48a-d8b0-46b2-be77-c9b62b44f43e@82c9826e-d987-ee11-8175-001dd809cff2.com",
+    "ownerid": "2c54198c-d979-ef11-a670-001dd804edd8"
+  },
+  {
+    "@odata.etag": "W/\"5297766\"",
+    "fullname": "# CloudFlowRunHistory",
+    "systemuserid": "58d5ffb1-3964-ef11-bfe2-001dd804ef32",
+    "internalemailaddress": "CloudFlowRunHistory@onmicrosoft.com",
+    "ownerid": "58d5ffb1-3964-ef11-bfe2-001dd804ef32"
+  },
+  {
+    "@odata.etag": "W/\"5297796\"",
+    "fullname": "# ConnectorManagementServiceBackend",
+    "systemuserid": "99d5ffb1-3964-ef11-bfe2-001dd804ef32",
+    "internalemailaddress": "ConnectorManagementServiceBackend@onmicrosoft.com",
+    "ownerid": "99d5ffb1-3964-ef11-bfe2-001dd804ef32"
+  },
+  {
+    "@odata.etag": "W/\"5713094\"",
+    "fullname": "AZCourts Student1",
+    "systemuserid": "bc8e2e52-3448-ef11-a316-001dd80513d7",
+    "internalemailaddress": "4a1f6f0ba1dd44818bd5845a804b7f5dazcourts.student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "bc8e2e52-3448-ef11-a316-001dd80513d7"
+  },
+  {
+    "@odata.etag": "W/\"5713092\"",
+    "fullname": "AZCourts Student2",
+    "systemuserid": "b6332958-3448-ef11-a316-001dd80513d7",
+    "internalemailaddress": "389fa9735d2346a6a6786a2da05450bfazcourts.student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b6332958-3448-ef11-a316-001dd80513d7"
+  },
+  {
+    "@odata.etag": "W/\"5713091\"",
+    "fullname": "AZCourts Student3",
+    "systemuserid": "d5332958-3448-ef11-a316-001dd80513d7",
+    "internalemailaddress": "23758f19ec3f45f88ab2527b21b8f74aazcourts.student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d5332958-3448-ef11-a316-001dd80513d7"
+  },
+  {
+    "@odata.etag": "W/\"5155106\"",
+    "fullname": "alcrt Student3",
+    "systemuserid": "1229f10a-bd48-ef11-a316-001dd80513d7",
+    "internalemailaddress": "cd326c2d03264bb3a696138cbd939034alcrt.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1229f10a-bd48-ef11-a316-001dd80513d7"
+  },
+  {
+    "@odata.etag": "W/\"5155083\"",
+    "fullname": "alcrt Student7",
+    "systemuserid": "1429f10a-bd48-ef11-a316-001dd80513d7",
+    "internalemailaddress": "7671e3e537ee43d7b56fbba45b9901b5alcrt.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1429f10a-bd48-ef11-a316-001dd80513d7"
+  },
+  {
+    "@odata.etag": "W/\"5155043\"",
+    "fullname": "alcrt Student2",
+    "systemuserid": "1629f10a-bd48-ef11-a316-001dd80513d7",
+    "internalemailaddress": "46a82426f9c542a692c07426df382cf8alcrt.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1629f10a-bd48-ef11-a316-001dd80513d7"
+  },
+  {
+    "@odata.etag": "W/\"5155041\"",
+    "fullname": "alcrt Student4",
+    "systemuserid": "1829f10a-bd48-ef11-a316-001dd80513d7",
+    "internalemailaddress": "686971a9e5664dab8637d0b4bcc6000balcrt.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1829f10a-bd48-ef11-a316-001dd80513d7"
+  },
+  {
+    "@odata.etag": "W/\"5155084\"",
+    "fullname": "alcrt Student10",
+    "systemuserid": "b0a40311-bd48-ef11-a316-001dd80513d7",
+    "internalemailaddress": "48a46a909e9147f59b8d26a72822789calcrt.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b0a40311-bd48-ef11-a316-001dd80513d7"
+  },
+  {
+    "@odata.etag": "W/\"5155082\"",
+    "fullname": "alcrt Student9",
+    "systemuserid": "f1a40311-bd48-ef11-a316-001dd80513d7",
+    "internalemailaddress": "758007061d434f7484f4b5db6e09b78calcrt.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f1a40311-bd48-ef11-a316-001dd80513d7"
+  },
+  {
+    "@odata.etag": "W/\"5155042\"",
+    "fullname": "alcrt Student5",
+    "systemuserid": "f5a40311-bd48-ef11-a316-001dd80513d7",
+    "internalemailaddress": "c046ebaee20747d286b96570935a5a8dalcrt.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f5a40311-bd48-ef11-a316-001dd80513d7"
+  },
+  {
+    "@odata.etag": "W/\"5990238\"",
+    "fullname": "DIR Lab4",
+    "systemuserid": "b462f4dc-473d-ef11-8409-001dd8051c8b",
+    "internalemailaddress": "DIRLab4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b462f4dc-473d-ef11-8409-001dd8051c8b"
+  },
+  {
+    "@odata.etag": "W/\"5990208\"",
+    "fullname": "DIR Lab2",
+    "systemuserid": "b662f4dc-473d-ef11-8409-001dd8051c8b",
+    "internalemailaddress": "DIRLab2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b662f4dc-473d-ef11-8409-001dd8051c8b"
+  },
+  {
+    "@odata.etag": "W/\"5990210\"",
+    "fullname": "DIR Lab1",
+    "systemuserid": "b862f4dc-473d-ef11-8409-001dd8051c8b",
+    "internalemailaddress": "DirLab1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b862f4dc-473d-ef11-8409-001dd8051c8b"
+  },
+  {
+    "@odata.etag": "W/\"3527027\"",
+    "fullname": "PBH Student13",
+    "systemuserid": "bdc83ca0-deb1-ee11-a568-001dd8052b86",
+    "internalemailaddress": "fb87bb982db540e4920b768fdd158830PBH.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "bdc83ca0-deb1-ee11-a568-001dd8052b86"
+  },
+  {
+    "@odata.etag": "W/\"3527012\"",
+    "fullname": "PBH Student2",
+    "systemuserid": "a119f841-d9b1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "e9f7c7c97d0b453bb4f0cd3edc2ddd8bPBH.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a119f841-d9b1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527011\"",
+    "fullname": "PBH Student1",
+    "systemuserid": "a319f841-d9b1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "bfb94a6c098940fea79d718cead25a3fPBH.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a319f841-d9b1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527016\"",
+    "fullname": "PBH Student4",
+    "systemuserid": "82cadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "67ba1288cb64496eb8a3d05d0a6b3170PBH.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "82cadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527019\"",
+    "fullname": "PBH Student6",
+    "systemuserid": "84cadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "44ee85e8659d4a8789eccf3e651ba0aePBH.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "84cadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527017\"",
+    "fullname": "PBH Student5",
+    "systemuserid": "86cadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "02c82007aece4732946d6136fb4a986cPBH.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "86cadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527018\"",
+    "fullname": "PBH Student7",
+    "systemuserid": "89cadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "0862dd47006849b8a825352ee1163d47PBH.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "89cadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527010\"",
+    "fullname": "PBH Student3",
+    "systemuserid": "adcadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "a75e6537619d491faad27b61db33d25aPBH.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "adcadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527020\"",
+    "fullname": "PBH Student8",
+    "systemuserid": "bccadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "8d9625a7965a4f04a5333f3b21a1d7f4PBH.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "bccadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527022\"",
+    "fullname": "PBH Student9",
+    "systemuserid": "bfcadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "2c18ab5fcab141e5baccbe5cf5bc00f6PBH.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "bfcadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527024\"",
+    "fullname": "PBH Student10",
+    "systemuserid": "c3cadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "9b30d515211a43fc9c0845215f0d53fdPBH.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c3cadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527009\"",
+    "fullname": "PBH Student11",
+    "systemuserid": "c5cadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "769ca4bf62e74ee29bf80c315c432975PBH.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c5cadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527021\"",
+    "fullname": "PBH Student12",
+    "systemuserid": "e5cadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "25aa94d950834948a0081c6ccc957243PBH.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e5cadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527023\"",
+    "fullname": "PBH Student14",
+    "systemuserid": "f3cadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "24f0f583475442ce9c51d7d5bb73214bPBH.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f3cadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"3527026\"",
+    "fullname": "PBH Student15",
+    "systemuserid": "f6cadda1-deb1-ee11-a568-001dd8052f25",
+    "internalemailaddress": "d56456a6ca01462b832bc02410fb6261PBH.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f6cadda1-deb1-ee11-a568-001dd8052f25"
+  },
+  {
+    "@odata.etag": "W/\"4870688\"",
+    "fullname": "DCFS2 Student5",
+    "systemuserid": "6f7e60d6-9501-ef11-a1fe-001dd8053efe",
+    "internalemailaddress": "04c75f67d20542dca40485a9daa1a706DCFS2.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6f7e60d6-9501-ef11-a1fe-001dd8053efe"
+  },
+  {
+    "@odata.etag": "W/\"4870718\"",
+    "fullname": "DCFS2 Student11",
+    "systemuserid": "747e60d6-9501-ef11-a1fe-001dd8053efe",
+    "internalemailaddress": "6278c2a686814053a144f9bb53803b0dDCFS2.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "747e60d6-9501-ef11-a1fe-001dd8053efe"
+  },
+  {
+    "@odata.etag": "W/\"4870801\"",
+    "fullname": "DCFS2 Student13",
+    "systemuserid": "07da5a3a-9801-ef11-a1fe-001dd8053efe",
+    "internalemailaddress": "260e2b6617da4732b611b26e6da4f897DCFS2.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "07da5a3a-9801-ef11-a1fe-001dd8053efe"
+  },
+  {
+    "@odata.etag": "W/\"4974326\"",
+    "fullname": "# CDSUserManagementApi",
+    "systemuserid": "490ea4f3-da3c-ef11-8409-001dd8068673",
+    "internalemailaddress": "CDSUserManagementApi@onmicrosoft.com",
+    "ownerid": "490ea4f3-da3c-ef11-8409-001dd8068673"
+  },
+  {
+    "@odata.etag": "W/\"3804372\"",
+    "fullname": "# CatalogServiceGcc",
+    "systemuserid": "78cb9c78-cbf7-ee11-a1fd-001dd8068673",
+    "internalemailaddress": "CatalogServiceGcc@onmicrosoft.com",
+    "ownerid": "78cb9c78-cbf7-ee11-a1fd-001dd8068673"
+  },
+  {
+    "@odata.etag": "W/\"5171354\"",
+    "fullname": "# Portal RP Service",
+    "systemuserid": "411b86e7-6854-ef11-a317-001dd8068673",
+    "internalemailaddress": "PortalRPService@onmicrosoft.com",
+    "ownerid": "411b86e7-6854-ef11-a317-001dd8068673"
+  },
+  {
+    "@odata.etag": "W/\"4475661\"",
+    "fullname": "# PowerAutomate-AiFlowsAppUser-Web",
+    "systemuserid": "9be11dbd-2123-ef11-840a-001dd8068eb0",
+    "internalemailaddress": "PowerAutomate-AiFlowsAppUser-Web@onmicrosoft.com",
+    "ownerid": "9be11dbd-2123-ef11-840a-001dd8068eb0"
+  },
+  {
+    "@odata.etag": "W/\"4475691\"",
+    "fullname": "# PowerAutomate-AiFlowsAppUser-Worker",
+    "systemuserid": "d5e11dbd-2123-ef11-840a-001dd8068eb0",
+    "internalemailaddress": "PowerAutomate-AiFlowsAppUser-Worker@onmicrosoft.com",
+    "ownerid": "d5e11dbd-2123-ef11-840a-001dd8068eb0"
+  },
+  {
+    "@odata.etag": "W/\"3264494\"",
+    "fullname": "# PowerAutomate-DesktopFlowAI",
+    "systemuserid": "94b8dddd-a8d6-ee11-9079-001dd8068eb0",
+    "internalemailaddress": "PowerAutomate-DesktopFlowAI@onmicrosoft.com",
+    "ownerid": "94b8dddd-a8d6-ee11-9079-001dd8068eb0"
+  },
+  {
+    "@odata.etag": "W/\"5118356\"",
+    "fullname": "# SSSAdminProd",
+    "systemuserid": "6394f490-a345-ef11-a316-001dd8068eb0",
+    "internalemailaddress": "SSSAdminProd@onmicrosoft.com",
+    "ownerid": "6394f490-a345-ef11-a316-001dd8068eb0"
+  },
+  {
+    "@odata.etag": "W/\"5150037\"",
+    "fullname": "Julian Soh",
+    "systemuserid": "f08bb338-5c4f-ef11-a316-001dd806a523",
+    "internalemailaddress": "julian.soh@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f08bb338-5c4f-ef11-a316-001dd806a523"
+  },
+  {
+    "@odata.etag": "W/\"3527330\"",
+    "fullname": "LADPS Student1",
+    "systemuserid": "f062a9c7-6bbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "68640c6d11c04d158ccd8bab1a8a9fbfLADPS.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f062a9c7-6bbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527322\"",
+    "fullname": "LADPS Student4",
+    "systemuserid": "38436399-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "f821dc8dd8504c7ca11450916dad0b66LADPS.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "38436399-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527332\"",
+    "fullname": "LADPS Student6",
+    "systemuserid": "39436399-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "b17f100d5db64741a8e7cffb8d4ecf2cLADPS.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "39436399-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527325\"",
+    "fullname": "LADPS Student2",
+    "systemuserid": "3b436399-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "1e548d6926ca4834a98095c21f5cf718LADPS.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3b436399-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527331\"",
+    "fullname": "LADPS Student5",
+    "systemuserid": "3d436399-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "c90079033222443682b415aa60a223c6LADPS.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3d436399-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527319\"",
+    "fullname": "LADPS Student3",
+    "systemuserid": "67436399-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "f064dc229cdb48359f42b25226d023a1LADPS.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "67436399-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527321\"",
+    "fullname": "LADPS Student9",
+    "systemuserid": "74436399-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "8371b3c7510b466899c8c5ebd76745f4LADPS.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "74436399-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527320\"",
+    "fullname": "LADPS Student8",
+    "systemuserid": "76436399-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "02fba22cdd91416282ee57d35174c23dLADPS.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "76436399-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527328\"",
+    "fullname": "LADPS Student10",
+    "systemuserid": "80ca5e9f-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "4e2cafa8731c4cfcbf412a794beb5840LADPS.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "80ca5e9f-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527333\"",
+    "fullname": "LADPS Student7",
+    "systemuserid": "83ca5e9f-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "b5fc92efb64047f0ac0b04a33d6ba15cLADPS.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "83ca5e9f-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527334\"",
+    "fullname": "LADPS Student12",
+    "systemuserid": "a0ca5e9f-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "ea3e450d53ad48189c0fc78b5759a645LADPS.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a0ca5e9f-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527326\"",
+    "fullname": "LADPS Student11",
+    "systemuserid": "b1ca5e9f-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "e6221e7119c94513972c417e06af84ceLADPS.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b1ca5e9f-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527329\"",
+    "fullname": "LADPS Student13",
+    "systemuserid": "b5ca5e9f-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "c1eb356762f743e9a3748b4930223b9eLADPS.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b5ca5e9f-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527327\"",
+    "fullname": "LADPS Student14",
+    "systemuserid": "bbca5e9f-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "363a1eab44fa466e982f7bf46033cb56LADPS.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "bbca5e9f-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"3527335\"",
+    "fullname": "LADPS Student15",
+    "systemuserid": "c9ca5e9f-6fbe-ee11-9078-001dd806c3ed",
+    "internalemailaddress": "fa9df7ae3c7a4cd591f2bdc0fca9dfb7LADPS.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c9ca5e9f-6fbe-ee11-9078-001dd806c3ed"
+  },
+  {
+    "@odata.etag": "W/\"2324560\"",
+    "fullname": "Microsoft Forms Pro",
+    "systemuserid": "18cbdfde-ea9e-ee11-be36-001dd806d6eb",
+    "internalemailaddress": "enterprisesurveyappuser@contoso.com",
+    "ownerid": "18cbdfde-ea9e-ee11-be36-001dd806d6eb"
+  },
+  {
+    "@odata.etag": "W/\"4870578\"",
+    "fullname": "COOIT Student4",
+    "systemuserid": "90e7a9e5-1290-ee11-8178-001dd806e383",
+    "internalemailaddress": "363d0600f9f74799a5c991c39cce453eCOOIT.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "90e7a9e5-1290-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"4870598\"",
+    "fullname": "COOIT Student7",
+    "systemuserid": "aee7a9e5-1290-ee11-8178-001dd806e383",
+    "internalemailaddress": "d5b5133a58c04d0da4147ce34bee75b4COOIT.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "aee7a9e5-1290-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"4870528\"",
+    "fullname": "COOIT Student8",
+    "systemuserid": "b0e7a9e5-1290-ee11-8178-001dd806e383",
+    "internalemailaddress": "5cd6ed01aa3748b1916ed36e3c2259a2COOIT.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b0e7a9e5-1290-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"3829314\"",
+    "fullname": "CLARK Student3",
+    "systemuserid": "c5e7a9e5-1290-ee11-8178-001dd806e383",
+    "internalemailaddress": "2c34a9a041c4472a865df95c8810110dCLARK.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c5e7a9e5-1290-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"3829173\"",
+    "fullname": "CLARK Student6",
+    "systemuserid": "cde7a9e5-1290-ee11-8178-001dd806e383",
+    "internalemailaddress": "b0b17441e2f34dae9de4b8c2fa345652CLARK.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "cde7a9e5-1290-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"3829171\"",
+    "fullname": "CLARK Student5",
+    "systemuserid": "dce7a9e5-1290-ee11-8178-001dd806e383",
+    "internalemailaddress": "aa26f96b512c4ea98fa6f70648e9b4aeCLARK.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "dce7a9e5-1290-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"3829189\"",
+    "fullname": "CLARK Student8",
+    "systemuserid": "6351f50e-1690-ee11-8178-001dd806e383",
+    "internalemailaddress": "25ff7553c29448d2b628784f8e9c09ceCLARK.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6351f50e-1690-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"3829267\"",
+    "fullname": "CLARK Student19",
+    "systemuserid": "6f51f50e-1690-ee11-8178-001dd806e383",
+    "internalemailaddress": "06cb8b4dbcad455da17fa31db443343dCLARK.Student19@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6f51f50e-1690-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"3829352\"",
+    "fullname": "CLARK Student25",
+    "systemuserid": "600eeea5-1b90-ee11-8178-001dd806e383",
+    "internalemailaddress": "f989612dae86491d9a9fb573c89e2b00CLARK.Student25@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "600eeea5-1b90-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"3829253\"",
+    "fullname": "CLARK Student23",
+    "systemuserid": "620eeea5-1b90-ee11-8178-001dd806e383",
+    "internalemailaddress": "70a2bc343d6b4aa2a7bdf3c137487535CLARK.Student23@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "620eeea5-1b90-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"3829398\"",
+    "fullname": "CLARK Student32",
+    "systemuserid": "960eeea5-1b90-ee11-8178-001dd806e383",
+    "internalemailaddress": "e8804a95fe674cd8bf9d2349c3a2a286CLARK.Student32@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "960eeea5-1b90-ee11-8178-001dd806e383"
+  },
+  {
+    "@odata.etag": "W/\"5990209\"",
+    "fullname": "DIR Lab5",
+    "systemuserid": "2586aee2-473d-ef11-8409-001dd806e985",
+    "internalemailaddress": "DIRLab5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2586aee2-473d-ef11-8409-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"5990207\"",
+    "fullname": "DIR Lab3",
+    "systemuserid": "2786aee2-473d-ef11-8409-001dd806e985",
+    "internalemailaddress": "DIRLab3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2786aee2-473d-ef11-8409-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786842\"",
+    "fullname": "DCFS Student2",
+    "systemuserid": "37bf0fc8-12f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "02ed35248d724707933e502a4bfd0367DCFS.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "37bf0fc8-12f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786848\"",
+    "fullname": "DCFS Student1",
+    "systemuserid": "39bf0fc8-12f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "213d00a947a0480e93214582fd7c74ccDCFS.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "39bf0fc8-12f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786796\"",
+    "fullname": "DCFS Student3",
+    "systemuserid": "3bbf0fc8-12f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "7170b533c6b646b6971958dfd4096ff7DCFS.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3bbf0fc8-12f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786825\"",
+    "fullname": "DCFS Student4",
+    "systemuserid": "3dbf0fc8-12f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "c466918b7f424b04a205cb8a396300f5DCFS.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3dbf0fc8-12f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786850\"",
+    "fullname": "DCFS Student5",
+    "systemuserid": "69bf0fc8-12f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "4f9a05d5dba24a988dfd640e4be36aa4DCFS.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "69bf0fc8-12f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786824\"",
+    "fullname": "DCFS Student6",
+    "systemuserid": "71bf0fc8-12f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "c805f743e3f64d17bf46d0a49213eff3DCFS.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "71bf0fc8-12f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786823\"",
+    "fullname": "DCFS Student13",
+    "systemuserid": "1229efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "a3519e55e40a48659636fce9a7aaeb12DCFS.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1229efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786879\"",
+    "fullname": "DCFS Student9",
+    "systemuserid": "1329efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "384ab298e9e24530a6213a2a020657b2DCFS.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1329efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786766\"",
+    "fullname": "DCFS Student8",
+    "systemuserid": "1529efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "6add8569b570461d95c39fd7ec669d86DCFS.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1529efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786870\"",
+    "fullname": "DCFS Student7",
+    "systemuserid": "1729efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "09fc7c6f0f304e35bdb8063310d92473DCFS.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1729efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786851\"",
+    "fullname": "DCFS Student11",
+    "systemuserid": "3d29efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "2321a1894d6d44449414810ff2de3415DCFS.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3d29efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786765\"",
+    "fullname": "DCFS Student14",
+    "systemuserid": "4429efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "6550fb77df9341d39e41db58c2afd9a4DCFS.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4429efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786797\"",
+    "fullname": "DCFS Student15",
+    "systemuserid": "4629efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "74b1a3fd5f2a4ab5bb7f8dc5044c25b3DCFS.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4629efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786767\"",
+    "fullname": "DCFS Student16",
+    "systemuserid": "5e29efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "69a1a8a873b046718d1289f46e96dfdeDCFS.Student16@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "5e29efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786768\"",
+    "fullname": "DCFS Student18",
+    "systemuserid": "6729efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "5fa8be6e348c410dba9b758d0746fb3dDCFS.Student18@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6729efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786798\"",
+    "fullname": "DCFS Student17",
+    "systemuserid": "6b29efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "8a541820a04c43ee970f60fa2ceba173DCFS.Student17@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6b29efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786764\"",
+    "fullname": "DCFS Student19",
+    "systemuserid": "8029efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "6bcc5dbf1a7f467992b8e656082d3438DCFS.Student19@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8029efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3786878\"",
+    "fullname": "DCFS Student20",
+    "systemuserid": "8c29efb6-17f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "41eb8142189b40458b61d1b70d0a9675DCFS.Student20@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8c29efb6-17f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3829167\"",
+    "fullname": "test Student1",
+    "systemuserid": "fb2c2df5-83f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "d686af32f7ed4bb8bb54d304aa4a8c72test.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "fb2c2df5-83f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3829031\"",
+    "fullname": "DCFS Student2",
+    "systemuserid": "7a0f9060-87f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "69a302aad6af4fa8b8a3df090d0d16f3DCFS.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7a0f9060-87f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3829030\"",
+    "fullname": "DCFS Student1",
+    "systemuserid": "7b0f9060-87f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "61386bdd0a8446149fe2458216dbe7b6DCFS.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7b0f9060-87f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3829057\"",
+    "fullname": "DCFS Student7",
+    "systemuserid": "f000bfc2-8cf3-ee11-904b-001dd806e985",
+    "internalemailaddress": "808083cc5a024cc09d775427d88caa36DCFS.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f000bfc2-8cf3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3829032\"",
+    "fullname": "DCFS Student5",
+    "systemuserid": "f200bfc2-8cf3-ee11-904b-001dd806e985",
+    "internalemailaddress": "0080b827989f45ad873cbe92c8aa4fb5DCFS.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f200bfc2-8cf3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3829054\"",
+    "fullname": "DCFS Student6",
+    "systemuserid": "f400bfc2-8cf3-ee11-904b-001dd806e985",
+    "internalemailaddress": "6c3e20d7e2c14d73b9814204c7ab02e4DCFS.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f400bfc2-8cf3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3829060\"",
+    "fullname": "DCFS Student8",
+    "systemuserid": "f600bfc2-8cf3-ee11-904b-001dd806e985",
+    "internalemailaddress": "91357cfa32e147ca8030b53930cf3c3eDCFS.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f600bfc2-8cf3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3829001\"",
+    "fullname": "DCFS Student4",
+    "systemuserid": "1701bfc2-8cf3-ee11-904b-001dd806e985",
+    "internalemailaddress": "8d07be5fa9054008a118a91d231120b4DCFS.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1701bfc2-8cf3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3829070\"",
+    "fullname": "DCFS Student9",
+    "systemuserid": "932e3364-91f3-ee11-904b-001dd806e985",
+    "internalemailaddress": "b93d9ed0b45c45e29aa15e9a3894aa2bDCFS.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "932e3364-91f3-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870759\"",
+    "fullname": "DCFS1 Student2",
+    "systemuserid": "b0925361-b4f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "434d875843984d8fb275b4564b830fc7DCFS1.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b0925361-b4f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870803\"",
+    "fullname": "DCFS1 Student5",
+    "systemuserid": "b1925361-b4f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "d5310e8a667444e8906f54f33d961f80DCFS1.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b1925361-b4f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870768\"",
+    "fullname": "DCFS1 Student4",
+    "systemuserid": "b3925361-b4f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "68262f33d68b490b92709ce3835bcbeaDCFS1.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b3925361-b4f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870742\"",
+    "fullname": "DCFS1 Student3",
+    "systemuserid": "b5925361-b4f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "01b0e3ea5df1426d8ddd3ff6a5ecb4d9DCFS1.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b5925361-b4f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870705\"",
+    "fullname": "DCFS1 Student1",
+    "systemuserid": "9b259867-b4f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "f53aba703e7e44798bd36771a14b8f6eDCFS1.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9b259867-b4f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870824\"",
+    "fullname": "DCFS1 Student7",
+    "systemuserid": "af259867-b4f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "25fc18d4d09d4df09c5f4966acd45f4aDCFS1.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "af259867-b4f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870855\"",
+    "fullname": "DCFS1 Student12",
+    "systemuserid": "b0e9a683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "cadf56882a914ebaa4ddf91befc63c23DCFS1.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b0e9a683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870826\"",
+    "fullname": "DCFS1 Student10",
+    "systemuserid": "b2e9a683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "516f65f687a344ff83280846dfbd9dc9DCFS1.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b2e9a683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870881\"",
+    "fullname": "DCFS1 Student13",
+    "systemuserid": "b4e9a683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "375ad56b99764c709b838c105e8defc7DCFS1.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b4e9a683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870830\"",
+    "fullname": "DCFS1 Student9",
+    "systemuserid": "c0e9a683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "3929011d358449299d0e98b727c779fdDCFS1.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c0e9a683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870854\"",
+    "fullname": "DCFS1 Student11",
+    "systemuserid": "d7e9a683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "21ce640b835642219977203b7dec674dDCFS1.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d7e9a683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870883\"",
+    "fullname": "DCFS1 Student14",
+    "systemuserid": "e5e9a683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "bf965b32b15e4a7fa7c14827cb0a1dafDCFS1.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e5e9a683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870899\"",
+    "fullname": "DCFS1 Student15",
+    "systemuserid": "e8e9a683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "c50f7c697d354fdb931e9665d0c7aac2DCFS1.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e8e9a683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870910\"",
+    "fullname": "DCFS1 Student16",
+    "systemuserid": "ebe9a683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "d98986ac0c434b7e9db61b3c07cb5988DCFS1.Student16@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ebe9a683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870956\"",
+    "fullname": "DCFS1 Student17",
+    "systemuserid": "f4e9a683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "042314da1af441e19fc6d9dbff924817DCFS1.Student17@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f4e9a683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870970\"",
+    "fullname": "DCFS1 Student18",
+    "systemuserid": "0beaa683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "4f78168963c04e56a4df21c40c02707aDCFS1.Student18@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "0beaa683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870695\"",
+    "fullname": "DCFS1 Student19",
+    "systemuserid": "1beaa683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "017b496625cf47b2bd5ed02d59095da5DCFS1.Student19@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1beaa683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870940\"",
+    "fullname": "DCFS1 Student20",
+    "systemuserid": "1feaa683-b8f5-ee11-904b-001dd806e985",
+    "internalemailaddress": "2f73f3d039214b8f92c45e082ffdefbfDCFS1.Student20@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1feaa683-b8f5-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811802\"",
+    "fullname": "John Nelson",
+    "systemuserid": "367beb15-b5f6-ee11-904b-001dd806e985",
+    "internalemailaddress": "e3eadf68fc304c9e883b8debb00b4b2djohn.nelson@microsoft.com",
+    "ownerid": "367beb15-b5f6-ee11-904b-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811721\"",
+    "fullname": "aldhr Student1",
+    "systemuserid": "dd3493ab-02ec-ee11-904c-001dd806e985",
+    "internalemailaddress": "1c7dbfc751fa4107aa8756fc9ef73a03aldhr.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "dd3493ab-02ec-ee11-904c-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811722\"",
+    "fullname": "aldhr Student3",
+    "systemuserid": "df3493ab-02ec-ee11-904c-001dd806e985",
+    "internalemailaddress": "ceb95b019a1e4c298cad7fb4c0e95afdaldhr.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "df3493ab-02ec-ee11-904c-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811720\"",
+    "fullname": "aldhr Student2",
+    "systemuserid": "e13493ab-02ec-ee11-904c-001dd806e985",
+    "internalemailaddress": "2d66857d0a3f4865afa13fa5aec5ec19aldhr.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e13493ab-02ec-ee11-904c-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811753\"",
+    "fullname": "aldhr Student5",
+    "systemuserid": "e33493ab-02ec-ee11-904c-001dd806e985",
+    "internalemailaddress": "05f18b3f945e4b6496f83a326003d3fbaldhr.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e33493ab-02ec-ee11-904c-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811751\"",
+    "fullname": "aldhr Student6",
+    "systemuserid": "a72eccb1-02ec-ee11-904c-001dd806e985",
+    "internalemailaddress": "6295bbd906724c2f94a77d3f215006b2aldhr.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a72eccb1-02ec-ee11-904c-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811750\"",
+    "fullname": "aldhr Student7",
+    "systemuserid": "a92eccb1-02ec-ee11-904c-001dd806e985",
+    "internalemailaddress": "b2ac3ec30c2a4e73bc1098e822158a10aldhr.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a92eccb1-02ec-ee11-904c-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811778\"",
+    "fullname": "aldhr Student8",
+    "systemuserid": "ac2eccb1-02ec-ee11-904c-001dd806e985",
+    "internalemailaddress": "9fec6973f87548af94ceb2751475f516aldhr.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ac2eccb1-02ec-ee11-904c-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811780\"",
+    "fullname": "aldhr Student10",
+    "systemuserid": "ae2eccb1-02ec-ee11-904c-001dd806e985",
+    "internalemailaddress": "aae87f877c9744d382dc0556cd0919fcaldhr.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ae2eccb1-02ec-ee11-904c-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811779\"",
+    "fullname": "aldhr Student9",
+    "systemuserid": "cc2eccb1-02ec-ee11-904c-001dd806e985",
+    "internalemailaddress": "0983417eb1384fc9920e71f4580c69b6aldhr.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "cc2eccb1-02ec-ee11-904c-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4064714\"",
+    "fullname": "CSA GCC",
+    "systemuserid": "b1c65173-3407-ef11-9f89-001dd806e985",
+    "internalemailaddress": "CSA.GCC@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b1c65173-3407-ef11-9f89-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4064750\"",
+    "fullname": "Asad Irfan",
+    "systemuserid": "8897a157-3a07-ef11-9f89-001dd806e985",
+    "internalemailaddress": "asad.irfan@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8897a157-3a07-ef11-9f89-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4137189\"",
+    "fullname": "State of Washington",
+    "systemuserid": "7b9e5f37-af08-ef11-9f89-001dd806e985",
+    "internalemailaddress": "stateofwa@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7b9e5f37-af08-ef11-9f89-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4083094\"",
+    "fullname": "Artena Woods",
+    "systemuserid": "1adc53e2-6c09-ef11-9f89-001dd806e985",
+    "internalemailaddress": "artena.woods@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1adc53e2-6c09-ef11-9f89-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4083093\"",
+    "fullname": "Greg Harrison",
+    "systemuserid": "1cdc53e2-6c09-ef11-9f89-001dd806e985",
+    "internalemailaddress": "greg.harrison@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1cdc53e2-6c09-ef11-9f89-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"3811834\"",
+    "fullname": "# Anne Weiler",
+    "systemuserid": "98172c0d-3af8-ee11-a1fd-001dd806e985",
+    "internalemailaddress": "annew@D365DemoTS457225.OnMicrosoft.com",
+    "ownerid": "98172c0d-3af8-ee11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"5713142\"",
+    "fullname": "bri Student1",
+    "systemuserid": "5a622f0c-0d03-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "210d53dbc10a44fc9e89e192b9505357bri.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "5a622f0c-0d03-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870909\"",
+    "fullname": "bri Student6",
+    "systemuserid": "9453ebec-0f03-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "52e2c3380d32404f9be09e2156b62bb8bri.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9453ebec-0f03-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870867\"",
+    "fullname": "bri Student4",
+    "systemuserid": "9553ebec-0f03-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "b2936f0e0301439ebc72d5370ef11c33bri.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9553ebec-0f03-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870882\"",
+    "fullname": "bri Student5",
+    "systemuserid": "9753ebec-0f03-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "5268367eecb146d4b46e3259ff340291bri.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9753ebec-0f03-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"5713160\"",
+    "fullname": "bri Student2",
+    "systemuserid": "9953ebec-0f03-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "74a18710d17442b691a7e449cd94d01ebri.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9953ebec-0f03-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"5713129\"",
+    "fullname": "bri Student3",
+    "systemuserid": "bb53ebec-0f03-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "9baf82b4ab214c7093896f90e23c8258bri.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "bb53ebec-0f03-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870939\"",
+    "fullname": "bri Student11",
+    "systemuserid": "d824a2f3-1403-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "02939d9e68274098ad0cc448b65dc9d3bri.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d824a2f3-1403-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870985\"",
+    "fullname": "bri Student8",
+    "systemuserid": "da24a2f3-1403-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "c346be5ed46a42e0a07be316a84736b7bri.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "da24a2f3-1403-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870937\"",
+    "fullname": "bri Student7",
+    "systemuserid": "dc24a2f3-1403-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "e609aade17bd4b77b3ad95eeace1414bbri.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "dc24a2f3-1403-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870928\"",
+    "fullname": "bri Student10",
+    "systemuserid": "e824a2f3-1403-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "a5d8e5a8c12745c89aef2e8f4ac9dee6bri.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e824a2f3-1403-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870913\"",
+    "fullname": "bri Student9",
+    "systemuserid": "0225a2f3-1403-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "6bcb9e4c8b7b4f4a9402c20738a56047bri.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "0225a2f3-1403-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870965\"",
+    "fullname": "bri Student13",
+    "systemuserid": "0e25a2f3-1403-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "ffc5db409b4643c4b5ea216d1f504948bri.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "0e25a2f3-1403-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870964\"",
+    "fullname": "bri Student12",
+    "systemuserid": "1025a2f3-1403-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "ae395966ecb14ed992c47194f69e5fcbbri.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1025a2f3-1403-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870994\"",
+    "fullname": "bri Student15",
+    "systemuserid": "2215d90a-1a03-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "44d898064fd54386b5f324fb56749be3bri.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2215d90a-1a03-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870996\"",
+    "fullname": "bri Student14",
+    "systemuserid": "2415d90a-1a03-ef11-a1fd-001dd806e985",
+    "internalemailaddress": "c7db71391fcb49f1b4dbe4979d802fd5bri.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2415d90a-1a03-ef11-a1fd-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870638\"",
+    "fullname": "DCFS2 Student4",
+    "systemuserid": "8e3cd11c-9001-ef11-a1fe-001dd806e985",
+    "internalemailaddress": "c8970fcf165d412f8fc19fb33659475fDCFS2.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8e3cd11c-9001-ef11-a1fe-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870720\"",
+    "fullname": "DCFS2 Student2",
+    "systemuserid": "903cd11c-9001-ef11-a1fe-001dd806e985",
+    "internalemailaddress": "2dee97612b254f1e99477341cdac041dDCFS2.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "903cd11c-9001-ef11-a1fe-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870674\"",
+    "fullname": "DCFS2 Student3",
+    "systemuserid": "923cd11c-9001-ef11-a1fe-001dd806e985",
+    "internalemailaddress": "dc03cf67125b481ea90c895c3d4e4171DCFS2.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "923cd11c-9001-ef11-a1fe-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870676\"",
+    "fullname": "DCFS2 Student1",
+    "systemuserid": "943cd11c-9001-ef11-a1fe-001dd806e985",
+    "internalemailaddress": "080b1c5bf07c40ef8595452ea2d053dcDCFS2.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "943cd11c-9001-ef11-a1fe-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870655\"",
+    "fullname": "DCFS2 Student9",
+    "systemuserid": "3f88ded7-9501-ef11-a1fe-001dd806e985",
+    "internalemailaddress": "7d0716f7fa6a444980afeacc5de77560DCFS2.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3f88ded7-9501-ef11-a1fe-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870741\"",
+    "fullname": "DCFS2 Student7",
+    "systemuserid": "4188ded7-9501-ef11-a1fe-001dd806e985",
+    "internalemailaddress": "fadbb305d097461889437cee5f87ba46DCFS2.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4188ded7-9501-ef11-a1fe-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870648\"",
+    "fullname": "DCFS2 Student8",
+    "systemuserid": "4388ded7-9501-ef11-a1fe-001dd806e985",
+    "internalemailaddress": "bb3ff2bd0f354592a469a6ce7eb9a0cdDCFS2.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4388ded7-9501-ef11-a1fe-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870632\"",
+    "fullname": "DCFS2 Student6",
+    "systemuserid": "4588ded7-9501-ef11-a1fe-001dd806e985",
+    "internalemailaddress": "d87adf88f22c4ba08dbaeca80ae19a87DCFS2.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4588ded7-9501-ef11-a1fe-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870668\"",
+    "fullname": "DCFS2 Student10",
+    "systemuserid": "6888ded7-9501-ef11-a1fe-001dd806e985",
+    "internalemailaddress": "24f895ffd36644349504d4de569a52fcDCFS2.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6888ded7-9501-ef11-a1fe-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870764\"",
+    "fullname": "DCFS2 Student12",
+    "systemuserid": "7088ded7-9501-ef11-a1fe-001dd806e985",
+    "internalemailaddress": "9cf5a90fc59644b989434aee380d9f97DCFS2.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7088ded7-9501-ef11-a1fe-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"5155044\"",
+    "fullname": "alcrt Student6",
+    "systemuserid": "3624bb10-bd48-ef11-a316-001dd806e985",
+    "internalemailaddress": "c42a3e572f314fd19dec170ccd5a6d55alcrt.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3624bb10-bd48-ef11-a316-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"5155081\"",
+    "fullname": "alcrt Student8",
+    "systemuserid": "3824bb10-bd48-ef11-a316-001dd806e985",
+    "internalemailaddress": "0144dfe5fe634a3a895286de1b880661alcrt.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3824bb10-bd48-ef11-a316-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"5155045\"",
+    "fullname": "alcrt Student1",
+    "systemuserid": "3a24bb10-bd48-ef11-a316-001dd806e985",
+    "internalemailaddress": "306d987b9f3947bf8e3fd75d699ab9a9alcrt.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3a24bb10-bd48-ef11-a316-001dd806e985"
+  },
+  {
+    "@odata.etag": "W/\"4870483\"",
+    "fullname": "John Nelson",
+    "systemuserid": "ded6319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "john.nelson@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ded6319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1434838\"",
+    "fullname": "Doug Bell",
+    "systemuserid": "e0d6319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "mstest_douglab@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e0d6319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"4870486\"",
+    "fullname": "Dual Write",
+    "systemuserid": "e5d6319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "dual.write@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e5d6319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"4870484\"",
+    "fullname": "Teri Michaels",
+    "systemuserid": "22d7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "temichae@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "22d7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1435170\"",
+    "fullname": "Jamie Reding",
+    "systemuserid": "36d7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "Jamie.Reding@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "36d7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1435475\"",
+    "fullname": "Dan Jump",
+    "systemuserid": "53d7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "Dan.Jump@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "53d7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"4870558\"",
+    "fullname": "Spencer Low",
+    "systemuserid": "5ed7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "67db40804f014f78aab31bd8419c8cd0Spencer.Low@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "5ed7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1435575\"",
+    "fullname": "Karen Berg",
+    "systemuserid": "6fd7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "Karen.Berg@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6fd7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1435728\"",
+    "fullname": "Allie Bellew",
+    "systemuserid": "7dd7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "Allie.Bellew@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7dd7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1435781\"",
+    "fullname": "Greg Winston",
+    "systemuserid": "87d7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "Greg.Winston@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "87d7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1435868\"",
+    "fullname": "Brant Jones",
+    "systemuserid": "99d7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "brant.jones@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "99d7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829000\"",
+    "fullname": "MaOET Student3",
+    "systemuserid": "a2d7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "e68aceca193048f882412b97761ec7beMaOET.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a2d7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610056\"",
+    "fullname": "CSLB Student1",
+    "systemuserid": "b1d7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "6e2957f245cb462485de7992f832bccaCSLB.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b1d7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610061\"",
+    "fullname": "CSLB Student5",
+    "systemuserid": "bad7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "cc059718a3ae4762913f493661b9b2c6CSLB.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "bad7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1436141\"",
+    "fullname": "Unlicensed User",
+    "systemuserid": "c7d7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "unlicensed@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c7d7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610057\"",
+    "fullname": "CSLB Student2",
+    "systemuserid": "cdd7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "744e17336ac241058d58875dbbe12a86CSLB.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "cdd7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610068\"",
+    "fullname": "CSLB Student14",
+    "systemuserid": "dcd7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "0375e9b040014cd3ac7a6c56d858a808CSLB.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "dcd7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610063\"",
+    "fullname": "CSLB Student11",
+    "systemuserid": "e7d7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "742972110dc3416983ea97db78ac494aCSLB.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e7d7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610062\"",
+    "fullname": "CSLB Student3",
+    "systemuserid": "f4d7319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "d7b8ec07234a475b8ba74ebc1c68b770CSLB.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f4d7319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610065\"",
+    "fullname": "CSLB Student8",
+    "systemuserid": "02d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "729b2996589d41b883bcae591a3e478dCSLB.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "02d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610070\"",
+    "fullname": "CSLB Student15",
+    "systemuserid": "0bd8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "73bed46395244ae7be95e914cd0481e5CSLB.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "0bd8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610067\"",
+    "fullname": "CSLB Student12",
+    "systemuserid": "1ad8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "c0c9b728caa34a75b04c11b2ecb734acCSLB.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1ad8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610050\"",
+    "fullname": "CAVCB Student11",
+    "systemuserid": "2dd8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "a40401f8e593419384995bf9306c3899CAVCB.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2dd8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1436500\"",
+    "fullname": "# Fish passage inspections",
+    "systemuserid": "33d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "fishpassageinspections@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "33d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610048\"",
+    "fullname": "CAVCB Student2",
+    "systemuserid": "43d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "918cc72dba654cc8a79709de531e3e2dCAVCB.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "43d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610049\"",
+    "fullname": "CAVCB Student8",
+    "systemuserid": "4ed8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "66bf634e0bda4bbfb639bf94bb4d05d2CAVCB.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4ed8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829130\"",
+    "fullname": "MCSO Student8",
+    "systemuserid": "51d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "b12fb5739d64442fb0ae40c159d78c53MCSO.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "51d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829119\"",
+    "fullname": "MCSO Student6",
+    "systemuserid": "65d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "a20cdb04d95f4b50ade3efc909d0263dMCSO.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "65d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829121\"",
+    "fullname": "MCSO Student7",
+    "systemuserid": "70d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "a6831fded67c45d3829d8ba2de3feafeMCSO.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "70d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829084\"",
+    "fullname": "MCSO Student2",
+    "systemuserid": "7cd8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "237fa7ca132b43b8ba7f1beda154ca77MCSO.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7cd8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829120\"",
+    "fullname": "MCSO Student10",
+    "systemuserid": "85d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "0b033e55e5044b9da3eeadc9c18f41ecMCSO.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "85d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785720\"",
+    "fullname": "admh Student7",
+    "systemuserid": "8ed8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "56e0a80d8eee4a4f846f59004eb0596eadmh.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8ed8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829097\"",
+    "fullname": "MCSO Student5",
+    "systemuserid": "a4d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "e99d52315b8a4e29932da19e008707a4MCSO.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a4d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785719\"",
+    "fullname": "admh Student8",
+    "systemuserid": "afd8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "be0f6ca911604c21ad0e953fc356a540admh.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "afd8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2610052\"",
+    "fullname": "CAVCB Student3",
+    "systemuserid": "bed8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "4dc76660236a4e87b7475bc0f481f293CAVCB.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "bed8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785716\"",
+    "fullname": "aoit Student6",
+    "systemuserid": "ced8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "626a2716325e4387958b84b2c92ff00baoit.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ced8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785715\"",
+    "fullname": "admh Student5",
+    "systemuserid": "d6d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "2d47ccd4cf92401a80f6563b2c1d94e5admh.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d6d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785727\"",
+    "fullname": "aoit Student8",
+    "systemuserid": "e4d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "d1a8c4990325407d9582708406152c7baoit.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e4d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785717\"",
+    "fullname": "admh Student4",
+    "systemuserid": "efd8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "bfd74866ddc84b7bab9126394c2c516badmh.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "efd8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785706\"",
+    "fullname": "aoit Student1",
+    "systemuserid": "f9d8319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "4ebabe20c64144acbb73753096f6338caoit.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f9d8319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1437597\"",
+    "fullname": "Renee Lo",
+    "systemuserid": "0ad9319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "Renee.Lo@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "0ad9319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785723\"",
+    "fullname": "aoit Student10",
+    "systemuserid": "15d9319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "eb261676bce1437b9cfb62809d7e8a6aaoit.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "15d9319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785713\"",
+    "fullname": "aoit Student5",
+    "systemuserid": "1dd9319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "8d767965bb894922a4881c4c07cf0a5faoit.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1dd9319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"1437764\"",
+    "fullname": "Jon Goodwin",
+    "systemuserid": "31d9319a-e387-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "Jon.goodwin@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "31d9319a-e387-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785732\"",
+    "fullname": "dbhdd Student14",
+    "systemuserid": "90c6fe54-418d-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "c051f3ac1cfa4eeb8c61434e8f580144dbhdd.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "90c6fe54-418d-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"2785736\"",
+    "fullname": "dbhdd Student12",
+    "systemuserid": "92c6fe54-418d-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "d3d321cb411d4240a856cbdecbe9ec7ddbhdd.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "92c6fe54-418d-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"4870562\"",
+    "fullname": "COOIT Student5",
+    "systemuserid": "24dc98e5-1290-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "a02a406aa24d48deb44f2e0405d1031aCOOIT.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "24dc98e5-1290-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"4870557\"",
+    "fullname": "COOIT Student2",
+    "systemuserid": "26dc98e5-1290-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "ea688b0893554235a195606c1677f15cCOOIT.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "26dc98e5-1290-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"4870579\"",
+    "fullname": "COOIT Student6",
+    "systemuserid": "97dc98e5-1290-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "5db4ebcd801841128b5f06898440e746COOIT.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "97dc98e5-1290-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"4870526\"",
+    "fullname": "COOIT Student11",
+    "systemuserid": "a2dc98e5-1290-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "9a80518dd30e498d8d121bfa7b8b2135COOIT.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a2dc98e5-1290-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"4870597\"",
+    "fullname": "COOIT Student12",
+    "systemuserid": "abdc98e5-1290-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "dc091a03ebcf484a90eca0aae9562407COOIT.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "abdc98e5-1290-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"4870599\"",
+    "fullname": "COOIT Student14",
+    "systemuserid": "b8dc98e5-1290-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "806159c37949492ea22e511a1f6a87b8COOIT.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b8dc98e5-1290-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829291\"",
+    "fullname": "CLARK Student1",
+    "systemuserid": "bedc98e5-1290-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "dbf16e2267e64afaba44cadaa33ce482CLARK.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "bedc98e5-1290-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829281\"",
+    "fullname": "CLARK Student2",
+    "systemuserid": "c7dc98e5-1290-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "feb34734856f4b3da4940b2bcc429a49CLARK.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c7dc98e5-1290-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829304\"",
+    "fullname": "CLARK Student10",
+    "systemuserid": "e72a130b-1690-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "e6f8f842b463490eb9aa6172e7280329CLARK.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e72a130b-1690-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829321\"",
+    "fullname": "CLARK Student9",
+    "systemuserid": "eb2a130b-1690-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "3b44f8fdeb94491fa396ef9dbdce4926CLARK.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "eb2a130b-1690-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829337\"",
+    "fullname": "CLARK Student11",
+    "systemuserid": "ee2a130b-1690-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "d007b154f80f413880c762907197aec9CLARK.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ee2a130b-1690-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829199\"",
+    "fullname": "CLARK Student12",
+    "systemuserid": "0b2b130b-1690-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "5741884ede93455dbdc3c31be2d92e4eCLARK.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "0b2b130b-1690-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829361\"",
+    "fullname": "CLARK Student15",
+    "systemuserid": "112b130b-1690-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "946216cfc5094ce896bc618da9ec3e07CLARK.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "112b130b-1690-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829222\"",
+    "fullname": "CLARK Student17",
+    "systemuserid": "202b130b-1690-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "43eae9c2cea54c94a70f680bfd5caf44CLARK.Student17@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "202b130b-1690-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829370\"",
+    "fullname": "CLARK Student20",
+    "systemuserid": "2c2b130b-1690-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "21936423b47c433d9d85e0b028074dbaCLARK.Student20@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2c2b130b-1690-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829386\"",
+    "fullname": "CLARK Student27",
+    "systemuserid": "d69390a9-1b90-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "5a277418c179423587a353e0f1205701CLARK.Student27@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d69390a9-1b90-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829427\"",
+    "fullname": "CLARK Student33",
+    "systemuserid": "e19390a9-1b90-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "f7a9b45331c44683a896fae6352f9a40CLARK.Student33@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e19390a9-1b90-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829404\"",
+    "fullname": "CLARK Student34",
+    "systemuserid": "ec9390a9-1b90-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "41c03498466a43c1893ef7dab8f2f08dCLARK.Student34@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ec9390a9-1b90-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829260\"",
+    "fullname": "CLARK Student36",
+    "systemuserid": "f29390a9-1b90-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "48d4d8e365164e89b484e9b9940877f8CLARK.Student36@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f29390a9-1b90-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3829440\"",
+    "fullname": "CLARK Student39",
+    "systemuserid": "029490a9-1b90-ee11-8178-001dd806eb4e",
+    "internalemailaddress": "0adf801f1e0c4f6f86ab47d806e7cfe0CLARK.Student39@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "029490a9-1b90-ee11-8178-001dd806eb4e"
+  },
+  {
+    "@odata.etag": "W/\"3552305\"",
+    "fullname": "Microsoft Microsoft Flow CDS Integration Service GCC",
+    "systemuserid": "ad652e7f-dde0-ee11-904c-001dd806ecfa",
+    "internalemailaddress": "flowdev@microsoft.com",
+    "ownerid": "ad652e7f-dde0-ee11-904c-001dd806ecfa"
+  },
+  {
+    "@odata.etag": "W/\"4870995\"",
+    "fullname": "AKGOV Student1",
+    "systemuserid": "2a47541c-54cb-ee11-9078-001dd806ecfa",
+    "internalemailaddress": "ecdfcaf127444a149f1422917b94ac66AKGOV.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2a47541c-54cb-ee11-9078-001dd806ecfa"
+  },
+  {
+    "@odata.etag": "W/\"4870508\"",
+    "fullname": "Jeff Davis",
+    "systemuserid": "a9a09e95-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Jeff.Davis@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a9a09e95-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434220\"",
+    "fullname": "Rojy Thomas",
+    "systemuserid": "aaa09e95-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "rojy.thomas@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "aaa09e95-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4870485\"",
+    "fullname": "John Parker",
+    "systemuserid": "aba09e95-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "john.parker@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "aba09e95-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434222\"",
+    "fullname": "Chris Harrington",
+    "systemuserid": "ada09e95-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "chris.harrington@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ada09e95-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"5140229\"",
+    "fullname": "Kurt Reynolds",
+    "systemuserid": "546fa09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Kurt.Reynolds@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "546fa09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434397\"",
+    "fullname": "Doug Barnard",
+    "systemuserid": "8a6fa09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "doug.barnard@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8a6fa09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"5140240\"",
+    "fullname": "David Pritchett",
+    "systemuserid": "8d6fa09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "david.pritchett@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8d6fa09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434450\"",
+    "fullname": "Daniel Cox",
+    "systemuserid": "9c6fa09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "daniel.cox@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9c6fa09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434484\"",
+    "fullname": "Brian Duncan",
+    "systemuserid": "a86fa09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "brian.duncan@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a86fa09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434508\"",
+    "fullname": "Richa Sharma",
+    "systemuserid": "b36fa09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "richa.sharma@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b36fa09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434587\"",
+    "fullname": "Joe Alexander",
+    "systemuserid": "d06fa09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "joe.alexander@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d06fa09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434644\"",
+    "fullname": "Earnest Swindell",
+    "systemuserid": "e36fa09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "earnest.swindell@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e36fa09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434675\"",
+    "fullname": "Kelly Cason",
+    "systemuserid": "ec6fa09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "kelly.cason@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ec6fa09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434695\"",
+    "fullname": "Pat Iafrato",
+    "systemuserid": "fa6fa09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "pat.iafrato@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "fa6fa09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4870487\"",
+    "fullname": "TJ Martin-TempAdmin",
+    "systemuserid": "1970a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "tj@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1970a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4870509\"",
+    "fullname": "Murray Fife",
+    "systemuserid": "2c70a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "mufife@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2c70a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1434966\"",
+    "fullname": "macarrer@msftpaflowgcc.onmicrosoft.com Carreras",
+    "systemuserid": "4070a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "macarrer_msftpaflowgcc.onmicrosoft.com#EXT#@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4070a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3817515\"",
+    "fullname": "Al Smith",
+    "systemuserid": "4f70a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Al.Smith@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4f70a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435107\"",
+    "fullname": "Power Platform Admin",
+    "systemuserid": "5b70a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "ppadmin@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "5b70a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435132\"",
+    "fullname": "mstest geo admin",
+    "systemuserid": "6370a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "mstest_geoadmin@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6370a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4249345\"",
+    "fullname": "Doug Furney",
+    "systemuserid": "7470a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "dofurney@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7470a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435283\"",
+    "fullname": "Amy Alberts",
+    "systemuserid": "7b70a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Amy.Alberts@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7b70a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435310\"",
+    "fullname": "Jeff Hay",
+    "systemuserid": "8370a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Jeff.Hay@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8370a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435338\"",
+    "fullname": "Alan Steiner",
+    "systemuserid": "9270a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Alan.Steiner@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9270a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435385\"",
+    "fullname": "Scott Gruenemeier",
+    "systemuserid": "a270a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "mstest_scogru@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a270a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435430\"",
+    "fullname": "Eric Gruber",
+    "systemuserid": "ab70a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Eric.Gruber@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ab70a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435459\"",
+    "fullname": "Molly Clark",
+    "systemuserid": "b970a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Molly.Clark@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b970a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435597\"",
+    "fullname": "David So",
+    "systemuserid": "d270a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "David.So@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d270a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435634\"",
+    "fullname": "Veronica Quek",
+    "systemuserid": "d870a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Veronica.Quek@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d870a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435644\"",
+    "fullname": "Alicia Thomber",
+    "systemuserid": "db70a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Alicia.Thomber@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "db70a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435659\"",
+    "fullname": "Pocket Admin",
+    "systemuserid": "e370a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Pocket.Admin@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e370a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4871013\"",
+    "fullname": "CofD Student1",
+    "systemuserid": "fc70a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "3a5c1a2c79f6451dbe92924fce4149b4CofD.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "fc70a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829027\"",
+    "fullname": "MaOET Student2",
+    "systemuserid": "0971a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "6e9221a1eddf4d3aabe86ac81dc98db0MaOET.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "0971a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1435811\"",
+    "fullname": "Matthew McWethy",
+    "systemuserid": "1571a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "Jeff.Meyer@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1571a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"5155146\"",
+    "fullname": "Office 365 User",
+    "systemuserid": "2471a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "858effc210ab4996aa36e4f76bd3afdeOffice365User@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2471a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610060\"",
+    "fullname": "CSLB Student4",
+    "systemuserid": "2f71a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "8f9f738dccff4706a113c7d22fa8ef4cCSLB.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2f71a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610058\"",
+    "fullname": "CSLB Student9",
+    "systemuserid": "3671a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "a880ce95c1724bf49ff1d69d2509c894CSLB.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3671a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3828998\"",
+    "fullname": "MaOET Student1",
+    "systemuserid": "4671a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "36ee198019c34bee87a99a1ef055810eMaOET.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4671a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610069\"",
+    "fullname": "CSLB Student13",
+    "systemuserid": "5071a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "93d90cdf47514cc48b40f1fba197e06cCSLB.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "5071a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610064\"",
+    "fullname": "CSLB Student10",
+    "systemuserid": "5a71a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "dfef87ad7c79491fa0c75a1277d953ebCSLB.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "5a71a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610059\"",
+    "fullname": "CSLB Student7",
+    "systemuserid": "6971a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "2bf7c164e952478489895d0602934fafCSLB.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6971a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"1436290\"",
+    "fullname": "M365 License Only User",
+    "systemuserid": "7b71a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "m365licenseonly@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7b71a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610042\"",
+    "fullname": "CAVCB Student1",
+    "systemuserid": "8c71a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "720c4febd5644ca7908f82f4d5ddc8abCAVCB.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8c71a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610044\"",
+    "fullname": "CAVCB Student6",
+    "systemuserid": "8f71a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "8dc00c09a807442f977bd0e03a7f91a5CAVCB.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8f71a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829081\"",
+    "fullname": "MCSO Student1",
+    "systemuserid": "a271a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "035033aaf1ff4a09a4406d15d3f14215MCSO.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a271a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610055\"",
+    "fullname": "CAVCB Student12",
+    "systemuserid": "af71a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "355aa704cbb94fddb0d5828981cf52c7CAVCB.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "af71a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829109\"",
+    "fullname": "MCSO Student4",
+    "systemuserid": "ba71a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "9938b8387f4f4d85a80d993940298bdeMCSO.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ba71a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610053\"",
+    "fullname": "CAVCB Student4",
+    "systemuserid": "c571a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "2cb7b5b2effe47eab6b6b940622ea0bfCAVCB.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c571a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610051\"",
+    "fullname": "CAVCB Student9",
+    "systemuserid": "d371a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "8badc1e39cf748b0bf99cef1bddba1deCAVCB.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d371a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829144\"",
+    "fullname": "MCSO Student12",
+    "systemuserid": "d971a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "897d5355d9cf4182b54945fb34846348MCSO.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d971a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829142\"",
+    "fullname": "MCSO Student9",
+    "systemuserid": "dc71a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "91835c2f895a4844822a635cba6b7bb5MCSO.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "dc71a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610043\"",
+    "fullname": "CAVCB Student5",
+    "systemuserid": "e671a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "dd062e939e0b48c2adb7d6737038d613CAVCB.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e671a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610054\"",
+    "fullname": "CAVCB Student10",
+    "systemuserid": "0572a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "5a06efe364894360bf2fc8b34c25f372CAVCB.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "0572a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785705\"",
+    "fullname": "admh Student6",
+    "systemuserid": "1372a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "04874c18ecfe40fb94977337e45934e7admh.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1372a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829086\"",
+    "fullname": "MCSO Student3",
+    "systemuserid": "1e72a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "d8159955f0b04d5c8601608840b43e08MCSO.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "1e72a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829158\"",
+    "fullname": "MCSO Student11",
+    "systemuserid": "2472a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "06a853df07274a3eac32b3cc2572fafeMCSO.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2472a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785712\"",
+    "fullname": "admh Student1",
+    "systemuserid": "3472a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "4ed06b8c941c4559a1eb72c0f9ba07c2admh.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3472a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785709\"",
+    "fullname": "admh Student10",
+    "systemuserid": "4572a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "8f12154549b847aa81d92dd3f0532f3badmh.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4572a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785710\"",
+    "fullname": "admh Student2",
+    "systemuserid": "4b72a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "6f264c3184f344069f9e7ae5ec1f5dedadmh.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4b72a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610045\"",
+    "fullname": "CAVCB Student7",
+    "systemuserid": "5972a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "a09195397c414e83a7e5efc75e60530dCAVCB.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "5972a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785714\"",
+    "fullname": "admh Student3",
+    "systemuserid": "6472a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "9bd37b17d73549f8b1efb3d40f3db9eaadmh.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6472a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785721\"",
+    "fullname": "admh Student9",
+    "systemuserid": "7372a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "126223c76dcc40c584cf241d1bdedc51admh.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7372a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785724\"",
+    "fullname": "aoit Student9",
+    "systemuserid": "7f72a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "a21547f92fed47fab0eb7d90c6202334aoit.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7f72a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785703\"",
+    "fullname": "aoit Student2",
+    "systemuserid": "8672a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "23e04ade4de1479a9af22f3439854745aoit.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8672a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785704\"",
+    "fullname": "aoit Student3",
+    "systemuserid": "9a72a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "d1eb58f8b3a94b8ea5a304f4ed592debaoit.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9a72a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2610066\"",
+    "fullname": "CSLB Student6",
+    "systemuserid": "ad72a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "dee3ae502aa74bce9d563abde0a0341eCSLB.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ad72a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785711\"",
+    "fullname": "aoit Student4",
+    "systemuserid": "b572a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "157979b76d3e495abd26bfd7e6b2d6c3aoit.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b572a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785718\"",
+    "fullname": "aoit Student7",
+    "systemuserid": "c672a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "95ee53544c9940588e8405280686b281aoit.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c672a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3786914\"",
+    "fullname": "test Student2",
+    "systemuserid": "d172a09b-e387-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "a559933060894a82b185994ac3560d1atest.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d172a09b-e387-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785733\"",
+    "fullname": "dbhdd Student2",
+    "systemuserid": "8a60bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "53c02681288f4c64884f5a056ce11be5dbhdd.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8a60bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785725\"",
+    "fullname": "dbhdd Student3",
+    "systemuserid": "8b60bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "b811bf7f1228445297038bfb490bed7ddbhdd.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8b60bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785726\"",
+    "fullname": "dbhdd Student5",
+    "systemuserid": "8d60bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "7eba191a92b94b078f502f928ebb87c4dbhdd.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8d60bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785722\"",
+    "fullname": "dbhdd Student4",
+    "systemuserid": "8f60bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "9bd123257b1f40a8a8a7cbd46bbb842fdbhdd.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8f60bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785738\"",
+    "fullname": "dbhdd Student1",
+    "systemuserid": "b960bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "3b6245078fa749d59258e8051b1afec9dbhdd.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b960bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785739\"",
+    "fullname": "dbhdd Student7",
+    "systemuserid": "c660bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "d21b7a0a824d404f9aec29a41a7de97fdbhdd.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c660bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785729\"",
+    "fullname": "dbhdd Student6",
+    "systemuserid": "c960bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "4f868ebb248348cabc528b5d9efe958adbhdd.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c960bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785735\"",
+    "fullname": "dbhdd Student8",
+    "systemuserid": "cc60bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "5a523d7b2ba1466093c95fdfdbc2c991dbhdd.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "cc60bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785731\"",
+    "fullname": "dbhdd Student11",
+    "systemuserid": "e060bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "ca19feaa81054e4ab3753a03fef5737ddbhdd.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e060bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785728\"",
+    "fullname": "dbhdd Student9",
+    "systemuserid": "e860bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "40d81200495f48bdab0e22ff4148a9d8dbhdd.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e860bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785734\"",
+    "fullname": "dbhdd Student10",
+    "systemuserid": "fb60bb98-3d8d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "114989beb4374915a18fdc5787a8a577dbhdd.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "fb60bb98-3d8d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785740\"",
+    "fullname": "dbhdd Student13",
+    "systemuserid": "0ece0055-418d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "5faed4ba78734c559a2ec0b7eb739090dbhdd.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "0ece0055-418d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"2785741\"",
+    "fullname": "dbhdd Student15",
+    "systemuserid": "10ce0055-418d-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "1fdb1cede3a740c283fa5a836b24725fdbhdd.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "10ce0055-418d-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4870527\"",
+    "fullname": "COOIT Student1",
+    "systemuserid": "9e7bdde3-1290-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "90c5694241034681b55c02824aa244f7COOIT.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9e7bdde3-1290-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4870525\"",
+    "fullname": "COOIT Student3",
+    "systemuserid": "a07bdde3-1290-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "2f630e83b1f44ce8aecb3cd11bda5ce9COOIT.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "a07bdde3-1290-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4870600\"",
+    "fullname": "COOIT Student9",
+    "systemuserid": "2e99dae9-1290-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "b18f95ab7fba467db4b24fde70f9c8b0COOIT.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "2e99dae9-1290-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4870625\"",
+    "fullname": "COOIT Student10",
+    "systemuserid": "3899dae9-1290-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "c182c826e3544cea801479564ceb75e8COOIT.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3899dae9-1290-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4870529\"",
+    "fullname": "COOIT Student13",
+    "systemuserid": "4599dae9-1290-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "49a1b99b9ac14c8b8e44ce68cd63c228COOIT.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4599dae9-1290-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4870636\"",
+    "fullname": "COOIT Student15",
+    "systemuserid": "5099dae9-1290-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "e6261cc32f314386a15495c040655bb0COOIT.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "5099dae9-1290-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829294\"",
+    "fullname": "CLARK Student4",
+    "systemuserid": "5d99dae9-1290-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "8da2610084f04748bcd157cff427ff74CLARK.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "5d99dae9-1290-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829188\"",
+    "fullname": "CLARK Student7",
+    "systemuserid": "17ffdc0d-1690-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "00cc7ac876954db6a1097a19e870e342CLARK.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "17ffdc0d-1690-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829201\"",
+    "fullname": "CLARK Student13",
+    "systemuserid": "21ffdc0d-1690-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "46c737b18f7c4062b88393cf7f7c5016CLARK.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "21ffdc0d-1690-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829322\"",
+    "fullname": "CLARK Student14",
+    "systemuserid": "24ffdc0d-1690-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "19df33f9ed6d44bba71f7f21a7fc3219CLARK.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "24ffdc0d-1690-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829207\"",
+    "fullname": "CLARK Student16",
+    "systemuserid": "39ffdc0d-1690-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "8697ce20e737411692cecd172c8f7201CLARK.Student16@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "39ffdc0d-1690-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829336\"",
+    "fullname": "CLARK Student18",
+    "systemuserid": "3cffdc0d-1690-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "234210e4a8bf48f0a31b3df54e4c8686CLARK.Student18@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3cffdc0d-1690-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829347\"",
+    "fullname": "CLARK Student22",
+    "systemuserid": "997d12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "4555c228646840888308567ff679b7aaCLARK.Student22@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "997d12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829382\"",
+    "fullname": "CLARK Student24",
+    "systemuserid": "9b7d12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "7f4a6dedc6fe4668ae8507b66e7d8887CLARK.Student24@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9b7d12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829227\"",
+    "fullname": "CLARK Student21",
+    "systemuserid": "9d7d12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "18d2f60fba6b456d9648a6cdfde81c0aCLARK.Student21@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9d7d12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829231\"",
+    "fullname": "CLARK Student26",
+    "systemuserid": "b97d12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "f3ae37929c484218b7a531c96a01a1feCLARK.Student26@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "b97d12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829279\"",
+    "fullname": "CLARK Student28",
+    "systemuserid": "bc7d12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "d2a7efebdeea42089c34f7c5b574c344CLARK.Student28@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "bc7d12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829402\"",
+    "fullname": "CLARK Student31",
+    "systemuserid": "c67d12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "9cb466479c9a42158b8c07e4419b3716CLARK.Student31@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c67d12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829372\"",
+    "fullname": "CLARK Student30",
+    "systemuserid": "da7d12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "03b2919d46204ba5aaa40d23273d1b64CLARK.Student30@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "da7d12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829229\"",
+    "fullname": "CLARK Student29",
+    "systemuserid": "e07d12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "8cc64e23eccf43b6b719e19795bc2b56CLARK.Student29@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e07d12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829428\"",
+    "fullname": "CLARK Student35",
+    "systemuserid": "f07d12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "dcd034110cf4423482c7be46e444ce20CLARK.Student35@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f07d12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829462\"",
+    "fullname": "CLARK Student40",
+    "systemuserid": "f87d12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "d3c53210ecea4f38a306a45e17e584d6CLARK.Student40@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f87d12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829419\"",
+    "fullname": "CLARK Student37",
+    "systemuserid": "067e12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "b124014a5fae485ab081597cd26a779bCLARK.Student37@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "067e12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"3829252\"",
+    "fullname": "CLARK Student38",
+    "systemuserid": "0d7e12a8-1b90-ee11-8178-001dd806ee0c",
+    "internalemailaddress": "620ed2a2eca140ab8d07ca61d82c85aaCLARK.Student38@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "0d7e12a8-1b90-ee11-8178-001dd806ee0c"
+  },
+  {
+    "@odata.etag": "W/\"4870740\"",
+    "fullname": "jcod Student1",
+    "systemuserid": "ef1bcc24-8ba9-ee11-be36-001dd80940e1",
+    "internalemailaddress": "d68a7ecb4eac4c1dabc0f4039ce4a76ejcod.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ef1bcc24-8ba9-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"4870787\"",
+    "fullname": "jcod Student3",
+    "systemuserid": "f01bcc24-8ba9-ee11-be36-001dd80940e1",
+    "internalemailaddress": "7c4a9550a16148beb0d0db3152795763jcod.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f01bcc24-8ba9-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"4870789\"",
+    "fullname": "jcod Student5",
+    "systemuserid": "f21bcc24-8ba9-ee11-be36-001dd80940e1",
+    "internalemailaddress": "89eecd09a91243d786d9d349e69930d7jcod.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f21bcc24-8ba9-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"4870722\"",
+    "fullname": "jcod Student2",
+    "systemuserid": "f51bcc24-8ba9-ee11-be36-001dd80940e1",
+    "internalemailaddress": "9f174783d0254b329a50d1c4373d1e16jcod.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "f51bcc24-8ba9-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"4870772\"",
+    "fullname": "jcod Student4",
+    "systemuserid": "63eccd2a-8ba9-ee11-be36-001dd80940e1",
+    "internalemailaddress": "6a226cc6a5384c09b66ebdc804af9f72jcod.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "63eccd2a-8ba9-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"4870825\"",
+    "fullname": "jcod Student7",
+    "systemuserid": "6feccd2a-8ba9-ee11-be36-001dd80940e1",
+    "internalemailaddress": "fc66d7e38a304c73920c879f7bffc21ajcod.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6feccd2a-8ba9-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"4870704\"",
+    "fullname": "jcod Student6",
+    "systemuserid": "72eccd2a-8ba9-ee11-be36-001dd80940e1",
+    "internalemailaddress": "b0ef1c3d2a59430a87192b05a9cc2991jcod.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "72eccd2a-8ba9-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075941\"",
+    "fullname": "aldor Student1",
+    "systemuserid": "3f379d1e-90ab-ee11-be36-001dd80940e1",
+    "internalemailaddress": "e9b2121bf1554ba9aca8f553490b80d0aldor.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3f379d1e-90ab-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075947\"",
+    "fullname": "aldor Student4",
+    "systemuserid": "41379d1e-90ab-ee11-be36-001dd80940e1",
+    "internalemailaddress": "38b921447213446a85e5f9ac133de261aldor.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "41379d1e-90ab-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075945\"",
+    "fullname": "aldor Student5",
+    "systemuserid": "43379d1e-90ab-ee11-be36-001dd80940e1",
+    "internalemailaddress": "8bc230617e4745e3962d0b191e3d7d0ealdor.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "43379d1e-90ab-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075946\"",
+    "fullname": "aldor Student3",
+    "systemuserid": "45379d1e-90ab-ee11-be36-001dd80940e1",
+    "internalemailaddress": "6e6edf7af28946839f167f578a8ae59aaldor.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "45379d1e-90ab-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075948\"",
+    "fullname": "aldor Student10",
+    "systemuserid": "499ff558-95ab-ee11-be36-001dd80940e1",
+    "internalemailaddress": "1c185fc8fd0848448b80a08ef4c2f2d8aldor.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "499ff558-95ab-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075940\"",
+    "fullname": "aldor Student6",
+    "systemuserid": "4e9ff558-95ab-ee11-be36-001dd80940e1",
+    "internalemailaddress": "eaeae6ef443a4439a808960aa7ec6573aldor.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4e9ff558-95ab-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075952\"",
+    "fullname": "aldor Student11",
+    "systemuserid": "639ff558-95ab-ee11-be36-001dd80940e1",
+    "internalemailaddress": "cd57583e4384408e9a0125bbafcbd328aldor.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "639ff558-95ab-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075951\"",
+    "fullname": "aldor Student13",
+    "systemuserid": "6f9ff558-95ab-ee11-be36-001dd80940e1",
+    "internalemailaddress": "419c37f4309c4c4a86dd027cdcf385c8aldor.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6f9ff558-95ab-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075954\"",
+    "fullname": "aldor Student14",
+    "systemuserid": "7a9ff558-95ab-ee11-be36-001dd80940e1",
+    "internalemailaddress": "5b21594db21c4c23ab3ae6f4af87bc5baldor.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "7a9ff558-95ab-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075953\"",
+    "fullname": "aldor Student15",
+    "systemuserid": "aae8ed5e-95ab-ee11-be36-001dd80940e1",
+    "internalemailaddress": "71f7390648e9470a8e9be4e367307cd8aldor.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "aae8ed5e-95ab-ee11-be36-001dd80940e1"
+  },
+  {
+    "@odata.etag": "W/\"3075931\"",
+    "fullname": "aldor Student2",
+    "systemuserid": "3d1ef723-90ab-ee11-be36-001dd8094669",
+    "internalemailaddress": "d6208a143a32423a912fe79bcd6fa808aldor.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3d1ef723-90ab-ee11-be36-001dd8094669"
+  },
+  {
+    "@odata.etag": "W/\"3075943\"",
+    "fullname": "aldor Student7",
+    "systemuserid": "be19b85a-95ab-ee11-be36-001dd8094669",
+    "internalemailaddress": "755d5a185d57432a9e3d12227021af4ealdor.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "be19b85a-95ab-ee11-be36-001dd8094669"
+  },
+  {
+    "@odata.etag": "W/\"3075944\"",
+    "fullname": "aldor Student8",
+    "systemuserid": "c019b85a-95ab-ee11-be36-001dd8094669",
+    "internalemailaddress": "00d7aa9321da4b8e9ef16e78991863ddaldor.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c019b85a-95ab-ee11-be36-001dd8094669"
+  },
+  {
+    "@odata.etag": "W/\"3075949\"",
+    "fullname": "aldor Student9",
+    "systemuserid": "c219b85a-95ab-ee11-be36-001dd8094669",
+    "internalemailaddress": "0c29a6deb91a4e0a9853f97131c275acaldor.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c219b85a-95ab-ee11-be36-001dd8094669"
+  },
+  {
+    "@odata.etag": "W/\"3075955\"",
+    "fullname": "aldor Student12",
+    "systemuserid": "c919b85a-95ab-ee11-be36-001dd8094669",
+    "internalemailaddress": "f3361e31e3924f81b05a787d0c79cff5aldor.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c919b85a-95ab-ee11-be36-001dd8094669"
+  },
+  {
+    "@odata.etag": "W/\"3769794\"",
+    "fullname": "Steve Adams B2B",
+    "systemuserid": "eb9bfd43-0ef1-ee11-904b-001dd809be52",
+    "internalemailaddress": "6c1268c65d2441968b71e114fffce98fadmin@D365DemoTS457225.OnMicrosoft.com",
+    "ownerid": "eb9bfd43-0ef1-ee11-904b-001dd809be52"
+  },
+  {
+    "@odata.etag": "W/\"3786876\"",
+    "fullname": "DCFS Student10",
+    "systemuserid": "6b4741b7-17f3-ee11-904b-001dd809be52",
+    "internalemailaddress": "4ffd41c2e25e4b268c106e7e5c39ae33DCFS.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6b4741b7-17f3-ee11-904b-001dd809be52"
+  },
+  {
+    "@odata.etag": "W/\"3786806\"",
+    "fullname": "DCFS Student12",
+    "systemuserid": "754741b7-17f3-ee11-904b-001dd809be52",
+    "internalemailaddress": "7a418e26df6b47b582b6dd75922e5155DCFS.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "754741b7-17f3-ee11-904b-001dd809be52"
+  },
+  {
+    "@odata.etag": "W/\"3828999\"",
+    "fullname": "DCFS Student3",
+    "systemuserid": "c0d53860-87f3-ee11-904b-001dd809be52",
+    "internalemailaddress": "8281becd7147490088129bf993ba8f3dDCFS.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c0d53860-87f3-ee11-904b-001dd809be52"
+  },
+  {
+    "@odata.etag": "W/\"4870853\"",
+    "fullname": "DCFS1 Student8",
+    "systemuserid": "930f3469-b4f5-ee11-904b-001dd809be52",
+    "internalemailaddress": "bb9ffd1bb07849b0b7fb623c1aa9361aDCFS1.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "930f3469-b4f5-ee11-904b-001dd809be52"
+  },
+  {
+    "@odata.etag": "W/\"4870815\"",
+    "fullname": "DCFS1 Student6",
+    "systemuserid": "950f3469-b4f5-ee11-904b-001dd809be52",
+    "internalemailaddress": "63a9bdfe496543549ad274fe59983937DCFS1.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "950f3469-b4f5-ee11-904b-001dd809be52"
+  },
+  {
+    "@odata.etag": "W/\"3811752\"",
+    "fullname": "aldhr Student4",
+    "systemuserid": "ea19c1ab-02ec-ee11-904c-001dd809be52",
+    "internalemailaddress": "06c4b3d9998b41ff8cf1e0d468ea4517aldhr.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "ea19c1ab-02ec-ee11-904c-001dd809be52"
+  },
+  {
+    "@odata.etag": "W/\"6013083\"",
+    "fullname": "# AIBuilder_StructuredML_Gcc_CDS_Legacy",
+    "systemuserid": "24f72809-0c86-ef11-ac20-001dd809d0e3",
+    "internalemailaddress": "AIBuilder_StructuredML_Gcc_CDS_Legacy@onmicrosoft.com",
+    "ownerid": "24f72809-0c86-ef11-ac20-001dd809d0e3"
+  },
+  {
+    "@odata.etag": "W/\"1434718\"",
+    "fullname": "Tim Hanewich",
+    "systemuserid": "4b7de536-d285-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "tim.hanewich@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4b7de536-d285-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377390\"",
+    "fullname": "# PpdfCDSClient",
+    "systemuserid": "c95dc53b-da85-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PpdfCDSClient@onmicrosoft.com",
+    "ownerid": "c95dc53b-da85-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377391\"",
+    "fullname": "# PowerAutomate-MachineManagementRelay",
+    "systemuserid": "e1ce0f23-dd85-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PowerAutomate-MachineManagementRelay@onmicrosoft.com",
+    "ownerid": "e1ce0f23-dd85-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377392\"",
+    "fullname": "# PowerAutomate-MachineProvisioning",
+    "systemuserid": "ecce0f23-dd85-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PowerAutomate-MachineProvisioning@onmicrosoft.com",
+    "ownerid": "ecce0f23-dd85-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377393\"",
+    "fullname": "# PowerAutomate-DesktopFlowRuntime",
+    "systemuserid": "10cf0f23-dd85-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PowerAutomate-DesktopFlowRuntime@onmicrosoft.com",
+    "ownerid": "10cf0f23-dd85-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"4779932\"",
+    "fullname": "# Microsoft Copilot Studio",
+    "systemuserid": "265ebb9f-de85-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "MicrosoftCopilotStudio@onmicrosoft.com",
+    "ownerid": "265ebb9f-de85-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"5586978\"",
+    "fullname": "# KISPAdminProd",
+    "systemuserid": "f6ccb3d2-e185-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "KISPAdminProd@onmicrosoft.com",
+    "ownerid": "f6ccb3d2-e185-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"5586974\"",
+    "fullname": "# KISPIngProd",
+    "systemuserid": "00cdb3d2-e185-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "KISPIngProd@onmicrosoft.com",
+    "ownerid": "00cdb3d2-e185-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"5586970\"",
+    "fullname": "# KISPSyncProd",
+    "systemuserid": "0acdb3d2-e185-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "KISPSyncProd@onmicrosoft.com",
+    "ownerid": "0acdb3d2-e185-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377398\"",
+    "fullname": "# Dynamics365Athena2",
+    "systemuserid": "4a44ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "Dynamics365Athena2@onmicrosoft.com",
+    "ownerid": "4a44ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377399\"",
+    "fullname": "# TPSProxyService",
+    "systemuserid": "9b44ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "TPSProxyService@onmicrosoft.com",
+    "ownerid": "9b44ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377400\"",
+    "fullname": "# PowerQueryOnline",
+    "systemuserid": "be44ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PowerQueryOnline@onmicrosoft.com",
+    "ownerid": "be44ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377401\"",
+    "fullname": "# JobsServiceProd",
+    "systemuserid": "2545ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "JobsServiceProd@onmicrosoft.com",
+    "ownerid": "2545ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377402\"",
+    "fullname": "# JobsServiceGcc",
+    "systemuserid": "2f45ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "JobsServiceGcc@onmicrosoft.com",
+    "ownerid": "2f45ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377403\"",
+    "fullname": "# DataLakeStorage",
+    "systemuserid": "3945ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "DataLakeStorage@onmicrosoft.com",
+    "ownerid": "3945ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377404\"",
+    "fullname": "# CDSFileStorage",
+    "systemuserid": "4345ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "CDSFileStorage@onmicrosoft.com",
+    "ownerid": "4345ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377405\"",
+    "fullname": "# CDSReportService",
+    "systemuserid": "4d45ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "CDSReportService@onmicrosoft.com",
+    "ownerid": "4d45ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377406\"",
+    "fullname": "# CDSUserManagement",
+    "systemuserid": "5745ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "CDSUserManagement@onmicrosoft.com",
+    "ownerid": "5745ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377407\"",
+    "fullname": "# CDSGlobalDiscovery",
+    "systemuserid": "6345ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "CDSGlobalDiscovery@onmicrosoft.com",
+    "ownerid": "6345ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377408\"",
+    "fullname": "# PowerPlatformAuthorization",
+    "systemuserid": "6d45ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PowerPlatformAuthorization@onmicrosoft.com",
+    "ownerid": "6d45ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377409\"",
+    "fullname": "# BAP",
+    "systemuserid": "7745ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "BAP@onmicrosoft.com",
+    "ownerid": "7745ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377410\"",
+    "fullname": "# PowerPlatformEnvironmentManagementGcc",
+    "systemuserid": "8145ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PowerPlatformEnvironmentManagementGcc@onmicrosoft.com",
+    "ownerid": "8145ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377411\"",
+    "fullname": "# DAMS",
+    "systemuserid": "8e45ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "DAMS@onmicrosoft.com",
+    "ownerid": "8e45ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377412\"",
+    "fullname": "# DAMSIsland",
+    "systemuserid": "9a45ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "DAMSIsland@onmicrosoft.com",
+    "ownerid": "9a45ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377413\"",
+    "fullname": "# Flow-CDSNativeConnector",
+    "systemuserid": "a445ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "Flow-CDSNativeConnector@onmicrosoft.com",
+    "ownerid": "a445ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377414\"",
+    "fullname": "# RelevanceSearch",
+    "systemuserid": "ae45ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "RelevanceSearch@onmicrosoft.com",
+    "ownerid": "ae45ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377415\"",
+    "fullname": "# MicrosoftDynamicsNRDService",
+    "systemuserid": "b845ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "MicrosoftDynamicsNRDService@onmicrosoft.com",
+    "ownerid": "b845ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377416\"",
+    "fullname": "# Flow-RP",
+    "systemuserid": "c245ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "Flow-RP@onmicrosoft.com",
+    "ownerid": "c245ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377417\"",
+    "fullname": "# PowerAppsCustomerManagementPlaneBackend",
+    "systemuserid": "cc45ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PowerAppsCustomerManagementPlaneBackend@onmicrosoft.com",
+    "ownerid": "cc45ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377418\"",
+    "fullname": "# PowerAppsDataPlaneBackend",
+    "systemuserid": "d745ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PowerAppsDataPlaneBackend@onmicrosoft.com",
+    "ownerid": "d745ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377419\"",
+    "fullname": "# CCADataAnalyticsML",
+    "systemuserid": "e145ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "CCADataAnalyticsML@onmicrosoft.com",
+    "ownerid": "e145ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377420\"",
+    "fullname": "# SharePointOnline",
+    "systemuserid": "eb45ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "SharePointOnline@onmicrosoft.com",
+    "ownerid": "eb45ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377421\"",
+    "fullname": "# Deflection",
+    "systemuserid": "f545ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "Deflection@onmicrosoft.com",
+    "ownerid": "f545ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377422\"",
+    "fullname": "# DataSyncFramework",
+    "systemuserid": "ff45ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "DataSyncFramework@onmicrosoft.com",
+    "ownerid": "ff45ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377423\"",
+    "fullname": "# DataSyncService",
+    "systemuserid": "0946ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "DataSyncService@onmicrosoft.com",
+    "ownerid": "0946ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377424\"",
+    "fullname": "# GlobalActiveMetricsMonitoringAlerting",
+    "systemuserid": "1346ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "GlobalActiveMetricsMonitoringAlerting@onmicrosoft.com",
+    "ownerid": "1346ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377425\"",
+    "fullname": "# InsightsAppsPlatform",
+    "systemuserid": "1d46ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "InsightsAppsPlatform@onmicrosoft.com",
+    "ownerid": "1d46ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377426\"",
+    "fullname": "# AppDeploymentOrchestration",
+    "systemuserid": "2746ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "AppDeploymentOrchestration@onmicrosoft.com",
+    "ownerid": "2746ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377427\"",
+    "fullname": "# CDSAcisInfraAppGlobal",
+    "systemuserid": "3146ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "CDSAcisInfraAppGlobal@onmicrosoft.com",
+    "ownerid": "3146ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377428\"",
+    "fullname": "# MicrosoftCustomerEngagementPortalGCC",
+    "systemuserid": "3b46ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "MicrosoftCustomerEngagementPortalGCC@onmicrosoft.com",
+    "ownerid": "3b46ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377429\"",
+    "fullname": "# Quartzite",
+    "systemuserid": "4946ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "Quartzite@onmicrosoft.com",
+    "ownerid": "4946ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377430\"",
+    "fullname": "# DynamicsInstaller",
+    "systemuserid": "5346ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "DynamicsInstaller@onmicrosoft.com",
+    "ownerid": "5346ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377431\"",
+    "fullname": "# Omnichannel",
+    "systemuserid": "5d46ec20-e885-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "Omnichannel@onmicrosoft.com",
+    "ownerid": "5d46ec20-e885-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377432\"",
+    "fullname": "# PowerCards-S2S-IL-Prod",
+    "systemuserid": "56d63a85-e985-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PowerCards-S2S-IL-Prod@onmicrosoft.com",
+    "ownerid": "56d63a85-e985-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"6013091\"",
+    "fullname": "# AIBuilderProdGcc",
+    "systemuserid": "2a11a014-ed85-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "AIBuilderProdGcc@onmicrosoft.com",
+    "ownerid": "2a11a014-ed85-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"6013087\"",
+    "fullname": "# AIBuilder_StructuredML_Gcc_CDS",
+    "systemuserid": "3e11a014-ed85-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "AIBuilder_StructuredML_Gcc_CDS@onmicrosoft.com",
+    "ownerid": "3e11a014-ed85-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377435\"",
+    "fullname": "# PowerAutomate-ProcessMining",
+    "systemuserid": "6097de69-ed85-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "PowerAutomate-ProcessMining@onmicrosoft.com",
+    "ownerid": "6097de69-ed85-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1433027\"",
+    "fullname": "Power Apps Checker Application",
+    "systemuserid": "2bfea69a-ed85-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "pacheckerapp@microsoft.com",
+    "ownerid": "2bfea69a-ed85-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377437\"",
+    "fullname": "# BizQA",
+    "systemuserid": "5a643613-ee85-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "BizQA@onmicrosoft.com",
+    "ownerid": "5a643613-ee85-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377438\"",
+    "fullname": "Support User",
+    "systemuserid": "fc1c8853-f285-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "crmoln@microsoft.com",
+    "ownerid": "fc1c8853-f285-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1377439\"",
+    "fullname": "Delegated Admin",
+    "systemuserid": "081d8853-f285-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "crmoln2@microsoft.com",
+    "ownerid": "081d8853-f285-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"1433032\"",
+    "fullname": "# Pegasus-GCC",
+    "systemuserid": "2b618059-f285-ee11-8177-001dd80c0acd",
+    "internalemailaddress": "Pegasus-GCC@onmicrosoft.com",
+    "ownerid": "2b618059-f285-ee11-8177-001dd80c0acd"
+  },
+  {
+    "@odata.etag": "W/\"3004143\"",
+    "fullname": "PBHD Student4",
+    "systemuserid": "c158adc6-b4ae-ee11-a568-001dd83040df",
+    "internalemailaddress": "249a1d0aea354abfae62759795f3e711PBHD.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c158adc6-b4ae-ee11-a568-001dd83040df"
+  },
+  {
+    "@odata.etag": "W/\"3004133\"",
+    "fullname": "PBHD Student2",
+    "systemuserid": "e4849dc8-b4ae-ee11-a568-001dd830473a",
+    "internalemailaddress": "132e0f95ab58462ba7d0cd001e7da52dPBHD.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e4849dc8-b4ae-ee11-a568-001dd830473a"
+  },
+  {
+    "@odata.etag": "W/\"3004130\"",
+    "fullname": "PBHD Student3",
+    "systemuserid": "e6849dc8-b4ae-ee11-a568-001dd830473a",
+    "internalemailaddress": "e1a7b054093e44988ea3ffd3d87b42dfPBHD.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e6849dc8-b4ae-ee11-a568-001dd830473a"
+  },
+  {
+    "@odata.etag": "W/\"3004132\"",
+    "fullname": "PBHD Student1",
+    "systemuserid": "e8849dc8-b4ae-ee11-a568-001dd830473a",
+    "internalemailaddress": "ca99013fe7e140ba90a9d2e49451b480PBHD.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e8849dc8-b4ae-ee11-a568-001dd830473a"
+  },
+  {
+    "@odata.etag": "W/\"3004129\"",
+    "fullname": "PBHD Student5",
+    "systemuserid": "eb849dc8-b4ae-ee11-a568-001dd830473a",
+    "internalemailaddress": "3a2a3eee5d154016adb50f38f0cfc086PBHD.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "eb849dc8-b4ae-ee11-a568-001dd830473a"
+  },
+  {
+    "@odata.etag": "W/\"3004131\"",
+    "fullname": "PBHD Student6",
+    "systemuserid": "37859dc8-b4ae-ee11-a568-001dd830473a",
+    "internalemailaddress": "0fe07166b8fc418a957bdf2ef26b2beePBHD.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "37859dc8-b4ae-ee11-a568-001dd830473a"
+  },
+  {
+    "@odata.etag": "W/\"3004141\"",
+    "fullname": "PBHD Student7",
+    "systemuserid": "4eca609a-b9ae-ee11-a568-001dd830473a",
+    "internalemailaddress": "912e4bbcbe804c18852d562a5c1001e4PBHD.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "4eca609a-b9ae-ee11-a568-001dd830473a"
+  },
+  {
+    "@odata.etag": "W/\"3004142\"",
+    "fullname": "PBHD Student10",
+    "systemuserid": "50ca609a-b9ae-ee11-a568-001dd830473a",
+    "internalemailaddress": "23e7e57c1f9b40f78b9ba9180e9f61ccPBHD.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "50ca609a-b9ae-ee11-a568-001dd830473a"
+  },
+  {
+    "@odata.etag": "W/\"3004139\"",
+    "fullname": "PBHD Student8",
+    "systemuserid": "52ca609a-b9ae-ee11-a568-001dd830473a",
+    "internalemailaddress": "71f6c4e4701b4fe7a5bd1001f0b4be17PBHD.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "52ca609a-b9ae-ee11-a568-001dd830473a"
+  },
+  {
+    "@odata.etag": "W/\"3004140\"",
+    "fullname": "PBHD Student9",
+    "systemuserid": "55ca609a-b9ae-ee11-a568-001dd830473a",
+    "internalemailaddress": "9a27425f8c8544fa9cfcfa73900b2edaPBHD.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "55ca609a-b9ae-ee11-a568-001dd830473a"
+  },
+  {
+    "@odata.etag": "W/\"5171896\"",
+    "fullname": "Abe Yoakum",
+    "systemuserid": "3cbfd3bf-d054-ef11-a316-001dd83059b4",
+    "internalemailaddress": "abe.yoakum@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "3cbfd3bf-d054-ef11-a316-001dd83059b4"
+  },
+  {
+    "@odata.etag": "W/\"5172840\"",
+    "fullname": "# Doug Bell",
+    "systemuserid": "8af5fc7e-9455-ef11-a316-001dd83059b4",
+    "internalemailaddress": "admin@D365DemoTS893456.onmicrosoft.com",
+    "ownerid": "8af5fc7e-9455-ef11-a316-001dd83059b4"
+  },
+  {
+    "@odata.etag": "W/\"5172873\"",
+    "fullname": "# Jamie Willis-Rose",
+    "systemuserid": "b4e802d6-9a55-ef11-a316-001dd83059b4",
+    "internalemailaddress": "jwillisrose@uspsgcctenant.onmicrosoft.com",
+    "ownerid": "b4e802d6-9a55-ef11-a316-001dd83059b4"
+  },
+  {
+    "@odata.etag": "W/\"5761506\"",
+    "fullname": "# Portals-SNAP Program Info",
+    "systemuserid": "faf0a3fa-347f-ef11-a671-001dd83059b4",
+    "internalemailaddress": "Portals-SNAPProgram_9d6e680e-5d96-4029-a581-185be8b9ead9@82c9826e-d987-ee11-8175-001dd809cff2.com",
+    "ownerid": "faf0a3fa-347f-ef11-a671-001dd83059b4"
+  },
+  {
+    "@odata.etag": "W/\"5766980\"",
+    "fullname": "# Portals-SNAP Program Info",
+    "systemuserid": "0157f40b-2080-ef11-a671-001dd83059b4",
+    "internalemailaddress": "Portals-SNAPProgram_161598c4-d80b-42d3-b6c8-772857bd3804@82c9826e-d987-ee11-8175-001dd809cff2.com",
+    "ownerid": "0157f40b-2080-ef11-a671-001dd83059b4"
+  },
+  {
+    "@odata.etag": "W/\"4193985\"",
+    "fullname": "# Kelly Cason",
+    "systemuserid": "5adb7f59-7c14-ef11-9f89-001dd8305aae",
+    "internalemailaddress": "admin@D365DemoTS254424.onmicrosoft.com",
+    "ownerid": "5adb7f59-7c14-ef11-9f89-001dd8305aae"
+  },
+  {
+    "@odata.etag": "W/\"4208702\"",
+    "fullname": "# Tim Law",
+    "systemuserid": "0c7be434-ea16-ef11-9f89-001dd8305aae",
+    "internalemailaddress": "tlaw@isd.lacounty.gov",
+    "ownerid": "0c7be434-ea16-ef11-9f89-001dd8305aae"
+  },
+  {
+    "@odata.etag": "W/\"5155143\"",
+    "fullname": "State of CA",
+    "systemuserid": "6be85a30-6418-ef11-9f89-001dd8305aae",
+    "internalemailaddress": "stateofca@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6be85a30-6418-ef11-9f89-001dd8305aae"
+  },
+  {
+    "@odata.etag": "W/\"4564438\"",
+    "fullname": "Ty Abrams",
+    "systemuserid": "8e640b62-3a28-ef11-840a-001dd8306a09",
+    "internalemailaddress": "Ty.Abrams@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "8e640b62-3a28-ef11-840a-001dd8306a09"
+  },
+  {
+    "@odata.etag": "W/\"6019700\"",
+    "fullname": "# Power Policy Service Non-Prod",
+    "systemuserid": "f817335a-7c88-ef11-ac20-001dd8306d3b",
+    "internalemailaddress": "PowerPolicyServiceNon-Prod@onmicrosoft.com",
+    "ownerid": "f817335a-7c88-ef11-ac20-001dd8306d3b"
+  },
+  {
+    "@odata.etag": "W/\"6019730\"",
+    "fullname": "# Power Policy Service Prod",
+    "systemuserid": "0a18335a-7c88-ef11-ac20-001dd8306d3b",
+    "internalemailaddress": "PowerPolicyServiceProd@onmicrosoft.com",
+    "ownerid": "0a18335a-7c88-ef11-ac20-001dd8306d3b"
+  },
+  {
+    "@odata.etag": "W/\"2889303\"",
+    "fullname": "ncdeq Student3",
+    "systemuserid": "6140e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "e1a1acf7a6ee46eaa83dd1364f1d4c4encdeq.Student3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6140e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889309\"",
+    "fullname": "ncdeq Student2",
+    "systemuserid": "6240e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "12649ee323e447f2b37b99cb6b072c0bncdeq.Student2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6240e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889313\"",
+    "fullname": "ncdeq Student6",
+    "systemuserid": "6540e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "46a0b55e967545f4a007b793529568c5ncdeq.Student6@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6540e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889304\"",
+    "fullname": "ncdeq Student4",
+    "systemuserid": "6640e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "3e3f19cd75bc40de8d5ae4fe67dbc2bdncdeq.Student4@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "6640e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889312\"",
+    "fullname": "ncdeq Student5",
+    "systemuserid": "9140e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "408242a13c64423ba8eb5301dbfb4f50ncdeq.Student5@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9140e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889314\"",
+    "fullname": "ncdeq Student7",
+    "systemuserid": "9540e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "26ab1f9b27c84e5dba029b7330847eccncdeq.Student7@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9540e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889316\"",
+    "fullname": "ncdeq Student8",
+    "systemuserid": "9740e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "8b3cedc6282f42b1a8f19c9e692a2641ncdeq.Student8@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9740e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889302\"",
+    "fullname": "ncdeq Student9",
+    "systemuserid": "9a40e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "23fcd5edb1fc486faeb9342e5f90e3d1ncdeq.Student9@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "9a40e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889301\"",
+    "fullname": "ncdeq Student10",
+    "systemuserid": "be40e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "54944b1204464f2886c45c95f04bc26cncdeq.Student10@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "be40e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889307\"",
+    "fullname": "ncdeq Student12",
+    "systemuserid": "c840e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "cfc39f36936c4b12bf719ae112b51db4ncdeq.Student12@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "c840e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889317\"",
+    "fullname": "ncdeq Student13",
+    "systemuserid": "d040e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "192a889906b9419f978af44539cb61d7ncdeq.Student13@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d040e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889311\"",
+    "fullname": "ncdeq Student14",
+    "systemuserid": "d840e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "56dc12bf8b414c369e8e9087144c2df0ncdeq.Student14@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d840e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889310\"",
+    "fullname": "ncdeq Student15",
+    "systemuserid": "e840e024-a791-ee11-8178-001dd830761c",
+    "internalemailaddress": "19994d3d659e4c189ba22b5415c4afccncdeq.Student15@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "e840e024-a791-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"5713181\"",
+    "fullname": "WA LNI Architect 3",
+    "systemuserid": "d269a581-d492-ee11-8178-001dd830761c",
+    "internalemailaddress": "a7d7955c51b54232a9cc305d5137949bwalniarchitect3@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d269a581-d492-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"5713166\"",
+    "fullname": "WA LNI Architect 1",
+    "systemuserid": "d469a581-d492-ee11-8178-001dd830761c",
+    "internalemailaddress": "aa70074b06d74176b4459f8c87ff33c8walniarchitect1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d469a581-d492-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"5713174\"",
+    "fullname": "WA LNI Architect 2",
+    "systemuserid": "d669a581-d492-ee11-8178-001dd830761c",
+    "internalemailaddress": "f364754837ab446bb4d50bef5c0202d6walniarchitect2@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "d669a581-d492-ee11-8178-001dd830761c"
+  },
+  {
+    "@odata.etag": "W/\"2889308\"",
+    "fullname": "ncdeq Student1",
+    "systemuserid": "78096e26-a791-ee11-8178-001dd8307757",
+    "internalemailaddress": "149b35e00a8145879adbe5d4682e1486ncdeq.Student1@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "78096e26-a791-ee11-8178-001dd8307757"
+  },
+  {
+    "@odata.etag": "W/\"2889315\"",
+    "fullname": "ncdeq Student11",
+    "systemuserid": "86096e26-a791-ee11-8178-001dd8307757",
+    "internalemailaddress": "f45fd45966d341cd8674fec99d9b9a10ncdeq.Student11@testtestmsftgccfo.onmicrosoft.com",
+    "ownerid": "86096e26-a791-ee11-8178-001dd8307757"
+  },
+  {
+    "@odata.etag": "W/\"1377441\"",
+    "fullname": "SYSTEM",
+    "systemuserid": "e774912e-3558-45b7-b050-a82a3aa018fb",
+    "internalemailaddress": null,
+    "ownerid": "e774912e-3558-45b7-b050-a82a3aa018fb"
+  },
+  {
+    "@odata.etag": "W/\"1377442\"",
+    "fullname": "INTEGRATION",
+    "systemuserid": "289c2967-641e-48f4-bd0d-d75cceca0913",
+    "internalemailaddress": null,
+    "ownerid": "289c2967-641e-48f4-bd0d-d75cceca0913"
+  }
+]

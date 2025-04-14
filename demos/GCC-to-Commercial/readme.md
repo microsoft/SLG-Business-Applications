@@ -1,5 +1,12 @@
 # Power Platform GCC + Azure Commercial Integration
 
+## This Specific Example is Obsolete
+This example demonstrates how to facilitate cross-cloud communication, calling upon an Azure BLOB Storage service running in Azure Commercial, from a Power Platform environment running in Azure Government ("GCC"). 
+
+Since the [Azure BLOB Storage connector](https://learn.microsoft.com/en-us/connectors/azureblob/) now natively supports connecting to services living in another Azure Cloud, you can simply use this capability instead of the workaround showcased below.
+
+However, for other connectors that do *not* yet support cross-cloud, this **architecture is still suggested as a workaround**. You can read further on exactly which connectors do and do not support cross-cloud in our white paper [here](../../white-papers/azure-connectors/).
+
 ## The Issue
 When working with Power Platform/Dynamics 365 resources in a GCC environment, integrations with Azure resources (nearly) always point to the Azure Government endpoints of resources. Many customers have an Azure Commercial instance paired with their Business Applications GCC environment, thus they are prevented from connecting with their Azure resources using the Power Platform's native SaaS integrations.
 

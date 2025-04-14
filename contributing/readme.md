@@ -1,6 +1,8 @@
 # Contribution Guidelines
 This project welcomes contributions and suggestions! Before you contribute, please take a moment to read and understand the following contribution guidelines:
 
+You can also check out our "how to contribute" guide, visually laid out in a clean PowerPoint deck, [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/14/contribute.to.github.pdf).
+
 ## Contributions can be made via a pull request
 To maintain transparency, accountability, and ensure proper review of all changes, we require that contributions be made via pull requests. Pull requests provide a structured way to propose and discuss modifications to this repo before they are merged into the main branch.
 

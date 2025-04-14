@@ -1,0 +1,262 @@
+{
+  "activities": [
+    {
+      "valueType": "ConversationInfo",
+      "type": "trace",
+      "timestamp": 1725905196,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "isDesignMode": true,
+        "locale": "en-US"
+      }
+    },
+    {
+      "id": "826d6575-c401-4e29-a71e-e5847a01d964",
+      "type": "event",
+      "timestamp": 1725905196,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "name": "startConversation",
+      "channelId": "pva-studio",
+      "attachments": []
+    },
+    {
+      "id": "2652282f-05f7-4894-9940-a479c0da9f9f",
+      "type": "message",
+      "timestamp": 1725905196,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "channelId": "pva-studio",
+      "textFormat": "markdown",
+      "text": "Hello, I'm Test Copilot, a virtual assistant. Just so you are aware, I sometimes use AI to answer your questions. If you provided a website during creation, try asking me about it! Next try giving me some more knowledge by setting up generative AI.",
+      "attachments": [],
+      "replyToId": "826d6575-c401-4e29-a71e-e5847a01d964",
+      "speak": "<speak version=\"1.0\" xml:lang=\"en-US\" xmlns:mstts=\"http://www.w3.org/2001/mstts\" xmlns=\"http://www.w3.org/2001/10/synthesis\"><voice name=\"en-US-ChristopherNeural\" xmlns=\"\"><prosody rate=\"0%\" pitch=\"0%\">Thanks for calling, how can I help?</prosody></voice></speak>"
+    },
+    {
+      "id": "57bd428f-fb68-4150-8bf9-7fb05a13ebfd",
+      "type": "event",
+      "timestamp": 1725905196,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DialogTracing",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "826d6575-c401-4e29-a71e-e5847a01d964",
+      "value": {
+        "actions": [
+          {
+            "actionId": "sendMessage_M0LuhV",
+            "topicId": "cr3e5_testCopilot.topic.ConversationStart",
+            "triggerId": "main",
+            "dialogComponentId": "0deb0421-454d-4e6a-9d67-0bfa0ca85aad",
+            "actionType": "SendActivity",
+            "conditionItemExit": [],
+            "variableState": {
+              "dialogState": {},
+              "globalState": {}
+            },
+            "exception": "",
+            "resultTrace": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "3483c868-03bf-4e5d-995b-11d2ce722cdd",
+      "type": "message",
+      "timestamp": 1725905206,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 1
+      },
+      "channelId": "pva-studio",
+      "textFormat": "plain",
+      "text": "Add a new account with the name \"Microsoft, Inc.\"",
+      "attachments": [],
+      "channelData": {
+        "attachmentSizes": [],
+        "enableDiagnostics": true,
+        "testMode": "Text",
+        "clientActivityID": "00js6ei5mumwv"
+      }
+    },
+    {
+      "id": "f44d19b2-3702-4082-b607-0ca5a1ee410f",
+      "type": "event",
+      "timestamp": 1725905209,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanReceived",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3483c868-03bf-4e5d-995b-11d2ce722cdd",
+      "value": {
+        "steps": [
+          "cr3e5_testCopilot.component.AddAccountRowfromCS"
+        ],
+        "isFinalPlan": true
+      }
+    },
+    {
+      "id": "77d3ead6-c200-4d8c-b1f4-e212ad33107a",
+      "type": "event",
+      "timestamp": 1725905209,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanReceivedDebug",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3483c868-03bf-4e5d-995b-11d2ce722cdd",
+      "value": {
+        "planIdentifier": "c9c73cac-106c-4127-8915-eacaca3e0df9",
+        "steps": [
+          {
+            "toolName": "cr3e5_testCopilot.component.AddAccountRowfromCS",
+            "inputBinding": {
+              "$kind": "ActionInputBinding",
+              "binding": {
+                "text": {
+                  "$kind": "ValueExpression",
+                  "literalValue": "Microsoft, Inc."
+                }
+              }
+            },
+            "outputBinding": {
+              "$kind": "ActionOutputBinding"
+            },
+            "state": "created",
+            "hasRecommendations": false
+          }
+        ],
+        "isFinalPlan": true
+      }
+    },
+    {
+      "id": "e9179faa-57c4-4881-9bfe-a2a17d163d1f",
+      "type": "event",
+      "timestamp": 1725905209,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanStepTriggered",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3483c868-03bf-4e5d-995b-11d2ce722cdd",
+      "value": {
+        "planIdentifier": "c9c73cac-106c-4127-8915-eacaca3e0df9",
+        "taskDialogId": "cr3e5_testCopilot.component.AddAccountRowfromCS",
+        "thought": "Add a new account with the name 'Microsoft, Inc.' using Add-a-new-Account-Record tool. ",
+        "state": "inProgress",
+        "hasRecommendations": false
+      }
+    },
+    {
+      "id": "4482f88e-e257-40bb-8c96-9cb3c8c258d6",
+      "type": "event",
+      "timestamp": 1725905209,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanStepBindUpdate",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3483c868-03bf-4e5d-995b-11d2ce722cdd",
+      "value": {
+        "taskDialogId": "cr3e5_testCopilot.component.AddAccountRowfromCS",
+        "arguments": {
+          "text": "Microsoft, Inc."
+        }
+      }
+    },
+    {
+      "id": "24e099b1-e53a-4c7d-932e-a1f62043ddad",
+      "type": "event",
+      "timestamp": 1725905209,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanStepBindUpdate",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3483c868-03bf-4e5d-995b-11d2ce722cdd",
+      "value": {
+        "taskDialogId": "cr3e5_testCopilot.component.AddAccountRowfromCS",
+        "arguments": {
+          "text": "Microsoft, Inc."
+        }
+      }
+    },
+    {
+      "id": "1a2ca9da-f926-4f70-a33d-e7bee8eba0f7",
+      "type": "event",
+      "timestamp": 1725905214,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanStepFinished",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3483c868-03bf-4e5d-995b-11d2ce722cdd",
+      "value": {
+        "taskDialogId": "cr3e5_testCopilot.component.AddAccountRowfromCS",
+        "observation": {},
+        "planUsedOutputs": {},
+        "planIdentifier": "c9c73cac-106c-4127-8915-eacaca3e0df9",
+        "state": "completed",
+        "hasRecommendations": false
+      }
+    },
+    {
+      "id": "8128fe42-245b-4a4b-a856-5e17ac8ecd2e",
+      "type": "event",
+      "timestamp": 1725905214,
+      "from": {
+        "id": "8f91bceb-7dcf-d638-91e0-78c2c1f37d2b",
+        "role": 0
+      },
+      "name": "DynamicPlanFinished",
+      "channelId": "pva-studio",
+      "attachments": [],
+      "replyToId": "3483c868-03bf-4e5d-995b-11d2ce722cdd",
+      "value": {
+        "planId": "c9c73cac-106c-4127-8915-eacaca3e0df9"
+      }
+    },
+    {
+      "valueType": "SessionInfo",
+      "id": "0",
+      "type": "trace",
+      "timestamp": 1725905214,
+      "from": {
+        "id": "",
+        "role": 0
+      },
+      "value": {
+        "startTimeUtc": "2024-09-09T18:06:36Z",
+        "endTimeUtc": "2024-09-09T18:06:54Z",
+        "type": "Unengaged",
+        "outcome": "None",
+        "turnCount": 2,
+        "impliedSuccess": false
+      }
+    }
+  ]
+}
