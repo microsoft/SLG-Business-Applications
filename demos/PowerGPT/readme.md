@@ -1,13 +1,13 @@
 # PowerGPT Solution
 
-![power gpt demo gif](https://imgur.com/a/NXwL0GQ)
+![power gpt demo gif](https://i.imgur.com/91LNWCI.mp4)
 
 ## Overview
 The **PowerGPT Solution** is a low-code conversational interface built entirely with **Power Apps** and **AI Builder**, offering an experience similar to Microsoft Copilot or ChatGPT — without requiring any external APIs, HTTP calls, or keys.
 
 This solution leverages the **AI Builder Prompt** model to generate intelligent responses based on user input. It also maintains **conversation context**, enabling users to ask follow-up questions and continue natural dialogues across multiple turns. Additionally, chat history is **saved to Dataverse**, allowing users to revisit and continue previous conversations.
 
-![ai builder prompt still](https://imgur.com/a/CHdAjVN)
+![ai builder prompt still](https://i.imgur.com/j52YYq5.png)
 
 ## Features
 - **No Custom Integrations Required**: No need for OpenAI keys, custom connectors, or API calls
