@@ -25,6 +25,7 @@ These demos are focused on Human Resources-related functions.
 |-|-|
 |[HR Onboarding/Offboarding and Approval Routing](./onboarding-offboarding-approval/)|Following the request/approval process for onboarding of employees, managing of access catalogs, security roles, and more|
 |[Desk Booking](./desk-booking)|App for employees to book desk and offices for the day at their place of work|
+|[RecruIT Employee Hiring Application](./RecruIT%20Employee%20Hiring)|App for posting job opportunities, collecting applications, and managing the hiring workflow|
 
 ### Digital Government
 These demos apply broadly across multiple areas of government.
