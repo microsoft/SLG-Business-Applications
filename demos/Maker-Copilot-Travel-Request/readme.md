@@ -10,3 +10,6 @@
 ## Assets
 - [TravelRequests_1_0_0_1.zip](https://github.com/microsoft/SLG-Business-Applications/releases/download/28/TravelRequests_1_0_0_1.zip)
 - [Explicit Instructions containing videos walking you through the steps](https://github.com/microsoft/SLG-Business-Applications/releases/download/28/Utilize.Copilot.to.Build.Travel.Request.App.PPTX)
+
+## Credit
+Created by [Jeff Davis](https://www.linkedin.com/in/jeff-davis-b411517/).
