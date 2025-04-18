@@ -1,5 +1,5 @@
 # Customer Service Copilot
-This solution containg D365 Customer Service with a focus on the Copilot features that enable users to quickly summarize the details
+This solution contains D365 Customer Service with a focus on the Copilot features that enable users to quickly summarize the details
 - Employees can quickly review aand address the needs of case records
 - Assign Knowledge Articles
 - Summarize Timeline content
