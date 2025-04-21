@@ -1,4 +1,4 @@
-# Health Plan Complain Tracking
+# Health Plan Complaint Tracking
 This solution captures complaints from the public, reviews the details of the complaint and works with the corresponding Health Plan to reconcile with the resident.
 
 The workflow of the solution starts with the Resident who has been denied coverage for a specific procedure.  Via the Portal the Patient can self-report, can have an authorized representative report, or if the patient is a child, their Parent can report.  
