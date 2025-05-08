@@ -2,6 +2,7 @@
 
 This solution provides a complete framework for **automatically transforming inbound citizen correspondence into actionable cases** within Dynamics 365 Customer Service or Contact Center. Built specifically for the needs of **State and Local Government (SLG)** agencies, this low-code solution leverages **Power Automate**, **AI Builder**, and **Dataverse** to streamline case intake, classification, and triage—regardless of communication channel.
 
+**DOWNLOAD THIS SOLUTION:** [CorrespondencetoCase_1_0_0_1.zip](https://github.com/user-attachments/files/20110219/CorrespondencetoCase_1_0_0_1.zip)
 
 ## Architecture Diagram
 
