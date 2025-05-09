@@ -35,6 +35,7 @@ These demos apply broadly across multiple areas of government.
 |[HR Onboarding/Offboarding](./Must-Have-Apps/)|Task tracking, coordination, and automation.  Designed with HR in mind but offers versatility for other types of checklists|
 |[Inspections](./Must-Have-Apps/)|Data-driven framework for defining form fields and surfacing via desktop/mobile app. Designed with inspections in mind but offers broad versatility|
 |[EVVIE - Enterprise Visual Vehicle Inspection Engine](./EVVIE/)|AI-powered vehicle inspection platform that streamlines the inspection process for state and local government fleets|
+|[EEO - Equal Employment Opportunity Case Tracking](./EqualEmploymentOpp)|App for filing, tracking, and investigating Equal Employment Complaints and Cases|
 
 ### Pro-Dev Focused
 These demos are focused on demonstrating a particular technology, feature, or functionality in the platform.
