@@ -15,7 +15,7 @@ Good news - it's incredibly easy!
 
 If you operate in commercial cloud you can access the [document automation toolkit](https://flow.microsoft.com/manage/aibuilder/documentautomation) in Power Automate.
 
-If you operate in the Government Community Cloud (GCC), download and install the [managed solution file](https://github.com/microsoft/SLG-Business-Applications/releases/download/20/powerautomate_documentautomation_basekit.AppSource.zip).
+If you operate in the Government Community Cloud (GCC), download and install the [managed solution file](https://github.com/microsoft/SLG-Business-Applications/releases/download/20/Documentautomationbasekit_managed.zip).
 
 You'll also need to train a Document Processing model in AI Builder to understand your specific form(s).  Unless you happen to be processing vendor invoices or travel expense receipts in which case, you're in luck as there are pretrained models available for these purposes!  Be sure to publish your model once you've trained it.
 
