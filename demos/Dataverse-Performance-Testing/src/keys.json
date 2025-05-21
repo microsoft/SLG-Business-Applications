@@ -1,0 +1,5 @@
+{
+    "username": "<your azure entra id login username>",
+    "password": "<your azure entra id login password>",
+    "environment": "<the environment URL of the environment you'd like to analyze, i.e. https://org45b79090.crm9.dynamics.com/>"
+}
