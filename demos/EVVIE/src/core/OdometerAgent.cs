@@ -25,7 +25,7 @@ namespace VehicleInspectionAI
             JArray messages = new JArray();
 
             //Construct system message and add it
-            string SystemPrompt = "Your job is to read images of odometers and report the reading (in miles). Always provide the reading as an integer in JSON format, like this: {\"odometer\": 123456}";
+            string SystemPrompt = "Your job is to read images of odometers and report the reading (in miles). Always provide the reading as an integer in JSON format, like this: {\"odometer\": 123456}\n\nIf there is a problem at any point, just return a reading of -1 to indicate there was an error!";
             JObject SystemMessage = new JObject();
             SystemMessage.Add("role", "system");
             SystemMessage.Add("content", SystemPrompt);
