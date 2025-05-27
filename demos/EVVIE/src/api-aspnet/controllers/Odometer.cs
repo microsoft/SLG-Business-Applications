@@ -54,7 +54,7 @@ namespace EVVIE_API
             int odo;
             try
             {
-                odo = await OdometerAgent.ReadOdometerAsync(image_b64);
+                odo = await OdometerReaderAgent.ReadOdometerAsync(image_b64);
             }
             catch (Exception ex)
             {

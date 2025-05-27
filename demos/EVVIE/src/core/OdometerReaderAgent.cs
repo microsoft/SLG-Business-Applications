@@ -6,7 +6,7 @@ using System.Net.Http;
 
 namespace VehicleInspectionAI
 {
-    public class OdometerAgent
+    public class OdometerReaderAgent
     {
         public static async Task<int> ReadOdometerAsync(string image_b64)
         { 
