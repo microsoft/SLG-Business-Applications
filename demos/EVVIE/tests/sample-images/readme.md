@@ -5,3 +5,5 @@
 
 ## Odometer Readings
 - [Reading of 73,840 miles](https://i.imgur.com/Izf73tr.jpeg), in base64 [here](./sample4.txt)
+- [Reading of 91,308 miles on very analog dash](https://i.imgur.com/szjCNrF.jpeg), in base64 [here](./sample5.txt)
+- [Reading of 63,693 miles](https://i.imgur.com/7Wz5cAa.jpeg) in base64 [here](./sample6.txt)
