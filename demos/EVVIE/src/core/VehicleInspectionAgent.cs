@@ -7,7 +7,7 @@ using System.Text;
 
 namespace VehicleInspectionAI
 {
-    public class VehicleInspectionGPT
+    public class VehicleInspectionAgent
     {
 
         public static string SystemPrompt

@@ -79,7 +79,7 @@ namespace EVVIE_API
             VehicleInspection vi;
             try
             {
-                vi = await VehicleInspectionGPT.InspectAsync(base64s.ToArray());
+                vi = await VehicleInspectionAgent.InspectAsync(base64s.ToArray());
             }
             catch (Exception ex)
             {
