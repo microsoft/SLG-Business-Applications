@@ -7,7 +7,7 @@ using System.Text;
 
 namespace VehicleInspectionAI
 {
-    public class PlateReaderGPT
+    public class PlateReaderAgent
     {
         public static HttpRequestMessage PrepareRequest(string base64)
         {

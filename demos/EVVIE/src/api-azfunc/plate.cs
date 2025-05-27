@@ -57,7 +57,7 @@ namespace VehicleInspectionsAPI
             }
 
             //Read the plate
-            string plate = await PlateReaderGPT.ReadPlateAsync(image.Value.ToString());
+            string plate = await PlateReaderAgent.ReadPlateAsync(image.Value.ToString());
 
             //Prepare response body
             JObject response = new JObject();
