@@ -8,10 +8,12 @@ namespace VehicleInspectionAI
     {
         public static void Main(string[] args)
         {
-            byte[] content = System.IO.File.ReadAllBytes(@"C:\Users\timh\Downloads\CRACKED.jpg");
-            string b64 = Convert.ToBase64String(content);
-            b64 = "data:image/jpeg;base64," + b64;
-            System.IO.File.WriteAllText(@"C:\Users\timh\Downloads\SLG-Business-Applications\demos\EVVIE\b64.txt", b64);
+            string imgpath = @"C:\Users\timh\Downloads\damage2.jpg";
+            byte[] imgbytes = File.ReadAllBytes(imgpath);
+            string b64 = "data:image/jpeg;base64," + Convert.ToBase64String(imgbytes);
+
+            string[] issues = ImageQualityValidationAgent.ValidateAsync(b64).Result;
+            Console.WriteLine(JsonConvert.SerializeObject(issues));
         }
     }
 }

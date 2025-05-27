@@ -20,15 +20,22 @@ Specifically, your job is to ensure the images meet the following requirements:
 - The image has sufficient lighting to show the damage. If the picture is being taken in a very dark environment where the damage would be difficult to detect, that is not acceptable.
 - The image is clear, in focus, and not blurry. If the image appears to just be blurry or very out of focus (the image was not taken correctly), that is not acceptable.
 
-If there is an issue with and of the images, as described above, you are to document these problems as a JSON array of strings, like below for example:
-[
-    ""You appear to be far away from the vehicle! Please stand closer, within 15 feet, to get a better photo."",
-    ""The image is somewhat dark and it is difficult to tell if there is damage. Please re-take these images in an environment with brighter lighting or use a flashlight of some sort!""
-]
+If there is an issue with and of the images, as described above, you are to document these problems as a JSON array of strings as property ""issues"" in a JSON object, like below for example:
+{
+    ""issues"":
+    [
+        ""Stand Closer: You appear to be far away from the vehicle! Please stand closer, within 15 feet, to get a better photo."",
+        ""Seek Better Lighting: The image is somewhat dark and it is difficult to tell if there is damage. Please re-take these images in an environment with brighter lighting or use a flashlight of some sort!""
+    ]
+}
 
-As you can see above, the messages you log will be shown directly to the officer that is taking the images, so please be polite and constructive. Log as many as you need, or none at all.
 
-If there is no problem with the images and they accurately depict damage (or lack of damage) well, leave it alone! No need to report any problems, so just simply return an empty JSON array ([]).
+As you can see above, the messages you log will be shown directly to the officer that is taking the images, so please be polite and constructive. Log as many as you need, or none at all. Similar to the examples above, please directly note the problem, then a colon, then further explain it.
+
+If there is no problem with the images and they accurately depict damage (or lack of damage) well, leave it alone! No need to report any problems, so just simply return an empty JSON array for the ""issues"" property, like this for example:
+
+{""issues"":[]}
+
                 ";
             }
         }
@@ -104,7 +111,7 @@ If there is no problem with the images and they accurately depict damage (or lac
             return ToReturn;
         }
 
-        public static async Task<string[]> ValidateAsync(string[] image_base64s)
+        public static async Task<string[]> ValidateAsync(params string[] image_base64s)
         {
             HttpRequestMessage request = PrepareRequest(image_base64s);
             HttpClient hc = new HttpClient();
@@ -115,7 +122,53 @@ If there is no problem with the images and they accurately depict damage (or lac
                 throw new Exception("Request to Azure OpenAI services returned status code '" + response.StatusCode.ToString() + "'! Msg: " + content);
             }
 
-            return new string[] { content };
+            //Extract the "content" property from the entire response (what the models response was)
+            JObject ResponseBody = JObject.Parse(content);
+            JToken? rcontent = ResponseBody.SelectToken("choices[0].message.content");
+            if (rcontent == null)
+            {
+                throw new Exception("Unable to find content property from Azure OpenAI response!");
+            }
+            string contentjson = rcontent.ToString();
+
+            //Now that we have the content that should be JSON (the models response), get the 'issues' property out of it, which should be a string array
+            JObject robject;
+            try
+            {
+                robject = JObject.Parse(contentjson);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("There was an issue while parsing the model's response as JSON. It didn't seem to follow a structured JSON format. Internal error: " + ex.Message);
+            }
+
+            //Get issues
+            JProperty? issues = robject.Property("issues");
+            if (issues == null)
+            {
+                throw new Exception("Property 'issues' was not in the response JSON payload! The model did not document the issues correctly.");
+            }
+            string issues_str = issues.Value.ToString();
+
+            //Unpack issues as JSON array
+            string[]? ToReturn;
+            try
+            {
+                ToReturn = JsonConvert.DeserializeObject<string[]>(issues_str);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("The 'issues' response from the model was not an array of strings! Msg: " + ex.Message);
+            }
+
+            //if empty
+            if (ToReturn == null)
+            {
+                throw new Exception("For some reason, the issues property did not successfully parse into an array of strings.");
+            }
+
+
+            return ToReturn;
         }
 
     }
