@@ -33,7 +33,7 @@ As described in the architecture diagram above, EVVIE uses a backend API running
 
 You can find the source code of EVVIE's ASP.NET-based API in the [src folder](./src/).
 - [core](./src/core/) - this contains a C# console application that is used essentially as a library of functions and capabilities that E.V.V.I.E. relies on for communicating with the Azure OpenAI service. This allows E.V.V.I.E. to reach out to the Azure OpenAI service to do things like identify vehicles via their license plate and assess damage to vehicles.
-- [api-](./src/api-aspnet/) - this contains the code to a ASP.NET web service, written in C#, that exposes several endpoints that the E.V.V.I.E. interface, built in Power Apps, can call to.
+- [api](./src/api-aspnet/) - this contains the code to a ASP.NET web service, written in C#, that exposes several endpoints that the E.V.V.I.E. interface, built in Power Apps, can call to.
 
 You can deploy this in numerous ways, but [deploying to an Azure App Service](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/?view=aspnetcore-9.0&tabs=visual-studio) is likely your best option. Be sure to modidfy the Azure OpenAI credentials to your own Azure OpenAI deployment in the [`AzureOpenAICredentialsProvider` class](./src/core/AzureOpenAICredentialsProvider.cs).
 
