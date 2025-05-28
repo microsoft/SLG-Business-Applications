@@ -3,7 +3,8 @@
 - [90's State Trooper Car](https://i.imgur.com/EgA89Lw.jpeg), in base64 [here](./sample2.txt)
 - [Michigan State Police, damaged in snow](https://i.imgur.com/1kPJyNK.jpeg) in base64 [here](./sample3.txt)
 - [Blurry picture, at night](https://i.imgur.com/PRDTt3Z.jpeg) in base64 [here](./sample8.txt)
-- [Blurry picture, during the day](https://i.imgur.com/Os7gIso.jpeg) in base64 [here](./sample9.txt).
+- [Blurry picture, during the day](https://i.imgur.com/Os7gIso.jpeg) in base64 [here](./sample9.txt)
+- [Police vehicle behind bars](https://i.imgur.com/xtruDiG.jpeg) in base64 [here](./sample10.txt).
 
 ## Odometer Readings
 - [Reading of 73,840 miles](https://i.imgur.com/Izf73tr.jpeg), in base64 [here](./sample4.txt)
