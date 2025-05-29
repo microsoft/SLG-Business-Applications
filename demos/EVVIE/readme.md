@@ -21,7 +21,7 @@ The **Power Apps** inspection app receives this response back from the **ASP.NET
 Another **Power Apps** app (model-driven with custom pages) allows for administrators to review this vehicle inspection data.
 
 ## Architecture
-EVVIE's architecture is a unique blend of Power Platform (low-code) and Azure (pro-code) resources, coming together to deliver a single unified AI-enabled service to users. The architecture is depicted below, but can be accessed in PowerPoint deck form [here](./architecture.pptx).
+EVVIE's architecture is a unique blend of Power Platform (low-code) and Azure (pro-code) resources, coming together to deliver a single unified AI-enabled service to users. The architecture is depicted below, but can be accessed in PowerPoint deck form [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/33/architecture.pptx).
 
 ![architecture](https://i.imgur.com/tWaQ4Va.png)
 
