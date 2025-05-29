@@ -11,9 +11,9 @@ EVVIE, short for “Enterprise Visual Vehicle Inspection Engine”, is an AI-pow
 *If the video above does not work, click [here](https://youtu.be/KvEFX-in2TM).*
 
 ## Architecture
-EVVIE's architecture is a unique blend of Power Platform (low-code) and Azure (pro-code) resources, coming together to deliver a single unified AI-enabled service to users. The architecture is depicted below, but can be accessed in PowerPoint deck form [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/33/architecture.pptx).
+EVVIE's architecture is a unique blend of Power Platform (low-code) and Azure (pro-code) resources, coming together to deliver a single unified AI-enabled service to users. The architecture is depicted below, but can be accessed in PowerPoint deck form [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/35/architecture.pptx).
 
-![architecture](https://i.imgur.com/tWaQ4Va.png)
+![architecture](https://i.imgur.com/FJ7kl5z.png)
 
 As seen above, EVVIE uses a unique blend of Microsoft Power Platform and Microsoft Azure resources to automate the vehicle inspection process using advanced, state-of-the-art AI models. EVVIE's internal process is described below, at a high level:
 
