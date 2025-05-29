@@ -1,3 +1,10 @@
+## EVVIE Graphics
+- [EEVIE static icon (still)](./evvie_icon.png)
+- [EVVIE waving GIF](./robot_waving.gif)
+- [EVVIE thinking GIF](./robot_waving.gif)
+- [EVVIE writing GIF](robot_writing.gif)
+- [EVVIE concerned](https://i.imgur.com/1Fu8FFb.png)
+
 ## Potential Car Sketches to Use for Mapping Damage
 - https://i.imgur.com/WRsVzjt.jpeg
     - Front: https://imgur.com/wF1aA3f
