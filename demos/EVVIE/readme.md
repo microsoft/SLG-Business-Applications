@@ -85,6 +85,7 @@ A one-slide description of EVVIE can be downloaded [here](https://github.com/mic
 ![evvie](https://i.imgur.com/kdquuAR.jpeg)
 
 ## Other Supplied Resources
+- [EVVIE's changelog](./changelog.md), documenting every version of EVVIE.
 - Find and use EVVIE's graphics [here](./graphics/).
 - Read more about EVVIE's ASP.NET-based API, endpoints, and input/output schema [here](./tests/endpoints.md).
 - Get sample imagery, already encoded in base64, to test with [here](./tests/sample-images/).
