@@ -1,7 +1,8 @@
-# E.V.V.I.E. - **E**nterprise **V**isual **V**ehicle **I**nspection **E**ngine
+![EVVIE banner](https://i.imgur.com/Ca4EwdG.jpeg)
+
 EVVIE, short for “Enterprise Visual Vehicle Inspection Engine”, is an AI-powered vehicle inspection platform that streamlines the inspection process for state and local government fleets, using artificial intelligence to analyze images of vehicles and detect damage or issues, enabling agencies to improve accuracy, reduce paperwork, and optimize maintenance management.
 
-Click the image below for a demonstration of E.V.V.I.E.
+**Click the image below for a demonstration of E.V.V.I.E.**
 
 [![demo video](https://i.imgur.com/5OIfuG4.png)](https://livesend.microsoft.com/i/DUFrJEz77SXgL85JbBg___Wio6___QrDyqYH7e0RigS84AIiHLC3WpVWVDDfooWSJ3PQpIq2iXxfS8jrzrqedqUQyBkGlTJR3slPbCyUqy6FOpY0dwIM38eR3YiOOSHP7___37)
 
