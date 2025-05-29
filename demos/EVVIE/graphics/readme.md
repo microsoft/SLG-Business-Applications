@@ -5,6 +5,8 @@
 - [EVVIE thinking GIF](./robot_waving.gif)
 - [EVVIE writing GIF](robot_writing.gif)
 - [EVVIE concerned](https://i.imgur.com/1Fu8FFb.png)
+- [EVVIE Quality Inspector](https://i.imgur.com/wPWQxwm.png)
+- [EVVIE Vehicle Inspector](https://i.imgur.com/dcavEZB.png)
 
 ## Potential Car Sketches to Use for Mapping Damage
 - https://i.imgur.com/WRsVzjt.jpeg
