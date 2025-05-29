@@ -25,7 +25,9 @@ The **Power Apps** inspection app receives this response back from the **ASP.NET
 Another **Power Apps** app (model-driven with custom pages) allows for administrators to review this vehicle inspection data.
 
 ## E.V.V.I.E. Source Code
-You can find EVVIE's source code below, split into two sections:
+We give EVVIE away for free! You can think of EVVIE as an accelerator: an asset that demonstrates Microsoft's technology applied to a business challenge and something you can further tweak for your *exact* business process.
+
+You can find EVVIE's source code described below, split into two sections:
 
 ### ASP.NET-Based API Web Service
 As described in the architecture diagram above, EVVIE uses a backend API running on ASP.NET to serve as a broker between the inspection app (client app) and the multimodal AI model running in Azure.
