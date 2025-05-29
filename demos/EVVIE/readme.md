@@ -23,7 +23,7 @@ Another **Power Apps** app (model-driven with custom pages) allows for administr
 ## Architecture
 EVVIE's architecture is a unique blend of Power Platform (low-code) and Azure (pro-code) resources, coming together to deliver a single unified AI-enabled service to users. The architecture is depicted below, but can be accessed in PowerPoint deck form [here](./architecture.pptx).
 
-![architecture](https://i.imgur.com/uT6N82Y.jpeg)
+![architecture](https://i.imgur.com/tWaQ4Va.png)
 
 ## E.V.V.I.E. Source Code
 You can find EVVIE's source code below, split into two sections:
