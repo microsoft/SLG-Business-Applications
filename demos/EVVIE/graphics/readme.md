@@ -17,3 +17,4 @@
 
 ## Other Graphics
 - Computer monitor PNG: https://i.imgur.com/T5sq2u3.png
+- [EVVIE Banner](https://github.com/microsoft/SLG-Business-Applications/releases/download/34/EVVIE_banner.pptx)
