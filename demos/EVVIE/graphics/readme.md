@@ -1,5 +1,6 @@
 ## EVVIE Graphics
 - [EEVIE static icon (still)](./evvie_icon.png)
+    - [Higher quality version](https://i.imgur.com/Ya0BXcL.png)
 - [EVVIE waving GIF](./robot_waving.gif)
 - [EVVIE thinking GIF](./robot_waving.gif)
 - [EVVIE writing GIF](robot_writing.gif)
