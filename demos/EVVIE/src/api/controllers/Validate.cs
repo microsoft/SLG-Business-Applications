@@ -70,7 +70,7 @@ namespace EVVIE_API
             }
 
             //Run it!
-            string[] issues;
+            ImageQualityIssue[] issues;
             try
             {
                 issues = await ImageQualityValidationAgent.ValidateAsync(images);
@@ -81,7 +81,6 @@ namespace EVVIE_API
                 await Response.WriteAsync("Image quality validation failed! Message: " + ex.Message);
                 return;
             }
-
 
             //Respond
             Response.StatusCode = 200;
