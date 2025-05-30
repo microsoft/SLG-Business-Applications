@@ -48,7 +48,7 @@ To learn more about the API, its endpoints, and their input/output schema, visit
 ### Power Platform Solution
 EVVIE's user interface and data residency is built in Microsoft's Power Platform. 
 
-You can download the solution file (a .zip file) [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/18/EVVIE_1_0_0_3.zip). This solution contains the underlying tables and option sets that make up the data structure, the Power Apps Canvas App that staff use while inspecting their vehicle, the Power Apps Model-Driven App that administrative staff can use to review these inspections, and the custom connector that is used to communicate with the EVVIE backend API system.
+You can download the solution file (a .zip file) [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/36/EVVIE_1_0_0_5.zip). This solution contains the underlying tables and option sets that make up the data structure, the Power Apps Canvas App that staff use while inspecting their vehicle, the Power Apps Model-Driven App that administrative staff can use to review these inspections, and the custom connector that is used to communicate with the EVVIE backend API system.
 
 **After importing the solution file into your environment, be sure to update the custom connector's actions so they point to your specific Azure App Service endpoints**.
 
