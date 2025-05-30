@@ -77,11 +77,11 @@ Below you can find various forms of marketing material for EVVIE:
 ### One Pager
 A "one-pager" flyer exists for EVVIE:
 
-![one-pager](https://i.imgur.com/Y3dUY0M.jpeg)
+![one-pager](https://i.imgur.com/areOT6W.jpeg)
 
 The one-pager can be downloaded in various formats below:
-- [As a PowerPoint deck](./one-pager/one-pager.pptx)
-- [In PDF Form](./one-pager/one-pager.pdf)
+- [As a PowerPoint deck](https://github.com/microsoft/SLG-Business-Applications/releases/download/39/one-pager.pptx)
+- [In PDF Form](https://github.com/microsoft/SLG-Business-Applications/releases/download/39/one-pager.pdf)
 
 ### Single Slide
 A one-slide description of EVVIE can be downloaded [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/38/one-pager-horizontal.pptx). See the preview below:
