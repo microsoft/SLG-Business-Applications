@@ -84,9 +84,9 @@ The one-pager can be downloaded in various formats below:
 - [In PDF Form](./one-pager/one-pager.pdf)
 
 ### Single Slide
-A one-slide description of EVVIE can be downloaded [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/25/one-pager-horizontal.pptx). See the preview below:
+A one-slide description of EVVIE can be downloaded [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/38/one-pager-horizontal.pptx). See the preview below:
 
-![evvie](https://i.imgur.com/kdquuAR.jpeg)
+![evvie](https://i.imgur.com/sGgG8qI.png)
 
 ## Other Supplied Resources
 - [EVVIE's changelog](./changelog.md), documenting every version of EVVIE.
