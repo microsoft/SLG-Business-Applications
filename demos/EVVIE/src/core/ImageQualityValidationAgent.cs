@@ -117,7 +117,7 @@ If there is no problem with the images and they accurately depict damage (or lac
             return ToReturn;
         }
 
-        public static async Task<string[]> ValidateAsync(params string[] image_base64s)
+        public static async Task<ImageQualityIssue[]> ValidateAsync(params string[] image_base64s)
         {
             HttpRequestMessage request = PrepareRequest(image_base64s);
             HttpClient hc = new HttpClient();
@@ -156,23 +156,22 @@ If there is no problem with the images and they accurately depict damage (or lac
             }
             string issues_str = issues.Value.ToString();
 
-            //Unpack issues as JSON array
-            string[]? ToReturn;
+            //Unpack issues str as JSON
+            ImageQualityIssue[]? ToReturn = null;
             try
             {
-                ToReturn = JsonConvert.DeserializeObject<string[]>(issues_str);
+                ToReturn = JsonConvert.DeserializeObject<ImageQualityIssue[]>(issues_str);
             }
             catch (Exception ex)
             {
-                throw new Exception("The 'issues' response from the model was not an array of strings! Msg: " + ex.Message);
+                throw new Exception("There was an issue while deserializing the provided AI resposne into ImageQualityIssues! Perhaps the JSON was not provided correctly? Exception message: " + ex.Message);
             }
 
-            //if empty
+            //None?
             if (ToReturn == null)
             {
-                throw new Exception("For some reason, the issues property did not successfully parse into an array of strings.");
+                throw new Exception("For an unknown reason, ImageQualityIssues were not deserialized from the provided AI response.");
             }
-
 
             return ToReturn;
         }
