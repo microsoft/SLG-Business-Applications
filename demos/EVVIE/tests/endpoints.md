@@ -86,11 +86,20 @@ Example response:
 Content-Type: application/json
 
 {
-    "issues":
-    [
-        "Lighting is poor: move to a more well lit area.",
-        "The image is blurry: make sure your hand is still when taking the photo"
-    ]
+  "issues": [
+    {
+      "title": "Image is Blurry",
+      "description": "The image is very out of focus, making it difficult to spot any damage. Please ensure the camera is steady and properly focused when taking the photo."
+    },
+    {
+      "title": "Seek Better Lighting",
+      "description": "The lighting in the image is dim and makes it difficult to accurately observe the condition of the vehicle. Please try to take the picture in a brighter environment or use additional lighting."
+    },
+    {
+      "title": "Stand Closer",
+      "description": "The photo appears to be taken from too far away from the vehicle, and it is hard to clearly see any specific details. Please stand closer, within 15 feet, and ensure the area with possible damage is clearly visible."
+    }
+  ]
 }
 ```
 
