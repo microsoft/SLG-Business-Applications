@@ -93,16 +93,15 @@ User Copilot features
 Maker Copilot features
 |Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
-|[Create, edit and configure forms using Form Designer](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-and-edit-forms)|GA|No|3.18.25|
-|[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/build-first-model-driven-app#create-an-app-description-with-copilot-preview)|Preview|No|3.18.25|
+|[Create, edit and configure forms using Form Designer](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-and-edit-forms)|GA|No|6.3.25|
+|[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/build-first-model-driven-app#create-an-app-description-with-copilot)|GA|No|6.3.25|
 
 User Copilot features
 |Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
-|[Copilot in rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/copilot-control)|Early Access|No|3.18.25|
-|[Copilot in email rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/use-copilot-email-assist)|Early Access|No|3.18.25|
-|[Copilot for App Users](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-ai-copilot)|Preview|No|3.18.25|
-|[Form filling assistance with Copilot](https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance)|Preview|No|3.18.25|
+|[Copilot in email rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/use-copilot-email-assist)|GA|No|6.3.25|
+|[Copilot for App Users](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-ai-copilot)|GA|No|6.3.25|
+|[Form filling assistance with Copilot](https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance)|Preview|No|6.3.25|
 |[Timeline highlights](https://learn.microsoft.com/en-us/power-apps/user/add-activities#use-timeline-highlights-powered-by-generative-ai)|GA|No|3.18.25|
 
 ### Power Automate
@@ -139,7 +138,7 @@ User Copilot features
 ### Platform
 |Feature|Commercial|GCC|Eval Date|Notes|
 |-|-|-|-|-|
-|[Dataverse Data Workspace](https://www.microsoft.com/en-us/power-platform/blog/power-apps/data-workspace-is-now-generally-available/?msockid=30d3025b988b65e001ec13a7997364df)|GA|No|10.24.24||
-|[Dataverse AI functions](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-ai)|GA|No|10.24.24|Functions exist but throw errors when called|
+|[Dataverse Data Workspace](https://www.microsoft.com/en-us/power-platform/blog/power-apps/data-workspace-is-now-generally-available/?msockid=30d3025b988b65e001ec13a7997364df)|GA|No|6.3.25||
+|[Dataverse AI functions](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-ai)|GA|No|6.3.25|Use AI Builder instead|
 |[AI Builder - AI prompts](https://learn.microsoft.com/en-us/ai-builder/prompts-overview)|GA|Yes|10.24.24||
-|[Power Designer - Copilot-first development](https://learn.microsoft.com/en-us/power-apps/maker/plan-designer/plan-designer)|Preview|No|3.18.25|
+|[Power Designer - Copilot-first development](https://learn.microsoft.com/en-us/power-apps/maker/plan-designer/plan-designer)|GA|No|6.3.25|
