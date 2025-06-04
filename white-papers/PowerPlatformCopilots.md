@@ -93,16 +93,15 @@ User Copilot features
 Maker Copilot features
 |Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
-|[Create, edit and configure forms using Form Designer](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-and-edit-forms)|GA|No|3.18.25|
-|[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/build-first-model-driven-app#create-an-app-description-with-copilot-preview)|Preview|No|3.18.25|
+|[Create, edit and configure forms using Form Designer](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/create-and-edit-forms)|GA|No|6.3.25|
+|[Create an app description with Copilot](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/build-first-model-driven-app#create-an-app-description-with-copilot)|GA|No|6.3.25|
 
 User Copilot features
 |Feature|Commercial|GCC|Eval Date|
 |-|-|-|-|
-|[Copilot in rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/copilot-control)|Early Access|No|3.18.25|
-|[Copilot in email rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/use-copilot-email-assist)|Early Access|No|3.18.25|
-|[Copilot for App Users](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-ai-copilot)|Preview|No|3.18.25|
-|[Form filling assistance with Copilot](https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance)|Preview|No|3.18.25|
+|[Copilot in email rich text editor](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/use-copilot-email-assist)|GA|No|6.3.25|
+|[Copilot for App Users](https://learn.microsoft.com/en-us/power-apps/maker/model-driven-apps/add-ai-copilot)|GA|No|6.3.25|
+|[Form filling assistance with Copilot](https://learn.microsoft.com/en-us/power-apps/user/form-filling-assistance)|Preview|No|6.3.25|
 |[Timeline highlights](https://learn.microsoft.com/en-us/power-apps/user/add-activities#use-timeline-highlights-powered-by-generative-ai)|GA|No|3.18.25|
 
 ### Power Automate
@@ -125,21 +124,43 @@ User Copilot features
 |[Power Pages Search with gen AI](https://learn.microsoft.com/en-us/power-pages/configure/search/generative-ai)|Preview|No|10.21.24|
 
 ### Copilot Studio
+
+Generative answers and knowledge sources
 |Feature|Commercial|GCC|Eval Date|Note|
 |-|-|-|-|-|
-|[Generative answers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#generative-answers)|GA|Yes|10.24.24||
+|[Generative answers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#generative-answers)|GA|Yes|10.24.24|[Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)|
 |[AI general knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#ai-general-knowledge)|GA|Yes|10.24.24||
-|[Orchestrate copilot topics and actions with generative AI](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-generative-actions)|Preview|Yes|10.24.24||
-|[Create a Copilot with natural language](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot)|GA|No|10.24.24||
-|[Create and edit topics with natural language](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot)|GA|Yes|10.24.24||
+|[Enable general web search](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio#enable-web-search-for-your-agent)|GA|No|6.4.25||
 |[Azure Open AI as a knowledge source for generative answers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-generative-answers-azure-openai)|Preview|No|3.18.25|[Custom pattern available](https://github.com/microsoft/SLG-Business-Applications/tree/main/white-papers/Copilot-Studio%2BAzure-AI-GCC)|
-|[Autonomous Agents - Triggers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about)|Preview|No|3.18.25||
+|[Agent Builder for M365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build)|GA|No|3.18.25||
+|["Ingest" files from SharePoint/OneDrive/etc.](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-unstructured-data)|GA|No|6.4.25|Understand nuanced distinction vs. "point to SharePoint" which is available in GCC|
+|[Use deep reasoning models](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-reasoning-models)|Preview|No|6.4.25||
+|[Enahnced search results from tenant graph grounding](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio#tenant-graph-grounding)|GA|No|6.4.25||
+|[Choose generative response model](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-preview-model)|Preview|No|6.4.25||
+
+Orchestration/Actions/Tools
+|Feature|Commercial|GCC|Eval Date|Note|
+|-|-|-|-|-|
+|[Orchestrate agent behavior with generative AI](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-generative-actions)|GA|Yes|10.24.24||
+|[Use custom prompts as actions/tools](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-prompt-node)|GA|Yes|3.18.25||
+|[Use connectors as actions/tools](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors)|GA|Yes|10.24.24||
+|[Call a Flow as an action/tool](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-use-flow)|GA|Yes|10.24.24||
+|[Create an "agent flow" and use as an action/tool](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow-create)|GA|No|6.4.25|Call a traditional Flow instead|
+|[Event triggered agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about)|GA|No|6.4.25||
+|[Add tools from Model Context Protocol (MCP) server](https://learn.microsoft.com/en-us/microsoft-copilot-studio/agent-extend-action-mcp)|GA|No|6.4.25||
+|[Automate web and desktop apps with computer use](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use?tabs=new)|Preview|No|6.4.25||
+
+Authoring experience
+|Feature|Commercial|GCC|Eval Date|Note|
+|-|-|-|-|-|
+|[Create a Copilot with natural language](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot)|GA|No|6.4.25||
+|[Create and edit topics with natural language](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot)|GA|Yes|10.24.24||
 |[Agent Builder for M365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build)|GA|No|3.18.25||
 
 ### Platform
 |Feature|Commercial|GCC|Eval Date|Notes|
 |-|-|-|-|-|
-|[Dataverse Data Workspace](https://www.microsoft.com/en-us/power-platform/blog/power-apps/data-workspace-is-now-generally-available/?msockid=30d3025b988b65e001ec13a7997364df)|GA|No|10.24.24||
-|[Dataverse AI functions](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-ai)|GA|No|10.24.24|Functions exist but throw errors when called|
+|[Dataverse Data Workspace](https://www.microsoft.com/en-us/power-platform/blog/power-apps/data-workspace-is-now-generally-available/?msockid=30d3025b988b65e001ec13a7997364df)|GA|No|6.3.25||
+|[Dataverse AI functions](https://learn.microsoft.com/en-us/power-platform/power-fx/reference/function-ai)|GA|No|6.3.25|Use AI Builder instead|
 |[AI Builder - AI prompts](https://learn.microsoft.com/en-us/ai-builder/prompts-overview)|GA|Yes|10.24.24||
-|[Power Designer - Copilot-first development](https://learn.microsoft.com/en-us/power-apps/maker/plan-designer/plan-designer)|Preview|No|3.18.25|
+|[Power Designer - Copilot-first development](https://learn.microsoft.com/en-us/power-apps/maker/plan-designer/plan-designer)|GA|No|6.3.25|
