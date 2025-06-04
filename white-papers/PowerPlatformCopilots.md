@@ -126,14 +126,19 @@ User Copilot features
 ### Copilot Studio
 |Feature|Commercial|GCC|Eval Date|Note|
 |-|-|-|-|-|
-|[Generative answers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#generative-answers)|GA|Yes|10.24.24||
+|[Generative answers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#generative-answers)|GA|Yes|10.24.24|[Knowledge sources](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio)|
 |[AI general knowledge](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview#ai-general-knowledge)|GA|Yes|10.24.24||
-|[Orchestrate copilot topics and actions with generative AI](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-generative-actions)|Preview|Yes|10.24.24||
+|[Enable general web search](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio#enable-web-search-for-your-agent)|GA|No|6.4.25||
+|[Orchestrate copilot topics and actions with generative AI](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-generative-actions)|GA|Yes|10.24.24||
 |[Create a Copilot with natural language](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot)|GA|No|10.24.24||
 |[Create and edit topics with natural language](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started?tabs=web#create-a-copilot)|GA|Yes|10.24.24||
 |[Azure Open AI as a knowledge source for generative answers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-generative-answers-azure-openai)|Preview|No|3.18.25|[Custom pattern available](https://github.com/microsoft/SLG-Business-Applications/tree/main/white-papers/Copilot-Studio%2BAzure-AI-GCC)|
 |[Autonomous Agents - Triggers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-triggers-about)|Preview|No|3.18.25||
 |[Agent Builder for M365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/copilot-studio-agent-builder-build)|GA|No|3.18.25||
+|["Ingest" files from SharePoint/OneDrive/etc.](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-unstructured-data)|GA|No|6.4.25|Understand nuanced distinction vs. "point to SharePoint" which is available in GCC|
+|[Use deep reasoning models](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-reasoning-models)|Preview|No|6.4.25||
+|[Enahnced search results from tenant graph grounding](https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio#tenant-graph-grounding)|GA|No|6.4.25||
+
 
 ### Platform
 |Feature|Commercial|GCC|Eval Date|Notes|
