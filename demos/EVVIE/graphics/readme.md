@@ -18,5 +18,6 @@
 - https://i.imgur.com/svcpOyq.jpeg
 
 ## Other Graphics
+- [Sample license plate photo on police interceptor](https://i.imgur.com/R0cQ71S.jpeg)
 - Computer monitor PNG: https://i.imgur.com/T5sq2u3.png
 - [EVVIE Banner](https://github.com/microsoft/SLG-Business-Applications/releases/download/34/EVVIE_banner.pptx)
