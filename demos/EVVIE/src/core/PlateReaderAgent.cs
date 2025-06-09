@@ -7,7 +7,7 @@ using System.Text;
 
 namespace VehicleInspectionAI
 {
-    public class PlateReaderGPT
+    public class PlateReaderAgent
     {
         public static HttpRequestMessage PrepareRequest(string base64)
         {
@@ -99,6 +99,7 @@ namespace VehicleInspectionAI
                 throw new Exception("Unable to find property 'plate' in the response from Azure OpenAI. It seems the model did not follow the correct format.");
             }
             string ToReturn = plate.Value.ToString();
+            ToReturn = ToReturn.Replace(" ", "").Trim(); //Remove empty spaces
             return ToReturn;
         }
     }
