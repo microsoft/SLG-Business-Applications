@@ -2,6 +2,7 @@
 
 ![power gpt demo gif](https://github.com/microsoft/SLG-Business-Applications/releases/download/26/K-GOVGPTGIF.gif)
 
+
 ## Overview
 The **PowerGPT Solution** is a low-code conversational interface built entirely with **Power Apps** and **AI Builder**, offering an experience similar to Microsoft Copilot or ChatGPT — without requiring any external APIs, HTTP calls, or keys.
 
