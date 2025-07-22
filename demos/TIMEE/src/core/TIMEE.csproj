@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="TimHanewich.AgentFramework" Version="0.3.0" />
+  </ItemGroup>
+
 </Project>
