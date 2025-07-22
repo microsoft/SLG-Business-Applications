@@ -7,7 +7,7 @@
     - Collect all relevant information
     - Then provide all relevant information to the next agent...
     - Has "**Generate Time Sheet**" tool for calling to time sheet generator
-- Agent 2 = Time Sheet Generator
+- Agent 2 = Timesheet Generator Agent
     - Role = **only generate a timesheet from a single input**
     - System prompt = elaborate prompt + structure specified
     - User prompt = description of timesheet needs as TIMEE
@@ -23,3 +23,16 @@
 - Outputs:
     - Generated (proposed) timesheet, if any (plain string)
     - Response message, if any (plain string)
+
+Example API Call:
+```
+{
+    "key": "d101a9c056ab43b5a162ac3084f555aa",
+    "message": "I worked every day last week from 9-5 AM with 30 minute lunches."
+}
+```
+
+Example API response:
+```
+
+```
