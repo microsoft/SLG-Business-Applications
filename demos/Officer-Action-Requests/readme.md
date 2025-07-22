@@ -20,6 +20,9 @@ The overall process is described below:
 5. After approval of the OAR, the **OAR Implementers** are then assigned *tasks* to complete their applicable duties to carry out the proposed change in the OAR. For example, if an officer receives a promotion to a new role in a new preccint, staff will need to make necessary changes in the agency's payroll system. These implementers are notified of their new task via email and can access a model-driven Power App for reviewing these tasks and marking them complete.
 
 ## Solution
+*(solution coming)*
+
+As described further below, the *Produce OAR PDF* workflow fills OAR data into a Word Document Template before exporting that document to a PDF. You can download a copy of that Word doc template: [OAR_Template.docx](https://github.com/microsoft/SLG-Business-Applications/releases/download/42/OAR_Template.docx)
 
 ## All Power Apps Apps, Described
 This solution package comes with **four** Power Apps apps:
@@ -49,6 +52,8 @@ If you choose to implement this accelerator, these are the areas you will need t
 - "Once fully approved by all approvers" flow trigger logic not built:
     - The *Produce OAR PDF* workflow is supposed to trigger upon all three approvers approving the OAR. This logic is not configured. For demo purposes, this workflow is simply configured with a "Manually trigger a flow" trigger. If implementing this, you will need to build the logic that checks and validates all three approvers have approved before continuing.
     - The *Create OAR Enactment Tasks* workflow's trigger is not configured to automatically run upon all three approvers approving. For demonstration of capability purposes, the trigger is just set to "Manually trigger a flow". If implementing this solution, you'll need to build in the logic that continuously checks for all three approvers having approved and triggers from there.
+- The *Produce OAR PDF* workflow that performs the merging of content into the Word Document template only uses the signature image thumbnail, not the full resolution image. If you are actually deploying this, it is probably best to use the Dataverse API call to pull down the full resolution image instead of using the low-quality thumbnail it provides.
+- The *Product OAR PDF* workflow does not select what type of OAR it is (i.e. put an "X" near "promotion", etc). That logic would have to be built.
 - In the model-driven app, the "Re-Route for Approval" button that the admin uses to kick-off the OAR approval process again (assign approval tasks) does not actually work. If you are implementing this solution, you will need to build that logic that triggers a similar process to the "When OAR is Submitted, Assign Approvers" workflow; it may even be best to extrapolate that logic to a single workflow that can be called both at the beginning of the OAR being submitted *and* in the event of a re-route.
 
 ## Credit
