@@ -3,6 +3,23 @@ This Power Platform solution streamlines the "Officer Action Requests" workflowm
 
 By centralizing and automating this process, the solution ensures that every personnel update—no matter how routine or complex—is handled consistently, transparently, and securely. For state and local law enforcement organizations, this system offers more than just workflow automation: it strengthens institutional accountability, supports informed decision-making, and lightens the administrative load on HR and command staff. Built on Microsoft’s low-code Power Platform, it provides a scalable and responsive framework that adapts to evolving agency needs.
 
+## Demo
+You can find a demo video of this solution's capabilities by clicking the image below:
+
+(demo video)
+
+Timestamps:
+- **0:00** - an admin submits a new Officer Action Request
+- **1:17** - the officer involved can review the OAR in the "My Officer Action Requests" app
+- **1:36** - each OAR approver (leadership) gets notified via email that a new OAR is awaiting their approval
+- **1:45** - *approval scenario:* each OAR approver reviews and approves the OAR in the "OAR Review and Approval" app
+- **3:04** - *approval scenario:* admin gets a notification that all approvers have approved and the completed OAR is available
+- **4:02** - *approval scenario:* staff responsible for enacting the OAR change get notified of a newly assigned task via email
+- **4:48** - *approval scenario:* the officer can see their OAR has now been marked as complete
+- **5:05** - *rejection scenario:* OAR is reviewed and rejected due to incorrect data
+- **5:47** - *rejection scenario:* admin is notified of the rejection, with comments
+- **6:10** - *rejection scenario:* admin makes necessary changes to OAR and re-routes for approval
+
 ## Here's how it works!
 ![solution](https://i.imgur.com/weezvHx.png)
 
