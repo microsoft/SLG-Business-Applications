@@ -6,7 +6,7 @@ By centralizing and automating this process, the solution ensures that every per
 ## Demo
 You can find a demo video of this solution's capabilities by clicking the image below:
 
-(demo video)
+[![demo thumbnail](thumbnail pic link)](https://youtu.be/58DGS8trTBs)
 
 Timestamps:
 - **0:00** - an admin submits a new Officer Action Request
