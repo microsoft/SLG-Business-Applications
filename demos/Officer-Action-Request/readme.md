@@ -37,7 +37,7 @@ The overall process is described below:
 5. After approval of the OAR, the **OAR Implementers** are then assigned *tasks* to complete their applicable duties to carry out the proposed change in the OAR. For example, if an officer receives a promotion to a new role in a new preccint, staff will need to make necessary changes in the agency's payroll system. These implementers are notified of their new task via email and can access a model-driven Power App for reviewing these tasks and marking them complete.
 
 ## Solution
-You can download and import this accelerator via the solution file. Download that [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/43/OAR_1_0_0_4.zip)
+You can download and import this accelerator via the solution file. Download that [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/43/OAR_1_0_0_4.zip).
 
 As described further below, the *Produce OAR PDF* workflow fills OAR data into a Word Document Template before exporting that document to a PDF. You can download a copy of that Word doc template: [OAR_Template.docx](https://github.com/microsoft/SLG-Business-Applications/releases/download/42/OAR_Template.docx)
 
