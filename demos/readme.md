@@ -18,6 +18,7 @@ These demos are specifically crafted for a Department of Corrections.
 |Title|Description|
 |-|-|
 |[I.R.I.S. - Case Investigations AI Bot](./IRIS/)|Embedded AI system in a case management platform. Employs next-gen generative AI to aid public investigators in various investigation tasks|
+|[Officer Action Requests](./Officer-Action-Request/)|Routed approval process that automates and secures HR updates for law enforcement agencies, ensuring consistent oversight and streamlined personnel management|
 
 ### Human Resources
 These demos are focused on Human Resources-related functions.
