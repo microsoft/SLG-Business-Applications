@@ -52,4 +52,4 @@ If you choose to implement this accelerator, these are the areas you will need t
 - In the model-driven app, the "Re-Route for Approval" button that the admin uses to kick-off the OAR approval process again (assign approval tasks) does not actually work. If you are implementing this solution, you will need to build that logic that triggers a similar process to the "When OAR is Submitted, Assign Approvers" workflow; it may even be best to extrapolate that logic to a single workflow that can be called both at the beginning of the OAR being submitted *and* in the event of a re-route.
 
 ## Credit
-Created by [Tim Hanewich](https://github.com/TimHanewich)
+Created by [Tim Hanewich](https://github.com/TimHanewich).
