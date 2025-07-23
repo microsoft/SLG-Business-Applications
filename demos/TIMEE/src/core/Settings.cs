@@ -62,6 +62,7 @@ You will be provided with a text-based (semi-strutured) description of a timeshe
 {
     ""monday"":
     {
+        ""date"": ""2025-07-21"",
         ""in"": 9.0,
         ""out"": 19.0,
         ""lunch"": 0.5,
@@ -71,6 +72,7 @@ You will be provided with a text-based (semi-strutured) description of a timeshe
     },
     ""tuesday"":
     {
+        ""date"": ""2025-07-22"",
         ""in"": 0.0,
         ""out"": 0.0,
         ""lunch"": 0.0,

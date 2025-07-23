@@ -10,105 +10,25 @@ namespace TIMEECore
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("yo");
+            Console.WriteLine(LastWeekDescriptor(DateTime.Today));
         }
 
-
-        public static async Task Go()
+        public static string LastWeekDescriptor(DateTime today)
         {
-            Agent TIMEE = new Agent();
-            TIMEE.Model = Settings.GetModelConnection();
+            //Prints all dates of last week so TIMEE knows what dates are which
+            int daysSinceMonday = ((int)today.DayOfWeek + 6) % 7; // normalize so Monday = 0
+            DateTime lastMonday = today.AddDays(-daysSinceMonday - 7); // jump back to last Monday
 
-            //Add the tool
-            Tool generate_timesheet = new Tool();
-            generate_timesheet.Name = "generate_timesheet";
-            generate_timesheet.Description = "Generate a timesheet and display it to the user for approval.";
-            generate_timesheet.Parameters.Add(new ToolInputParameter("description", "A summary description of the timesheet with all necessary details."));
-            TIMEE.Tools.Add(generate_timesheet);
+            List<DateTime> lastWeekDays = Enumerable.Range(0, 5).Select(offset => lastMonday.AddDays(offset)).ToList();
 
-            //Add system prompt
-            TIMEE.Messages.Add(new Message(Role.system, Settings.TimesheetGeneratorSystemPrompt));
-
-            while (true)
+            if (lastWeekDays.Count == 5)
             {
-
-                //Collect user input
-                Console.Write("> ");
-                string? input = Console.ReadLine();
-                if (input == null)
-                {
-                    throw new Exception("You must enter something in!!");
-                }
-
-                //Add it as a message
-                Message userMSG = new Message(Role.user, input);
-                TIMEE.Messages.Add(userMSG);
-
-            //Prompt the model
-            PromptModel:
-                Console.WriteLine();
-                Console.Write("Thinking...");
-                Message response = await TIMEE.PromptAsync();
-                TIMEE.Messages.Add(response);
-                Console.WriteLine("complete!");
-
-
-                //Handle content
-                if (response.Content != null)
-                {
-                    Console.WriteLine("TIMEE: " + response.Content);
-                }
-
-                //Handle tool calls
-                if (response.ToolCalls.Length > 0)
-                {
-                    foreach (ToolCall tc in response.ToolCalls)
-                    {
-                        Console.WriteLine("Working on tool call of tool '" + tc.ToolName + "'...");
-
-                        Message ToolCallResponse = new Message();
-                        ToolCallResponse.Role = Role.tool;
-                        ToolCallResponse.ToolCallID = tc.ID;
-
-                        if (tc.ToolName == generate_timesheet.Name)
-                        {
-                            //Get description parameter
-                            JProperty? prop_description = tc.Arguments.Property("description");
-                            if (prop_description == null)
-                            {
-                                throw new Exception("TIMEE did not provide the timesheet description as parameter 'description' to the 'generate_timesheet' action");
-                            }
-                            string description = prop_description.Value.ToString();
-
-                            //Prompt agent 2 to generate the timesheet!
-                            Console.Write("Generating timesheet... ");
-                            JObject timesheet = await GenerateTimesheetAsync(description);
-                            Console.WriteLine("Done!");
-
-                            //Show the timesheet
-                            Console.WriteLine(timesheet.ToString());
-
-                            //Respond to TIMEE that it has been made and sown
-                            ToolCallResponse.Content = "The timesheet has been generated and shown to the user.";
-                        }
-                        else
-                        {
-                            string err = "Tool '" + tc.ToolName + "' not recognized!";
-                            Console.WriteLine(err);
-                            ToolCallResponse.Content = err;
-                        }
-
-                        //Add it
-                        TIMEE.Messages.Add(ToolCallResponse);
-                    }
-
-                    //Go right back to prompting model
-                    goto PromptModel;
-                }
-
-                
+                return "Monday was " + lastWeekDays[0].ToShortDateString() + "\nTuesday was " + lastWeekDays[1].ToShortDateString() + "\nWednesday was " + lastWeekDays[2].ToShortDateString() + "\nThursday was " + lastWeekDays[3].ToShortDateString() + "\nFriday was " + lastWeekDays[4].ToShortDateString();
             }
-
+            else
+            {
+                return "idk";
+            }
         }
 
         public static async Task<JObject> GenerateTimesheetAsync(string description)
@@ -116,8 +36,12 @@ namespace TIMEECore
             Agent a = new Agent();
             a.Model = Settings.GetModelConnection();
 
+            //Construct system prompt (add last week's dates to it)
+            string SYSTEM = Settings.TimesheetGeneratorSystemPrompt;
+            SYSTEM = SYSTEM + "\n\n" + "Last week's dates:" + "\n" + LastWeekDescriptor(DateTime.Today);
+
             //Add system prompt
-            a.Messages.Add(new Message(Role.system, Settings.TimesheetGeneratorSystemPrompt));
+            a.Messages.Add(new Message(Role.system, SYSTEM));
 
             //Add user prompt
             a.Messages.Add(new Message(Role.user, "The following is a description of a timesheet. Please generate provide this in JSON format as you have been instructed to: \n\n" + description));

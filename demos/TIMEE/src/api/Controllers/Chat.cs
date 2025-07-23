@@ -97,7 +97,9 @@ namespace TIMEEAPI
             //If there are no messages, that means we are starting from a clean slate, so add the system prompt
             if (TIMEE.Messages.Count == 0)
             {
-                TIMEE.Messages.Add(new Message(Role.system, Settings.TIMEESystemPrompt));
+                string SYSTEM = Settings.TIMEESystemPrompt;
+                SYSTEM = SYSTEM + "\n\n" + "Last week's dates:" + "\n" + TIMEECore.Program.LastWeekDescriptor(DateTime.Today);
+                TIMEE.Messages.Add(new Message(Role.system, SYSTEM));
             }
 
             //Add the user message that was just provided
