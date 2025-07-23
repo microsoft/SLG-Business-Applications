@@ -79,7 +79,7 @@ namespace TIMEEAPI
 
             //Construct TIMEE Agent (Agent 1)
             Agent TIMEE = new Agent();
-            TIMEE.Model = Settings.GetModelConnection();
+            TIMEE.Model = TIMEECore.Settings.GetModelConnection();
 
             //Add the tool
             Tool generate_timesheet = new Tool();
@@ -97,7 +97,7 @@ namespace TIMEEAPI
             //If there are no messages, that means we are starting from a clean slate, so add the system prompt
             if (TIMEE.Messages.Count == 0)
             {
-                string SYSTEM = Settings.TIMEESystemPrompt;
+                string SYSTEM = TIMEECore.Prompts.TIMEESystemPrompt;
                 SYSTEM = SYSTEM + "\n\n" + "Last week's dates:" + "\n" + TIMEECore.Program.LastWeekDescriptor(DateTime.Today);
                 TIMEE.Messages.Add(new Message(Role.system, SYSTEM));
             }

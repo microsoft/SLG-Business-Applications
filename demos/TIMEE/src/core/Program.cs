@@ -37,7 +37,7 @@ namespace TIMEECore
             a.Model = Settings.GetModelConnection();
 
             //Construct system prompt (add last week's dates to it)
-            string SYSTEM = Settings.TimesheetGeneratorSystemPrompt;
+            string SYSTEM = Prompts.TimesheetGeneratorSystemPrompt;
             SYSTEM = SYSTEM + "\n\n" + "Last week's dates:" + "\n" + LastWeekDescriptor(DateTime.Today);
 
             //Add system prompt
