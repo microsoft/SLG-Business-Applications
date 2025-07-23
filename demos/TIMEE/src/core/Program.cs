@@ -4,20 +4,20 @@ using Newtonsoft.Json;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 
-namespace TIMEE
+namespace TIMEECore
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Go().Wait();
+            Console.WriteLine("yo");
         }
 
 
         public static async Task Go()
         {
             Agent TIMEE = new Agent();
-            TIMEE.Model = new AzureOpenAICredentials("https://ai-testaistudio030597089470.openai.azure.com/openai/deployments/aida-gpt-4.1/chat/completions?api-version=2025-01-01-preview", "52799f2a98ac497baddc5da03e6c3cdd");
+            TIMEE.Model = Settings.GetModelConnection();
 
             //Add the tool
             Tool generate_timesheet = new Tool();
@@ -27,7 +27,7 @@ namespace TIMEE
             TIMEE.Tools.Add(generate_timesheet);
 
             //Add system prompt
-            TIMEE.Messages.Add(new Message(Role.system, System.IO.File.ReadAllText(@"C:\Users\timh\OneDrive - Microsoft\Stretch Projects\AI POC Teasers (CHASE IRIS)\TIMEE\prompts\agent1.md")));
+            TIMEE.Messages.Add(new Message(Role.system, Settings.TimesheetGeneratorSystemPrompt));
 
             while (true)
             {
@@ -114,10 +114,10 @@ namespace TIMEE
         public static async Task<JObject> GenerateTimesheetAsync(string description)
         {
             Agent a = new Agent();
-            a.Model = new AzureOpenAICredentials("https://ai-testaistudio030597089470.openai.azure.com/openai/deployments/aida-gpt-4.1/chat/completions?api-version=2025-01-01-preview", "52799f2a98ac497baddc5da03e6c3cdd");
+            a.Model = Settings.GetModelConnection();
 
             //Add system prompt
-            a.Messages.Add(new Message(Role.system, System.IO.File.ReadAllText(@"C:\Users\timh\OneDrive - Microsoft\Stretch Projects\AI POC Teasers (CHASE IRIS)\TIMEE\prompts\agent2.md")));
+            a.Messages.Add(new Message(Role.system, Settings.TimesheetGeneratorSystemPrompt));
 
             //Add user prompt
             a.Messages.Add(new Message(Role.user, "The following is a description of a timesheet. Please generate provide this in JSON format as you have been instructed to: \n\n" + description));

@@ -1,7 +1,7 @@
 using System;
 using TimHanewich.AgentFramework;
 
-namespace TIMEEAPI
+namespace TIMEECore
 {
     public class Settings
     {
