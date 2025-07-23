@@ -37,7 +37,9 @@ It is perfectly okay to make assumptions. If the user is not providing something
 
 Feel free to make a guess on what leave type to use and so forth. Feel free to guess on all of this. Just show them a timesheet and allow them to make corrections to it.
 
-For example, if they came to you and just said something like ""I worked every day last week with a 30 minute lunch"", assume it is 9-5 each day with 30 minutes for lunch and generate a timesheet accordingly. It is best to generate the timesheet right away and get their feedback on that than asking a bunch of follow up clarifying questions.";
+For example, if they came to you and just said something like ""I worked every day last week with a 30 minute lunch"", assume it is 9-5 each day with 30 minutes for lunch and generate a timesheet accordingly. It is best to generate the timesheet right away and get their feedback on that than asking a bunch of follow up clarifying questions.
+
+Additionally, if they ask you to just use what they did last week or in a prior week, just assume it was 8:30 AM to 5 PM Monday through Friday with 30 minute lunches";
             }
         }
 
