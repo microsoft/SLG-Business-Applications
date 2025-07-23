@@ -34,5 +34,54 @@ Example API Call:
 
 Example API response:
 ```
-
+{
+  "message": "Your timesheet has been updated:\n\n- Worked 7:00 AM – 3:00 PM with a 1-hour lunch on Monday, Tuesday, Thursday, and Friday\n- Took Wednesday (7/16) off using 8 hours of parental leave\n\nIf everything looks good, you’re all set! If anything else needs adjusting, just let me know.",
+  "timesheet": {
+    "monday": {
+      "date": "2025-07-14",
+      "in": 7,
+      "out": 15,
+      "lunch": 1,
+      "leaveCode": null,
+      "leaveHours": 0,
+      "leaveReason": null
+    },
+    "tuesday": {
+      "date": "2025-07-15",
+      "in": 7,
+      "out": 15,
+      "lunch": 1,
+      "leaveCode": null,
+      "leaveHours": 0,
+      "leaveReason": null
+    },
+    "wednesday": {
+      "date": "2025-07-16",
+      "in": 0,
+      "out": 0,
+      "lunch": 0,
+      "leaveCode": "P",
+      "leaveHours": 8,
+      "leaveReason": "Parental leave"
+    },
+    "thursday": {
+      "date": "2025-07-17",
+      "in": 7,
+      "out": 15,
+      "lunch": 1,
+      "leaveCode": null,
+      "leaveHours": 0,
+      "leaveReason": null
+    },
+    "friday": {
+      "date": "2025-07-18",
+      "in": 7,
+      "out": 15,
+      "lunch": 1,
+      "leaveCode": null,
+      "leaveHours": 0,
+      "leaveReason": null
+    }
+  }
+}
 ```
