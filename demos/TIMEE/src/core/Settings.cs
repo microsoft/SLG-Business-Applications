@@ -8,8 +8,8 @@ namespace TIMEECore
         public static IModelConnection GetModelConnection()
         {
             AzureOpenAICredentials ToReturn = new AzureOpenAICredentials();
-            ToReturn.URL = "https://ai-testaistudio030597089470.openai.azure.com/openai/deployments/aida-gpt-4.1/chat/completions?api-version=2025-01-01-preview";
-            ToReturn.ApiKey = "52799f2a98ac497baddc5da03e6c3cdd";
+            ToReturn.URL = "(your Azure AI Foundry model endpoint here)";
+            ToReturn.ApiKey = "(your Azure AI Foundry API Key here)";
             return ToReturn;
         }
 
