@@ -85,3 +85,14 @@ Example API response:
   }
 }
 ```
+
+## Media Assets
+- TIMEE Avatars
+  - [Main](https://i.imgur.com/kVoZQlJ.png)
+    - [Flipped horizontally](https://i.imgur.com/Db1RQUy.png)
+  - [Thinking](https://i.imgur.com/QTOdNxJ.png)
+  - [Mailbox](https://i.imgur.com/T1rFNN3.png)
+  - [Celebrating](https://i.imgur.com/0adH6TQ.png)
+- Other assets
+  - [Loading GIF](https://i.imgur.com/DCePhoO.gif)
+  - [Gradient](https://i.imgur.com/dUNT54U.jpeg)
