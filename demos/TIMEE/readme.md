@@ -29,7 +29,7 @@ The Following is an example body for an HTTP POST call to the TIMEE API:
 ```
 {
     "key": "d101a9c056ab43b5a162ac3084f555aa",
-    "message": "I worked every day last week from 7 AM to 3 PM with 60 minute lunches."
+    "message": "I worked every day last week from 7 AM to 3 PM with 60 minute lunches, but I took Wednesday off for parental leave."
 }
 ```
 
