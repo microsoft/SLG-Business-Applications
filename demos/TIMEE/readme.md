@@ -95,6 +95,9 @@ And the following is an example of the response TIMEE would provide:
 }
 ```
 
+## Architecture
+*(complete architecture diagram coming soon)*
+
 ## Media Assets
 - TIMEE Avatars
   - [Main](https://i.imgur.com/kVoZQlJ.png)
