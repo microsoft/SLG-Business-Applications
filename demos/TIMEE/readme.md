@@ -21,6 +21,8 @@ The API layer has two inputs that must be provided in an API call to TIMEE:
 - **SessionKey** (plain text) = a random string that uniquely identifies the chat "session". Chat history is stored *sever-side*, so the TIMEE API uses this key to know what message history to retrieve and load into memory before generating an AI response and timesheet.
 - **User Message** (plain text) = the new user inquiry (i.e. further clarification about the timesheet, any tweaks or adjustments, etc.)
 
+*Note, the SessionKey parameter above can be any random string - you make it up! It is just a way to formally load and save chat history*
+
 The API layer provides two distinct outputs, both of which are visible to the user:
 - **Proposed Timesheet** (large JSON object) = the Timesheet Generator Agent's generated timesheet in a structured format
 - **Response Message** (plain text) = the plain text response from TIMEE (i.e. a confirmation of a change, further commentary, or a follow-up question)
