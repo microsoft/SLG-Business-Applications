@@ -9,7 +9,7 @@ TIMEE is powered by Microsoft Power Platform and Azure AI Foundry, leveraging sc
 
 Check out a demo of TIMEE by clicking the image below!
 
-[![timee](https://i.imgur.com/txoBBdI.png)]()
+[![timee](https://i.imgur.com/txoBBdI.png)](https://youtu.be/aq7pQY8-Qe0)
 
 ## How does TIMEE Work?
 TIMEE uses an advanced multi-agent architecture to achieve the functionality demonstrated. 
