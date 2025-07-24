@@ -5,19 +5,14 @@ Just describe your week, and TIMEE takes care of the rest: interpreting your inp
 
 TIMEE is powered by Microsoft Power Platform and Azure AI Foundry, leveraging scalable cloud technologies and advanced AI capabilities to streamline operational workflows and enhance user experience.
 
-## Two Agents:
-- Agent 1 = TIMEE
-    - Conversational
-    - Role = chat with the user about their timesheet needs.
-    - Collect all relevant information
-    - Then provide all relevant information to the next agent...
-    - Has "**Generate Time Sheet**" tool for calling to time sheet generator
-- Agent 2 = Timesheet Generator Agent
-    - Role = **only generate a timesheet from a single input**
-    - System prompt = elaborate prompt + structure specified
-    - User prompt = description of timesheet needs as TIMEE
-    - Outputs timesheet as JSON, outputs it + is handled programmatically
-    - Responds "the user is now seeing the timesheet you specified" to TIMEE
+## How does TIMEE Work?
+TIMEE uses an advanced multi-agent architecture to achieve the functionality demonstrated. 
+
+The first agent is **TIMEE**. This is the AI agent that communicates with the user. TIMEE is designed to be conversational, helpful, and polite in its tone. TIMEE's main job is to collect relevant information about the user's work week that will eventually be entered into a timesheet in a structured format. Upon conversing with the user and collecting all relevant information, TIMEE passes this information along to the next agent.
+
+The second agent is the **Timesheet Generator Agent**. This agent is *not* directly communicated with by the user and, in fact, is completely invisible to the user. TIMEE acts as a broker between this agent and the user, collecting relevant information from the user about their work week and in turn providing that information to the Timesheet Generator Agent. The Timesheet Generator Agent is *not* a conversational agent - instead, it serves one purpose: generate timesheets in a standard, structured format.
+
+**TIMEE** collects relevant information from the user and passes along an unstructured summary of that information to the **Timesheet Generator Agent** once sufficient information to make a timesheet is collected.  The Timesheet Generator Agent takes the summary and converts it to a standard structured format that is understood and agreed upon between the two agents. As the conversation between the user and TIMEE progresses, TIMEE then further communicates any relevant changes to the Timesheet Generator Agent, which then produced the new timesheet and provides it to TIMEE, when it is then shown to the user.
 
 ### API System
 - Inputs:
