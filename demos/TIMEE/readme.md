@@ -1,4 +1,4 @@
-# 🕒 TIMEE: AI-Powered **Time**sheet **E**ntry Agent
+# 🕒 TIMEE: **Time**sheet **E**ntry Agent
 TIMEE, pronouned *Timmy*, is a conversational agent that transforms how organizations handle timesheet reporting. Instead of wrestling with rigid, manual entry systems, staff can simply talk to TIMEE - an intuitive AI chatbot built to understand natural language descriptions of work activities.
 
 Just describe your week, and TIMEE takes care of the rest: interpreting your input, auto-filling the timesheet, and allowing further refinement through follow-up chat. Submit with confidence and skip the hassle.
@@ -17,7 +17,7 @@ The second agent is the **Timesheet Generator Agent**. This agent is *not* direc
 ## API System
 Because that multi-agent architecture described above can be complicated to facilitate within-app, an API layer exists to *abstract* that complexity away from the app layer. Moreover, this API layer is the code layer that facilitates the back and forth communication between **TIMEE** and the **Timesheet Generator Agent**. To both *the user* and *the developer of the app*, that background process is invisible; all the user and developer see are messages being submitted to TIMEE and a response message and timesheet coming out!
 
-The API layer has two inputs that must be provided upon an API call to TIMEE:
+The API layer has two inputs that must be provided in an API call to TIMEE:
 - **SessionKey** (plain text) = a random string that uniquely identifies the chat "session". Chat history is stored *sever-side*, so the TIMEE API uses this key to know what message history to retrieve and load into memory before generating an AI response and timesheet.
 - **User Message** (plain text) = the new user inquiry (i.e. further clarification about the timesheet, any tweaks or adjustments, etc.)
 
@@ -36,54 +36,54 @@ The Following is an example body for an HTTP POST call to the TIMEE API:
 And the following is an example of the response TIMEE would provide:
 ```
 {
-  "message": "Your timesheet has been updated:\n\n- Worked 7:00 AM – 3:00 PM with a 1-hour lunch on Monday, Tuesday, Thursday, and Friday\n- Took Wednesday (7/16) off using 8 hours of parental leave\n\nIf everything looks good, you’re all set! If anything else needs adjusting, just let me know.",
-  "timesheet": {
-    "monday": {
-      "date": "2025-07-14",
-      "in": 7,
-      "out": 15,
-      "lunch": 1,
-      "leaveCode": null,
-      "leaveHours": 0,
-      "leaveReason": null
-    },
-    "tuesday": {
-      "date": "2025-07-15",
-      "in": 7,
-      "out": 15,
-      "lunch": 1,
-      "leaveCode": null,
-      "leaveHours": 0,
-      "leaveReason": null
-    },
-    "wednesday": {
-      "date": "2025-07-16",
-      "in": 0,
-      "out": 0,
-      "lunch": 0,
-      "leaveCode": "P",
-      "leaveHours": 8,
-      "leaveReason": "Parental leave"
-    },
-    "thursday": {
-      "date": "2025-07-17",
-      "in": 7,
-      "out": 15,
-      "lunch": 1,
-      "leaveCode": null,
-      "leaveHours": 0,
-      "leaveReason": null
-    },
-    "friday": {
-      "date": "2025-07-18",
-      "in": 7,
-      "out": 15,
-      "lunch": 1,
-      "leaveCode": null,
-      "leaveHours": 0,
-      "leaveReason": null
+    "message": "Your timesheet has been updated:\n\n- Worked 7:00 AM – 3:00 PM with a 1-hour lunch on Monday, Tuesday, Thursday, and Friday\n- Took Wednesday (7/16) off using 8 hours of parental leave\n\nIf everything looks good, you’re all set! If anything else needs adjusting, just let me know.",
+    "timesheet": {
+        "monday": {
+            "date": "2025-07-14",
+            "in": 7,
+            "out": 15,
+            "lunch": 1,
+            "leaveCode": null,
+            "leaveHours": 0,
+            "leaveReason": null
+        },
+        "tuesday": {
+            "date": "2025-07-15",
+            "in": 7,
+            "out": 15,
+            "lunch": 1,
+            "leaveCode": null,
+            "leaveHours": 0,
+            "leaveReason": null
+        },
+        "wednesday": {
+            "date": "2025-07-16",
+            "in": 0,
+            "out": 0,
+            "lunch": 0,
+            "leaveCode": "P",
+            "leaveHours": 8,
+            "leaveReason": "Parental leave"
+        },
+        "thursday": {
+            "date": "2025-07-17",
+            "in": 7,
+            "out": 15,
+            "lunch": 1,
+            "leaveCode": null,
+            "leaveHours": 0,
+            "leaveReason": null
+        },
+        "friday": {
+            "date": "2025-07-18",
+            "in": 7,
+            "out": 15,
+            "lunch": 1,
+            "leaveCode": null,
+            "leaveHours": 0,
+            "leaveReason": null
+        }
     }
-  }
 }
 ```
 
