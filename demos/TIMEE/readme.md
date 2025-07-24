@@ -1,9 +1,15 @@
 # 🕒 TIMEE: **Time**sheet **E**ntry Agent
-TIMEE, pronouned *Timmy*, is a conversational agent that transforms how organizations handle timesheet reporting. Instead of wrestling with rigid, manual entry systems, staff can simply talk to TIMEE - an intuitive AI chatbot built to understand natural language descriptions of work activities.
+![banner](https://i.imgur.com/wXgrfTF.jpeg)
+
+**TIMEE**, pronouned *Timmy*, is a conversational agent that transforms how organizations handle timesheet reporting. Instead of wrestling with rigid, manual entry systems, staff can simply talk to TIMEE - an intuitive AI chatbot built to understand natural language descriptions of work activities.
 
 Just describe your week, and TIMEE takes care of the rest: interpreting your input, auto-filling the timesheet, and allowing further refinement through follow-up chat. Submit with confidence and skip the hassle.
 
 TIMEE is powered by Microsoft Power Platform and Azure AI Foundry, leveraging scalable cloud technologies and advanced AI capabilities to streamline operational workflows and enhance user experience.
+
+Check out a demo of TIMEE by clicking the image below!
+
+[![timee](https://i.imgur.com/txoBBdI.png)]()
 
 ## How does TIMEE Work?
 TIMEE uses an advanced multi-agent architecture to achieve the functionality demonstrated. 
