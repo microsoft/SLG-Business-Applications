@@ -14,23 +14,26 @@ The second agent is the **Timesheet Generator Agent**. This agent is *not* direc
 
 **TIMEE** collects relevant information from the user and passes along an unstructured summary of that information to the **Timesheet Generator Agent** once sufficient information to make a timesheet is collected.  The Timesheet Generator Agent takes the summary and converts it to a standard structured format that is understood and agreed upon between the two agents. As the conversation between the user and TIMEE progresses, TIMEE then further communicates any relevant changes to the Timesheet Generator Agent, which then produced the new timesheet and provides it to TIMEE, when it is then shown to the user.
 
-### API System
-- Inputs:
-    - SessionKey (plain string) = key to look up message history, stored in memory on the server
-    - New User Message (plain string) = the new user inquiry
-- Outputs:
-    - Generated (proposed) timesheet, if any (plain string)
-    - Response message, if any (plain string)
+## API System
+Because that multi-agent architecture described above can be complicated to facilitate within-app, an API layer exists to *abstract* that complexity away from the app layer. Moreover, this API layer is the code layer that facilitates the back and forth communication between **TIMEE** and the **Timesheet Generator Agent**. To both *the user* and *the developer of the app*, that background process is invisible; all the user and developer see are messages being submitted to TIMEE and a response message and timesheet coming out!
 
-Example API Call:
+The API layer has two inputs that must be provided upon an API call to TIMEE:
+- **SessionKey** (plain text) = a random string that uniquely identifies the chat "session". Chat history is stored *sever-side*, so the TIMEE API uses this key to know what message history to retrieve and load into memory before generating an AI response and timesheet.
+- **User Message** (plain text) = the new user inquiry (i.e. further clarification about the timesheet, any tweaks or adjustments, etc.)
+
+The API layer provides two distinct outputs, both of which are visible to the user:
+- **Proposed Timesheet** (large JSON object) = the Timesheet Generator Agent's generated timesheet in a structured format
+- **Response Message** (plain text) = the plain text response from TIMEE (i.e. a confirmation of a change, further commentary, or a follow-up question)
+
+The Following is an example body for an HTTP POST call to the TIMEE API:
 ```
 {
     "key": "d101a9c056ab43b5a162ac3084f555aa",
-    "message": "I worked every day last week from 9-5 AM with 30 minute lunches."
+    "message": "I worked every day last week from 7 AM to 3 PM with 60 minute lunches."
 }
 ```
 
-Example API response:
+And the following is an example of the response TIMEE would provide:
 ```
 {
   "message": "Your timesheet has been updated:\n\n- Worked 7:00 AM – 3:00 PM with a 1-hour lunch on Monday, Tuesday, Thursday, and Friday\n- Took Wednesday (7/16) off using 8 hours of parental leave\n\nIf everything looks good, you’re all set! If anything else needs adjusting, just let me know.",
