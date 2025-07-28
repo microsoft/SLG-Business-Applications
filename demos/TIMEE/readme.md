@@ -96,7 +96,9 @@ And the following is an example of the response TIMEE would provide:
 ```
 
 ## Architecture
-*(complete architecture diagram coming soon)*
+![TIMEE architecture](https://i.imgur.com/qDrx810.png)
+
+*Download the architecture above [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/44/timee_architecture.pptx)*
 
 ## Solution
 *(solution file and source code coming soon)*
