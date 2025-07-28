@@ -11,6 +11,11 @@ Check out a demo of TIMEE by clicking the image below!
 
 [![timee](https://i.imgur.com/txoBBdI.png)](https://youtu.be/aq7pQY8-Qe0)
 
+## Architecture
+![TIMEE architecture](https://i.imgur.com/qDrx810.png)
+
+*Download the architecture above [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/44/timee_architecture.pptx)*
+
 ## How does TIMEE Work?
 TIMEE uses an advanced multi-agent architecture to achieve the functionality demonstrated. 
 
@@ -94,11 +99,6 @@ And the following is an example of the response TIMEE would provide:
     }
 }
 ```
-
-## Architecture
-![TIMEE architecture](https://i.imgur.com/qDrx810.png)
-
-*Download the architecture above [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/44/timee_architecture.pptx)*
 
 ## Solution
 *(solution file and source code coming soon)*
