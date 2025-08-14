@@ -33,18 +33,43 @@ The good news: there is a reliable workaround.
 
 1. In Copilot Studio, go to the **Teams channel** settings for your agent.
 2. Click **"Availability options"**.
-3. Select **"Download .zip"** to export a custom Teams app package.
+3. On the following screen you have two options that work:
+    1. **Show to everyone in my org** to route the agent for approval in the Teams Admin Center (preferred for admin approval)
+    2. **"Download .zip"** to export a custom Teams app package
 
-![Availability options → Download .zip](https://i.imgur.com/00JMU9Z.png)
+<img width="1110" height="420" alt="Availability options ➡️ Settings" src="https://github.com/user-attachments/assets/8e756d06-f614-49b4-8e68-8b1613b25f01" />
+
 > *[Image: Availability options → Download .zip]*
 
-> ⚠️ Ignore all other options in the dialog—they do not apply in GCC.
+> [!WARNING]  
+> ⚠️ Ignore all other options in the dialog — they do not work in GCC.
+
+---
+## 👍 Admin approval for "Show to everyone in my org" option
+
+From the agent creator's perspective, you continue through the dialog to send the request to a Teams admin
+<img width="2046" height="717" alt="Show to everyone in my org - creator UX" src="https://github.com/user-attachments/assets/6e13bf39-3b9d-4d1e-a26d-f7b1c649c9da" />
+
+> *[Image : Visual step-by-step process for agent creator requesting to publish an agent to Teams"]*
+
+From the Teams admin perspective, once the request has been submitted, the app will show with a **Pending Action** notice in the admin center. The admin can then publish or reject the request.
+<img width="1242" height="716" alt="Show to everyone in my org - admin UX" src="https://github.com/user-attachments/assets/1925061c-221c-4a5d-a890-340a24bc8d69" />
+
+> *[Image : Visual step-by-step process for admin approving publishing an agent to Teams"]*
+
+> [!NOTE]  
+> The Teams admin will not automatically be notified that an agent's app package is pending their action. Your organization should determine a process to request admin support for this action.
 
 ---
 
 ## 🧭 What to Do with the .zip File
 
 There are two paths forward, but the most common is to hand off the `.zip` file to a **Teams Administrator**.
+
+> [!WARNING]  
+> ⚠️ The other option for the `.zip` file is for individual users to "side-load" the agent's app package `.zip` file into Teams for their personal use (see [Upload your custom app - Teams | Microsoft Learn](https://learn.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload)). Uploading custom apps in this way is possible only in Government Community Cloud (GCC) and isn't possible in GCC High, Department of Defense (DoD).
+>
+> To disable this functionality and require teams apps go through admin approval, turn off Custom apps in Org-wide app settings in the Teams Admin Center (see [Manage custom app policies and settings - Microsoft Teams | Microsoft Learn](https://learn.microsoft.com/en-us/microsoftteams/teams-custom-app-policies-and-settings#allow-users-to-upload-custom-apps)).
 
 ### Admin Instructions:
 
@@ -78,7 +103,8 @@ When makers publish updates to the agent in Copilot Studio, **no changes are nee
 
 | Feature | GCC Support |
 |--------|--------------|
-| "Easy button" publich to Teams | ❌ Not supported |
+| "Easy button" publish to Teams | ❌ Not supported |
+| Publish using "Show to everyone in my org" option + approval from Teams Admin  | ✅ Supported |
 | Download .zip and upload via Teams Admin | ✅ Supported |
 | Auto-reflect agent updates in Teams | ✅ Supported |
 | Other availability options | ❌ Not applicable base on the method we're using |
@@ -87,4 +113,4 @@ When makers publish updates to the agent in Copilot Studio, **no changes are nee
 
 ## 👨‍💻 Author
 
-- [Doug Bell](https://www.linkedin.com/in/doug-bell-56090341/), *Power Platform Technical Specialist*
+- [Doug Bell](https://www.linkedin.com/in/doug-bell-56090341/), *Power Platform Senior Solution Engineer*
