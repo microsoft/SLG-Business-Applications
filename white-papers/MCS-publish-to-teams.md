@@ -111,6 +111,7 @@ When makers publish updates to the agent in Copilot Studio, **no changes are nee
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
 - [Doug Bell](https://www.linkedin.com/in/doug-bell-56090341/), *Power Platform Senior Solution Engineer*
+- [Grayson Bishop](https://www.linkedin.com/in/grayson-bishop), *Power Platform Senior Solution Engineer*
