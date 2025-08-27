@@ -4,8 +4,6 @@ Before July 2025, the Tech Series presented across three pillars, each month, to
 - **Low-Code Pillar** - Designed for non-technical users and business analysts, this pillar focuses on empowering citizen developers to build custom applications without extensive coding knowledge. We'll showcase the latest Power Platform features and best practices to accelerate digital transformation in State & Local governments.
 - **Pro-Code Pillar** - Geared towards professional developers and IT professionals, this pillar delves into the advanced capabilities of Power Platform, including integrations, APIs, and custom development. Our experts will share in-depth knowledge and hands-on guidance to help you unlock the full potential of Power Platform.
 
-By attending these monthly sessions, you'll gain a deeper understanding of Power Platform and its applications in State & Local government, as well as valuable insights from Microsoft experts and peers. Join us to stay ahead of the curve and achieve more with Power Platform!
-
 You can find an archive of all previous sessions below:
 
 |Month|Solution|Low Code|Pro Code|
