@@ -28,3 +28,6 @@ Below are some possible uses for this system:
 
 ## Why This Matters
 Manual review of wildlife camera images is time-consuming and prone to human error. This AI system automates the process, enabling faster, more accurate, and more consistent monitoring. The result is better data, better decisions, and better outcomes for wildlife conservation.
+
+## Credit
+Built by [Tim Hanewich](https://github.com/TimHanewich).
