@@ -9,8 +9,8 @@ namespace AnimalID
 
         public AzureOpenAICredentials()
         {
-            Endpoint = "<your chat completions endpoint>";
-            ApiKey = "<your api key>";
+            Endpoint = "<Azure OpenAI Chat endpoint>";
+            ApiKey = "<Azure OpenAI API key>";
         }
     }
 }
