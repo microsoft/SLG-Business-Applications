@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Http;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace AnimalID
 {
@@ -18,7 +19,7 @@ namespace AnimalID
             animals = new AnimalID[] { };
         }
 
-        private string Prompt
+        private static string Prompt
         {
             get
             {
@@ -69,8 +70,6 @@ If there are now visible animals in the photos, just return an empty animals arr
 
         public static async Task<IdentificationOutput> IdentifyAsync(string image_path)
         {
-            IdentificationOutput ToReturn = new IdentificationOutput();
-
             string b64 = ImageToBase64(image_path);
             b64 = "data:image/jpeg;base64," + b64;
 
@@ -82,7 +81,7 @@ If there are now visible animals in the photos, just return an empty animals arr
             //Add system prompt
             JObject SystemPrompt = new JObject();
             SystemPrompt.Add("role", "system");
-            SystemPrompt.Add("content", ToReturn.Prompt);
+            SystemPrompt.Add("content", Prompt);
             messages.Add(SystemPrompt);
 
             //Add user prompt (with image)
@@ -123,9 +122,22 @@ If there are now visible animals in the photos, just return an empty animals arr
                 throw new Exception("Call to Azure AI Service returned " + resp.StatusCode.ToString() + ": " + content);
             }
 
+            //Unpack as JSON
+            JObject response = JObject.Parse(content);
+            JToken? target = response.SelectToken("choices[0].message.content");
+            if (target == null)
+            {
+                throw new Exception("Unable to find model's response message in returned data!");
+            }
+
+            //Unpack it into an ID
+            IdentificationOutput? ToReturn = JsonConvert.DeserializeObject<IdentificationOutput>(target.ToString());
+            if (ToReturn == null)
+            {
+                throw new Exception("Unable to parse IdentificationOutput from what the model returned. It may not be returning in the format that was specified to it.");
+            }
 
             return ToReturn;
-
         }
 
 
