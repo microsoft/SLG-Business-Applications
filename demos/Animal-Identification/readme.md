@@ -7,13 +7,13 @@ By turning raw camera trap images into structured, actionable data, State Govern
 
 ## How It Works
 1. Image Collection – Game cameras capture photos in the field.
-2. Analysis – The system processes each image to:
+2. Analysis – multimodal AI is used to process each image to:
     - Detect and identify animal species
     - Count the number of individuals present
     - Estimate age categories (juvenile, sub-adult, adult)
     - Determine sex (male, female, unknown)
-3. Data Aggregation – Results are stored in a secure database for analysis.
-4. Reporting & Insights – Dashboards and reports provide trends, alerts, and summaries.
+3. Data Aggregation – Results are stored in a secure database for analysis. *(coming soon)*
+4. Reporting & Insights – Dashboards and reports provide trends, alerts, and summaries. *(coming soon)*
 
 ## Use Cases for State Government
 This system can deliver wildlife insights by tracking species diversity, population changes, seasonal movements, and age/sex ratios, while also detecting unusual patterns such as sudden declines or invasive species. Together, these metrics provide a clear picture of ecosystem health and support informed conservation decisions.
