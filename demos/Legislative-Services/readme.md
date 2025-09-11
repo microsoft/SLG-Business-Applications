@@ -9,7 +9,7 @@ A comprehensive solution that enables legislature organizations to submit, manag
 - Automation for enforcement events
 
 ## Resources
-- Solution File: [download](https://github.com/microsoft/SLG-Business-Applications/releases/download/23/senateethicsoversight_1_0_0_1.zip)
+- Solution File: [download](https://github.com/microsoft/SLG-Business-Applications/releases/download/45/senateethicsoversight_1_0_0_12.zip)
 
 ## Credit
 Made by [John Parker](https://www.linkedin.com/in/corporalparker/).
