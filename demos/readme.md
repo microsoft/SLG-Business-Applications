@@ -100,8 +100,6 @@ For use cases that don't fit a particular agency or department:
 - Accessibility Accomodation Request
 - Desk booking
 - Asset Mgmt
-- Power Platform GCC + Azure Commercial Integration
-- Dataverse Web API / Dataverse deleegation
 - Marker Copilot Tavel request
 - onboaridng offboarding
 
@@ -131,3 +129,5 @@ For use cases that don't fit a particular agency or department:
 - Kells UI/UX assets
 - Power Apps with SQL
 - PowerGPT
+- Power Platform GCC + Azure Commercial Integration
+- Dataverse Web API / Dataverse deleegation
