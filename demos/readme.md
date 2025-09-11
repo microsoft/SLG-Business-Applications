@@ -88,6 +88,8 @@ For use cases that don't fit a particular agency or department:
 - Officer Action Reuqest
 - Public Safety Alerts
 - EVVIE
+- IRIS
+- TIPLI
 
 ## Department of Transportation / DMV
 - DMV Agent
@@ -102,6 +104,8 @@ For use cases that don't fit a particular agency or department:
 - Asset Mgmt
 - Marker Copilot Tavel request
 - onboaridng offboarding
+- RecruIT Employee Hiring
+- TIMEE
 
 ## Finance / Enterprise Operations
 - ERP Suite
@@ -116,11 +120,7 @@ For use cases that don't fit a particular agency or department:
 - Inventory Management
 
 ## Misc
-- RecruIT Employee Hiring
 - Legislative services
-- IRIS
-- TIMEE
-- TIPLI
 - Must have apps
 - Kells UI/UX assets
 - Power Apps with SQL
