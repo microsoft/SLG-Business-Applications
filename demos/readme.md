@@ -112,10 +112,6 @@ For use cases that don't fit a particular agency or department:
 - Correspondence to Case
 - Customer Service Copilot
 
-## Technology / IT Operations
-- Copilot Studio Advanced Analytics
-- Copilot Studio Knowledge manager
-
 ## Public Works and Infrastructure
 - Inventory Management
 
@@ -131,3 +127,5 @@ For use cases that don't fit a particular agency or department:
 - PowerGPT
 - Power Platform GCC + Azure Commercial Integration
 - Dataverse Web API / Dataverse deleegation
+- Copilot Studio Advanced Analytics
+- Copilot Studio Knowledge manager
