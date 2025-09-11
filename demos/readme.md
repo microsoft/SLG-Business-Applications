@@ -62,3 +62,72 @@ For use cases that don't fit a particular agency or department:
 |[Dataverse vs. SQL Delegation Testing](./Dataverse-Delegation/)|Testing delegation of Dataverse against SQL in Power Apps, using Power Fx|
 |[PowerGPT](./PowerGPT)|Power App for low-code chat interface using the pre-built AI Builder GPT model|
 |[Accessibility Accommodation Request](./Accessibility-Accommodation-Request/)|Sample solution to showcase Power Platform accessibility capabilities|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Health & Human Services (HHS)
+- CHASE
+- Foster Home Inspections AI
+- Equal Employment Opportunity
+- Health Plan Complain Tracking
+
+## Public Safety & Justice
+- K9 Training
+- Officer Action Reuqest
+- Public Safety Alerts
+- EVVIE
+
+## Department of Transportation / DMV
+- DMV Agent
+
+## Environment & Natural Resources
+- Environmental Air Quality Monitoring
+- Animal Identification (Wildlife Monitoring System)
+
+## Adminisration / General Government
+- Accessibility Accomodation Request
+- Desk booking
+- Asset Mgmt
+- Power Platform GCC + Azure Commercial Integration
+- Dataverse Web API / Dataverse deleegation
+- Marker Copilot Tavel request
+- onboaridng offboarding
+
+## Finance / Enterprise Operations
+- ERP Suite
+- D365 Record to Report
+
+## Customer Service & Case Management
+- Contact Center (D365)
+- Correspondence to Case
+- Customer Service Copilot
+
+## Technology / IT Operations
+- Copilot Studio Advanced Analytics
+- Copilot Studio Knowledge manager
+
+## Public Works and Infrastructure
+- Inventory Management
+
+## Misc
+- RecruIT Employee Hiring
+- Legislative services
+- IRIS
+- TIMEE
+- TIPLI
+- Must have apps
+- Kells UI/UX assets
+- Power Apps with SQL
+- PowerGPT
