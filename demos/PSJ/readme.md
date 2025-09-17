@@ -1,0 +1,11 @@
+# 🚓 Public Safety & Justice Demos
+The Public Safety & Justice category is where smart technology meets mission-critical action—showcasing digital solutions built to boost safety, streamline investigations, empower officers, and foster real-time community engagement. 
+
+These demos span the world of AI-powered inspections, advanced case management, automated alerting, K9 training, and digital tip intake—giving agencies new powers to respond faster, act smarter, and keep communities safe. Whether it’s behind-the-scenes workflow magic or public-facing heroes, these apps are all about making justice and emergency response more intelligent and effective.
+
+- [E.V.V.I.E. (Enterprise Visual Vehicle Inspection Engine)](./EVVIE/): Streamline government fleet inspections using AI to analyze vehicle images, detect damage, generate assessments, and store reports—cutting paperwork, reducing errors, and improving maintenance management.
+- [IRIS (Investigation Resourceful Intelligence Support)](./IRIS/): Equip investigators with AI-powered analysis of evidence (video, audio, testimony), comparative summaries, composite sketch generation, and interactive mapping to supercharge complex public safety investigations.
+- [K9 Training Application](./K9-Training/): Track K9 units’ training, handler activities, vaccinations, real-world search operations, and individualized training events to support the health, compliance, and effectiveness of law enforcement canines.
+- [Officer Action Requests](./Officer-Action-Request/): Automate and document HR-related status changes—like promotions, role changes, or retirements—for law enforcement officers, ensuring leadership approval, task tracking, and transparent workflows.
+- [Public Safety Alerts](./Public-Safety-Alerts/): Demonstrate custom connector integration with a webhook-powered public safety alert system, enabling automated real-time notifications, alert management, and custom workflows for crisis communication.
+- [TIPLI (Tip & Lead Intake via Copilot Studio)](./TIPLI/): Show how Copilot Studio AI agents can act as digital dispatchers—collecting public tips, matching them with cases, logging details, and scheduling investigator follow-up calls—all via natural conversations on public websites.
