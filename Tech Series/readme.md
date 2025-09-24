@@ -15,4 +15,4 @@ By attending these monthly sessions, you'll gain a deeper understanding of Power
 |Month|AI Business Solutions|Copilot Agents|Advanced PP|
 |-|-|-|-|
 |August 2025|[Form Agentification](https://www.youtube.com/watch?v=ruMt6cg86wU)|[Copilot Studio Basics](https://www.youtube.com/watch?v=ZFISa3QVG70)|[Power Platform Managed Environments](https://www.youtube.com/watch?v=nqU01ZoQapE)|
-|September 2025|[Unlocking D365 Contact Center Voice & IVR](https://msit.events.teams.microsoft.com/event/597b985a-34f9-40b5-95c3-650b75b9c65b@72f988bf-86f1-41af-91ab-2d7cd011db47)|[Decoding Copilot and Copilot Studio](https://msit.events.teams.microsoft.com/event/77a54861-af0a-417f-be66-4f260b3e72ad@72f988bf-86f1-41af-91ab-2d7cd011db47)|[Streamlining ALM with Power Platform](https://www.youtube.com/watch?v=dsQBhKXWAM4)|
+|September 2025|[Unlocking D365 Contact Center Voice & IVR](https://msit.events.teams.microsoft.com/event/597b985a-34f9-40b5-95c3-650b75b9c65b@72f988bf-86f1-41af-91ab-2d7cd011db47)|[Decoding Copilot and Copilot Studio](https://www.youtube.com/watch?v=Qpl7N6iQFBE)|[Streamlining ALM with Power Platform](https://www.youtube.com/watch?v=dsQBhKXWAM4)|
