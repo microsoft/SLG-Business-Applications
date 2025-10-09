@@ -33,7 +33,7 @@ A Power Automate workflow serves as an orchestration layer for the entire proces
 ### Azure AI Foundry: Language Model
 A language model, GPT-4.1 used in this example, is deployed in Azure AI Foundry and serves as the "brain", authoring the proposed response.
 
-![LLM](https://i.imgur.com/Pjn2ADk.jpeg)
+![LLM](https://i.imgur.com/94SW0Co.png)
 
 ### Knowledge In Blob Storage
 The organization can upload all knowledge material that should be referenced for answers to all questions to a Azure Blob Storage container. Several documents uploaded below as an example.
@@ -43,9 +43,9 @@ The organization can upload all knowledge material that should be referenced for
 ### Azure AI Search
 An Azure AI Search instance indexes all content within the Azure Blob Storage container, enabling search as a RAG pattern.
 
-![indexer](https://i.imgur.com/1KI8BTB.jpeg)
+![indexer](https://i.imgur.com/QYsE4iW.png)
 
-![indexer tested](https://i.imgur.com/zOtrv1s.jpeg)
+![indexer tested](https://i.imgur.com/OjzVy1b.png)
 
 ### Azure AI Foundry Language Model Tested
 As seen below in a simple HTTP call test to the language model in Azure AI Foundry, we provide the model with:
