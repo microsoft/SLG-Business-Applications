@@ -62,7 +62,7 @@ And it responds with:
 ### Display to Staff in Power Apps
 With the inqury email and proposed response stored in Dataverse by the Power Automate workflow, a human can then review in a Power App interface.
 
-![power app](https://i.imgur.com/Z2QMHNs.jpeg)
+![power app](https://i.imgur.com/Cg7wWnm.png)
 
 Once they are ready to send, the Office 365 Outlook connector in Power Apps allows for seamless sending without leaving this interface.
 
