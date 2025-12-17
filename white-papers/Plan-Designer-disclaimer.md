@@ -11,6 +11,9 @@ This document explains why the disclaimer exists and provides the context admini
 
 ## 📘 Background
 
+> Plan Designer uses resources that do not meet Power Platform US Government (GCC, GCC High, and DoD) audit and compliance requirements. By default, environments in Power Platform US Government (GCC, GCC High, and DoD) cannot connect to resources outside of those compliance boundaries. Enabling this setting will allow connections to resources that operate and send data outside of the relevant Power Platform US Government (GCC, GCC High, and DoD) compliance boundary to resources that do not have FedRamp High or DoD authorization.
+
+
 ### What Plan Designer *is*
 Plan Designer is a **development tool**.  
 It does **not** access or manipulate your data beyond the text prompts you provide while designing a solution.
@@ -60,7 +63,7 @@ Microsoft 365 GCC services aren’t part of the Power Platform GCC boundary.
 Any communication crossing that line — even between government‑compliant systems — must be explicitly disclosed.
 
 ### **2. A FedRAMP High nuance around Azure Fluid Relay’s usage**
-Plan Designer’s collaboration functionality leverages components abstracted from **Azure Fluid Relay**.
+Plan Designer’s collaboration functionality leverages components abstracted from [Azure Fluid Relay](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/overview/overview).
 
 - Azure Fluid Relay *is* FedRAMP High authorized.  
 - However, the *integration path* between Fluid Relay and Power Platform has not yet completed its FedRAMP High audit.  
