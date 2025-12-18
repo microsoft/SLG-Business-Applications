@@ -15,7 +15,8 @@ This document hopes to explain why the disclaimer exists and why it's written th
 
 ## The Disclaimer
 
-The text we're examing is the disclaimer administrators see when enabling the tenant setting for Plan Designer in GCC:
+The message we're examing appears when enabling Plan Designer in GCC. It is as follows:
+
 > *Plan Designer uses resources that do not meet Power Platform US Government (GCC, GCC High, and DoD) audit and compliance requirements. By default, environments in Power Platform US Government (GCC, GCC High, and DoD) cannot connect to resources outside of those compliance boundaries. Enabling this setting will allow connections to resources that operate and send data outside of the relevant Power Platform US Government (GCC, GCC High, and DoD) compliance boundary to resources that do not have FedRamp High or DoD authorization.*
 
 ---
@@ -23,7 +24,7 @@ The text we're examing is the disclaimer administrators see when enabling the te
 ## 📘 Context
 
 ### What Plan Designer *is*
-First, let’s be clear what Plan Designer is: it's a **development tool**. It does not access or manipulate your data beyond the text prompts you provide while designing a solution.
+First, let’s be clear: Plan Designer is a **development tool**. It does not access or manipulate your data beyond the text prompts you provide while designing a solution.
 
 
 ### Understanding the compliance boundaries
@@ -33,7 +34,7 @@ To make sense of the disclaimer, it’s helpful to understand the perspective fr
   When the disclaimer refers to the “relevant Power Platform US Government (GCC, GCC High, and DoD) compliance boundary” it's referring to Azure Government.
 
 - **Microsoft 365 (Office 365) GCC has a different boundary.**  
-  Microsoft 365 GCC runs inside a "protected enclave" within Azure Commercial — *not* Azure Government. Therefore, Microsoft 365 GCC resides outside the "Power Platform GCC compliance boundary" even though Microsoft 365 GCC operates within its own trusted compliance boundary and carries its own FedRAMP High authorization.
+  Microsoft 365 GCC runs inside a "protected enclave" within Azure Commercial — *not* Azure Government. Therefore, Microsoft 365 GCC resides outside the "Power Platform GCC compliance boundary" even though Microsoft 365 GCC operates within its own trusted compliance boundary and carries its own FedRAMP authorization.
 
 **Power Platform GCC compliance boundary = Azure Government**  
 **Microsoft 365 GCC compliance boundary = Protected enclave in Azure Commercial**
