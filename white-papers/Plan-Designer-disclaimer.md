@@ -9,25 +9,27 @@ This document explains why the disclaimer exists and provides the context admini
 
 ---
 
-## 📘 Background
+## The Disclaimer
 
-> Plan Designer uses resources that do not meet Power Platform US Government (GCC, GCC High, and DoD) audit and compliance requirements. By default, environments in Power Platform US Government (GCC, GCC High, and DoD) cannot connect to resources outside of those compliance boundaries. Enabling this setting will allow connections to resources that operate and send data outside of the relevant Power Platform US Government (GCC, GCC High, and DoD) compliance boundary to resources that do not have FedRamp High or DoD authorization.
+The text we're examing is as follows; this is the disclaimer administrators see when enabling the tenant setting for Plan Designer in GCC:
+> *Plan Designer uses resources that do not meet Power Platform US Government (GCC, GCC High, and DoD) audit and compliance requirements. By default, environments in Power Platform US Government (GCC, GCC High, and DoD) cannot connect to resources outside of those compliance boundaries. Enabling this setting will allow connections to resources that operate and send data outside of the relevant Power Platform US Government (GCC, GCC High, and DoD) compliance boundary to resources that do not have FedRamp High or DoD authorization.*
 
+---
+
+## 📘 Context
 
 ### What Plan Designer *is*
-Plan Designer is a **development tool**.  
-It does **not** access or manipulate your data beyond the text prompts you provide while designing a solution.
+First, let’s be clear what Plan Designer is: it's a **development tool**. It does not access or manipulate your data beyond the text prompts you provide while designing a solution.
+
 
 ### Understanding the compliance boundaries
-To make sense of the disclaimer, it’s helpful to understand the architectural context and the perspective from which it was written:
+To make sense of the disclaimer, it’s helpful to understand the perspective from which it was written:
 
 - **Power Platform GCC runs on Azure Government.**  
   When the disclaimer refers to the “relevant Power Platform US Government (GCC, GCC High, and DoD) compliance boundary” it's referring to Azure Government.
 
 - **Microsoft 365 (Office 365) GCC has a different boundary.**  
-  Microsoft 365 GCC runs inside a "protected enclave" within Azure Commercial — *not* Azure Government.
-
-Since Plan Designer uses services from both ecosystems, these boundaries matter.
+  Microsoft 365 GCC runs inside a "protected enclave" within Azure Commercial — *not* Azure Government. Therefore, Microsoft 365 GCC resides outside the "Power Platform GCC compliance boundary" even though Microsoft 365 GCC operates within its own trusted compliance boundary and carries its own FedRAMP High authorization.
 
 **Power Platform GCC compliance boundary = Azure Government**  
 **Microsoft 365 GCC compliance boundary = Protected enclave in Azure Commercial**
@@ -39,28 +41,27 @@ _Image credit: Federal Business Applications team_
 
 ---
 
-## 🧩 What’s Happening with Plan Designer in GCC?
+## 🧩 Plan Designer architecture
 
-Quite a bit. Plan Designer relies on:
+Plan designer is a complex service that relies on:
 
 - Power Platform services (Azure Government)
-- Azure OpenAI and related Azure services (Azure Government)
-- Several Microsoft 365 GCC services (Azure Commercial protected enclave)
+- Other Azure Government services (e.g., Azure OpenAI)
+- Several Microsoft 365 GCC services
 
 All Azure components stay within **Azure Government**, and all Microsoft 365 components stay within **Microsoft 365 GCC**.
 
 Approximate architecture:  
-![Plan diesigner GCC architecture](https://imgur.com/BOjZzkI.png)
+![Plan diesigner GCC architecture](https://imgur.com/lvF1I2s.png)
 
 ---
 
-## ⚠️ So Why the Scary Disclaimer?
+## ⚠️ So Why Such a Strong Disclaimer?
 
-Because enabling Plan Designer in GCC triggers two compliance considerations:
+Out of an abundance of caution and because enabling Plan Designer in GCC triggers two compliance considerations:
 
 ### **1. Use of services *outside* the Power Platform (Azure Gov) compliance boundary**
-Microsoft 365 GCC services aren’t part of the Power Platform GCC boundary.  
-Any communication crossing that line — even between government‑compliant systems — must be explicitly disclosed.
+Microsoft 365 GCC services aren’t part of the Power Platform GCC boundary. Any communication crossing that line — even between government‑compliant systems — must be explicitly disclosed.
 
 ### **2. A FedRAMP High nuance around Azure Fluid Relay’s usage**
 Plan Designer’s collaboration functionality leverages components abstracted from [Azure Fluid Relay](https://learn.microsoft.com/en-us/azure/azure-fluid-relay/overview/overview).
@@ -102,9 +103,14 @@ In the **Power Platform Admin Center**, at both the *tenant* and *environment* l
 **Path:**  
 `Manage → Tenant Settings → Plan Designer for solution development`
 
-If you don’t see *Tenant Settings*, you do not have tenant-level permissions.
+> *If you don’t see *Tenant Settings*, you do not have tenant-level permissions.*
 
 ![Tenant level setting](https://imgur.com/tcxFaot.png)
+
+> [!IMPORTANT]
+> This setting only controls Plan Designer availability.  For information on other AI-assisted development experiences, please see the link below:
+>
+> [Copilot in Dynamics 365 apps and Power Platform Governance Controls](https://learn.microsoft.com/en-us/power-platform/faqs-copilot-data-security-privacy#copilot-in-dynamics-365-apps-and-power-platform)
 
 ---
 
@@ -113,7 +119,7 @@ If you don’t see *Tenant Settings*, you do not have tenant-level permissions.
 **Path:**  
 `Manage → Environments → <Environment> → Generative AI settings → Microsoft 365 services`
 
-If you lack tenant-level permissions, saving will produce an error.
+> *If you lack tenant-level permissions, saving will produce an error.*
 
 ![Environment level setting](https://imgur.com/V5tVQop.png)
 
