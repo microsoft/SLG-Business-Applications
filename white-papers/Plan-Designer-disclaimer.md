@@ -7,11 +7,23 @@ But if you're in GCC, you’ve probably noticed a pretty intimidating disclaimer
 
 This document explains why the disclaimer exists and provides the context administrators need to make an informed decision.
 
----
+## Responsible AI
+Every Microsoft Business Applications service has their own dedicated Responsible AI page on our public documentation site.  Below we have summarized the links for all Power Platform and Dynamics 365 services and their associated Responsible AI page.
+
+* [FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform](https://learn.microsoft.com/en-us/power-platform/faqs-copilot-data-security-privacy)
+* [Power Platform](https://learn.microsoft.com/en-us/power-platform/responsible-ai-overview)
+  * [AI Builder](https://learn.microsoft.com/en-us/ai-builder/responsible-ai-overview)
+  * [Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/responsible-ai-overview)
+  * [Power Apps](https://learn.microsoft.com/en-us/power-apps/maker/common/responsible-ai-overview/)
+  * [Power Automate](https://learn.microsoft.com/en-us/power-automate/responsible-ai-overview/)
+  * [Power Pages](https://learn.microsoft.com/en-us/power-pages/responsible-ai-overview/)
+* [Dynamics 365](https://learn.microsoft.com/en-us/dynamics365/responsible-ai-overview)
+  * [Dynamics 365 Customer Service](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/responsible-ai-overview)
+
 
 ## The Disclaimer
 
-The text we're examing is as follows; this is the disclaimer administrators see when enabling the tenant setting for Plan Designer in GCC:
+The text we're examing is the disclaimer administrators see when enabling the tenant setting for Plan Designer in GCC:
 > *Plan Designer uses resources that do not meet Power Platform US Government (GCC, GCC High, and DoD) audit and compliance requirements. By default, environments in Power Platform US Government (GCC, GCC High, and DoD) cannot connect to resources outside of those compliance boundaries. Enabling this setting will allow connections to resources that operate and send data outside of the relevant Power Platform US Government (GCC, GCC High, and DoD) compliance boundary to resources that do not have FedRamp High or DoD authorization.*
 
 ---
@@ -39,7 +51,6 @@ Architecture reference:
 
 _Image credit: Federal Business Applications team_
 
----
 
 ## 🧩 Plan Designer architecture
 
@@ -72,7 +83,6 @@ Plan Designer’s collaboration functionality leverages components abstracted fr
 
 The disclaimer is disclosure-driven; it is not an indication of perceived risk.
 
----
 
 ## ✅ Key Facts to Inform Your Decision
 
@@ -123,7 +133,6 @@ In the **Power Platform Admin Center**, at both the *tenant* and *environment* l
 
 ![Environment level setting](https://imgur.com/V5tVQop.png)
 
----
 
 ## 🚀 Using Plan Designer
 
@@ -137,7 +146,6 @@ You can validate functionality by selecting a suggested prompt and generating a 
 
 For a longer walkthrough, check out the [Tech Series demo (Oct 2025)](https://www.youtube.com/watch?v=_QqvWMLqbYc).
 
----
 
 ## 👨‍💻 Author
 
