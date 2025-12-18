@@ -3,23 +3,15 @@
 
 Plan Designer is an impressive capability that empowers makers to move from idea to first solution iteration in minutes. It accelerates analysis, requirements gathering, front‑ and back‑end development, and documentation — all through natural language.
 
-But if you're in GCC, you’ve probably noticed a pretty intimidating disclaimer when enabling it.
+But if you're an administrator in a GCC environment, you may have noticed an intimidating sign-off required to enable it.
 
-This document explains why the disclaimer exists and provides the context administrators need to make an informed decision.
+This document hopes to explain why the disclaimer exists and why it's written the way it is, and to provide the context stakeholders need in order to make an informed decision.
 
-## Responsible AI
-Every Microsoft Business Applications service has their own dedicated Responsible AI page on our public documentation site.  Below we have summarized the links for all Power Platform and Dynamics 365 services and their associated Responsible AI page.
-
-* [FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform](https://learn.microsoft.com/en-us/power-platform/faqs-copilot-data-security-privacy)
-* [Power Platform](https://learn.microsoft.com/en-us/power-platform/responsible-ai-overview)
-  * [AI Builder](https://learn.microsoft.com/en-us/ai-builder/responsible-ai-overview)
-  * [Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/responsible-ai-overview)
-  * [Power Apps](https://learn.microsoft.com/en-us/power-apps/maker/common/responsible-ai-overview/)
-  * [Power Automate](https://learn.microsoft.com/en-us/power-automate/responsible-ai-overview/)
-  * [Power Pages](https://learn.microsoft.com/en-us/power-pages/responsible-ai-overview/)
-* [Dynamics 365](https://learn.microsoft.com/en-us/dynamics365/responsible-ai-overview)
-  * [Dynamics 365 Customer Service](https://learn.microsoft.com/en-us/dynamics365/customer-service/implement/responsible-ai-overview)
-
+> [!IMPORTANT]
+> For general information on Responsible AI considerations across Power Platform, please see the link below:
+> 
+> [FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform](https://learn.microsoft.com/en-us/power-platform/faqs-copilot-data-security-privacy)
+> 
 
 ## The Disclaimer
 
