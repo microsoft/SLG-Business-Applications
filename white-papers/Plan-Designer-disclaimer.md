@@ -1,11 +1,11 @@
 
-# Can I Be Confident Enabling Plan Designer in GCC?
+# Plan Designer in Sovereign Clouds
 
 Plan Designer is an impressive capability that empowers makers to move from idea to first solution iteration in minutes. It accelerates analysis, requirements gathering, front‑ and back‑end development, and documentation — all through natural language.
 
-But if you're an administrator in a GCC environment, you may have noticed an intimidating sign-off required to enable it.
+But if you're an administrator in a GCC environment, you may be worried as to the implications of leveraging AI tooling in Public Sector.  Additionally, the toggle to enable Plan Designer at the tenant level suggests cross cloud connectivity.  What does that mean exactly?
 
-This document hopes to explain why the disclaimer exists and why it's written the way it is, and to provide the context stakeholders need in order to make an informed decision.
+This document hopes to explain why the disclaimer exists and to provide the context stakeholders need in order to make an informed decision.
 
 > [!IMPORTANT]
 > For general information on Responsible AI considerations across Power Platform, please see the link below:
@@ -15,7 +15,7 @@ This document hopes to explain why the disclaimer exists and why it's written th
 
 ## The Disclaimer
 
-The message we're examing appears when enabling Plan Designer in GCC. It is as follows:
+The message label attached to the tenant level toggle to enable Plan Designer in Gov clouds reads:
 
 > *Plan Designer uses resources that do not meet Power Platform US Government (GCC, GCC High, and DoD) audit and compliance requirements. By default, environments in Power Platform US Government (GCC, GCC High, and DoD) cannot connect to resources outside of those compliance boundaries. Enabling this setting will allow connections to resources that operate and send data outside of the relevant Power Platform US Government (GCC, GCC High, and DoD) compliance boundary to resources that do not have FedRamp High or DoD authorization.*
 
@@ -60,9 +60,9 @@ Approximate architecture:
 
 ---
 
-## ⚠️ So Why Such a Strong Disclaimer?
+## ⚠️ The intention of the toggle disclaimer:
 
-Out of an abundance of caution and because enabling Plan Designer in GCC triggers two compliance considerations:
+Enabling Plan Designer in GCC triggers two compliance considerations:
 
 ### **1. Use of services *outside* the Power Platform (Azure Gov) compliance boundary**
 Microsoft 365 GCC services aren’t part of the Power Platform GCC boundary. Any communication crossing that line — even between government‑compliant systems — must be explicitly disclosed.
@@ -72,7 +72,7 @@ Plan Designer’s collaboration functionality leverages components abstracted fr
 
 - Azure Fluid Relay *is* FedRAMP High authorized.  
 - However, the *integration path* between Fluid Relay and Power Platform has not yet completed its FedRAMP High audit.  
-- Because of that nuance, Microsoft must state that not all resources used by Plan Designer are FedRAMP High authorized.
+- Because of that nuance, Microsoft must state that not all resources used by Plan Designer are FedRAMP High accredited.
 
 The disclaimer is disclosure-driven; it is not an indication of perceived risk.
 
@@ -82,10 +82,13 @@ The disclaimer is disclosure-driven; it is not an indication of perceived risk.
 1. **Plan Designer only assists solution development.**  
    It doesn't interact with your organizational data beyond user-entered prompts and has no impact on runtime behavior.
 
-2. **All Plan Designer components remain inside Azure Government or Microsoft 365 GCC.**  
-   Nothing leaves these boundaries.
+2. **All prompt data that crosses into the M365 GCC compliance boundary is transient only.**  
+   Prompt data is not stored within the M365 GCC compliance boundary.
+   
+3. **All components created by Plan Designer remain inside Azure Government.**  
+   These components - tables, apps, etc.. - will reside inside the solution selected during creation.
 
-3. **Tenant control is granular.**  
+4. **Tenant control is granular.**  
    Even after enabling it at the tenant level, admins decide which environments — and therefore which makers — can use Plan Designer.
 
 ---
