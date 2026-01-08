@@ -26,3 +26,4 @@ These whitepapers are specifically created for use in the **US Government sovere
 * [Copilot feature availability for Dynamics 365 and Power Platform GCC](./PowerPlatformCopilots.md)
 * [Connect Copilot Studio GCC to customer-owned Azure AI resources](./Copilot-Studio+Azure-AI-GCC/README.md)
 * [Publish Copilot Studio agent to Teams in GCC](./MCS-publish-to-teams.md)
+* [Plan Designer in Sovereign Clouds](./Plan-Designer-disclaimer.md)
