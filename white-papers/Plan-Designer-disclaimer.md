@@ -143,6 +143,7 @@ You can validate functionality by selecting a suggested prompt and generating a 
 For a longer walkthrough, check out the [Tech Series demo (Oct 2025)](https://www.youtube.com/watch?v=_QqvWMLqbYc).
 
 
-## 👨‍💻 Author
+## 👨‍💻 Authors
 
 - [Doug Bell](https://www.linkedin.com/in/doug-bell-56090341/), *Power Platform Senior Solution Engineer*
+- [Craig Harris](https://www.linkedin.com/in/stephen-craig-harris/), *Technical Director, Microsoft AI Business Solutions*
