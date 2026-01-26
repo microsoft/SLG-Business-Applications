@@ -6,6 +6,8 @@
 - **Evaluation AI (Microsoft Foundry)**: AI performs initial candidate application assessments. It evaluates candidates not just on keywords, but on their specific alignment with weighted job requirements and screening responses.
 
 ## Entity Relationship Diagram
+![erd](https://i.imgur.com/2oXYsS6.png)
+
 The custom tables and their relationships are further described below.
 
 ### Job Posting
