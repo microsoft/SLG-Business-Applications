@@ -27,7 +27,7 @@ This is the Identity table for the person applying. By separating this from the 
 - **Email:** String (Unique) 
 - **Resume** File (`.pdf` or `.docx`) 
 - **LinkedIn URL:** String/URI 
-- **Phone**
+- **Phone:** phone number of the candidate
 
 ### Application
 This table represents the transaction of a candidate expressing interest in a job. It acts as a container for that specific journey, tracking which Candidate applied for which Job Posting and what their current status is (e.g., "Screening," "Interviewing," or "Rejected").
