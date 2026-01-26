@@ -1,5 +1,5 @@
-# QualifAI: Intelligent Talent Acquisition & Lifecycle Management
-**QualifAI** is an end-to-end AI-driven recruitment ecosystem built on the Microsoft Power Platform. Designed to bridge the gap between high-volume job postings and high-quality candidate selection, QualifAI leverages advanced AI to automate the heavy lifting of the initial evaluation process, allowing hiring teams to focus on what matters most: the human connection.
+# QualifAI: Intelligent Talent Acquisition
+**QualifAI** is an end-to-end AI-driven recruitment system built on the Microsoft Power Platform. Designed to bridge the gap between high-volume job postings and high-quality candidate selection, QualifAI leverages advanced AI to automate the heavy lifting of the initial evaluation process.
 
 - **Internal Operations (Power App)**: Staff use a robust Model-Driven app to architect job postings, define custom screening questions, and select specific "Hireable Skills" from a global library to build a weighted "Success Profile" for every role.
 - **External Talent Portal (Power Pages)**: A public-facing portal where candidates can create secure accounts, browse open requisitions, submit structured applications, and track their real-time status in the hiring pipeline.
