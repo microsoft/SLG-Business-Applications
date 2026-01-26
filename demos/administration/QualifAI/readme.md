@@ -13,8 +13,8 @@ This is the central anchor of the system representing an open requisition. It st
 This is a junction table that maps specific Skills to a Job Posting. Its purpose is to define the "Success Profile" for a role. It allows a hiring manager to say, "To be successful in this Job Posting, you need these five specific skills."
 - **Job Posting Lookup**: Lookup to `Job Posting` 
 - **Skill Lookup**: Lookup to `Skill` 
-- **Importance Weight**: Integer (1–10)
-- **Minimum Years Required**: Integer
+- **Importance Weight**: weight of how important this particular skill is, 1-10
+- **Minimum Years Required**: how many years of this skill the candidate must possess
 
 ### Skill
 This is your global library or "dictionary" of every possible competency an organization might care about (e.g., "Python," "Public Speaking," "Strategic Planning"). By keeping this as a standalone table, you ensure data consistency so that "Java" isn't accidentally entered as "Javascript" or "JAVA" elsewhere in the system. 
