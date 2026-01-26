@@ -62,7 +62,7 @@
           <mxGeometry height="80" width="179" x="625.5" y="120" as="geometry" />
         </mxCell>
         <mxCell id="7r6kVW79jNvUuyv6z9LL-124" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;u style=&quot;&quot;&gt;QualifAI ERD&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;https://aka.ms/QualifAI&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="90" width="320" x="-130" y="30" as="geometry" />
+          <mxGeometry height="90" width="320" x="-140" y="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
