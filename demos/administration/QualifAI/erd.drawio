@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.4">
   <diagram name="Page-1" id="SbjFLBYWAj6ZixciyXDM">
-    <mxGraphModel dx="2518" dy="974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2518" dy="918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -60,6 +60,9 @@
         </mxCell>
         <mxCell id="7r6kVW79jNvUuyv6z9LL-120" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Screening Answer&lt;/b&gt;&lt;/font&gt;&lt;div&gt;The candidate&#39;s structured responses to a job&#39;s screening questions.&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="179" x="625.5" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="7r6kVW79jNvUuyv6z9LL-124" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;u style=&quot;&quot;&gt;QualifAI ERD&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;https://aka.ms/QualifAI&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="-130" y="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
