@@ -26,46 +26,62 @@ This is the global library or "dictionary" of competencies an organization might
 
 ### Job Requirement
 This is a junction table that maps specific a specific `Skill` to a `Job Posting`. Its purpose is to define the "Success Profile" for a role (the skills a candidate must possess for a particular `Job Posting`). It allows a hiring manager to say, "To be successful in this Job Posting, you need these five specific skills."
-- **Job Posting Lookup**: Lookup to `Job Posting` 
-- **Skill Lookup**: Lookup to `Skill` 
+- **For Job Posting**: Lookup to `Job Posting` 
+- **Required Skill**: Lookup to `Skill` 
 - **Importance Weight**: weight of how important this particular skill is, 1-10
 - **Minimum Years Required**: how many years of this skill the candidate must possess
 
 ### Candidate
-This is the Identity table for the person applying. Each candidate has a persistent profile, enabling the organization to track their history if they apply for different roles over several years.
-- **Full Name**: candidate's full name
-- **Email**: candidate's email 
-- **Resume** file (`.pdf` or `.docx`) 
-- **LinkedIn URL**: String/URI 
-- **Phone**: phone number of the candidate
+Leveraging Dataverse's OOTB *Contact* table from the common data model, this served as the identity table for the person applying. Each candidate has a persistent profile, enabling the organization to track their history if they apply for different roles over several years.
+- **LinkedIn Profile**: Link to their LinkedIn profile (URL) 
+- *All other fields are fulfilled via OOTB columns provided in the Contact table*
 
 ### Screening Question
 This table stores the specific inquiries (individual questions) a hiring manager wants to have in a particular Job Posting.
-- **Job Posting**: Lookup to the `Job Posting` this question is for
+- **On Job Posting**: Lookup to the `Job Posting` this question is for
 - **Question Text**: prompt (question) shown to candidate
 
 ### Application
 A candidate's application to a specific `Job Posting`, containing all relevant information they have submitted for consideration.
-- **Job Posting**: lookup to the `Job Posting` being applied to
-- **Candidate**: lookup to the `Candidate` that applied
+- **Applied To**: lookup to the `Job Posting` being applied to
+- **Applying Candidate**: lookup to the `Candidate` that applied
 - **Stage**: New, Screened, Interviewing, Rejected, Offered, Accepted
+- **Candidate Resume** file (`.pdf` or `.docx`) 
 
 ### Screening Answer
 Stores each of the candidate's specific responses to each `Screening Question`. It maps a response back to both the Screening Question (to know what was asked) and the Application (to know who said it). 
-- **Application**: Lookup to the `Application` this answer is on
+- **On Application**: Lookup to the `Application` this answer is on
 - **Question**: Lookup to the original `Screening Question` this is answering
 - **Answer**: raw candidate input (their answer to the question), as text
 
 ### Application Evaluation
 Stores an evaluation of a candidate's `Application`, storing the high-level "All Up" score and qualitative reasoning for why the candidate is or isn't a fit for the job.
-- **Application Lookup**: Lookup to the `Application` this review is for
-- **Fit Score**: grade as to how close of a match the candidate is for the *overall* job posting, 0-100%
+- **Evaluated Application**: Lookup to the `Application` this review is for
+- **Fit Score**: grade as to how close of a match the candidate is for the *overall* job posting (whole number, 0-100)
 - **Justification**: general commentary on candidate fit for the job posting, supporting the score
-- **Evaluated At**: Timestamp of when the evaluation was performed
+- **Evaluated Performed**: Timestamp of when the evaluation was performed
 
 ### Skill Assessment
 Stores specific evaluation scores given to the candidate for *each* required `Job Requirement` skill, providing the evidence used to calculate the candidate's overall alignment score.
-- **Evaluation Lookup**: Lookup to `Application Evaluation`
-- **Skill Lookup**: Lookup to `Skill`
-- **Score**: grade as to how well the candidate fulfilles a skill requirement for the job posting, 0-100%
+- **Part of Evaluation**: Lookup to `Application Evaluation` this assessment is a part of.
+- **Evaluated Skill**: Lookup to the `Skill` that was evaluate
+- **Score**: grade as to how well the candidate fulfilles a skill requirement for the job posting (whole number, 0-100)
 - **Justification**: commentary supporting the score
+
+
+
+
+GLOW Steps:
+- ~~Make tables~~
+- Make all columns per table:
+    - ~~Application~~
+    - ~~Application Evaluation~~
+    - ~~Candidate~~
+    - ~~Job Posting~~
+    - ~~Job Requirement~~
+    - ~~Screening Answer~~
+    - ~~Screening Question~~
+    - ~~Skill~~
+    - ~~Skill Assessment~~
+- Write markdown doc for GLOWS website.
+- Send solution file to jeremy + markdown.
