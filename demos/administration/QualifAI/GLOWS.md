@@ -12,7 +12,7 @@ The model also introduces a structured **Screening** and **Evaluation** layer. A
 This module is built for flexibility. A small team can use the core `Job Posting` and `Application` tables for simple tracking. Larger, more mature agencies can activate the full `Evaluation` and `Skill Assessment` suite to perform deep talent evaluation and analytics. By unifying job requirements, applicant data, and qualitative assessments, the HR Recruiting module transforms hiring from a manual exercise into a strategic, data-backed process.
 
 ## Entity Relationship Diagram
-![erd](https://i.imgur.com/2oXYsS6.png)
+![erd](https://i.imgur.com/cqRfVK1.png)
 
 This package's custom tables and their relationships are further described below:
 
