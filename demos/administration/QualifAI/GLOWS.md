@@ -8,8 +8,8 @@ At the heart of the system is the **Job Posting** table, the central anchor for 
 
 The model also introduces a structured **Screening** and **Evaluation** layer. Agencies can define specific **Screening Questions** per job, with **Screening Answers** captured directly on the application. Once a candidate is under review, the Application Evaluation and Skill Assessment tables allow for granular scoring. Instead of a single "gut-feeling" score, evaluators can provide evidence-based grades for every individual skill required for the position.
 
-## Scalability and Growth
-This module is built for flexibility. A small team can use the core `Job Posting` and `Application` tables for simple tracking. Larger, more mature agencies can activate the full `Evaluation` and `Skill Assessment` suite to perform deep talent evaluation and analytics. By unifying job requirements, applicant data, and qualitative assessments, the HR Recruiting module transforms hiring from a manual exercise into a strategic, data-backed process.
+## Extensibility
+This module is built for *flexibility*. A small team can use the core `Job Posting` and `Application` tables for simple tracking. Larger, more mature agencies can activate the full `Evaluation` and `Skill Assessment` suite to perform deep talent evaluation and analytics. By unifying job requirements, applicant data, and qualitative assessments, the HR Recruiting module transforms hiring from a manual exercise into a strategic, data-backed process.
 
 ## Entity Relationship Diagram
 ![erd](https://i.imgur.com/cqRfVK1.png)
