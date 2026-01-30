@@ -61,8 +61,8 @@
         <mxCell id="7r6kVW79jNvUuyv6z9LL-120" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Screening Answer&lt;/b&gt;&lt;/font&gt;&lt;div&gt;The candidate&#39;s structured responses to a job&#39;s screening questions.&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="179" x="625.5" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="7r6kVW79jNvUuyv6z9LL-124" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#d79b00;fillColor=#ffe6cc;align=center;verticalAlign=middle;rounded=0;fontSize=18;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;u style=&quot;&quot;&gt;QualifAI ERD&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;https://aka.ms/QualifAI&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="90" width="320" x="-140" y="90" as="geometry" />
+        <mxCell id="7r6kVW79jNvUuyv6z9LL-124" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#132F4F;align=center;verticalAlign=middle;rounded=0;fontSize=18;fontColor=#FFFFFF;" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;u style=&quot;&quot;&gt;GLOWS: HR Recruiting Data Model&lt;/u&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;microsoft.github.io/gov-solutions/data-models/hr-recruiting&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="534" x="-220" y="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
