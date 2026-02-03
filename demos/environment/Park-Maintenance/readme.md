@@ -1,4 +1,4 @@
-# Public Park Maintenance
+# 🏞️ Public Park Maintenance 🛠️
 This solution is designed to streamline the management, reporting, and execution of public park maintenance. By leveraging the Microsoft Power Platform, this system bridges the gap between public reporting and internal maintenance operations to resolve issues.
 
 *Click the image below for a short demo of the finished solution!*
