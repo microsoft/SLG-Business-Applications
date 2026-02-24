@@ -30,17 +30,17 @@ To support governance of cross cloud connections, there is a new setting in the 
 
 ### Going forward
 
-We anticipate cross cloud flexibility for additional Azure connectors and will maintain this table as updates become available.
+Unfortunately this effort has been deprioritized due to multiple factors. No future timelines are known at this time.
 
 |Connector|Status|Date|
 |-|-|-|
 |Azure SQL (via SQL Server)|Available|Legacy|
 |Azure Blob Storage|Available|June 2024|
-|Azure Key Vault|Under Construction|~August, 2024|
-|Azure Cosmos DB|Under Construction|~August, 2024|
+|Azure Key Vault|Nominated Prioirty|TBD|
+|Azure Cosmos DB|Nominated Priority|TBD|
 |Azure Resource Manager|Nominated Priority|TBD|
 |All other Azure connectors|Under Consideration|TBD|
 
 ### Interim Options
 
-In the interim, the Azure service APIs called via HTTP or custom connector is always a possibility for a workaround. We have an example of this approach [here](../../demos/GCC-to-Commercial/). The example used happens to be obsolete as the Azure Blob Storage connector was our top priority for enhancement, but the patterns and techniques utilized remain valid.
+In the interim, the Azure service APIs called via HTTP or custom connector is always a possibility for a workaround. We have an example of this approach [here](../../demos/misc/GCC-to-Commercial/). The example used happens to be obsolete as the Azure Blob Storage connector was our top priority for enhancement, but the patterns and techniques utilized remain valid.
