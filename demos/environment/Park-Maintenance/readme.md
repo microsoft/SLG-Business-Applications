@@ -27,7 +27,7 @@ A robust data model, built on Microsoft Dataverse, is used in this solution:
 - `Maintenance Task`: A child entity linked to specific issues. This allows managers to break down a single reported issue (e.g., "Park Vandalism") into multiple actionable work orders for field staff.
 
 ## Assets
-- [The completed solution file (.zip)](https://github.com/microsoft/SLG-Business-Applications/releases/download/48/ParkMaintenance_1_0_0_1.zip)
+- [The completed solution file (.zip)](https://github.com/microsoft/SLG-Business-Applications/releases/download/49/ParkMaintenance_1_0_0_2.zip)
 - [Park Backdrop Image](https://github.com/microsoft/SLG-Business-Applications/releases/download/48/park.jpg), to be used as background for Canvas App
 - [Park icon](https://github.com/microsoft/SLG-Business-Applications/releases/download/48/park-icon.png), to be used as icon for Copilot Studio agent
 
