@@ -1,10 +1,6 @@
 # Responsive Design Template - Employee Directory Canvas App
 A fully responsive canvas app design template.
 
-![responsive_app](https://i.imgur.com/6Qq4wAS.png)
-
-![response_app_gif](https://i.imgur.com/teqYOXa.gif)
-
 ## What can this be used for?
 This asset was created to help folks familiarize themselves with responsive design techniques in Canvas Apps. 
 
