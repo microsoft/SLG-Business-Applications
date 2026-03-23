@@ -14,6 +14,5 @@ estimates, and request statuses, built on a dynamic Power Platform solution.
 approvals and history, organize access catalogs, and support manager-driven processes within departmental hierarchies.
 - [RecruIT Employee Hiring](./RecruIT%20Employee%20Hiring/): Advertise available government jobs, register applicants, manage applications, coordinate
 interviews, and navigate the full hiring workflow- with specialized portals for staff and applicants.
-- [TIMEE Timesheet Entry Agent](./TIMEE/): Transform timesheet reporting using an AI-powered chatbot that collects natural language
-descriptions of staff workweeks, automatically fills in timesheets, and lets users refine and submit through friendly,
-conversational interaction.
+- [TIMEE Timesheet Entry Agent](./TIMEE/): Transform timesheet reporting using an AI-powered chatbot that collects natural language descriptions of staff workweeks, automatically fills in timesheets, and lets users refine and submit through friendly, conversational interaction.
+- [AI Email Response Drafting](./AI-Email-Response-Drafting/) - automates and personalizes email replies for government agencies by using AI to monitor inboxes and craft responses based on agency-specific guidance.
