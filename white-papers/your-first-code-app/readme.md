@@ -1,12 +1,17 @@
 # Your First Power Apps Code App
-![Image 1](https://i.imgur.com/Xsah13F.jpeg)
+![Image 1](https://i.imgur.com/BO1ZAyK.jpeg)
 
 [Power Apps Code Apps]() allows developers to bring custom React applications into the Power Platform, integrated with key Power Platform services like Dataverse, connectors, and Entra ID authentication.
 
 This article takes you through the basics of creating your first code app, step-by-step!
 
+## The Plan
+![Image 12](https://i.imgur.com/JHurxTw.jpeg)
+
+## Install Dependencies
+
+
 ## IMAGES
-![Image 1](https://i.imgur.com/BO1ZAyK.jpeg)
 ![Image 2](https://i.imgur.com/AxO5pcN.jpeg)
 ![Image 3](https://i.imgur.com/x8cNuM9.jpeg)
 ![Image 4](https://i.imgur.com/EuKFg5c.jpeg)
@@ -17,7 +22,7 @@ This article takes you through the basics of creating your first code app, step-
 ![Image 9](https://i.imgur.com/zPPzBfg.jpeg)
 ![Image 10](https://i.imgur.com/taFR1ba.jpeg)
 ![Image 11](https://i.imgur.com/ictPScF.jpeg)
-![Image 12](https://i.imgur.com/JHurxTw.jpeg)
+
 ![Image 13](https://i.imgur.com/xZZyBGX.jpeg)
 ![Image 14](https://i.imgur.com/BbMxA2U.jpeg)
 ![Image 15](https://i.imgur.com/0Wy7y1f.jpeg)
@@ -34,3 +39,6 @@ This article takes you through the basics of creating your first code app, step-
 ![Image 26](https://i.imgur.com/ORLH6pT.jpeg)
 ![Image 27](https://i.imgur.com/6zMFCyH.jpeg)
 ![Image 28](https://i.imgur.com/jjbrgs3.jpeg)
+
+## Other Resources
+- Imgur album: https://imgur.com/a/ZfjWrgv
