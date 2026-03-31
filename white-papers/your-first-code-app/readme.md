@@ -12,33 +12,34 @@ This article takes you through the basics of creating your first code app, step-
 
 
 ## IMAGES
-![Image 2](https://i.imgur.com/AxO5pcN.jpeg)
-![Image 3](https://i.imgur.com/x8cNuM9.jpeg)
-![Image 4](https://i.imgur.com/EuKFg5c.jpeg)
-![Image 5](https://i.imgur.com/sqjkkdf.jpeg)
-![Image 6](https://i.imgur.com/sdntyeD.jpeg)
-![Image 7](https://i.imgur.com/ey6DRmL.jpeg)
-![Image 8](https://i.imgur.com/rM9ifuh.jpeg)
-![Image 9](https://i.imgur.com/zPPzBfg.jpeg)
-![Image 10](https://i.imgur.com/taFR1ba.jpeg)
-![Image 11](https://i.imgur.com/ictPScF.jpeg)
-
-![Image 13](https://i.imgur.com/xZZyBGX.jpeg)
-![Image 14](https://i.imgur.com/BbMxA2U.jpeg)
-![Image 15](https://i.imgur.com/0Wy7y1f.jpeg)
-![Image 16](https://i.imgur.com/8aDapBC.jpeg)
-![Image 17](https://i.imgur.com/9JdRoJO.jpeg)
-![Image 18](https://i.imgur.com/GV7Mnwm.jpeg)
-![Image 19](https://i.imgur.com/Jae4agG.jpeg)
-![Image 20](https://i.imgur.com/pYkAqNP.jpeg)
-![Image 21](https://i.imgur.com/RtUi6g0.jpeg)
-![Image 22](https://i.imgur.com/lXBP3cx.jpeg)
-![Image 23](https://i.imgur.com/awGGfjh.jpeg)
-![Image 24](https://i.imgur.com/mD2vv0J.jpeg)
-![Image 25](https://i.imgur.com/pxV2Ml5.jpeg)
-![Image 26](https://i.imgur.com/ORLH6pT.jpeg)
-![Image 27](https://i.imgur.com/6zMFCyH.jpeg)
-![Image 28](https://i.imgur.com/jjbrgs3.jpeg)
+https://i.imgur.com/wLlIYr6.jpeg
+https://i.imgur.com/jYrbGF5.jpeg
+https://i.imgur.com/CTKmYyM.jpeg
+https://i.imgur.com/oAGi2BV.jpeg
+https://i.imgur.com/Sia5lZQ.jpeg
+https://i.imgur.com/tMHg0YJ.jpeg
+https://i.imgur.com/2Gsl3mj.jpeg
+https://i.imgur.com/Lv53WnL.jpeg
+https://i.imgur.com/DnJ6vsl.jpeg
+https://i.imgur.com/HFidmnE.jpeg
+https://i.imgur.com/OHvEyIF.jpeg
+https://i.imgur.com/bm73gEv.jpeg
+https://i.imgur.com/OvjckCR.jpeg
+https://i.imgur.com/Fr8uIGT.jpeg
+https://i.imgur.com/oygJRO1.jpeg
+https://i.imgur.com/AJlv6gd.jpeg
+https://i.imgur.com/BLjSGvv.jpeg
+https://i.imgur.com/nQyLlft.jpeg
+https://i.imgur.com/TQBqmNj.jpeg
+https://i.imgur.com/huDtJEI.jpeg
+https://i.imgur.com/e65EZQX.jpeg
+https://i.imgur.com/5yNDGkZ.jpeg
+https://i.imgur.com/u9CPQzk.jpeg
+https://i.imgur.com/76lrNop.jpeg
+https://i.imgur.com/dw8yCIj.jpeg
+https://i.imgur.com/X8zQekz.jpeg
+https://i.imgur.com/oOT1tDW.jpeg
+https://i.imgur.com/PeWUzsN.jpeg
 
 ## Other Resources
-- Imgur album: https://imgur.com/a/ZfjWrgv
+- Imgur album: https://imgur.com/a/vOAGF0U
