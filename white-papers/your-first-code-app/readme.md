@@ -3,7 +3,7 @@
 
 [Power Apps Code Apps](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/overview) allows developers to bring custom React applications into the Power Platform, integrated with key Power Platform services like Dataverse, connectors, and Entra ID authentication.
 
-While there is no definitive date for the arrival of code apps in our soveirgn clouds (GCC), it will be arriving soon.
+While there is no definitive date for the arrival of code apps in our sovereign clouds (GCC), it will be arriving soon.
 
 This article takes you through the basics of creating your first code app, step-by-step!
 
@@ -40,7 +40,7 @@ After you do so, you should see it instantly serve the app for you on localhost.
 ![Image 6](https://i.imgur.com/tMHg0YJ.jpeg)
 
 ## Use AI to Customize your React App
-With a basic React app now scaffolded, we can now proceed to build a React app that actually does something for us! If you are a talented React developer, you can certainly get to work writing your code at this stage. But for folks like me that aren't familiar React code, you can use AI to assist with development. Below I'm running `copilot` in the terminal to open GitHub Copilot to assist with writing my app.
+With a basic React app now scaffolded, we can now proceed to build a React app that actually does something for us! If you are a talented React developer, you can certainly get to work writing your code at this stage. But for people like me that aren't familiar React code, you can use AI to assist with development. Below I'm running `copilot` in the terminal to open GitHub Copilot to assist with writing my app.
 
 ![Image 7](https://i.imgur.com/2Gsl3mj.jpeg)
 
@@ -119,7 +119,7 @@ Microsoft provides terrific documentation on how code in your Code App can be wr
 
 ![Image 22](https://i.imgur.com/5yNDGkZ.jpeg)
 
-Since I'll be relying on GitHub Copilot to write my app's code for me, I'll make sure to provide this documentation to the AI before instructing it to make my app for me. By explicitly providing this documentation, I am **ensuring** GitHub Copilot has the latest documentation and best-practices to follow.
+Since I'll be relying on GitHub Copilot to write my app's code for me, I'll make sure to provide this documentation to the AI before instructing it to make my app for me. By explicitly providing this documentation, I am **ensuring** GitHub Copilot has the latest documentation and best practices to follow.
 
 Provide the following prompt to GitHub Copilot:
 
@@ -160,4 +160,4 @@ Run `npm run build` followed by `pac code push` to push your Code App to your ta
 - [Official Code Apps Documentation](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/)
 
 ## Author
-Written by [Tim Hanewich](https://timhanewich.github.io/), Sr. Solution Engineer @ Microsoft.
+Written by [Tim Hanewich](https://timhanewich.github.io/), Sr. Solution Engineer at Microsoft
