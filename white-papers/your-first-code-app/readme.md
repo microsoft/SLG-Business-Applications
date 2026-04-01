@@ -22,6 +22,7 @@ First, you must install several dependencies onto your machine:
 - **Power Platform PAC CLI**
     - Required to eventually “push” the Code App to your Environment
     - https://learn.microsoft.com/en-us/power-platform/developer/howto/install-cli-msi
+    - This tutorial assumes you have already authenticated into your PAC CLI. See how to [here](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/auth) via the `pac auth` command if you have not done so already.
 - **GitHub Copilot**
     - Within VS Code (as extension) or GitHub Copilot CLI
     - You don’t necessarily need this to make a Code App… as long as you are a good React dev 
