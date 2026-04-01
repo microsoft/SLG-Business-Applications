@@ -157,3 +157,6 @@ Run `npm run build` followed by `pac code push` to push your Code App to your ta
 
 ## Additional Resources
 - Imgur album: https://imgur.com/a/vOAGF0U
+
+## Author
+Written by [Tim Hanewich](https://timhanewich.github.io/), Sr. Solution Engineer @ Microsoft.
