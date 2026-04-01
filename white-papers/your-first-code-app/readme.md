@@ -144,7 +144,7 @@ Next step is to test out the app: run `npm run dev` and Vite will serve up your 
 
 Your app should be updated with an additional page that allows you to interface with data in your Contacts table.
 
-![Image 26](https://i.imgur.com/X8zQekz.jpeg)
+![Image 26](https://i.imgur.com/aYt3VYC.png)
 
 ## Push to your Environment
 And, just like last time, we are ready to push our app to our Power Platform environment!
