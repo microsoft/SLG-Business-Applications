@@ -156,7 +156,8 @@ Run `npm run build` followed by `pac code push` to push your Code App to your ta
 ![Image 28](https://i.imgur.com/PeWUzsN.jpeg)
 
 ## Additional Resources
-- Imgur album: https://imgur.com/a/vOAGF0U
+- [The images above in PowerPoint deck form](https://github.com/microsoft/SLG-Business-Applications/releases/download/51/Your.First.Power.Apps.Code.App.pptx)
+- [Official Code Apps Documentation](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/)
 
 ## Author
 Written by [Tim Hanewich](https://timhanewich.github.io/), Sr. Solution Engineer @ Microsoft.
