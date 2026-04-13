@@ -107,7 +107,7 @@ The PAC CLI will confirm it pushed successfully and provide a URL that you can n
 
 ![Image 19](https://i.imgur.com/TQBqmNj.jpeg)
 
-**IMPORTANT**: If you are deploying your code app to a *GCC environment* (not Commercial), you must update your `region` property to `gccmoderate` in your `power.config.json` file:
+> **🚨 IMPORTANT**: If you are deploying your code app to a *GCC environment* (not Commercial), you must update your `region` property to `gccmoderate` in your `power.config.json` file:
 
 ![gccmoderate](https://i.imgur.com/WQZL2Ga.png)
 
