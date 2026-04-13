@@ -3,9 +3,9 @@
 
 [Power Apps Code Apps](https://learn.microsoft.com/en-us/power-apps/developer/code-apps/overview) allows developers to bring custom React applications into the Power Platform, integrated with key Power Platform services like Dataverse, connectors, and Entra ID authentication.
 
-While there is no definitive date for the arrival of code apps in our sovereign clouds (GCC), it will be arriving soon.
+**As of April 2026, Power Apps Code Apps are confirmed to be available in GCC environments!**
 
-This article takes you through the basics of creating your first code app, step-by-step!
+This article takes you through the basics of creating your first code app, step-by-step.
 
 ## The Plan
 ![Image 2](https://i.imgur.com/jYrbGF5.jpeg)
