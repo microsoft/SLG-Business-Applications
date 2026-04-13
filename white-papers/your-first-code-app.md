@@ -111,7 +111,7 @@ The PAC CLI will confirm it pushed successfully and provide a URL that you can n
 
 ![gccmoderate](https://i.imgur.com/WQZL2Ga.png)
 
-Here is a list of other regions you may need to deploy to as well as their `region` value:
+Here is a list of other regions you may need to deploy (`prod`, `gccmoderate`, `gcchigh`, `dod`, etc.):
 
 ![region](https://i.imgur.com/GWaVvXg.png)
 
