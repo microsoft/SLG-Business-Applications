@@ -107,6 +107,14 @@ The PAC CLI will confirm it pushed successfully and provide a URL that you can n
 
 ![Image 19](https://i.imgur.com/TQBqmNj.jpeg)
 
+**IMPORTANT**: If you are deploying your code app to a *GCC environment* (not Commercial), you must update your `region` property to `gccmoderate` in your `power.config.json` file:
+
+![gccmoderate](https://i.imgur.com/WQZL2Ga.png)
+
+Here is a list of other regions you may need to deploy to as well as their `region` value:
+
+![region](https://i.imgur.com/GWaVvXg.png)
+
 ## Connect with Dataverse
 Ok - this Cat Facts app is fun, but how do we make it *real*? How can we, for example, connect our app to Dataverse and perform Create, Read, Update, Delete (CRUD) operations on it?
 
