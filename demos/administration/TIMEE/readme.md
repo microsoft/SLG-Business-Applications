@@ -101,7 +101,11 @@ And the following is an example of the response TIMEE would provide:
 ```
 
 ## Solution
-*(solution file and source code coming soon)*
+The TIMEE Power Platform Solution can be downloaded [here](https://github.com/microsoft/SLG-Business-Applications/releases/download/52/TIMEE.zip).
+
+Note the solution only contains two components: the Power App Canvas App that provides the TIMEE user interface and the TIMEE Custom Connector that the Power App uses to communicate with the API backend.
+
+![solution](https://i.imgur.com/8NNi4Bm.png)
 
 ## Media Assets
 - TIMEE Avatars
