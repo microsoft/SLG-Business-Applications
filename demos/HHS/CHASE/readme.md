@@ -5,6 +5,9 @@ The demo below follows Sarah Mitchell, a child welfare case worker, as she suppo
 
 [![demo_video_thumbnail](https://i.imgur.com/kZder4h.png)](https://youtu.be/F4pPeF-AMxQ)
 
+## What Technology makes this possible?
+*Solution architecture coming soon.*
+
 ## Credits
 CHASE was created by [Tim Hanewich](https://github.com/TimHanewich).
 
