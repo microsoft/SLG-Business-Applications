@@ -3,7 +3,7 @@
 
 The demo below follows Sarah Mitchell, a child welfare case worker, as she supports the Williams family through a stressful period involving job loss, food insecurity, school lunch support, and follow-up services. CHASE acts as Sarah's AI sidekick inside a child welfare workflow, helping her prepare for visits, capture case context, identify risks, draft follow-ups, and move administrative work forward while Sarah stays focused on the family.
 
-[![demo_video_thumbnail](https://i.imgur.com/kZder4h.png)]()
+[![demo_video_thumbnail](https://i.imgur.com/kZder4h.png)](https://youtu.be/F4pPeF-AMxQ)
 
 ## Credits
 CHASE was created by [Tim Hanewich](https://github.com/TimHanewich).
