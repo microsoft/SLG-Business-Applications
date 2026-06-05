@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://i.imgur.com/1XdPBGa.png" alt="CHASE banner" width="35%">
+</p>
+
 # CHASE: Child Health and Safety Expert
 **CHASE**, short for **Child Health And Safety Expert**, is a conceptual AI agent for child welfare case workers. CHASE was designed with the goal of giving case workers more time for the human work that matters most. AI agents can help carry the repetitive administrative load, connect information across systems, and turn next steps into momentum, while the case worker remains in control.
 
