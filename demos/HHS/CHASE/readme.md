@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://i.imgur.com/1XdPBGa.png" alt="CHASE banner" width="50%">
+    <img src="https://i.imgur.com/1XdPBGa.png" alt="CHASE banner" width="60%">
 </p>
 
 # CHASE: Child Health and Safety Expert
