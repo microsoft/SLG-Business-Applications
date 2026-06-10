@@ -9,17 +9,17 @@ The demo below follows Sarah Mitchell, a child welfare case worker, as she suppo
 
 [![demo_video_thumbnail](https://i.imgur.com/kZder4h.png)](https://youtu.be/F4pPeF-AMxQ)
 
-## What Technology makes this possible?
-CHASE, a vision for the future of Child Welfare in the era of AI Agents, is powered by a group of discreet capabilities on the Microsoft Powerplatform. These technologies come together to create a unified solution that is both external facing (families) and internal facing (Children & Family Service).
+## What technology makes this possible?
+CHASE is a vision for how AI agents can modernize child welfare. It brings together Microsoft technologies into a connected solution that supports both frontline case workers and the families they serve.
 
 ![solution architecture](https://i.imgur.com/WZIj2np.jpeg)
 
-- **Copilot Studio** serves as the AI Agent engine, performing in the background in parallel to Sarah's efforts. A Copilot Studio autonomous (background) agent reviews prior case history to synthesize the pre-visit briefing that Sarah reads in the morning. Post-visit, this agent reviews the transcript from the meeting and takes action to proactively file draft notes and suggested next steps for Sarah for her to review later. When Sarah selects which next steps to pursue, it works in the background to get a head start on those tasks.
-- **Power Apps** serves as CHASE's User Interface, a pane of glass that Sarah can use to review CHASE's output, including the dashboards, visit summaries, and proactive work against the case.
-- **Power Pages** serves to host the public-facing SNAP Portal, allowing families like Rebecca's to visit a public-facing site to complete and submit their application for SNAP benefits.
-- **Dynamics 365** and **Dataverse** serve as a Unified HHS Enterprise platform, with two spokes:
-    - **Comprehensive Child Welfare Information System (CCWIS)**: a CCWIS system, built on Dyamics 365, serves as the core CCWIS system, securely storing full case history for all families. CHASE integrates with this system to both read data to acquire case context and write data (drafted case notes, suggested next steps, task progress, etc).
-    - **Integrated Eligibility System (IES)**: a IES system, built on Dynamics 365 serves as the core IES system, securely receiving and storing SNAP applications that are submitted via the online portal. Because this IES system is built on the same technology as their CCWIS system (a unified platform), CHASE is able to begin a SNAP application leveraging family information previously collected as part of the Child Welfare process.
+- **Copilot Studio** powers the CHASE agent experience. An autonomous background agent reviews prior case history to generate Sarah's pre-visit briefing, then analyzes visit transcripts to draft case notes, surface risks, recommend next steps, and begin approved follow-up work in parallel.
+- **Power Apps** provides the CHASE experience for case workers: a single place for Sarah to review dashboards, visit summaries, recommendations, and the progress CHASE is making on her behalf.
+- **Power Pages** hosts the public-facing SNAP portal, giving families like Rebecca's a simple digital experience to resume, complete, and submit benefit applications.
+- **Dynamics 365** and **Dataverse** provide the unified HHS platform foundation, connecting child welfare and eligibility processes across a shared data and application layer:
+    - **Comprehensive Child Welfare Information System (CCWIS)**: Built on Dynamics 365, the CCWIS system serves as the system of record for family case history. CHASE reads from it to understand case context and writes back draft notes, suggested actions, and task progress for worker review.
+    - **Integrated Eligibility System (IES)**: Built on Dynamics 365, the IES system receives and stores SNAP applications submitted through the online portal. Because it operates on the same platform foundation as CCWIS, CHASE can intelligently pre-start an application using information already collected through the child welfare process.
 
 ## Credits
 CHASE was created by [Tim Hanewich](https://github.com/TimHanewich).
