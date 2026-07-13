@@ -22,7 +22,7 @@ The following table pairs a Power Platform component its current support for cre
 | Copilot Studio Agents | **Yes.** Use `pac copilot create`, then edit the generated YAML locally. Agents can also be modified through the `bots` Dataverse record. |
 | AI Builder Models & Prompts | **Kind of.** `pac solution export/import` can clone an existing asset, modify it, and re-import it. Useful, but still somewhat obscure. |
 
-## Power Platform Plugins Overview
+## Power Platform Plugins: High-Level Overview
 Microsoft officially supports Power Platform development by AI Coding Agents via the [Power Platform Agent Skill Plugins](https://github.com/microsoft/power-platform-skills/). Each plugin contains unique **skills** and **agents** that assist in creating various types of Power Platform resources. When using these agents for development, focus on triggering these skills as you work through the creation lifecycle of the component.
 
 - App Development
