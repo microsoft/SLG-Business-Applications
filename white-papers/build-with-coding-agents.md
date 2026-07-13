@@ -6,6 +6,8 @@ Power Platform is increasingly becoming an AI-first development platform. Many o
 This whitepaper helps answer **which Power Platform components are ready for agentic development today, and how should a developer approach them?**
 
 ## Can a coding agent make that?
+The following table pairs a Power Platform component its current support for creation via Coding Agents and what tools/approaches to use.
+
 | Component | Can a coding agent make it? |
 | - | - |
 | Power Apps Code Apps | **Yes.** Officially supported via the [Code Apps Plugin](https://github.com/microsoft/power-platform-skills/tree/main/plugins/code-apps). |
