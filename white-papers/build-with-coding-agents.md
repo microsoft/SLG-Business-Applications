@@ -3,7 +3,7 @@ Coding agents are quickly becoming a normal part of how developers build softwar
 
 Power Platform is increasingly becoming an AI-first development platform. Many of its components can now be created, modified, and deployed through coding agents, especially when paired with the right plugins, CLIs, and source-controlled project structures.
 
-This whitepaper helps answer *which Power Platform components are ready for agentic development today, and how should a developer approach them?*
+This whitepaper helps answer **which Power Platform components are ready for agentic development today, and how should a developer approach them?**
 
 ## Can a coding agent make that?
 | Component | Can a coding agent make it? |
