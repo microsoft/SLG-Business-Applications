@@ -10,7 +10,7 @@ The following table pairs a Power Platform component its current support for cre
 
 | Component | Can a coding agent make it? |
 | - | - |
-| Solutions | **Yes.** Via `pac solution init` of the PAC CLI. |
+| Solutions | **Yes.** Via [`pac solution`](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/solution) of the PAC CLI. |
 | Power Apps Code Apps | **Yes.** Officially supported via the [Code Apps Plugin](https://github.com/microsoft/power-platform-skills/tree/main/plugins/code-apps). |
 | Power Apps Canvas Apps | **Yes.** Officially supported via the [Canvas Apps Plugin](https://github.com/microsoft/power-platform-skills/tree/main/plugins/canvas-apps). |
 | Power Apps Model-Driven Apps | **Yes.** Officially supported via the [Model-Driven Apps Plugin](https://github.com/microsoft/power-platform-skills/tree/main/plugins/model-apps). |
