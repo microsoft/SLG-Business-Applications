@@ -19,7 +19,7 @@ The following table pairs a Power Platform component its current support for cre
 | Power BI Report Authoring | **Yes.** Officially supported via the [Power BI Report Authoring Plugin](https://github.com/microsoft/skills-for-fabric/tree/main/plugins/powerbi-authoring). |
 | Custom Connectors & MCP Servers | **Yes.** A coding agent can work against the `connectors` Dataverse table, including OpenAPI definitions stored in connector records. |
 | Power Automate Cloud Flows | **Yes.** A coding agent can work against the `workflows` Dataverse table, where cloud flows are represented as Azure Logic Apps JSON. |
-| Copilot Studio Agents | **Yes.** Use `pac copilot create`, then edit the generated YAML locally. Agents can also be modified through the `bots` Dataverse record. |
+| Copilot Studio Agents | **Yes.** Use `pac copilot create`, then edit the generated YAML locally. Agents can also be modified through the `bots` Dataverse record. Experimental [Copilot Studio Plugin](https://github.com/microsoft/copilot-studio-plugin) available too. |
 | AI Builder Models & Prompts | **Kind of.** `pac solution export/import` can clone an existing asset, modify it, and re-import it. Useful, but still somewhat obscure. |
 
 ## Power Platform Plugins: High-Level Overview
@@ -64,7 +64,7 @@ Microsoft officially supports Power Platform development by AI Coding Agents via
             - `create-webroles`: creates web roles (security roles) for site
             - `setup-auth`: adds login/logout functionality and role-based authorization to the site.
 - Agents
-    - [Copilot Studio]()
+    - [Copilot Studio](https://github.com/microsoft/copilot-studio-plugin) - *experimental plugin with agents, not skills*
 - Data
     - [Dataverse](https://github.com/microsoft/Dataverse-skills/tree/main/.github/plugins/dataverse)
         - `dv-connect`: installs the [Dataverse CLI](https://www.npmjs.com/package/@microsoft/dataverse), Python SDK, PAC CLI. Then authenticates, sets up Dataverse MCP server.
