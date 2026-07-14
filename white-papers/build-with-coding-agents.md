@@ -63,6 +63,8 @@ Microsoft officially supports Power Platform development by AI Coding Agents via
         - Security skills
             - `create-webroles`: creates web roles (security roles) for site
             - `setup-auth`: adds login/logout functionality and role-based authorization to the site.
+- Agents
+    - [Copilot Studio]()
 - Data
     - [Dataverse](https://github.com/microsoft/Dataverse-skills/tree/main/.github/plugins/dataverse)
         - `dv-connect`: installs the [Dataverse CLI](https://www.npmjs.com/package/@microsoft/dataverse), Python SDK, PAC CLI. Then authenticates, sets up Dataverse MCP server.
@@ -76,3 +78,11 @@ Microsoft officially supports Power Platform development by AI Coding Agents via
 - Misc
     - [MCP Apps Widget Generator](https://github.com/microsoft/power-platform-skills/tree/main/plugins/mcp-apps) - *for creating visual "widgets" that display the results of MCP tool calls within chat interfaces like M365 Copilot. Not sure why it is in the Power Platform repo.*
 - [Power BI Report Authoring](https://github.com/microsoft/skills-for-fabric/tree/main/plugins/powerbi-authoring)
+
+## Other capabilities to be aware of
+- `pac copilot` command of the PAC CLI allows for lifecycle management of Copilot Studio agents. Docs [here](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/copilot).
+- [Power Apps Code Apps CLI on npm](https://www.npmjs.com/package/@microsoft/power-apps?activeTab=readme) (CLI add-on to the npm SDK)
+    - Supports what was once the `pac code` commands from the PAC CLI (see [here](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/code))
+- [Dataverse CLI on npm](https://www.npmjs.com/package/@microsoft/dataverse) - see "Command Reference" section [here](https://www.npmjs.com/package/@microsoft/dataverse)
+    - [Docs](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction?tabs=windows)
+    - To run it: `npx dataverse` (downloads, caches, and runs)
