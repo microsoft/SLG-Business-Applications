@@ -87,3 +87,16 @@ Microsoft officially supports Power Platform development by AI Coding Agents via
 - [Dataverse CLI on npm](https://www.npmjs.com/package/@microsoft/dataverse) - see "Command Reference" section [here](https://www.npmjs.com/package/@microsoft/dataverse)
     - [Docs](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction?tabs=windows)
     - To run it: `npx dataverse` (downloads, caches, and runs)
+
+## Programatically Building: Further Details
+Exactly how can an agent (or even a human!) programatically build these components? We'll take a closer look at a few from above. By documenting these, we are A) developing an understanding of the process and B) providing guides for agents.
+
+### Solution Creation
+- `pac auth list` and `pac auth create`: ensure authenticated into PAC CLI.
+- `pac solution init --publisher-name "timhtesting" --publisher-prefix "timh"`: scaffolds a new solution locally (XML files)
+- `pac solution pack --zipfile "bin\311Management.zip" --folder "src" --packagetype Unmanaged`: packs solution into importable `.zip`
+- `pac solution import --path "bin\311Management.zip" --publish-changes`: imports solution into environment
+- `pac solution list`: validate it landed there.
+
+### Dataverse Table Creation
+- `dv-metadata` skill ships with `auth.py` that can be executed to handle token acquisition and caching.
