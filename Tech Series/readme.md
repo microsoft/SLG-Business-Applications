@@ -9,7 +9,7 @@ We deliver valuable insights and expertise across two pillars, each month, to ca
 
 By attending these monthly sessions, you'll gain a deeper understanding of Power Platform and its applications in State & Local government, as well as valuable insights from Microsoft experts and peers. Join us to stay ahead of the curve and achieve more with Power Platform!
 
-*Looking for pre-July 2025 sessions? We have a catalog of over 80 sessions [here](./pre-July-2025.md)!*
+*Looking for older sessions? We have a catalog of 100+ previous session recordings [here](./archive.md)!*
 
 |Month|Agentic Dynamics 365 First Party Apps|Apps & Agents|
 |-|-|-|
