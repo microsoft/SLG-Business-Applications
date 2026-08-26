@@ -3,26 +3,25 @@
 # SLG Business Applications Tech Evangelism Series
 The Microsoft SLG Business Applications team presents a series of monthly sessions to educate, inform, and inspire State & Local government organizations to achieve more with Power Platform!
 
-We deliver valuable insights and expertise across three pillars, each month, to cater to diverse needs and skill levels:
-- **AI Business Solutions** - The AI Business Solutions pillar strives to spotlight transformative, real-world solutions that harness the power of Microsoft’s Business Applications as a unifying platform. By integrating with Modern Work, Azure Data & AI, and virtually any ecosystem—Microsoft or otherwise—this pillar demonstrates how organizations can break down silos and create holistic, intelligent workflows. Through compelling customer stories and practical examples, our mission is to inspire innovation, accelerate adoption, and showcase the full potential of AI-driven business transformation.​
-- **Copilot Agents** - This series will explore how Copilot Agents—powered by Copilot Studio and Microsoft 365 Copilot—are transforming the way organizations automate, personalize, and scale business processes, with real-world scenarios showing how low-code AI agents can be used within the Power Platform and rapidly built, deployed, and integrated across agency and department needs; attendees will gain insights into designing intelligent copilots that enhance productivity, streamline operations, and deliver measurable business value.
-- **Advanced Power Platform** - The Advanced Power Platform Capabilities pillar showcases how makers and pro developers can collaboratively build scalable, enterprise-ready solutions by extending the platform with TypeScript, C#, and Python, integrating with Azure and GitHub to enable sophisticated apps and automations, and driving innovation through advanced development patterns and practical, real-world demonstrations.
+We deliver valuable insights and expertise across two pillars, each month, to cater to diverse needs and skill levels:
+- **Agentic Dynamics 365 First Party Apps** - Spotlights the AI agents Microsoft ships natively inside the Dynamics 365 first-party apps. Taking an AI-first approach, each session leads with an embedded agent doing real public-sector work out of the box, grounded in a SLED or EDU scenario from our GCC tenant, and shows the path to extend it further.
+- **Apps & Agents** - Spotlights how SLG and EDU customers can modernize mission-critical work with Power Platform apps, automation, agents, and governed data. Taking a business-problem-first approach, each session anchors in a real public-sector or higher education process, shows the solution path through a GCC-ready demo, and connects the story back to governance, security, ALM, and production readiness.
 
 By attending these monthly sessions, you'll gain a deeper understanding of Power Platform and its applications in State & Local government, as well as valuable insights from Microsoft experts and peers. Join us to stay ahead of the curve and achieve more with Power Platform!
 
 *Looking for pre-July 2025 sessions? We have a catalog of over 80 sessions [here](./pre-July-2025.md)!*
 
-|Month|AI Business Solutions|Copilot Agents|Advanced PP|
-|-|-|-|-|
-|August 2025|[Form Agentification](https://www.youtube.com/watch?v=ruMt6cg86wU)|[Copilot Studio Basics](https://www.youtube.com/watch?v=ZFISa3QVG70)|[Power Platform Managed Environments](https://www.youtube.com/watch?v=nqU01ZoQapE)|
-|September 2025|[Smarter Conversations: Unlocking D365 Contact Center Voice & IVR](https://www.youtube.com/watch?v=wy98HiXObZk)|[Decoding Copilot and Copilot Studio](https://www.youtube.com/watch?v=Qpl7N6iQFBE)|[Streamlining ALM with Power Platform](https://www.youtube.com/watch?v=dsQBhKXWAM4)|
-|October 2025|[Smart Data Integration: Strategies for Seamless, Scalable Apps](https://www.youtube.com/watch?v=Uetera39av4)|[Accelerate and Automate: Meet the New Plan Designer](https://www.youtube.com/watch?v=_QqvWMLqbYc)|[AI-Powered Development in Canvas Apps: YAML & Copilot](https://youtu.be/7ZHp8cTJAx0)|
-|November 2025|[Securely Evolving: Advancing Security Through Governance, Privacy, and Automation](https://www.youtube.com/watch?v=i-qXVPJPPac)|[Smarter Together: Power Apps & AI in the Power Platform](https://www.youtube.com/watch?v=FmArEZoa0pA)|[Extending the Power Platform with Custom Code](https://www.youtube.com/watch?v=4ebm_vfHYm8)|
-|December 2025|*none*|*none*|*none*|
-|January 2026|Power Platform Playbook: Proven tips, tricks, and best practices that work in the wild (*recording lost*)|[From Ideas to Impact: Real-World AI Use Cases in Power Platform](https://www.youtube.com/watch?v=37IL_GNgAhc)|[Copilot Studio Authentication](https://www.youtube.com/watch?v=Y6ueCvyF5wI&feature=youtu.be)|
-|February 2026|[Accessibility as a Differentiator: Copilot-Powered Inclusion](https://www.youtube.com/watch?v=d0WR6ad2xeQ)|[AI-Enabling Your Agency in 2026: Where to Start](https://www.youtube.com/watch?v=64dZ1Ksk_90)|[When Government Gets a Co‑Pilot: Autonomous Agents That Actually Get Work Done](https://www.youtube.com/watch?v=rDBYdvhp9xM)|
-|March 2026|[From Contact to Action: Connecting Contact Center to Field Service with D365 & Copilot](https://www.youtube.com/watch?v=Xs--9TppSqs)|[The Agent Matchmaker: Finding the Perfect AI Partner for Your Organization](https://youtu.be/AILvzwA_jH4) ([deck](https://github.com/microsoft/SLG-Business-Applications/releases/download/50/The.Agent.Matchmaker.pdf))|[Getting More out of your Copilot Studio Agents](https://www.youtube.com/watch?v=mFsVT1HhaiA)|
-|April 2026|*none*|[FAST (App Starter Templates)](https://www.youtube.com/watch?v=IAbx1-UCMGA)|[Code Apps for Power Platform](https://www.youtube.com/watch?v=FpfiRtk8Mic) ([deck](https://github.com/microsoft/SLG-Business-Applications/releases/download/53/code-apps-deck.pdf))|
-|May 2026|[Dynamics 365 Contact Center Autonomous Service Agents Tour](https://www.youtube.com/watch?v=b6X7GBRDF8Y)|[The people demand agents! Now what?](https://www.youtube.com/watch?v=pCSNZvUO3iI)|[From Prompt to Portal: Building Modern Websites with Power Pages and GitHub Copilot](https://youtu.be/g-0xHWVCDwQ)|
-|June 2026|[Modernizing Disaster Response](https://msit.events.teams.microsoft.com/event/msit.caecc117-7fa0-4426-abd3-7d36f7dbcb86@72f988bf-86f1-41af-91ab-2d7cd011db47)|[Prompting for Agents: How Better Instructions Create Better Outcomes (Copilot Studio Edition)](https://youtu.be/rjDN13P1Kcw)|[From Reteaching to Reuse: Context Engineering GitHub Copilot Across Projects](https://www.youtube.com/watch?v=Z84qGPgr5DI)|
-|July 2026|(off)|(off)|(off)|
+|Month|Agentic Dynamics 365 First Party Apps|Apps & Agents|
+|-|-|-|
+|August 2026| | |
+|September 2026| | |
+|October 2026| | |
+|November 2026| | |
+|December 2026| | |
+|January 2027| | |
+|February 2027| | |
+|March 2027| | |
+|April 2027| | |
+|May 2027| | |
+|June 2027| | |
+|July 2027| | |
