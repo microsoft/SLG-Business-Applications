@@ -15,13 +15,3 @@ By attending these monthly sessions, you'll gain a deeper understanding of Power
 |-|-|-|
 |August 2026| | |
 |September 2026| | |
-|October 2026| | |
-|November 2026| | |
-|December 2026| | |
-|January 2027| | |
-|February 2027| | |
-|March 2027| | |
-|April 2027| | |
-|May 2027| | |
-|June 2027| | |
-|July 2027| | |
