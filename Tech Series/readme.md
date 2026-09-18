@@ -11,6 +11,10 @@ By attending these monthly sessions, you'll gain a deeper understanding of Micro
 
 *Looking for older sessions? We have a catalog of 100+ previous session recordings [here](./archive.md)!*
 
+## Build & Deep-Dive Series
+- [Copilot Studio Governance Series](./Copilot-Studio-Governance/) - a four-part video series on governing Copilot Studio for SLED organizations.
+- [Case Management Build Series](./Case-Mgt-Build-Series/) - a 3-part solution build series on Dynamics 365 Case Management, Power Pages, and Power Apps.
+
 |Month|Agentic Dynamics 365 First Party Apps|Apps & Agents|
 |-|-|-|
 |August 2026|[Transforming Citizen and Student Experiences with Proactive Engagement](https://www.youtube.com/watch?v=yIBT5Kv0-F4)|[Rethinking How Government and Higher Ed Work Gets Done](https://www.youtube.com/watch?v=-Y2zmHFed5Q)|

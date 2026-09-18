@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1365" height="768" viewBox="0 0 1365 768" role="img" aria-labelledby="title desc">
+  <title id="title">Tenant Settings and DLP Policies</title>
+  <desc id="desc">Part 01 of the Copilot Studio Governance Series</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.45" stop-color="#f5f7fa"/>
+      <stop offset="0.72" stop-color="#c8dfe6"/>
+      <stop offset="1" stop-color="#adcce4"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4fd2c3"/>
+      <stop offset="0.52" stop-color="#3f8ef2"/>
+      <stop offset="1" stop-color="#1555d6"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4fd2c3"/>
+      <stop offset="1" stop-color="#236be7"/>
+    </linearGradient>
+    <linearGradient id="cubeBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5ca1f8"/>
+      <stop offset="1" stop-color="#1262e3"/>
+    </linearGradient>
+    <linearGradient id="cubeTeal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5bd9d5"/>
+      <stop offset="1" stop-color="#28b7d1"/>
+    </linearGradient>
+    <filter id="shadow" x="-60%" y="-60%" width="220%" height="240%">
+      <feDropShadow dx="5" dy="12" stdDeviation="10" flood-color="#40566f" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1365" height="768" fill="url(#background)"/>
+  <rect width="10" height="768" fill="url(#edge)"/>
+
+  <g fill="none" stroke="#e8f7f8" stroke-width="2" opacity="0.82">
+    <rect x="928" y="104" width="555" height="492" rx="48" transform="rotate(6 928 104)"/>
+    <rect x="973" y="387" width="530" height="397" rx="48" transform="rotate(2 973 387)"/>
+    <rect x="1135" y="375" width="418" height="402" rx="48" transform="rotate(-7 1135 375)"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="84" y="86" fill="#1769df" font-size="27" font-weight="700" letter-spacing="3.2">PART 01</text>
+    <circle cx="224" cy="76" r="4.5" fill="#c5d1e0"/>
+    <text x="240" y="86" fill="#7589a5" font-size="27" font-weight="700" letter-spacing="3.2">GOVERNANCE SERIES</text>
+
+    <text x="84" y="373" fill="#071226" font-size="72" font-weight="800" letter-spacing="-1.7">TENANT SETTINGS</text>
+    <text x="84" y="451" fill="#071226" font-size="72" font-weight="800" letter-spacing="-1.7">&amp; DLP POLICIES</text>
+    <rect x="84" y="490" width="213" height="8" rx="4" fill="url(#rule)"/>
+
+    <text x="84" y="702" fill="#5f718b" font-size="27" font-weight="600" letter-spacing="2.6">COPILOT STUDIO</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(1204 64) rotate(10)">
+      <rect width="107" height="107" rx="28" fill="url(#cubeBlue)"/>
+      <path d="M0 28Q0 0 28 0H79Q107 0 107 28V47Q75 57 0 41Z" fill="#72adf7" opacity="0.62"/>
+    </g>
+    <g transform="translate(1260 519) rotate(-9)">
+      <rect width="84" height="84" rx="22" fill="url(#cubeBlue)"/>
+      <path d="M0 22Q0 0 22 0H62Q84 0 84 22V37Q55 47 0 36Z" fill="#72adf7" opacity="0.58"/>
+    </g>
+    <g transform="translate(840 602) rotate(-15)">
+      <rect width="69" height="69" rx="19" fill="url(#cubeTeal)"/>
+      <path d="M0 18Q0 0 18 0H51Q69 0 69 18V30Q43 40 0 29Z" fill="#70dfdc" opacity="0.62"/>
+    </g>
+  </g>
+</svg>

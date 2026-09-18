@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copilot Studio Governance Series | U.S. SLED Business Applications</title>
+<style>
+  :root {
+    --page: #ffffff;
+    --band: #f7f9fc;
+    --card: #ffffff;
+    --border: #e3e8ef;
+    --ink: #0b1727;
+    --body: #5a6779;
+    --muted: #7b8798;
+    --brand: #0f62c4;
+    --brand-dark: #0b4fa0;
+    --radius: 10px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font: 16px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+
+  a { color: var(--brand); }
+  a:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; border-radius: 4px; }
+
+  /* ---------- Hero ---------- */
+
+  /* Layered gradient renders on its own if assets/hero.jpg is absent. */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: 44px 0 48px;
+    background-color: #eef4ff;
+    background-image:
+      url("assets/hero.jpg"),
+      radial-gradient(1100px 460px at 88% -10%, #dfe6ff 0%, rgba(223,230,255,0) 62%),
+      radial-gradient(760px 420px at 62% 96%, #d9f0ff 0%, rgba(217,240,255,0) 66%),
+      radial-gradient(620px 380px at 8% 8%, #e6f7f1 0%, rgba(230,247,241,0) 70%),
+      linear-gradient(120deg, #f4f8ff 0%, #eef4ff 48%, #e9f2fb 100%);
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
+
+  /* Keeps the headline legible over the artwork. */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(100deg, rgba(255,255,255,.99) 0%, rgba(255,255,255,.96) 30%, rgba(255,255,255,.86) 48%, rgba(255,255,255,.45) 66%, rgba(255,255,255,0) 88%);
+  }
+  .hero .wrap { position: relative; }
+
+  .eyebrow {
+    display: inline-block;
+    margin: 0 0 22px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    background: rgba(255,255,255,.72);
+    color: var(--brand);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    max-width: 16ch;
+    margin: 0 0 20px;
+    font-size: clamp(2.2rem, 5.2vw, 3.4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -.02em;
+  }
+
+  .lede { max-width: 52ch; margin: 0; color: var(--body); font-size: 1rem; }
+
+  .series-details {
+    display: grid;
+    max-width: 760px;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 28px;
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(15,98,196,.2);
+  }
+
+  .series-detail-label {
+    margin: 0 0 4px;
+    color: var(--brand-dark);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+  }
+
+  .series-detail-copy { margin: 0; color: var(--body); font-size: .86rem; line-height: 1.5; }
+  .series-creators { display: grid; gap: 3px; margin: 0; padding: 0; list-style: none; }
+  .series-creators li { color: var(--body); font-size: .86rem; line-height: 1.5; }
+
+  /* ---------- Series ---------- */
+
+  .series { padding: 36px 0 64px; background: var(--band); }
+
+  .list { display: flex; flex-direction: column; gap: 20px; }
+
+  .card {
+    display: flex;
+    height: 218px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card);
+    box-shadow: 0 1px 2px rgba(16,32,58,.05);
+    transition: box-shadow .16s ease, border-color .16s ease;
+  }
+  .card:hover { border-color: #cfd9e6; box-shadow: 0 8px 24px rgba(16,32,58,.09); }
+
+  /* Width is tuned so the stretched thumb lands at roughly 16:9 against the card body. */
+  .thumb {
+    position: relative;
+    flex: 0 0 384px;
+    align-self: stretch;
+    min-height: 216px;
+    background: var(--card);
+  }
+
+  .thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .thumb.video-two img,
+  .thumb.video-three img,
+  .thumb.video-four img {
+    object-fit: contain;
+  }
+
+  .thumb::after {
+    content: "";
+    position: absolute;
+    right: 7px;
+    bottom: -2px;
+    width: 36%;
+    aspect-ratio: 520 / 373;
+    background: url("assets/presenters-doug-kelly.png") right bottom / contain no-repeat;
+    filter: drop-shadow(0 3px 3px rgba(7,18,38,.24));
+    pointer-events: none;
+  }
+
+  .body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 22px 20px;
+  }
+
+
+  h3 { margin: 0 0 8px; font-size: 1.06rem; font-weight: 700; letter-spacing: -.01em; }
+
+  .card p { margin: 0 0 12px; max-width: 74ch; color: var(--body); font-size: .89rem; line-height: 1.55; }
+
+
+  .watch {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 14px;
+    border-radius: 6px;
+    background: var(--brand);
+    color: #fff;
+    font-size: .82rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: auto;
+  }
+  .watch:hover { background: var(--brand-dark); color: #fff; }
+
+  /* ---------- Video player ---------- */
+
+  .video-dialog {
+    width: min(960px, calc(100% - 32px));
+    max-width: none;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: var(--radius);
+    background: #000;
+    color: var(--ink);
+    box-shadow: 0 24px 72px rgba(2,12,27,.36);
+  }
+  .video-dialog::backdrop { background: rgba(4,13,26,.78); }
+
+  .video-dialog-header {
+    display: flex;
+    min-height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 11px 12px 11px 18px;
+    background: var(--card);
+  }
+  .video-dialog h2 { margin: 0; font-size: 1rem; line-height: 1.35; }
+
+  .video-dialog-close {
+    display: grid;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    place-items: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--card);
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .video-dialog-close:hover { background: #eef2f7; }
+  .video-dialog-close:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+  .video-frame {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    background: #000;
+  }
+
+  .video-dialog-fallback {
+    display: flex;
+    justify-content: flex-end;
+    padding: 9px 16px 10px;
+    background: var(--card);
+  }
+  .video-dialog-fallback a { font-size: .8rem; font-weight: 600; }
+
+  /* ---------- Footer ---------- */
+
+  footer {
+    width: 100%;
+    padding: 28px 0 36px;
+    border-top: 1px solid var(--border);
+    background: var(--page);
+    color: var(--muted);
+    font-size: .8rem;
+  }
+  footer .wrap { max-width: none; }
+  footer p { width: 100%; margin: 0 0 10px; }
+  footer p:last-child { margin-bottom: 0; }
+  footer a { color: inherit; }
+
+  @media (max-width: 720px) {
+    .wrap { padding: 0 20px; }
+    .hero { padding: 36px 0 40px; }
+    .hero::before { background: linear-gradient(180deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.9) 72%, rgba(255,255,255,.86) 100%); }
+    .series-details { grid-template-columns: 1fr; gap: 16px; }
+    .card { height: auto; flex-direction: column; }
+    .body { flex: none; height: 230px; }
+    .thumb { flex: none; align-self: auto; aspect-ratio: 16 / 9; min-height: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">4-Part Video Series</p>
+    <h1>Copilot Studio Governance Series</h1>
+    <p class="lede">A practical series covering tenant settings, environment strategy, DLP policies, licensing, security roles, billing, and consumption.</p>
+    <div class="series-details" aria-label="Series guidance and contacts">
+      <div>
+        <p class="series-detail-label">Recommended viewing</p>
+        <p class="series-detail-copy">Watch this series in order to set up the minimum recommended configuration to prepare your tenant for Copilot Studio agent development and usage.</p>
+      </div>
+      <div>
+        <p class="series-detail-label">Created by</p>
+        <ul class="series-creators">
+          <li>Doug Bell</li>
+          <li>Kelly Cason</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="series" id="episodes">
+    <div class="wrap">
+      <div class="list">
+
+        <article class="card">
+          <a class="thumb video-one video-trigger" href="https://youtu.be/su6vKWZ4I6Y" data-video-id="su6vKWZ4I6Y" data-video-title="Tenant Settings &amp; DLP Policies" aria-label="Play Part 1: Tenant Settings and DLP Policies">
+            <img src="assets/part-01-tenant-settings-dlp-policies.svg" alt="Part 01 — Tenant Settings and DLP Policies">
+          </a>
+          <div class="body">
+            <h3>Tenant Settings &amp; DLP Policies</h3>
+            <p>Learn how to enable publishing for Copilot Studio agents through tenant settings, protect your tenant with DLP policies, and define an environment strategy.</p>
+            <a class="watch video-trigger" href="https://youtu.be/su6vKWZ4I6Y" data-video-id="su6vKWZ4I6Y" data-video-title="Tenant Settings &amp; DLP Policies">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2.5 1.3 10 6l-7.5 4.7z"/></svg>
+              Watch part 1
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb video-two video-trigger" href="https://youtu.be/6y4UVMNDxaI" data-video-id="6y4UVMNDxaI" data-video-title="Environment Setup and Creation" aria-label="Play Part 2: Environment Setup and Creation">
+            <img src="assets/part-02-environment-setup.png" alt="Part 02 — Environment Setup">
+          </a>
+          <div class="body">
+            <h3>Environment Setup and Creation</h3>
+            <p>Learn how to assign environment admins, create an environment, enable generative AI features, and assign a DLP policy exclusion to the new environment.</p>
+            <a class="watch video-trigger" href="https://youtu.be/6y4UVMNDxaI" data-video-id="6y4UVMNDxaI" data-video-title="Environment Setup and Creation">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2.5 1.3 10 6l-7.5 4.7z"/></svg>
+              Watch part 2
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb video-three video-trigger" href="https://youtu.be/ZKneOZIQW8w" data-video-id="ZKneOZIQW8w" data-video-title="Licensing and Security Roles" aria-label="Play Part 3: Licensing and Security Roles">
+            <img src="assets/part-03-licensing-security-roles.png" alt="Part 03 — Licensing and Security Roles">
+          </a>
+          <div class="body">
+            <h3>Licensing and Security Roles</h3>
+            <p>Learn how to provision users to access Copilot Studio and build agents through licensing and security roles.</p>
+            <a class="watch video-trigger" href="https://youtu.be/ZKneOZIQW8w" data-video-id="ZKneOZIQW8w" data-video-title="Licensing and Security Roles">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2.5 1.3 10 6l-7.5 4.7z"/></svg>
+              Watch part 3
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb video-four video-trigger" href="https://youtu.be/3Nk3NfktYe4" data-video-id="3Nk3NfktYe4" data-video-title="Billing, Licensing, and Consumption" aria-label="Play Part 4: Billing, Licensing, and Consumption">
+            <img src="assets/part-04-billing-licensing-consumption.jpg" alt="Part 04 — Billing, Licensing, and Consumption">
+          </a>
+          <div class="body">
+            <h3>Billing, Licensing, and Consumption</h3>
+            <p>Learn how to set up a PAYG billing plan, connected to your Azure Subscription, and then assign it to target environments.</p>
+            <a class="watch video-trigger" href="https://youtu.be/3Nk3NfktYe4" data-video-id="3Nk3NfktYe4" data-video-title="Billing, Licensing, and Consumption">
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M2.5 1.3 10 6l-7.5 4.7z"/></svg>
+              Watch part 4
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog class="video-dialog" id="video-player" aria-labelledby="video-player-title">
+  <div class="video-dialog-header">
+    <h2 id="video-player-title">Video player</h2>
+    <button class="video-dialog-close" type="button" aria-label="Close video">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M6 6l12 12M18 6 6 18"/>
+      </svg>
+    </button>
+  </div>
+  <iframe class="video-frame" id="video-frame" title="Video player" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="video-dialog-fallback">
+    <a id="video-player-fallback" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
+  </div>
+</dialog>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Educational content only.</strong> This independent video series reflects the presenters&rsquo; understanding as of each recording date and is not official Microsoft product documentation, licensing guidance, legal advice, security advice, or compliance advice.</p>
+    <p>Microsoft products, services, features, availability, terminology, and licensing can change. Always verify current capabilities, requirements, limits, and licensing with the applicable official Microsoft documentation and licensing guides before making business, technical, procurement, security, or compliance decisions.</p>
+    <p>Content is provided &ldquo;as is,&rdquo; without warranties or guarantees of accuracy, completeness, or fitness for a particular purpose. Microsoft, Copilot, Copilot Studio, Power Platform, and related product names may be trademarks of Microsoft Corporation. Site source is available under the repository&rsquo;s <a href="../../LICENSE">MIT License</a>.</p>
+  </div>
+</footer>
+
+<script>
+  const videoDialog = document.querySelector('#video-player');
+  const videoFrame = document.querySelector('#video-frame');
+  const videoTitle = document.querySelector('#video-player-title');
+  const videoFallback = document.querySelector('#video-player-fallback');
+  const videoClose = document.querySelector('.video-dialog-close');
+  let videoOpener = null;
+
+  function resetVideo() {
+    videoFrame.src = 'about:blank';
+    videoOpener?.focus();
+    videoOpener = null;
+  }
+
+  function closeVideo() {
+    if (videoDialog.open) videoDialog.close();
+    resetVideo();
+  }
+
+  for (const trigger of document.querySelectorAll('.video-trigger')) {
+    trigger.setAttribute('aria-haspopup', 'dialog');
+    trigger.setAttribute('aria-controls', 'video-player');
+    trigger.addEventListener('click', (event) => {
+      if (typeof videoDialog.showModal !== 'function') return;
+
+      event.preventDefault();
+      videoOpener = trigger;
+      videoTitle.textContent = trigger.dataset.videoTitle;
+      videoFrame.title = `${trigger.dataset.videoTitle} video player`;
+      videoFrame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(trigger.dataset.videoId)}?autoplay=1&rel=0&playsinline=1`;
+      videoFallback.href = trigger.href;
+      videoDialog.showModal();
+    });
+  }
+
+  videoClose.addEventListener('click', closeVideo);
+
+  videoDialog.addEventListener('cancel', (event) => {
+    event.preventDefault();
+    closeVideo();
+  });
+
+  videoDialog.addEventListener('click', (event) => {
+    const bounds = videoDialog.getBoundingClientRect();
+    const clickedBackdrop = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+    if (clickedBackdrop) closeVideo();
+  });
+
+  videoDialog.addEventListener('close', resetVideo);
+</script>
+</body>
+</html>
