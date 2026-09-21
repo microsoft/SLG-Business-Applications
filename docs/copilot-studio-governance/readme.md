@@ -34,7 +34,7 @@ Learn how to set up a PAYG billing plan, connected to your Azure Subscription, a
 
 ## Landing page
 
-The [interactive landing page](./index.html) presents all four videos in one place and supports in-page playback when hosted with GitHub Pages.
+The [interactive landing page](https://microsoft.github.io/SLG-Business-Applications/copilot-studio-governance/) presents all four videos in one place and supports in-page playback when hosted with GitHub Pages.
 
 ## Included assets
 
