@@ -18,4 +18,4 @@ By attending these monthly sessions, you'll gain a deeper understanding of Micro
 |Month|Agentic Dynamics 365 First Party Apps|Apps & Agents|
 |-|-|-|
 |August 2026|[Transforming Citizen and Student Experiences with Proactive Engagement](https://www.youtube.com/watch?v=yIBT5Kv0-F4)|[Rethinking How Government and Higher Ed Work Gets Done](https://www.youtube.com/watch?v=-Y2zmHFed5Q)|
-|September 2026|[Optimizing the Workforce: AI-Powered Engagement and Performance Management](https://msit.events.teams.microsoft.com/event/msit.1c2a146b-ed59-4a26-bd45-23a4b195ba01@72f988bf-86f1-41af-91ab-2d7cd011db47?source=copyLinkLegacyShareLinkDialog)|[Meet the NEW Copilot Studio: Rebuilt for Complex, Multi-Step Work](https://msit.events.teams.microsoft.com/event/msit.cbfbdf78-b425-4541-af95-36ef7de7a792@72f988bf-86f1-41af-91ab-2d7cd011db47?source=copyLinkLegacyShareLinkDialog)|
+|September 2026|[Optimizing the Workforce: AI-Powered Engagement and Performance Management](https://www.youtube.com/watch?v=ug6ew03IQ38)|[Meet the NEW Copilot Studio: Rebuilt for Complex, Multi-Step Work](https://www.youtube.com/watch?v=Bv4CWNMhj4Q)|
